@@ -122,7 +122,7 @@
 
     <!-- Mobile Header -->
     <div class="mobile-header">
-      <div class="logo"><a href="#"><img style="height: 90px; width: 90px;" src="/onboarding/IandM-white-logo.png" alt="" title=""></a></div>
+      <div class="logo round-logo-container"><a href="#"><img  src="/onboarding/IandM-white-logo.png" alt="" title=""></a></div>
 
       <!--Nav Box-->
       <div class="nav-outer clearfix">
