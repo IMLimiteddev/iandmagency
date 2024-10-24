@@ -100,7 +100,7 @@ Global Settings
 ***/
 
 :root{
-    --bs-yellow: #ffc107;
+    --bs-yellow: #f6ad3e;
     --bs-black: #000000;
     --bs-white: #ffffff;
 }
@@ -2393,7 +2393,7 @@ Buttons Styles
   text-align: center;
   white-space: nowrap;
   color: #202124;
-  background-color: #F9AB00;
+  background-color: var(--bs-yellow);
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -2403,7 +2403,7 @@ Buttons Styles
 
 .btn-style-two:hover {
   color: #202124;
-  background-color: #E9A000;
+  background-color: var(--bs-black);
 }
 
 /* Btn Style Three */
@@ -2411,7 +2411,7 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: #1967D2;
+  color: var(--bs-black);
   background-color: #E2EAF8;
   font-size: 15px;
   line-height: 20px;
@@ -2422,7 +2422,7 @@ Buttons Styles
 
 .btn-style-three:hover {
   color: #FFFFFF;
-  background-color: #1967D2;
+  background-color: var(--bs-black);
 }
 
 /* Btn Style Four */
@@ -5425,7 +5425,7 @@ Main Footer / Style Two
 
 ***/
 .main-footer.style-two {
-  background-color: #302EA7;
+  background-color: var(--bs-black);
 }
 
 .main-footer.style-two.alternate {
@@ -5887,6 +5887,49 @@ Main Header
   z-index: 99;
   transition: all 300ms ease;
 }
+/*
+.main-header .logo-box {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bs-black);
+    border-radius: 50%;
+}
+
+.main-header .logo-box .logo {
+    height: 100px;
+    width: 100px;
+    display: block;
+    background-image: url(../IandM-white-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.round-logo-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #000000; /* Adjust the background color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 0 20px 0;
+}
+
+.round-logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
 
 .header-span {
   position: relative;
@@ -5984,7 +6027,7 @@ Main Header
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li.current > span {
-  color: #1967D2;
+  color: #ffffff;
 }
 
 .main-menu .navigation > li.dropdown > span {
@@ -6083,7 +6126,7 @@ Main Header
 .main-menu .navigation > li.current.dropdown > span:after,
 .main-menu .navigation > li > ul > li > ul > li.current > a,
 .main-menu .navigation > li > ul > li.current > a {
-  color: #1967D2;
+  color: #ffffff;
 }
 
 .main-menu .navigation > li > ul > li > ul {
@@ -6238,7 +6281,7 @@ Main Header
 }
 
 .main-header.header-style-two.fixed-header {
-  background-color: var(--bs-black);
+  background-color: var(--bs-yellow);
 }
 
 .main-header.header-shaddow {
@@ -6324,7 +6367,8 @@ Header Style Two
 .header-style-two .main-menu .navigation > li.current.dropdown > span:after,
 .header-style-two .main-menu .navigation > li.current > a,
 .header-style-two .main-menu .navigation > li.current > span {
-  color: #F9AB00;
+  color: #000000;
+  text-decoration: underline;
 }
 
 .header-style-two .main-menu .navigation > li > ul > li > ul,
@@ -6541,7 +6585,7 @@ Mobile Header
   padding: 20px 15px;
   display: none;
   z-index: 99;
-  background-color: var(--bs-black);
+  background-color: var(--bs-yellow);
   box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
 }
 
@@ -6777,7 +6821,7 @@ Job Categories
 
 .category-block-two .inner-box:hover .icon {
   color: #ffffff;
-  background: #1967D2;
+  background: var(--bs-black);
 }
 .category-block-two.at-home21 .inner-box{
   background-color: #fff;
@@ -6796,12 +6840,12 @@ Job Categories
   color: #202124;
 }
 .category-block-two.at-home22 .inner-box{
-  background-color: #EBF7FE;
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 30px;
 }
 .category-block-two.at-home22 .icon{
-  background-color: #1967D2;
+  background-color: var(--bs-yellow);
   color: #FFFFFF;
 }
 
@@ -7282,7 +7326,7 @@ Job Section Two
 ***/
 .job-section-two {
   position: relative;
-  background-color: #F5F7FC;
+  background-color: var(--bs-yellow);
   padding: 100px 0;
 }
 
@@ -9901,7 +9945,7 @@ Preloader
   margin-top: -25px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(../images/favicon.png);
+  /* background-image: url(../IandM-no-white-bg-logo-.png); */
   content: "";
 }
 
@@ -9914,11 +9958,12 @@ Preloader
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
-  color: #1967D2;
+  color: #000000;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
-  content: "LOADING";
+  content: " I & M LOADING...";
+
 }
 
 /*==========================
@@ -12249,7 +12294,7 @@ Candidates Section
 .candidate-block .designation {
   display: block;
   font-size: 14px;
-  color: #1967D2;
+  color: var(--bs-yellow);
   line-height: 19px;
   margin-bottom: 10px;
 }
@@ -13329,7 +13374,7 @@ Call To Action Three
 .call-to-action-three {
   position: relative;
   padding: 60px 0;
-  background-color: #DEEBFF;
+  background-color: var(--bs-yellow);
 }
 
 .call-to-action-three .outer-box {
@@ -19809,7 +19854,7 @@ Product Tabs
 }
 
 .work-block.-type-4:hover .icon-wrap {
-  background-color: #4182E8;
+  background-color: var(--bs-yellow);
 }
 
 .work-block.-type-4:hover .icon::before {
@@ -20439,13 +20484,13 @@ Banner Section
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/bg-2.png);
+  /* background-image: url(../images/icons/bg-2.png); */
   /* background-image: url(../images/index-21/home21-hero-peoples.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   content: "";
-  background-color: var(--bs-black);
+  background-color: var(--bs-yellow);
 }
 
 .banner-section-two .content-column {

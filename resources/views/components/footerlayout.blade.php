@@ -6,9 +6,9 @@
         <div class="row">
           <div class="big-column col-xl-4 col-lg-3 col-md-12">
             <div class="footer-column about-widget">
-              <div class="logo"><a href="#"><img src="/onboarding/images/logo-2.svg" alt=""></a></div>
-              <p class="phone-num"><span>Call us </span><a href="thebeehost%40support.html">123 456 7890</a></p>
-              <p class="address">329 Queensberry Street, North Melbourne VIC<br> 3051, Australia. <br><a href="mailto:support@superio.com" class="email">support@superio.com</a></p>
+              <div class="logo"><a href="#"><img style="height: 60px; width: 60px;" src="/logos/IandM-no-bg-logo-.png" alt=""></a></div>
+              <p class="phone-num"><span>Call us </span><a href="#">123 456 7890</a></p>
+              <p class="address">329 Olashola Street, North Garden VIC<br> 3051, Nigeria. <br><a href="#" class="email">support@iandm.com</a></p>
             </div>
           </div>
 
@@ -19,9 +19,9 @@
                   <h4 class="widget-title">Find Jobs</h4>
                   <div class="widget-content">
                     <ul class="list">
-                      <li><a href="#">US Jobs</a></li>
-                      <li><a href="#">Canada Jobs</a></li>
-                      <li><a href="#">UK Jobs</a></li>
+                      <li><a href="#">NG Jobs</a></li>
+                      <li><a href="#">NG Jobs</a></li>
+                      <li><a href="#">NG Jobs</a></li>
                       <li><a href="#">Emplois en France</a></li>
                       <li><a href="#">Jobs in Deutschland</a></li>
                       <li><a href="#">Vacatures China</a></li>
