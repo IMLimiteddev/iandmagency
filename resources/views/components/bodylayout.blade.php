@@ -5,7 +5,7 @@
             <div class="content-column col-lg-8 col-md-12 col-sm-12">
                 <div class="inner-column wow fadeInUp">
                     <div class="title-box">
-                        <h3 id="typingText"></h3>
+                        <h6 id="typingText"></h6>
                         <div class="text text-white">Find Jobs, Employment & Career Opportunities</div>
                     </div>
 
@@ -214,8 +214,7 @@
                             <li><span class="icon flaticon-briefcase"></span> Segment</li>
                             <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
                             <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                            <li><span class="icon flaticon-money"></span> ₦1k - ₦2k</li>
-                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+
                         </ul>
                     </div>
                     <ul class="job-other-info">
@@ -236,8 +235,7 @@
                             <li><span class="icon flaticon-briefcase"></span> Segment</li>
                             <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
                             <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                            <li><span class="icon flaticon-money"></span> ₦1k - ₦2k</li>
-                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+
                         </ul>
                     </div>
                     <ul class="job-other-info">
@@ -258,8 +256,7 @@
                             <li><span class="icon flaticon-briefcase"></span> Segment</li>
                             <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
                             <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                            <li><span class="icon flaticon-money"></span> ₦1k - ₦2k</li>
-                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+
                         </ul>
                     </div>
                     <ul class="job-other-info">
@@ -280,8 +277,7 @@
                             <li><span class="icon flaticon-briefcase"></span> Segment</li>
                             <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
                             <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                            <li><span class="icon flaticon-money"></span> ₦1k - ₦2k</li>
-                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+
                         </ul>
                     </div>
                     <ul class="job-other-info">
@@ -302,8 +298,7 @@
                             <li><span class="icon flaticon-briefcase"></span> Segment</li>
                             <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
                             <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                            <li><span class="icon flaticon-money"></span> ₦1k - ₦2k</li>
-                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+
                         </ul>
                     </div>
                     <ul class="job-other-info">

@@ -26,9 +26,15 @@
         <div class="preloader">
         </div>
 
+        @if (Route::currentRouteName()!= 'register')
+        @if (Route::currentRouteName()!= 'login')
+
         <x-headerlayout />
 
-        <x-bodylayout />
+        @endif
+        @endif
+
+        {{$body}}
 
         <x-footerlayout />
 
@@ -51,6 +57,8 @@
     <script src="/onboarding/js/owl.js"></script>
     <script src="/onboarding/js/wow.js"></script>
     <script src="/onboarding/js/script.js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyDaaCBm4FEmgKs5cfVrh3JYue3Chj1kJMw&amp;ver=5.2.4"></script>
+
 
     <script defer>
         document.addEventListener("DOMContentLoaded", function() {
