@@ -63,7 +63,7 @@
             }
         }
 
-        .wow {
+        .woww {
             display: flex;
             align-items: center;
             background: #f6ad3e;
@@ -73,7 +73,7 @@
             /* Ensures smooth scroll within container */
         }
 
-        .title {
+        .t {
             display: inline-block;
             white-space: nowrap;
             /* Keeps text on a single line */

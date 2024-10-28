@@ -26,10 +26,10 @@
                                 </div>
                             </div>
 
-                            <div class="wow fadeInUp"
+                            <div class="woww fadeInUp"
                                 style="display: flex; align-items: center; background: #f6ad3e; padding: 20px; border-radius: 10px;">
 
-                                <span class="title">
+                                <span class="title t">
                                     <span class="m-3">Founded<span> <i class="fa fa-calendar"></i></span>: November
                                         2023,</span>
                                     <span class="m-3">Location <span> <i class="fa fa-map-marker"></i></span>: Lagos
@@ -168,7 +168,7 @@
         <div class="sidebar-page-container">
             <div class="auto-container">
                 <!-- Static background section with centered text -->
-                <div style="background-image: url('/onboarding/iandm6.png');" class="background-container">
+                <div style="background-image: url('/onboarding/targetiandm.jpg');" class="background-container">
                 </div>
 
                 <!-- Additional content below -->
@@ -195,7 +195,7 @@
         <div class="sidebar-page-container">
             <div class="auto-container">
                 <!-- Static background section with centered text -->
-                <div style="background-image: url('/onboarding/iandm.png');" class="background-container">
+                <div style="background-image: url('/onboarding/servicesiandm.jpg');" class="background-container">
                 </div>
 
                 <!-- Additional content below -->
@@ -225,7 +225,7 @@
         <div class="sidebar-page-container">
             <div class="auto-container">
                 <!-- Static background section with centered text -->
-                <div style="background-image: url('/onboarding/iandm.png');" class="background-container">
+                <div style="background-image: url('/onboarding/iandm6.png');" class="background-container">
                 </div>
 
                 <!-- Additional content below -->
