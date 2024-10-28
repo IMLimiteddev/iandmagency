@@ -15,12 +15,19 @@
 
                 <nav class="nav main-menu">
                     <ul class="navigation" id="navbar">
-                        <li class="current">
+                        {{-- <li class="current">
                             <span>Home</span>
+                        </li> --}}
+                        <li class="current">
+                            <span>
+                                <a style="color: white" href="{{route('portfolio')}}">
+                                    Portfolio
+                                </a>
+                            </span>
 
                         </li>
 
-                        <li class="dropdown has-mega-menu" id="has-mega-menu">
+                        {{-- <li class="dropdown has-mega-menu" id="has-mega-menu">
                             <span>Find Jobs</span>
                             <div class="mega-menu">
                                 <div class="mega-menu-bar row">
@@ -41,7 +48,6 @@
                                 </div>
                             </div>
                         </li>
-
                         <li class="dropdown">
                             <span>Companies</span>
                             <ul>
@@ -87,15 +93,13 @@
                             </a>
 
                         </li>
-
-
                         <li>
                             <a href="{{route('about.us')}}">
                                 <span>Service</span>
                             </a>
 
 
-                        </li>
+                        </li> --}}
 
                         <li>
                             <a href="{{route('contact.us')}}">

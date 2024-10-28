@@ -20952,10 +20952,11 @@ Banner Section Six
 .banner-section-six:before {
   position: absolute;
   left: 0;
-  width: 50%;
+  width: 100%;
   top: 0;
   height: 100%;
-  background: #ECEDF2;
+  background: var(--bs-black);
+  background-image: url(../shake.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
