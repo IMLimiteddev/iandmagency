@@ -18,7 +18,9 @@
                         {{-- <li class="current">
                             <span>Home</span>
                         </li> --}}
-                        <li class="current">
+                        {{-- <li class="current"> --}}
+
+                        <li>
                             <span>
                                 <a style="color: white" href="{{route('portfolio')}}">
                                     Portfolio

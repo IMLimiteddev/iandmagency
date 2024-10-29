@@ -31,9 +31,14 @@ class OnboardingController extends Controller
 
         return view('onboarding.job-list');
     }
+    // public function portfolio()
+    // {
+
+    //     return view('onboarding.portfolio');
+    // }
     public function portfolio()
     {
 
-        return view('onboarding.portfolio');
+        return view('onboarding.porty');
     }
 }

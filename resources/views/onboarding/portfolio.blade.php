@@ -92,9 +92,6 @@
             </div>
         </section>
         <!-- End Banner Section-->
-
-
-
         <!-- Sidebar Page Container -->
         <div class="sidebar-page-container">
             <div class="auto-container">
@@ -140,7 +137,6 @@
             </div>
         </div>
         <!-- End Sidebar Container -->
-
         <!-- Call To Action -->
         <section class="call-to-action-two style-two">
             <div class="auto-container">
@@ -162,9 +158,6 @@
             </div>
         </section>
         <!-- End Call To Action -->
-
-
-
         <div class="sidebar-page-container">
             <div class="auto-container">
                 <!-- Static background section with centered text -->
@@ -317,7 +310,6 @@
                 </div>
             </div>
         </div>
-
         <div class="sidebar-page-container">
             <div class="auto-container">
                 <!-- Static background section with centered text -->
