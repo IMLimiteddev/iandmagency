@@ -54,9 +54,7 @@
         </div>
         <!-- Mobile Header -->
         <div class="bringer-mobile-header-inner">
-            <a href="index.html" class="bringer-logo">
-                <img src="/portfolioimg/logo.png" alt="bringer." width="88" height="24">
-            </a>
+            
             <a href="#" class="bringer-mobile-menu-toggler">
                 <i class="bringer-menu-toggler-icon">
                     <span></span>
