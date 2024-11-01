@@ -36,7 +36,11 @@ Route::prefix('web/')->group(function () {
     Route::get('/candidates-list', [OnboardingController::class, 'candidates_list'])->name('candidates.list');
     Route::get('/employer-list', [OnboardingController::class, 'employer_list'])->name('employer.list');
     Route::get('/job-list', [OnboardingController::class, 'job_list'])->name('job.list');
-    Route::get('/portfolio', [OnboardingController::class, 'portfolio'])->name('portfolio');
+    Route::get('/port', [OnboardingController::class, 'portfolio'])->name('portfolio');
+
+
+    Route::get('/portfolio', [OnboardingController::class, 'portfolio_colors'])->name('portfolio.colors');
+
 });
 
 require __DIR__.'/auth.php';

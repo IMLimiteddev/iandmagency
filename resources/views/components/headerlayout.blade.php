@@ -22,7 +22,7 @@
 
                         <li>
                             <span>
-                                <a style="color: white" href="{{route('portfolio')}}">
+                                <a style="color: white" href="{{route('portfolio.colors')}}">
                                     Portfolio
                                 </a>
                             </span>

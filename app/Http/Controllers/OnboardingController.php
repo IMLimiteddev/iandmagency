@@ -41,4 +41,9 @@ class OnboardingController extends Controller
 
         return view('onboarding.porty');
     }
+    public function portfolio_colors()
+    {
+
+        return view('onboarding.portfolio-colors');
+    }
 }
