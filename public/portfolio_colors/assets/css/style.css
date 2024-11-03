@@ -5723,7 +5723,13 @@ blockquote {
 @media (max-width: 768px) {
 
     .vision-hide{
-        margin-top: 900px;
+        margin-top: 600px;
+    }
+}
+@media (max-width: 450px) {
+
+    .vision-hide{
+        margin-top: 40px;
     }
 }
 
