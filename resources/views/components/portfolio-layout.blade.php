@@ -262,7 +262,7 @@
                     <div data-w-id="9db68b5b-aa2d-bbb8-b5cb-da84198db334" style="width:100%;height:100%"
                         class="mask-frame"></div>
 
-                    <img src="/portfolio_colors/assets/images/home-1-hero-03-p-1080.jpg" loading="lazy"
+                    <img src="/portfolio_colors/assets/images/home-1-hero-03.jpg" loading="lazy"
                         style="-webkit-transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                         data-w-id="b7d53991-f45b-e33a-570a-e86dafeb3773" alt="Image" />
                 </div>
