@@ -133,7 +133,7 @@
                         <div data-delay="100" data-hover="true" class="dropdown-navbar w-dropdown">
                             <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold"><img style="height: 50px"
-                                        src="/onboarding/Icon Png.png" alt=""></div>
+                                        src="/onboarding/Icon Png-1.png" alt=""></div>
                             </div>
 
                             {{-- <div class="dropdown w-dropdown-toggle">
@@ -189,7 +189,7 @@
                         </div><a href="/contact/contact-1" class="dropdown responsive w-nav-link">Contact</a> --}}
                     </nav>
                     <a href="/home/home-1" aria-current="page" class="brand-link w-inline-block w--current"><img
-                            style="margin-top: 5px; height: 20px;" src="/onboarding/Icon Png.png" loading="lazy"
+                            style="margin-top: 5px; height: 20px;" src="/onboarding/Icon Png-1.png" loading="lazy"
                             alt="" /></a>
 
                 </div>
