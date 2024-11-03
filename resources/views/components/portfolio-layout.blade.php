@@ -5,16 +5,16 @@
     <meta charset="utf-8" />
     <title>I&M</title>
     <meta
-        content="Take your portfolio to new heights with Colours — a stunning Webflow Template designed to showcase your work with customizable layouts and seamless animations. Perfect for creatives of all levels, impress your clients with a polished and professional presentation of your design projects."
+        content="Recriute agency."
         name="description" />
     <meta content="Colours - Webflow Ecommerce website template" property="og:title" />
     <meta
-        content="Take your portfolio to new heights with Colours — a stunning Webflow Template designed to showcase your work with customizable layouts and seamless animations. Perfect for creatives of all levels, impress your clients with a polished and professional presentation of your design projects."
+        content="Recriute agency."
         property="og:description" />
     <meta content="/portfolio_colors/assets/images/colours-20opengraph.jpg" property="og:image" />
-    <meta content="Colours - Webflow Ecommerce website template" property="twitter:title" />
+    <meta content="Recriute agency." property="twitter:title" />
     <meta
-        content="Take your portfolio to new heights with Colours — a stunning Webflow Template designed to showcase your work with customizable layouts and seamless animations. Perfect for creatives of all levels, impress your clients with a polished and professional presentation of your design projects."
+        content="Recriute agency."
         property="twitter:description" />
     <meta content="/portfolio_colors/assets/images/colours-20opengraph.jpg" property="twitter:image" />
     <meta property="og:type" content="website" />
@@ -208,12 +208,17 @@
                     <div class="bottom-navbar-links"><a href="{{route('welcome')}}" aria-current="page"
                             class="bottom-link w-inline-block w--current">
                             <div class="text-size-small caps text-weight-medium">home</div>
-                        </a><a href="#" class="bottom-link w-inline-block">
+                        </a><a href="#about" class="bottom-link w-inline-block">
                             <div class="text-size-small caps text-weight-medium">about</div>
-                        </a><a href="#" class="bottom-link w-inline-block">
+                        </a>
+                        <a href="#services" class="bottom-link w-inline-block">
                             <div class="text-size-small caps text-weight-medium">services</div>
-                        </a></div>
-                </div><a href="#" data-w-id="aceb7894-5f4c-c97e-0527-d57d17abc63c"
+                        </a>
+                        <a href="#vision" class="bottom-link w-inline-block">
+                            <div class="text-size-small caps text-weight-medium">Vision</div>
+                        </a>
+                    </div>
+                </div><a href="#contact" data-w-id="aceb7894-5f4c-c97e-0527-d57d17abc63c"
                     class="main-button-navbar button-hero mobile w-inline-block">
                     <div class="relative">
                         <div class="text-weight-medium">Contact Us</div>
@@ -269,7 +274,7 @@
             </div>
         </section>
         {{-- About us section --}}
-        <section>
+        <section id="about">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="who-we-component">
@@ -485,9 +490,8 @@
             </div>
         </section>
 
-
-
-        <section class="vision-hide">
+        {{-- Market Potential --}}
+        <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="testimonial-wrapper">
@@ -525,7 +529,6 @@
                 </div>
             </div>
         </section>
-
 
         {{-- Employee development --}}
         <section>
@@ -591,7 +594,7 @@
         </section>
 
         {{-- Our services section --}}
-        <section style="margin-bottom: 400px">
+        <section id="services" style="margin-bottom: 400px">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="main-sticky-wrapper">
@@ -804,7 +807,7 @@
         </section>
 
         {{-- Our vision and mission --}}
-        <section>
+        <section id="vision">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="testimonial-wrapper">
@@ -894,7 +897,7 @@
         </section>
 
         {{-- Contact us section --}}
-        <section>
+        <section id="contact">
             <div>
                 <div class="padding-global small">
                     <div class="contact-component">
@@ -1009,11 +1012,11 @@
                                         <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d51f" class="cta-header">
                                             <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d520"
                                                 class="overflow-hiden-footer">
-                                                <h2 class="heading-footer">Unlocking Potential,</h2>
+                                                <h2 class="heading-footer"></h2>
                                             </div><a href="/contact/contact-1"
                                                 data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
                                                 class="cta-button w-inline-block">
-                                                <h3 class="heading-footer"> One Professional at a Time.</h3>
+                                                <h3 class="heading-footer"> Unlocking Potential, One Professional at a Time.</h3>
                                                 <div class="cta-button-line"></div>
                                             </a>
                                         </div>
