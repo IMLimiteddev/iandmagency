@@ -189,14 +189,13 @@
                         </div><a href="/contact/contact-1" class="dropdown responsive w-nav-link">Contact</a> --}}
                     </nav>
                     <a href="/home/home-1" aria-current="page" class="brand-link w-inline-block w--current"><img
-
-                        style="height: 20px; margin: 5px"
-                            src="/onboarding/Icon Png.png" loading="lazy"
+                            style="margin-top: 5px; height: 20px;" src="/onboarding/Icon Png.png" loading="lazy"
                             alt="" /></a>
 
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="relative-navbar">
 
@@ -206,12 +205,12 @@
                     {{-- <div class="brand-logo"><img src="/onboarding/IandM-no-bg-logo-.png" loading="lazy" alt="" />
                     </div> --}}
                     <div class="vertical-line"></div>
-                    <div class="bottom-navbar-links"><a href="/home/home-1" aria-current="page"
+                    <div class="bottom-navbar-links"><a href="{{route('welcome')}}" aria-current="page"
                             class="bottom-link w-inline-block w--current">
                             <div class="text-size-small caps text-weight-medium">home</div>
-                        </a><a href="/about/about-1" class="bottom-link w-inline-block">
+                        </a><a href="#" class="bottom-link w-inline-block">
                             <div class="text-size-small caps text-weight-medium">about</div>
-                        </a><a href="/work/work-1" class="bottom-link w-inline-block">
+                        </a><a href="#" class="bottom-link w-inline-block">
                             <div class="text-size-small caps text-weight-medium">services</div>
                         </a></div>
                 </div><a href="#" data-w-id="aceb7894-5f4c-c97e-0527-d57d17abc63c"
@@ -485,8 +484,114 @@
                 </div>
             </div>
         </section>
-        {{-- Our services section --}}
+
+
+
+        <section class="vision-hide">
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container medium w-container">
+                    <div class="testimonial-wrapper">
+                        <div data-easing="ease-in-out-quart" data-duration-in="300" data-duration-out="100" class="">
+                            <div class="tabs-content w-tab-content">
+                                <div class="tab-content ">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-header">
+                                            <h3 class="text-size-display text-weight-regular mobile-size">Market
+                                                Potential
+                                            </h3>
+                                        </div>
+                                        <div class="testimonial-quote">
+                                            <p class="text-size-xlarge mobile-size">The global shift towards flexible,
+                                                remote work is driving
+                                                significant growth in our industry. Remote work services,
+                                                particularly in international recruitment, are growing by 20-
+                                                30% annually. The demand for specialized services in
+                                                compliance, remote team management, and technological
+                                                solutions is increasing, providing significant opportunities for
+                                                I&M to lead the market.
+                                                We operate in a wide range of industries, including IT,
+                                                marketing, and engineering, focusing on remote-enabled
+                                                work models for companies aiming to enhance their
+                                                international footprint.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        {{-- Employee development --}}
         <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="blog-posts-component">
+                        <div class="blog-posts-wrapper">
+                            <div data-delay="4000" data-animation="outin" class="slider w-slider" data-autoplay="true"
+                                data-easing="ease" data-hide-arrows="false" data-disable-swipe="false"
+                                data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                                <div class="w-slider-mask">
+
+                                    <div class="w-slide">
+                                        <div class="first-blog-card-cms show-mobile w-dyn-list">
+                                            <div role="list" class="collection-list w-dyn-items">
+                                                <div id="w-node-_898bbfe9-3c0d-bbd9-8b13-dd20f699b1d0-43d62ef2"
+                                                    data-w-id="898bbfe9-3c0d-bbd9-8b13-dd20f699b1d0" role="listitem"
+                                                    class="collection-item w-dyn-item">
+                                                    <div class="slider-content-wrapper">
+                                                        <div class="big-card-content">
+                                                            <div class="blog-slider-card">
+                                                                <div class="max-width-40vw"><a
+                                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
+                                                                        class="text-size-xxhuge text-weight-medium">Employee
+                                                                        Development</a></div>
+                                                                <div class="opacity-80 max-width-blog slier"><a
+                                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
+                                                                        class="text-size-huge">We recognize the
+                                                                        importance of
+                                                                        continuous learning and development.
+                                                                        To better communicate with our
+                                                                        German clients, our employees have
+                                                                        completed German language training
+                                                                        (B1 level). We are also working to
+                                                                        enhance our team’s skills in French to
+                                                                        further expand our global reach and
+                                                                        services.</a></div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div><a id="w-node-_898bbfe9-3c0d-bbd9-8b13-dd20f699b1ec-43d62ef2"
+                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
+                                                        class="blog-card-image first-card-blog w-inline-block">
+                                                        <div class="overlay-slider"></div><img
+                                                            style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                            loading="lazy" alt=""
+                                                            src="/portfolio_colors/assets/images/image8_enhanced.jpg"
+                                                            class="image" />
+                                                        <div class="mask-frame"></div>
+                                                        <div class="overlay-slider-left"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{-- Our services section --}}
+        <section style="margin-bottom: 400px">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="main-sticky-wrapper">
@@ -534,25 +639,29 @@
                             </div>
 
 
-                            <div style="background-image: url(/portfolio_colors/assets/images/image3.jpg) " class="max-width-30vw our-text">
+                            <div style="background-image: url(/portfolio_colors/assets/images/image3.jpg) "
+                                class="max-width-30vw our-text">
                                 <p class="text-size-huge text-weight-med te">1. Remote Talent Placement:
                                     We help companies find the best international professionals, ensuring they
                                     access the global talent pool to meet their needs, with a special focus on
                                     engineering, IT, marketing, and software development.</p>
                             </div>
-                            <div style="background-image: url(/portfolio_colors/assets/images/image11.jpg) " class="max-width-30vw our-text">
+                            <div style="background-image: url(/portfolio_colors/assets/images/image11.jpg) "
+                                class="max-width-30vw our-text">
                                 <p class="text-size-huge text-weight-med te">2. Compliance and Legal Consulting:
                                     We offer advisory services to ensure companies remain compliant with
                                     international legal and tax regulations while hiring remote workers.</p>
                             </div>
-                            <div style="background-image: url(/portfolio_colors/assets/images/image1.jpg) " class="max-width-30vw our-text">
+                            <div style="background-image: url(/portfolio_colors/assets/images/image1.jpg) "
+                                class="max-width-30vw our-text">
                                 <p class="text-size-huge text-weight-med te">3. Remote Team Onboarding and
                                     Management:
                                     Our services include integrating and increasing the productivity of remote
                                     teams through tailored onboarding processes and tools for effective team
                                     management.</p>
                             </div>
-                            <div style="background-image: url(/portfolio_colors/assets/images/image2.jpg) " class="max-width-30vw our-text">
+                            <div style="background-image: url(/portfolio_colors/assets/images/image2.jpg) "
+                                class="max-width-30vw our-text">
                                 <p class="text-size-huge text-weight-med te">4. Technological Solutions for Remote
                                     Work:
                                     I&M offers innovative platforms that streamline collaboration,
@@ -565,7 +674,137 @@
             </div>
         </section>
 
-        <section class="vision-hide">
+         {{--Our display --}}
+         <section class="vision-hide">
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="blog-posts-component">
+                        <div class="blog-posts-wrapper">
+                            <div class="first-blog-card-cms show-mobile w-dyn-list">
+                                <div role="list" class="blog-cards-list w-dyn-items">
+                                    <div data-w-id="b01f902c-63ef-dc1c-228a-296f7a241b13" style="opacity:1"
+                                        role="listitem" class="blog-card w-dyn-item"><a
+                                            href="/blog-posts/5-things-about-branding"
+                                            class="blog-card-image w-inline-block"><img alt="5 Things About Branding"
+                                                loading="lazy"
+                                                src="/portfolio_colors/assets/images/image7.jpg"
+                                                class="image" />
+                                            <div class="mask-frame"></div>
+                                        </a>
+                                        <div class="blog-bottom-content">
+                                            <div class="blog-second-card">
+                                                <div><a href="/blog-posts/5-things-about-branding"
+                                                        class="text-size-xlarge">Corporate Philosophy</a></div>
+                                                <div class="opacity-80 max-width-blog"><a
+                                                        href="/blog-posts/5-things-about-branding">At I&M, we believe in
+                                                        creating
+                                                        sustainable solutions that benefit
+                                                        both companies and employees. By
+                                                        investing in the well-being and
+                                                        development of our workforce, we
+                                                        strengthen Nigeria’s economy and
+                                                        position the country as a key player
+                                                        in the global remote work market.
+                                                        We live by the Ubuntu philosophy—
+                                                        “I am because we are”—emphasizing
+                                                        collaboration and growth for all.</a>
+                                                </div><a href="/blog-posts/5-things-about-branding"
+                                                    class="writter-wrapper margin-top color-cards w-inline-block">
+
+                                                    <div class="writter-info">
+                                                        <div class="writter-date">
+                                                            <div class="text-size-small">I</div>
+                                                            <div class="dot"></div>
+                                                            <div class="text-size-small">M</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-w-id="b01f902c-63ef-dc1c-228a-296f7a241b13" style="opacity:1"
+                                        role="listitem" class="blog-card w-dyn-item"><a href="#"
+                                            class="blog-card-image w-inline-block"><img alt="Our Clients" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image18.jpg"
+                                                class="image" />
+                                            <div class="mask-frame"></div>
+                                        </a>
+                                        <div class="blog-bottom-content">
+                                            <div class="blog-second-card">
+                                                <div><a href="#" class="text-size-xlarge">Our Clients</a></div>
+                                                <div class="opacity-80 max-width-blog"><a href="#">Currently, we serve
+                                                        primarily German
+                                                        customers, who value our
+                                                        seamless service and
+                                                        quick employee training.
+                                                        Our clients have
+                                                        expressed high
+                                                        satisfaction with our
+                                                        team’s work ethic and
+                                                        performance, making us
+                                                        a preferred partner for
+                                                        their remote work needs.</a>
+                                                </div><a href="#"
+                                                    class="writter-wrapper margin-top color-cards w-inline-block">
+
+                                                    <div class="writter-info">
+                                                        <div class="writter-date">
+                                                            <div class="text-size-small">I</div>
+                                                            <div class="dot"></div>
+                                                            <div class="text-size-small">M</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-w-id="b01f902c-63ef-dc1c-228a-296f7a241b13" style="opacity:1"
+                                        role="listitem" class="blog-card w-dyn-item"><a href="#"
+                                            class="blog-card-image w-inline-block"><img alt="Our Clients" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image19.jpg"
+                                                class="image" />
+                                            <div class="mask-frame"></div>
+                                        </a>
+                                        <div class="blog-bottom-content">
+                                            <div class="blog-second-card">
+                                                <div><a href="#" class="text-size-xlarge">Location & Future Plans </a></div>
+                                                <div class="opacity-80 max-width-blog"><a href="#">Our headquarters are in Lagos, Nigeria—a rapidly
+                                                    growing economic hub in Africa. Lagos provides us
+                                                    with the ideal environment for growth and
+                                                    development. We aim to establish the city as the
+                                                    centre of our international activities, building a solid
+                                                    infrastructure to attract more skilled professionals and
+                                                    enhance our service offerings globally.
+                                                    As we expand, we will continue to prioritize fair
+                                                    working conditions for our employees and sustainable
+                                                    growth for our clients, making Nigeria an attractive
+                                                    destination for international business.</a>
+                                                </div><a href="#"
+                                                    class="writter-wrapper margin-top color-cards w-inline-block">
+
+                                                    <div class="writter-info">
+                                                        <div class="writter-date">
+                                                            <div class="text-size-small">I</div>
+                                                            <div class="dot"></div>
+                                                            <div class="text-size-small">M</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{-- Our vision and mission --}}
+        <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="testimonial-wrapper">
@@ -661,164 +900,288 @@
                     <div class="contact-component">
                         <div data-w-id="306d7d83-f732-8433-32f6-5206932eb07c" style="opacity:1"
                             class="contact-left-content">
-                            {{-- <div style="opacity:1" class="contact-left-content"> --}}
-                                <div class="contact-content-wrapepr">
-                                    <p class="text-style-italic text-weight-light">Contact us</p>
-                                    <h1 class="text-size-xxhuge">Let&#x27;s work togheter <span
-                                            class="text-color-grey text-style-italic text-weight-light">&amp;</span> get you
-                                        a professional. </h1>
-                                    <div class="contact-email-wrapper"><a href="#" class="contact-email w-inline-block">
-                                            <div class="email-line"></div>
-                                            <div class="text-size-medium">info@imengin.com</div><img loading="lazy"
-                                                src="/portfolio_colors/assets/images/copy-20icon.svg" alt="Copy Icon"
-                                                class="copy-icon" />
-                                        </a></div>
-                                </div><a href="#" class="back-button w-inline-block"><img loading="lazy"
-                                        src="/portfolio_colors/assets/images/back-20arrow.svg" alt="Back Arrow"
-                                        class="back-arrow" />
-                                    <div class="no-break">
-                                        <div>Back to home</div>
-                                    </div>
-                                </a>
+
+
+                            <div class="contact-content-wrapepr">
+
+                                <p class="text-style-italic text-weight-light">Contact us</p>
+                                <h1 class="text-size-xxhuge">Let&#x27;s work together
+                                     <span
+                                        class="text-color-grey text-style-italic text-weight-light">&amp;</span> get
+                                    you
+                                    a professional. </h1>
+                                <div class="contact-email-wrapper"><a href="#" class="contact-email w-inline-block">
+                                        <div class="email-line"></div>
+                                        <div class="text-size-medium">info@imengin.com</div><img loading="lazy"
+                                            src="/portfolio_colors/assets/images/copy-20icon.svg" alt="Copy Icon"
+                                            class="copy-icon" />
+                                    </a>
+                                </div>
                             </div>
-                            <div data-w-id="306d7d83-f732-8433-32f6-5206932eb091" style="opacity:1"
-                                class="contact-right-content">
-                                {{-- <div class="contact-right-content"> --}}
-                                    <div id="w-node-_306d7d83-f732-8433-32f6-5206932eb092-e90cf757"
-                                        data-w-id="306d7d83-f732-8433-32f6-5206932eb092" style="opacity:0"
-                                        class="contact-form-header">
-                                        <div href="#" class="navbar-left-content"><img loading="lazy"
-                                                src="../images/logo.svg" alt="Logo icon" class="navbar-logo-image" />
-                                            <div class="navbar-logo-text">
-                                                <div class="text-weight-medium">Contact us</div>
-                                            </div>
+                            <a href="{{route('welcome')}}" class="back-button w-inline-block">
+                                <img loading="lazy" src="/portfolio_colors/assets/images/back-20arrow.svg"
+                                    alt="Back Arrow" class="back-arrow" />
+                                <div class="no-break">
+                                    <div>Back to home</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-w-id="306d7d83-f732-8433-32f6-5206932eb091" style="opacity:1"
+                            class="contact-right-content">
+                            {{-- <div class="contact-right-content"> --}}
+                                <div id="w-node-_306d7d83-f732-8433-32f6-5206932eb092-e90cf757"
+                                    data-w-id="306d7d83-f732-8433-32f6-5206932eb092" style="opacity:0"
+                                    class="contact-form-header">
+                                    <div href="#" class="navbar-left-content"><img loading="lazy"
+                                            src="/portfolio_colors/assets/images/logo.svg" alt="Logo icon"
+                                            class="navbar-logo-image" />
+                                        <div class="navbar-logo-text">
+                                            <div class="text-weight-medium">Contact us</div>
                                         </div>
-                                        <div class="text-weight-light">I&M</div>
                                     </div>
-                                    <div data-w-id="306d7d83-f732-8433-32f6-5206932eb09c" style="opacity:1"
-                                        class="contact-form">
-                                        <div class="w-form">
-                                            <form id="email-form" name="email-form" data-name="Email Form" method="get"
-                                                class="form" data-wf-page-id="671131609b81cf89e90cf757"
-                                                data-wf-element-id="306d7d83-f732-8433-32f6-5206932eb09e"><label
-                                                    for="name">Name</label><input class="text-field w-input" maxlength="256"
-                                                    name="name" data-name="Name" placeholder="Enter your name" type="text"
-                                                    id="name" required="" /><label for="email">Email Address</label><input
-                                                    class="text-field w-input" maxlength="256" name="email"
-                                                    data-name="Email" placeholder="Enter your e-mail" type="email"
-                                                    id="email" required="" /><label for="field">Message</label><textarea
-                                                    id="field" name="field" maxlength="5000" data-name="Field"
-                                                    placeholder="Your message..." class="message-field w-input"></textarea>
-                                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0a8"
-                                                    class="button-405 large"><input type="submit" data-wait="Please wait..."
-                                                        class="submit-button w-button" value="Submit" />
-                                                    <div class="button-contact">
-                                                        <div class="text-weight-medium">Send Message</div>
-                                                    </div>
-                                                    <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0ac"
-                                                        class="button-hover-color">
-                                                        <img data-w-id="306d7d83-f732-8433-32f6-5206932eb0ad" loading="lazy"
-                                                            alt="Mail Icon" src="../images/mail.svg" class="button-icon" />
-                                                    </div>
+                                    <div class="text-weight-light">I&M</div>
+                                </div>
+                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb09c" style="opacity:1"
+                                    class="contact-form">
+                                    <div class="w-form">
+                                        <form id="email-form" name="email-form" data-name="Email Form" method="get"
+                                            class="form" data-wf-page-id="671131609b81cf89e90cf757"
+                                            data-wf-element-id="306d7d83-f732-8433-32f6-5206932eb09e"><label
+                                                for="name">Name</label><input class="text-field w-input" maxlength="256"
+                                                name="name" data-name="Name" placeholder="Enter your name" type="text"
+                                                id="name" required="" /><label for="email">Email Address</label><input
+                                                class="text-field w-input" maxlength="256" name="email"
+                                                data-name="Email" placeholder="Enter your e-mail" type="email"
+                                                id="email" required="" /><label for="field">Message</label><textarea
+                                                id="field" name="field" maxlength="5000" data-name="Field"
+                                                placeholder="Your message/portfolio_colors/assets."
+                                                class="message-field w-input"></textarea>
+                                            <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0a8"
+                                                class="button-405 large"><input type="submit"
+                                                    data-wait="Please wait/portfolio_colors/assets."
+                                                    class="submit-button w-button" value="Submit" />
+                                                <div class="button-contact">
+                                                    <div class="text-weight-medium">Send Message</div>
                                                 </div>
-                                            </form>
-                                            <div class="success-message w-form-done"><img loading="lazy"
-                                                    src="../images/logo-20blue.svg" alt="Logo blue icon"
-                                                    class="success-message-image" />
-                                                <div>Thank you! Your submission has been received!</div>
+                                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0ac"
+                                                    class="button-hover-color">
+                                                    <img data-w-id="306d7d83-f732-8433-32f6-5206932eb0ad" loading="lazy"
+                                                        alt="Mail Icon" src="/portfolio_colors/assets/images/mail.svg"
+                                                        class="button-icon" />
+                                                </div>
                                             </div>
-                                            <div class="error-message w-form-fail">
-                                                <div>Oops! Something went wrong while submitting the form.</div>
+                                        </form>
+                                        <div class="success-message w-form-done"><img loading="lazy"
+                                                src="/portfolio_colors/assets/images/logo-20blue.svg"
+                                                alt="Logo blue icon" class="success-message-image" />
+                                            <div>Thank you! Your submission has been received!</div>
+                                        </div>
+                                        <div class="error-message w-form-fail">
+                                            <div>Oops! Something went wrong while submitting the form.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0b5" style="opacity:0"
+                                    class="contact-footer">
+                                    <p class="text-color-grey">Thank you for visiting my portfolio! I&#x27;m excited
+                                        to
+                                        hear from
+                                        you. If you have any questions, comments, or project inquiries, please
+                                        don&#x27;t hesitate
+                                        to get in touch with me.  I&#x27;ll do my best to get back to you as soon as
+                                        possible within
+                                        24 hours!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="overflow-hidden">
+                    <section>
+                        <div class="padding-global">
+                            <div class="w-layout-blockcontainer container w-container">
+                                <div class="footer-wrapper">
+                                    <div class="cta-wrapper">
+                                        <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d51f" class="cta-header">
+                                            <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d520"
+                                                class="overflow-hiden-footer">
+                                                <h2 class="heading-footer">Unlocking Potential,</h2>
+                                            </div><a href="/contact/contact-1"
+                                                data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
+                                                class="cta-button w-inline-block">
+                                                <h3 class="heading-footer"> One Professional at a Time.</h3>
+                                                <div class="cta-button-line"></div>
+                                            </a>
+                                        </div>
+                                        <div class="cta-effect">
+                                            <div class="gradient-wrapper">
+                                                <div class="w-embed"><svg width="523" height="374" viewBox="0 0 723 474"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M43.9991 338.499C132.799 462.582 180.545 534.791 237.672 402.862C294.798 270.935 375.661 226.562 722.465 236.705C633.665 112.625 252.799 -88.7754 195.673 43.1515C2.92556 132.197 -44.7997 214.42 43.9991 338.499Z"
+                                                            fill="url(#paint0_linear_118_4552)" />
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_118_4552" x1="137.909"
+                                                                y1="84.719" x2="582.283" y2="4.34229"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop stop-color="#15E7BC" />
+                                                                <stop offset="0.340797" stop-color="#4C4CFF" />
+                                                                <stop offset="0.97" stop-color="#ED70EF" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                    </svg></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0b5" style="opacity:0"
-                                        class="contact-footer">
-                                        <p class="text-color-grey">Thank you for visiting my portfolio! I&#x27;m excited to
-                                            hear from
-                                            you. If you have any questions, comments, or project inquiries, please
-                                            don&#x27;t hesitate
-                                            to get in touch with me.  I&#x27;ll do my best to get back to you as soon as
-                                            possible within
-                                            24 hours!</p>
+                                    <div class="footer-bottom-content">
+                                        <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52b"
+                                            class="divider-line-footer"></div>
+                                        <div class="footer-content">
+                                            <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52d" class="footer-email">
+                                                <div class="text-size-huge">info@imengin.com </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d53e"
+                                            class="footer-links-wrapper">
+                                            <div class="credits-wrapper"><a href="#" target="_blank"
+                                                    class="credits w-inline-block">
+                                                    <p class="paragraph">Design &amp; Developed by <span
+                                                            class="text-color-white">codeBrown</span></p>
+                                                </a><a href="https://webflow.com/" target="_blank"
+                                                    class="credits w-inline-block">
+
+                                                </a></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </section>
+
+        {{-- <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="hero-header about">
+                        <div class="header-works cms">
+
+                            <div class="w-layout-blockcontainer container w-container">
+                                <div class="works-template">
+                                    <div class="work-content">
+
+                                        <div class="rich-text align-center w-richtext">
+
+                                            <h3>The global shift towards flexible, remote work is driving
+                                                significant growth in our industry. Remote work services,
+                                                particularly in international recruitment, are growing by 20-
+                                                30% annually. The demand for specialized services in
+                                                compliance, remote team management, and technological
+                                                solutions is increasing, providing significant opportunities for
+                                                I&M to lead the market.
+                                                We operate in a wide range of industries, including IT,
+                                                marketing, and engineering, focusing on remote-enabled
+                                                work models for companies aiming to enhance their
+                                                international footprint.</h3>
+                                        </div>
+                                    </div>
+                                    <div class="work-template-images">
+                                        <img alt="Aquemini" loading="lazy"
+                                            src="/portfolio_colors/assets/images/Untitled design (6).png" sizes="85vw"
+                                            srcset="/portfolio_colors/assets/images/Untitled design (6).png 500w,
+                                                /portfolio_colors/assets/images/Untitled design (6).png 800w,
+                                                /portfolio_colors/assets/images/Untitled design (6).png 1080w,
+                                                /portfolio_colors/assets/images/Untitled design (6).png 2124w"
+                                            class="image" />
+                                        <div class="mask-frame"></div>
+                                    </div>
+                                    <div class="work-template-images margin-bottom"><img alt="Aquemini" loading="lazy"
+                                            src="/portfolio_colors/assets/images/blog-20images-20-1-.jpg" sizes="85vw"
+                                            srcset="/portfolio_colors/assets/images/blog-20images-20-1-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-1-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-1-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-1-p-1600.jpg 1600w, /portfolio_colors/assets/blog-20images-20-1-.jpg 2124w"
+                                            class="image" />
+                                        <div class="mask-frame"></div>
+                                    </div>
+                                    <div class="work-content">
+                                        <div class="rich-text align-center w-richtext">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in
+                                                reprehenderit in
+                                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="work-template-images margin-bottom"><img alt="Aquemini" loading="lazy"
+                                            src="/portfolio_colors/assets/images/blog-20images-20-4-.jpg" sizes="85vw"
+                                            srcset="/portfolio_colors/assets/images/blog-20images-20-4-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-4-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-4-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-4-p-1600.jpg 1600w, /portfolio_colors/assets/blog-20images-20-4-.jpg 2124w"
+                                            class="image" />
+                                        <div class="mask-frame"></div>
+                                    </div>
+                                    <div class="work-content">
+                                        <div class="rich-text align-center w-richtext">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in
+                                                reprehenderit in
+                                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="work-template-images vertical"><img alt="Aquemini" loading="lazy"
+                                            src="/portfolio_colors/assets/images/blog-20images-20-5-.jpg"
+                                            sizes="(max-width: 767px) 85vw, (max-width: 991px) 42vw, 43vw"
+                                            srcset="/portfolio_colors/assets/images/blog-20images-20-5-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-5-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-5-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-5-.jpg 1270w"
+                                            class="image" />
+                                        <div class="mask-frame"></div>
+                                    </div>
+                                    <div class="work-template-images vertical right"><img alt="Aquemini" loading="lazy"
+                                            src="/portfolio_colors/assets/images/blog-20images-20-3-.jpg"
+                                            sizes="(max-width: 767px) 85vw, (max-width: 991px) 42vw, 43vw"
+                                            srcset="/portfolio_colors/assets/images/blog-20images-20-3-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-3-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-3-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-3-.jpg 1270w"
+                                            class="image" />
+                                        <div class="mask-frame"></div>
+                                    </div>
+                                    <div class="work-content">
+                                        <div class="rich-text align-center w-richtext">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in
+                                                reprehenderit in
+                                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="work-template-images"><img alt="Aquemini" loading="lazy"
+                                            src="/portfolio_colors/assets/images/blog-20images-20-2-.jpg" sizes="85vw"
+                                            srcset="/portfolio_colors/assets/images/blog-20images-20-2-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-2-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-2-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-2-p-1600.jpg 1600w, /portfolio_colors/assets/blog-20images-20-2-p-2000.jpg 2000w, /portfolio_colors/assets/blog-20images-20-2-.jpg 2560w"
+                                            class="image" />
+                                        <div class="mask-frame"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-                    <div class="overflow-hidden">
-                        <section>
-                            <div class="padding-global">
-                                <div class="w-layout-blockcontainer container w-container">
-                                    <div class="footer-wrapper">
-                                        <div class="cta-wrapper">
-                                            <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d51f" class="cta-header">
-                                                <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d520"
-                                                    class="overflow-hiden-footer">
-                                                    <h2 class="heading-footer">Unlocking Potential,</h2>
-                                                </div><a href="/contact/contact-1"
-                                                    data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
-                                                    class="cta-button w-inline-block">
-                                                    <h3 class="heading-footer"> One Professional at a Time.</h3>
-                                                    <div class="cta-button-line"></div>
-                                                </a>
-                                            </div>
-                                            <div class="cta-effect">
-                                                <div class="gradient-wrapper">
-                                                    <div class="w-embed"><svg width="523" height="374" viewBox="0 0 723 474"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M43.9991 338.499C132.799 462.582 180.545 534.791 237.672 402.862C294.798 270.935 375.661 226.562 722.465 236.705C633.665 112.625 252.799 -88.7754 195.673 43.1515C2.92556 132.197 -44.7997 214.42 43.9991 338.499Z"
-                                                                fill="url(#paint0_linear_118_4552)" />
-                                                            <defs>
-                                                                <linearGradient id="paint0_linear_118_4552" x1="137.909"
-                                                                    y1="84.719" x2="582.283" y2="4.34229"
-                                                                    gradientUnits="userSpaceOnUse">
-                                                                    <stop stop-color="#15E7BC" />
-                                                                    <stop offset="0.340797" stop-color="#4C4CFF" />
-                                                                    <stop offset="0.97" stop-color="#ED70EF" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                        </svg></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="footer-bottom-content">
-                                            <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52b"
-                                                class="divider-line-footer"></div>
-                                            <div class="footer-content">
-                                                <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52d" class="footer-email">
-                                                    <div class="text-size-huge">info@imengin.com</div>
-                                                </div>
-                                            </div>
-                                            <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d53e"
-                                                class="footer-links-wrapper">
-                                                <div class="credits-wrapper"><a href="#" target="_blank"
-                                                        class="credits w-inline-block">
-                                                        <p class="paragraph">Design &amp; Developed by <span
-                                                                class="text-color-white">codeBrown</span></p>
-                                                    </a><a href="https://webflow.com/" target="_blank"
-                                                        class="credits w-inline-block">
-
-                                                    </a></div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <script src="/portfolio_colors/assets/js/jquery.js" type="text/javascript"></script>
-        <script src="/portfolio_colors/assets/js/webflow-script.js" type="text/javascript"></script>
+
+    </div>
+
+    <script src="/portfolio_colors/assets/js/jquery.js" type="text/javascript"></script>
+    <script src="/portfolio_colors/assets/js/webflow-script.js" type="text/javascript"></script>
 </body>
 
 </html>

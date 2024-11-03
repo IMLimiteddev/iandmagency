@@ -5723,7 +5723,7 @@ blockquote {
 @media (max-width: 768px) {
 
     .vision-hide{
-        margin-top: 600px;
+        margin-top: 2000px;
     }
 }
 @media (max-width: 450px) {
@@ -5837,7 +5837,7 @@ blockquote {
 }
 
 .contact-left-content {
-    background-image: url("../images/contact-20background.jpg");
+    background-image: url("../images/image16.jpg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -5853,6 +5853,7 @@ blockquote {
     position: sticky;
     top: 1rem;
 }
+
 
 .text-color-grey {
     color: #6c6c6c;
@@ -5994,6 +5995,21 @@ blockquote {
     display: flex;
     overflow: hidden;
 }
+/* @media (max-width:768px) {
+
+    .contact-right-content {
+        background-color: #202020;
+        border-radius: 1rem;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+        max-width: 50%;
+        max-height: 200vh;
+        padding: 3rem 2.4rem 1.5rem 2rem;
+        display: flex;
+        overflow: hidden;
+    }
+} */
 
 .button-hover-color {
     z-index: 2;
