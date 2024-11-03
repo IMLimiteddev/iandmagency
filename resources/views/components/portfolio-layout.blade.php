@@ -230,7 +230,7 @@
                         <div class="heading-hero">
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-1-interaction">Fresh</h1>
+                                class="heading-1-interaction">Youthful</h1>
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="heading-1-interaction">Creative</h1>
@@ -313,7 +313,7 @@
                     <div class="services-component">
                         <div data-w-id="04cadffc-f2dc-8161-da9c-8f21a182528a" class="services-hover">
                             <div data-w-id="d95c9dbd-b5c9-523f-c0c3-480afaff5c47" class="text-relative _1">
-                                <div class="text-size-xlarge">Fresh</div>
+                                <div class="text-size-xlarge">Youthful</div>
                             </div>
                             <div class="text-relative _2">
                                 <div class="text-size-xlarge text-color-interaction">Creative</div>
