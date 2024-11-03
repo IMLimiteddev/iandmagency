@@ -133,10 +133,8 @@
                         <div data-delay="100" data-hover="true" class="dropdown-navbar w-dropdown">
                             <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold"><img style="height: 50px"
-                                        src="/onboarding/IandM-no-white-bg-logo-.png" alt=""></div>
+                                        src="/onboarding/Icon Png.png" alt=""></div>
                             </div>
-
-
 
                             {{-- <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold">Home</div>
@@ -149,7 +147,8 @@
 
                     </nav>
                     <nav role="navigation" id="w-node-a0814933-dfa2-4581-2ed5-24b9b1fe3048-b1fe301d"
-                        class="nav-menu w-nav-menu"><a href="#" class="dropdown responsive w-nav-link">Home</a>
+                        class="nav-menu w-nav-menu">
+                        {{-- <a href="#" class="dropdown responsive w-nav-link">Home</a> --}}
                         {{-- <div data-delay="100" data-hover="true" class="dropdown-navbar responsive w-dropdown">
                             <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold">Home</div>
@@ -208,9 +207,8 @@
         <div class="bottom-navbar-sticky">
             <div class="bottom-navbar-wrapper">
                 <div class="bottom-navbar-content">
-                    <div class="brand-logo"><img src="/onboarding/IandM-no-bg-logo-.png"
-                            loading="lazy" alt="" />
-                    </div>
+                    {{-- <div class="brand-logo"><img src="/onboarding/IandM-no-bg-logo-.png" loading="lazy" alt="" />
+                    </div> --}}
                     <div class="vertical-line"></div>
                     <div class="bottom-navbar-links"><a href="/home/home-1" aria-current="page"
                             class="bottom-link w-inline-block w--current">
@@ -218,7 +216,7 @@
                         </a><a href="/about/about-1" class="bottom-link w-inline-block">
                             <div class="text-size-small caps text-weight-medium">about</div>
                         </a><a href="/work/work-1" class="bottom-link w-inline-block">
-                            <div class="text-size-small caps text-weight-medium">works</div>
+                            <div class="text-size-small caps text-weight-medium">services</div>
                         </a></div>
                 </div><a href="#" data-w-id="aceb7894-5f4c-c97e-0527-d57d17abc63c"
                     class="main-button-navbar button-hero mobile w-inline-block">
@@ -230,7 +228,7 @@
             </div>
         </div>
 
-
+        {{-- Banner section --}}
         <section>
             <div class="hero-size align-middle">
                 <div class="padding-global">
@@ -268,13 +266,14 @@
                 </div>
                 <div class="hero-background">
                     <div data-w-id="9db68b5b-aa2d-bbb8-b5cb-da84198db334" style="width:100%;height:100%"
-                        class="mask-frame"></div><img src="/portfolio_colors/assets/images/home-1-hero-03.jpg"
+                        class="mask-frame"></div><img src="/portfolio_colors/assets/images/3 (1)_enhanced.png"
                         loading="lazy"
                         style="-webkit-transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(2.5, 2.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                         data-w-id="b7d53991-f45b-e33a-570a-e86dafeb3773" alt="Image" />
                 </div>
             </div>
         </section>
+        {{-- About us section --}}
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
@@ -320,6 +319,7 @@
                 </div>
             </div>
         </section>
+        {{-- Design section --}}
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
@@ -342,6 +342,7 @@
                 </div>
             </div>
         </section>
+        {{-- Company Objectives section --}}
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
@@ -458,7 +459,7 @@
                                                         class="project-arrow" />
                                                     <div class="white-circle"></div>
                                                 </div><img alt="Aquemini" loading="lazy"
-                                                    src="/portfolio_colors/assets/images/Untitled design (6).png"
+                                                    src="/portfolio_colors/assets/images/2 (1)_enhanced.png"
                                                     class="image" />
                                                 <div class="mask-frame bottom"></div>
                                             </div>
@@ -488,21 +489,29 @@
                 </div>
             </div>
         </section>
+        {{-- Our services section --}}
         <section>
-
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="main-sticky-wrapper">
-                        <div id="w-node-_12090b61-063d-a1db-c3d2-b335ff977dbf-2d74513d" class="main-sticky-title">
+                        <div id="w-node-_12090b61-063d-a1db-c3d2-b335ff977dbf-2d74513d"
+                            class="main-sticky-title to-hide">
                             <div class="max-width-28vw">
                                 {{-- <div data-w-id="3cd57464-46ce-1a90-f646-4fd14c883ca6" style="opacity:0"
                                     class="slide-in">
-                                    <h2 class="text-size-display text-weight-medium">Design solutions that speak to your
+                                    <h2 class="text-size-display text-weight-medium">Design solutions that speak to
+                                        your
                                         brand’s</h2>
                                 </div> --}}
                                 <div class="utility-margin-top">
                                     <div class="max-width-30vw opacity-75">
-                                        <p class="text-size-medium header-4">OUR SERVICES</p>
+                                        {{-- <p class="text-size-medium header-4">OUR SERVICES</p> --}}
+                                        <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                            style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                            class="heading-3 caps">our</h2>
+                                        <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                            style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                            class="heading-3 caps">services</h2>
                                     </div>
                                 </div>
                             </div>
@@ -514,30 +523,42 @@
                                 </div>
                             </div>
                             <div class="timeline">
-                                <div data-w-id="952d0a2f-4be9-f7e9-0c83-2f25d9044ed1" style="height:0%"
+                                <div data-w-id="952d0a2f-4be9-f7e9-0c83-2f25d9044ed1" style="height:10%"
                                     class="timeline-fill"></div>
                             </div>
                         </div>
-                        <div id="w-node-f12d0135-e5a4-99eb-6f06-796dd7c726ea-2d74513d" class="main-sticky-content">
-                            <div class="max-width-30vw">
-                                <p class="text-size-huge text-weight-medium">1. Remote Talent Placement:
+                        <div id="w-node-f12d0135-e5a4-99eb-6f06-796dd7c726ea-2d74513d"
+                            class="main-sticky-content max-width-36vw utility-box-gap">
+                            <div class="max-width-30vw to-show">
+
+                                <div class="max-width-30vw opacity-75">
+                                    <h2 class="heading-3 caps">Our services
+
+                                </div>
+                            </div>
+
+
+                            <div style="background-image: url(/portfolio_colors/assets/images/image3.jpg) " class="max-width-30vw our-text">
+                                <p class="text-size-huge text-weight-med te">1. Remote Talent Placement:
                                     We help companies find the best international professionals, ensuring they
                                     access the global talent pool to meet their needs, with a special focus on
                                     engineering, IT, marketing, and software development.</p>
                             </div>
-                            <div class="max-width-30vw">
-                                <p class="text-size-huge text-weight-medium">2. Compliance and Legal Consulting:
+                            <div style="background-image: url(/portfolio_colors/assets/images/image11.jpg) " class="max-width-30vw our-text">
+                                <p class="text-size-huge text-weight-med te">2. Compliance and Legal Consulting:
                                     We offer advisory services to ensure companies remain compliant with
                                     international legal and tax regulations while hiring remote workers.</p>
                             </div>
-                            <div class="max-width-30vw">
-                                <p class="text-size-huge text-weight-medium">3. Remote Team Onboarding and Management:
+                            <div style="background-image: url(/portfolio_colors/assets/images/image1.jpg) " class="max-width-30vw our-text">
+                                <p class="text-size-huge text-weight-med te">3. Remote Team Onboarding and
+                                    Management:
                                     Our services include integrating and increasing the productivity of remote
                                     teams through tailored onboarding processes and tools for effective team
                                     management.</p>
                             </div>
-                            <div class="max-width-30vw">
-                                <p class="text-size-huge text-weight-medium">4. Technological Solutions for Remote Work:
+                            <div style="background-image: url(/portfolio_colors/assets/images/image2.jpg) " class="max-width-30vw our-text">
+                                <p class="text-size-huge text-weight-med te">4. Technological Solutions for Remote
+                                    Work:
                                     I&M offers innovative platforms that streamline collaboration,
                                     communication, and project management for remote teams, ensuring
                                     smooth and efficient operations</p>
@@ -547,7 +568,8 @@
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="vision-hide">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="testimonial-wrapper">
@@ -718,11 +740,11 @@
                             <div class="contact-content-wrapepr">
                                 <p class="text-style-italic text-weight-light">Contact us</p>
                                 <h1 class="text-size-xxhuge">Let&#x27;s work togheter <span
-                                        class="text-color-grey text-style-italic text-weight-light">&amp;</span> get you a professional. </h1>
+                                        class="text-color-grey text-style-italic text-weight-light">&amp;</span> get you
+                                    a professional. </h1>
                                 <div class="contact-email-wrapper"><a href="#" class="contact-email w-inline-block">
                                         <div class="email-line"></div>
-                                        <div class="text-size-medium">info@imengin.com /
-                                            ai@imengin.com</div><img loading="lazy"
+                                        <div class="text-size-medium">info@imengin.com</div><img loading="lazy"
                                             src="/portfolio_colors/assets/images/copy-20icon.svg" alt="Copy Icon"
                                             class="copy-icon" />
                                     </a></div>
@@ -899,9 +921,8 @@
                                         </div>
                                         <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d53e"
                                             class="footer-links-wrapper">
-                                            <div class="credits-wrapper"><a
-                                                    href="#"
-                                                    target="_blank" class="credits w-inline-block">
+                                            <div class="credits-wrapper"><a href="#" target="_blank"
+                                                    class="credits w-inline-block">
                                                     <p class="paragraph">Design &amp; Developed by <span
                                                             class="text-color-white">codeBrown</span></p>
                                                 </a><a href="https://webflow.com/" target="_blank"
