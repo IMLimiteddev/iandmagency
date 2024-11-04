@@ -534,7 +534,6 @@
                 </div>
             </div>
         </section>
-
         {{-- Market Potential --}}
         <section>
             <div class="padding-global">
@@ -575,7 +574,6 @@
                 </div>
             </div>
         </section>
-
         {{-- Employee development --}}
         <section>
             <div class="padding-global">
@@ -638,7 +636,6 @@
                 </div>
             </div>
         </section>
-
         {{-- Our services section --}}
         <section id="services" style="margin-bottom: 400px">
             <div class="padding-global">
@@ -785,7 +782,7 @@
                                                             <div class="text-size-small">M</div> --}}
 
                                                             <img src="/onboarding/IandM-white-logo.png"
-                                                            style="height: 10px" alt="">
+                                                            style="height: 10px; width: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -822,7 +819,7 @@
                                                             <div class="dot"></div>
                                                             <div class="text-size-small">M</div> --}}
                                                             <img src="/onboarding/IandM-white-logo.png"
-                                                            style="height: 10px" alt="">
+                                                            style="height: 10px; width: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -855,7 +852,7 @@
                                                             <div class="dot"></div>
                                                             <div class="text-size-small">M</div> --}}
                                                             <img src="/onboarding/IandM-white-logo.png"
-                                                            style="height: 10px" alt="">
+                                                            style="height: 10px; width: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
