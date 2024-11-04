@@ -5623,11 +5623,16 @@ blockquote {
 
 .heading-hero {
     z-index: 2;
-    mix-blend-mode: overlay;
+    mix-blend-mode: normal;
     padding-right: .5vw;
     display: flex;
     position: relative;
     overflow: hidden;
+}
+
+.test-black{
+
+    color: #000;
 }
 
 .hero-background {
@@ -5666,10 +5671,14 @@ blockquote {
     animation-delay: 3s;
 }
 
+.change{
+    color: #00000000;
+}
+
 @media (max-width: 495px) {
     .heading-hero {
         display: flex;
-        mix-blend-mode: screen;
+        mix-blend-mode: normal;
         text-align: center;
         flex-direction: column;
         align-items: center;
@@ -5684,13 +5693,30 @@ blockquote {
         display: inline-block;
         font-size: 40px;
     }
+
+    /* .change{
+        color: #fe681c;
+    } */
 }
 @media (max-width: 768px) {
     .heading-hero {
-        mix-blend-mode: screen;
+        mix-blend-mode: normal;
     }
     .to-hide{
         display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .dynamic-text {
+        color: #FFFFFFFF; 
+    }
+}
+@media (max-width: 768px) {
+
+    .change{
+        color: #fe681c;
     }
 
 }

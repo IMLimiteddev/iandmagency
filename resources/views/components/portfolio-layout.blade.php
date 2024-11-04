@@ -103,6 +103,10 @@
                 transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
             }
         }
+
+
+
+
     </style>
     <script type="text/javascript">
         !function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
@@ -127,7 +131,7 @@
                         <div data-delay="100" data-hover="true" class="dropdown-navbar w-dropdown">
                             <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold"><img style="height: 50px"
-                                        src="/onboarding/IandM-white-logo.png" alt=""></div>
+                                        src="/logos/IandM-no-white-bg-logo-.png" alt=""></div>
                             </div>
 
                             {{-- <div class="dropdown w-dropdown-toggle">
@@ -183,8 +187,8 @@
                         </div><a href="/contact/contact-1" class="dropdown responsive w-nav-link">Contact</a> --}}
                     </nav>
                     <a href="/home/home-1" aria-current="page" class="brand-link w-inline-block w--current"><img
-                            style="margin-top: 5px; height: 20px;" src="/onboarding/IandM-white-logo.png" loading="lazy"
-                            alt="" /></a>
+                            style="margin-top: 5px; height: 20px;" src="/logos/IandM-no-white-bg-logo-.png"
+                            loading="lazy" alt="" /></a>
 
                 </div>
             </div>
@@ -230,13 +234,16 @@
                         <div class="heading-hero">
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-1-interaction">Youthful</h1>
+                                class="heading-1-interaction ">Youthful</h1>
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="heading-1-interaction">Creative</h1>
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
-                                style="margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-1-interaction">Dynamic</h1>
+                                style="color: #000000; margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-1-interaction">
+                                <span  class="dynamic-text">Dynamic<span style="color: #fe681c">.</span></span></h1>
+                            {{-- <input type="color"> --}}
+
                             <!-- <h1 data-w-id="2a7a2c11-364c-d838-f491-63b7d1961fed"
 								style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
 								class="heading-1-interaction">o</h1>
@@ -279,7 +286,7 @@
                             <div class="overflow-hidden-header align-mobile">
                                 <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                     style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    class="heading-3 caps">Who</h2>
+                                    class="heading-3 caps"><span style="color: #fe681c">W</span>ho</h2>
                             </div>
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
@@ -339,7 +346,8 @@
                                 <div class="tab-content ">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Learn
+                                            <h3 class="text-size-display text-weight-regular mobile-size">
+                                                <span style="color: #fe681c">L</span>ean
                                                 Management as a Principle for Efficiency and Success
 
                                             </h3>
@@ -378,7 +386,7 @@
                             class="header align-mobile">
                             <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-4 caps">Company</h2>
+                                class="heading-4 caps"><span style="color: #fe681c">C</span>ompany</h2>
                             <h2 data-w-id="a3412a01-b997-3225-490e-c28d4eb8a22b"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="heading-4 caps">Objectives</h2>
@@ -537,8 +545,9 @@
                                 <div class="tab-content ">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Market
-                                                Potential
+                                            <h3 class="text-size-display text-weight-regular mobile-size">
+
+                                                <span style="color: #fe681c">M</span>arket Potential
                                             </h3>
                                         </div>
                                         <div class="testimonial-quote">
@@ -589,7 +598,8 @@
                                                             <div class="blog-slider-card">
                                                                 <div class="max-width-40vw"><a
                                                                         href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
-                                                                        class="text-size-xxhuge text-weight-medium">Employee
+                                                                        class="text-size-xxhuge text-weight-medium"><span
+                                                                            style="color: #fe681c">E</span>mployee
                                                                         Benefits</a></div>
                                                                 <div class="opacity-80 max-width-blog slier"><a
                                                                         href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
@@ -648,7 +658,7 @@
                                         {{-- <p class="text-size-medium header-4">OUR SERVICES</p> --}}
                                         <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                             style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                            class="heading-3 caps">our</h2>
+                                            class="heading-3 caps"><span style="color: #fe681c">O</span>ur</h2>
                                         <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                             style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                             class="heading-3 caps">services</h2>
@@ -672,7 +682,7 @@
                             <div class="max-width-30vw to-show">
 
                                 <div class="max-width-30vw opacity-75">
-                                    <h2 class="heading-3 caps">Our services
+                                    <h2 class="heading-3 caps"><span style="color: #fe681c">O</span>ur services
 
                                 </div>
                             </div>
@@ -753,7 +763,9 @@
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
                                                 <div><a href="/blog-posts/5-things-about-branding"
-                                                        class="text-size-xlarge">Success Through Strong Partnerships</a>
+                                                        class="text-size-xlarge"><span
+                                                            style="color: #fe681c">S</span>uccess Through Strong
+                                                        Partnerships</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a
                                                         href="/blog-posts/5-things-about-branding">Our partnership with
@@ -768,9 +780,12 @@
 
                                                     <div class="writter-info">
                                                         <div class="writter-date">
-                                                            <div class="text-size-small">I</div>
+                                                            {{-- <div class="text-size-small">I</div>
                                                             <div class="dot"></div>
-                                                            <div class="text-size-small">M</div>
+                                                            <div class="text-size-small">M</div> --}}
+
+                                                            <img src="/onboarding/IandM-white-logo.png"
+                                                            style="height: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -785,7 +800,7 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge">Our Clients</a></div>
+                                                <div><a href="#" class="text-size-xlarge"><span style="color: #fe681c">O</span>ur Clients</a></div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Currently, we serve
                                                         primarily German
                                                         customers, who value our
@@ -803,9 +818,11 @@
 
                                                     <div class="writter-info">
                                                         <div class="writter-date">
-                                                            <div class="text-size-small">I</div>
+                                                            {{-- <div class="text-size-small">I</div>
                                                             <div class="dot"></div>
-                                                            <div class="text-size-small">M</div>
+                                                            <div class="text-size-small">M</div> --}}
+                                                            <img src="/onboarding/IandM-white-logo.png"
+                                                            style="height: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -820,7 +837,7 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge">Access to Qualified
+                                                <div><a href="#" class="text-size-xlarge"><span style="color: #fe681c">A</span>ccess to Qualified
                                                         Professionals for Your Company</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Take advantage of the
@@ -834,9 +851,11 @@
 
                                                     <div class="writter-info">
                                                         <div class="writter-date">
-                                                            <div class="text-size-small">I</div>
+                                                            {{-- <div class="text-size-small">I</div>
                                                             <div class="dot"></div>
-                                                            <div class="text-size-small">M</div>
+                                                            <div class="text-size-small">M</div> --}}
+                                                            <img src="/onboarding/IandM-white-logo.png"
+                                                            style="height: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -879,8 +898,6 @@
                                             </div>
                                         </div>
                                     </div> --}}
-
-
                                 </div>
                             </div>
                         </div>
@@ -900,7 +917,7 @@
                                 <div data-w-tab="Tab 1" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision and
+                                            <h3 class="text-size-display text-weight-regular mobile-size"><span style="color: #fe681c">O</span>ur Vision and
                                                 Mission
                                             </h3>
                                         </div>
@@ -916,7 +933,7 @@
                                 <div data-w-tab="Tab 2" class="tab-content w-tab-pane w--tab-active">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision and
+                                            <h3 class="text-size-display text-weight-regular mobile-size"><span style="color: #fe681c">O</span>ur Vision and
                                                 Mission
                                             </h3>
                                         </div>
@@ -931,7 +948,7 @@
                                 <div data-w-tab="Tab 3" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision and
+                                            <h3 class="text-size-display text-weight-regular mobile-size"><span style="color: #fe681c">O</span>ur Vision and
                                                 Mission
                                             </h3>
                                         </div>
@@ -950,21 +967,21 @@
                                     <div class="testimonial-info">
 
                                         <div class="testimonial-writer">
-                                            <div class="text-size-large">1</div>
+                                            <div class="text-size-large"><span style="color: #fe681c">1</span></div>
                                         </div>
                                     </div>
                                 </a><a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link ">
                                     <div class="testimonial-info">
 
                                         <div class="testimonial-writer">
-                                            <div class="text-size-large">2</div>
+                                            <div class="text-size-large"><span style="color: #fe681c">2</span></div>
                                         </div>
                                     </div>
                                 </a><a data-w-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
                                     <div class="testimonial-info">
 
                                         <div class="testimonial-writer">
-                                            <div class="text-size-large">3</div>
+                                            <div class="text-size-large"><span style="color: #fe681c">3</span></div>
                                         </div>
                                     </div>
                                 </a></div>
@@ -986,7 +1003,7 @@
                             <div class="contact-content-wrapepr">
 
                                 <p class="text-style-italic text-weight-light">Contact us</p>
-                                <h1 class="text-size-xxhuge">Let&#x27;s work together
+                                <h1 class="text-size-xxhuge"><span style="color: #fe681c">L</span>et&#x27;s work together
                                     <span class="text-color-grey text-style-italic text-weight-light">&amp;</span> get
                                     you
                                     a professional.
@@ -1094,7 +1111,7 @@
                                             </div><a href="/contact/contact-1"
                                                 data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
                                                 class="cta-button w-inline-block">
-                                                <h3 class="heading-footer"> Unlocking Potential, One Professional at a
+                                                <h3 class="heading-footer"> <span style="color: #fe681c">U</span>nlocking Potential, One Professional at a
                                                     Time.</h3>
                                                 <div class="cta-button-line"></div>
                                             </a>
@@ -1134,7 +1151,7 @@
                                             <div class="credits-wrapper"><a href="#" target="_blank"
                                                     class="credits w-inline-block">
                                                     <p class="paragraph">Design &amp; Developed by <span
-                                                            class="text-color-white">codeBrown</span></p>
+                                                            class="text-color-white"><span style="color: #fe681c">code</span>Brown</span></p>
                                                 </a><a href="https://webflow.com/" target="_blank"
                                                     class="credits w-inline-block">
 
