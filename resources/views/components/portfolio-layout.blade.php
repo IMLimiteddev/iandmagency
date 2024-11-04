@@ -187,7 +187,7 @@
                         </div><a href="/contact/contact-1" class="dropdown responsive w-nav-link">Contact</a> --}}
                     </nav>
                     <a href="/home/home-1" aria-current="page" class="brand-link w-inline-block w--current"><img
-                            style="margin-top: 5px; height: 20px;" src="/logos/IandM-no-white-bg-logo-.png"
+                            style="margin-top: 5px; height: 20px; width: 20px;" src="/logos/IandM-no-white-bg-logo-.png"
                             loading="lazy" alt="" /></a>
 
                 </div>
