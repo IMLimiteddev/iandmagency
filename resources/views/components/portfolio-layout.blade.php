@@ -103,10 +103,6 @@
                 transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
             }
         }
-
-
-
-
     </style>
     <script type="text/javascript">
         !function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
@@ -136,8 +132,8 @@
 
                             {{-- <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold">Home</div>
-                            </div> --}}
-                            {{-- <nav class="dropdown-list w-dropdown-list"><a href="/home/home-1" aria-current="page"
+                            </div>
+                            <nav class="dropdown-list w-dropdown-list"><a href="/home/home-1" aria-current="page"
                                     class="dropdown-link w-dropdown-link w--current">Home 1</a><a href="/home/home-2"
                                     class="dropdown-link w-dropdown-link">Home 2</a><a href="/home/home-3"
                                     class="dropdown-link w-dropdown-link">Home 3</a></nav> --}}
@@ -146,7 +142,14 @@
                     </nav>
                     <nav role="navigation" id="w-node-a0814933-dfa2-4581-2ed5-24b9b1fe3048-b1fe301d"
                         class="nav-menu w-nav-menu">
-                        {{-- <a href="#" class="dropdown responsive w-nav-link">Home</a> --}}
+
+                        <div style="margin-right: 50px; height: 100px; width: 100px" class="dropdown responsive w-nav-link">
+
+                            <div id="google_translate_element"></div>
+
+
+                        </div>
+                        {{-- <a href="#" >Home</a> --}}
                         {{-- <div data-delay="100" data-hover="true" class="dropdown-navbar responsive w-dropdown">
                             <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold">Home</div>
@@ -186,7 +189,7 @@
                                     class="dropdown-link w-dropdown-link">Contact</a></nav>
                         </div><a href="/contact/contact-1" class="dropdown responsive w-nav-link">Contact</a> --}}
                     </nav>
-                    <a href="/home/home-1" aria-current="page" class="brand-link w-inline-block w--current"><img
+                    <a href="#" aria-current="page" class="brand-link w-inline-block w--current"><img
                             style="margin-top: 5px; height: 20px; width: 20px;" src="/logos/IandM-no-white-bg-logo-.png"
                             loading="lazy" alt="" /></a>
 
@@ -222,6 +225,7 @@
                         <div class="text-weight-medium">Contact Us</div>
                     </div>
                     <div class="button-mask-pricing"></div>
+
                 </a>
             </div>
         </div>
@@ -241,7 +245,8 @@
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="color: #000000; margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="heading-1-interaction">
-                                <span  class="dynamic-text">Dynamic<span style="color: #fe681c">.</span></span></h1>
+                                <span class="dynamic-text">Dynamic<span style="color: #fe681c">.</span></span>
+                            </h1>
                             {{-- <input type="color"> --}}
 
                             <!-- <h1 data-w-id="2a7a2c11-364c-d838-f491-63b7d1961fed"
@@ -295,8 +300,15 @@
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
                                 <p class="text-size-huge size-mobile">Welcome to I&M Limited, an innovative company
-                                    based in Nigeria, Africa's most populous country, with approximately 230 million
-                                    residents.</p>
+                                    based in Nigeria, Africa's most populous country with approximately 230 million
+                                    residents. This dynamic environment allows us to draw from a diverse pool of talent
+                                    who share our vision of achieving great things together.In our recruitment agency ,
+                                    we combine lean and kaizen principles with African methods such as Ubuntu and
+                                    Jugaad. This is how we create efficient, flexible and sustainable solutions for your
+                                    company. Ubuntu stands for close cooperation based on trust and respect, while
+                                    Jugaad emphasises creative, resource-saving approaches. The result: customised
+                                    recruitment that responds quickly to your needs and delivers real added value - for
+                                    your success.</p>
                             </div>
                             <div data-w-id="609759a9-d06c-3cc7-9f92-fcaef3a0f569" class="slide-in">
                                 <p class="text-size-huge text-color-light size-mobile">
@@ -782,7 +794,7 @@
                                                             <div class="text-size-small">M</div> --}}
 
                                                             <img src="/onboarding/IandM-white-logo.png"
-                                                            style="height: 10px; width: 10px" alt="">
+                                                                style="height: 10px; width: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -797,7 +809,8 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge"><span style="color: #fe681c">O</span>ur Clients</a></div>
+                                                <div><a href="#" class="text-size-xlarge"><span
+                                                            style="color: #fe681c">O</span>ur Clients</a></div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Currently, we serve
                                                         primarily German
                                                         customers, who value our
@@ -819,7 +832,7 @@
                                                             <div class="dot"></div>
                                                             <div class="text-size-small">M</div> --}}
                                                             <img src="/onboarding/IandM-white-logo.png"
-                                                            style="height: 10px; width: 10px" alt="">
+                                                                style="height: 10px; width: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -834,7 +847,8 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge"><span style="color: #fe681c">A</span>ccess to Qualified
+                                                <div><a href="#" class="text-size-xlarge"><span
+                                                            style="color: #fe681c">A</span>ccess to Qualified
                                                         Professionals for Your Company</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Take advantage of the
@@ -852,7 +866,7 @@
                                                             <div class="dot"></div>
                                                             <div class="text-size-small">M</div> --}}
                                                             <img src="/onboarding/IandM-white-logo.png"
-                                                            style="height: 10px; width: 10px" alt="">
+                                                                style="height: 10px; width: 10px" alt="">
                                                         </div>
                                                     </div>
                                                 </a>
@@ -914,7 +928,8 @@
                                 <div data-w-tab="Tab 1" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size"><span style="color: #fe681c">O</span>ur Vision and
+                                            <h3 class="text-size-display text-weight-regular mobile-size"><span
+                                                    style="color: #fe681c">O</span>ur Vision and
                                                 Mission
                                             </h3>
                                         </div>
@@ -930,7 +945,8 @@
                                 <div data-w-tab="Tab 2" class="tab-content w-tab-pane w--tab-active">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size"><span style="color: #fe681c">O</span>ur Vision and
+                                            <h3 class="text-size-display text-weight-regular mobile-size"><span
+                                                    style="color: #fe681c">O</span>ur Vision and
                                                 Mission
                                             </h3>
                                         </div>
@@ -945,7 +961,8 @@
                                 <div data-w-tab="Tab 3" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size"><span style="color: #fe681c">O</span>ur Vision and
+                                            <h3 class="text-size-display text-weight-regular mobile-size"><span
+                                                    style="color: #fe681c">O</span>ur Vision and
                                                 Mission
                                             </h3>
                                         </div>
@@ -1000,7 +1017,8 @@
                             <div class="contact-content-wrapepr">
 
                                 <p class="text-style-italic text-weight-light">Contact us</p>
-                                <h1 class="text-size-xxhuge"><span style="color: #fe681c">L</span>et&#x27;s work together
+                                <h1 class="text-size-xxhuge"><span style="color: #fe681c">L</span>et&#x27;s work
+                                    together
                                     <span class="text-color-grey text-style-italic text-weight-light">&amp;</span> get
                                     you
                                     a professional.
@@ -1108,7 +1126,9 @@
                                             </div><a href="/contact/contact-1"
                                                 data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
                                                 class="cta-button w-inline-block">
-                                                <h3 class="heading-footer"> <span style="color: #fe681c">U</span>nlocking Potential, One Professional at a
+                                                <h3 class="heading-footer"> <span
+                                                        style="color: #fe681c">U</span>nlocking Potential, One
+                                                    Professional at a
                                                     Time.</h3>
                                                 <div class="cta-button-line"></div>
                                             </a>
@@ -1148,7 +1168,8 @@
                                             <div class="credits-wrapper"><a href="#" target="_blank"
                                                     class="credits w-inline-block">
                                                     <p class="paragraph">Design &amp; Developed by <span
-                                                            class="text-color-white"><span style="color: #fe681c">code</span>Brown</span></p>
+                                                            class="text-color-white"><span
+                                                                style="color: #fe681c">code</span>Brown</span></p>
                                                 </a><a href="https://webflow.com/" target="_blank"
                                                     class="credits w-inline-block">
 
@@ -1275,6 +1296,17 @@
 
 
     </div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     <script src="/portfolio_colors/assets/js/jquery.js" type="text/javascript"></script>
     <script src="/portfolio_colors/assets/js/webflow-script.js" type="text/javascript"></script>
