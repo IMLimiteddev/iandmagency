@@ -223,7 +223,7 @@
                             </div> --}}
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps first-letter-styled">who <br> we are</h2>
+                                class="heading-9 caps ">who <br> <span style="color: #fe681c">we</span> are</h2>
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
@@ -240,7 +240,7 @@
                                         while working locally, </span> ensuring fair work conditions, career growth, and
                                     well-being.
                                     With I&M, companies find reliable, flexible and remote staffing solutions,
-                                    creating win-win partnerships for both employers and employees.
+                                    creating win-win partnerships.
 
                                 </p>
                             </div>
@@ -263,11 +263,12 @@
                             <div class="overflow-hidden-header align-mobile">
                                 <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                     style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    class="heading-9 caps first-letter-styled">Why</h2>
+                                    class="heading-9 caps">Why</h2>
                             </div>
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps">Nigeria ? A Dynamic Talent Market with Untapped Potential</h2>
+                                class="heading-9 caps"><span style="color: #fe681c">Nigeria?</span> A Dynamic Talent
+                                Market with Untapped Potential</h2>
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
@@ -314,50 +315,645 @@
         {{-- Lean Management --}}
         <section>
             <div class="padding-global">
-                <div class="w-layout-blockcontainer container medium w-container">
-                    <div class="testimonial-wrapper">
-                        <div data-easing="ease-in-out-quart" data-duration-in="300" data-duration-out="100" class="">
-                            <div class="tabs-content w-tab-content">
-                                <div class="tab-content ">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-light mobile-size first-letter-styled">
-                                                Achieving Success with Lean Management
-                                            </h3>
-                                            {{-- <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
-                                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                                class="heading-9">Achieving Success with Lean Management</h2> --}}
-                                        </div>
-                                        <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size">Our corporate structure is based on
-                                                lean management principles, allowing us to
-                                                operate efficiently and flexibly. By regularly reviewing and adjusting
-                                                our
-                                                processes, we enhance effectiveness across all business areas—from
-                                                personnel
-                                                management to strategic decisions. Every employee is part of a
-                                                continuous
-                                                improvement process and shares responsibility, which strengthens
-                                                motivation.
-                                                Together, we are strong and flexible enough to balance processes and
-                                                create
-                                                space for new challenges. At I&M Limited, we are ready to support you
-                                                with
-                                                commitment, innovation, and strong partnerships.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Achieving </h2>
                             </div>
-
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps"><span style="color: #fe681c">Success</span> with Lean Management
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">Our corporate structure is based on
+                                    lean management principles, allowing us to
+                                    operate efficiently and flexibly. By regularly reviewing and adjusting
+                                    our
+                                    processes, we enhance effectiveness across all business areas—from
+                                    personnel
+                                    management to strategic decisions. Every employee is part of a
+                                    continuous
+                                    improvement process and shares responsibility, which strengthens
+                                    motivation.
+                                    Together, we are strong and flexible enough to balance processes and
+                                    create
+                                    space for new challenges. At I&M Limited, we are ready to support you
+                                    with
+                                    commitment, innovation, and strong partnerships.
+                                </p>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        {{-- <div id="google_translate_element"></div> --}}
+
+
         {{-- Company Objectives section --}}
         <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container w-container">
+
+                    <div class="testimonial-header">
+                        <h3 class="heading-9 caps">
+                            <div></div>
+                            <span style="color: #fe681c">Company </span> Objectives
+                        </h3>
+                    </div>
+
+                    <div style="margin-top: 10px" class="opacity-80">
+                        <p class="text-weight-regular">Our Vision for Growth and Excellence
+                            At I&M, we are dedicated to achieving excellence and expanding our presence in
+                            the global market. Our strategic objectives focus on fostering growth, enhancing
+                            our capabilities, and establishing a strong operational foundation in Nigeria.
+                        </p>
+                        <br>
+                        <h4 class="heading-8">We invite you to explore our key short-term goals:</h4>
+                    </div>
+
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps"><span style="color: #fe681c">Expansion</span> </h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps">Our
+                                Global Footprint
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">1. By leveraging Nigeria's
+                                    vibrant talent pool and competitive advantages, we can
+                                    provide exceptional personnel services that meet the diverse
+                                    needs of
+                                    international clients. Our commitment to quality and
+                                    efficiency positions us as
+                                    the ideal partner for companies looking to expand their
+                                    global footprint with
+                                    skilled professionals from Nigeria.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="works-component">
+                        <div class="w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+                                <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Sweater Weather" loading="lazy"
+                                                src="/portfolio_colors/assets/images/Untitled Project.jpg"
+                                                class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        {{-- <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Expansion Our
+                                                    Global Footprint
+                                                </div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">1. By leveraging Nigeria's
+                                                        vibrant talent pool and competitive advantages, we can
+                                                        provide exceptional personnel services that meet the diverse
+                                                        needs of
+                                                        international clients. Our commitment to quality and
+                                                        efficiency positions us as
+                                                        the ideal partner for companies looking to expand their
+                                                        global footprint with
+                                                        skilled professionals from Nigeria.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> --}}
+                                    </a>
+                                </div>
+
+                                {{-- <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Madera" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image6_enhanced.jpg"
+                                                class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Empower Our Team
+                                                </div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">2. We understand that our team is
+                                                        the backbone of our success, which is why we
+                                                        prioritize their growth and development. By empowering our
+                                                        employees with
+                                                        continuous training and resources, we ensure they are
+                                                        equipped with the
+                                                        expertise and innovation needed to elevate your business to
+                                                        new heights.</p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> --}}
+
+                                {{-- <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Aquemini" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image5_enhanced.jpg"
+                                                class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Enhance Efficiency
+                                                </div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">3. We are dedicated to improving
+                                                        our processes for greater efficiency, enabling us to
+                                                        respond swiftly to your needs. This means you can count on
+                                                        us for timely, high-quality service that supports your
+                                                        success and keeps your projects on track. </p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> --}}
+
+                                {{-- <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Aquemini" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image20.png" class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Establish Lagos as
+                                                    a Service Hub</div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">4. We are committed to
+                                                        positioning Lagos as a premier hub for international remote
+                                                        services, harnessing the city’s vibrant talent pool to
+                                                        provide exceptional support
+                                                        to our global clients. By strengthening our presence in
+                                                        Nigeria, we empower local
+                                                        talent while fostering authentic partnerships built on trust
+                                                        and collaboration.
+                                                        Together, we’ll create a path to success where your goals
+                                                        are our highest priority.</p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps"><span style="color: #fe681c">Empower</span> </h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps">Our
+                                Team
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">2. We understand that our team is
+                                    the backbone of our success, which is why we
+                                    prioritize their growth and development. By empowering our
+                                    employees with
+                                    continuous training and resources, we ensure they are
+                                    equipped with the
+                                    expertise and innovation needed to elevate your business to
+                                    new heights.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="works-component">
+                        <div class="w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+
+
+                                <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Madera" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image6_enhanced.jpg"
+                                                class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        {{-- <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Empower Our Team
+                                                </div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">2. We understand that our team is
+                                                        the backbone of our success, which is why we
+                                                        prioritize their growth and development. By empowering our
+                                                        employees with
+                                                        continuous training and resources, we ensure they are
+                                                        equipped with the
+                                                        expertise and innovation needed to elevate your business to
+                                                        new heights.</p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> --}}
+                                    </a>
+                                </div>
+
+                                {{-- <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Aquemini" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image5_enhanced.jpg"
+                                                class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Enhance Efficiency
+                                                </div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">3. We are dedicated to improving
+                                                        our processes for greater efficiency, enabling us to
+                                                        respond swiftly to your needs. This means you can count on
+                                                        us for timely, high-quality service that supports your
+                                                        success and keeps your projects on track. </p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> --}}
+
+                                {{-- <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Aquemini" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image20.png" class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Establish Lagos as
+                                                    a Service Hub</div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">4. We are committed to
+                                                        positioning Lagos as a premier hub for international remote
+                                                        services, harnessing the city’s vibrant talent pool to
+                                                        provide exceptional support
+                                                        to our global clients. By strengthening our presence in
+                                                        Nigeria, we empower local
+                                                        talent while fostering authentic partnerships built on trust
+                                                        and collaboration.
+                                                        Together, we’ll create a path to success where your goals
+                                                        are our highest priority.</p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps"><span style="color: #fe681c">Enhance</span> </h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps">Efficiency
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">3. We are dedicated to improving
+                                    our processes for greater efficiency, enabling us to
+                                    respond swiftly to your needs. This means you can count on
+                                    us for timely, high-quality service that supports your
+                                    success and keeps your projects on track.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="works-component">
+                        <div class="w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+
+                                <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Aquemini" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image5_enhanced.jpg"
+                                                class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        {{-- <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Enhance Efficiency
+                                                </div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">3. We are dedicated to improving
+                                                        our processes for greater efficiency, enabling us to
+                                                        respond swiftly to your needs. This means you can count on
+                                                        us for timely, high-quality service that supports your
+                                                        success and keeps your projects on track. </p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> --}}
+                                    </a>
+                                </div>
+
+                                {{-- <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Aquemini" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image20.png" class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Establish Lagos as
+                                                    a Service Hub</div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">4. We are committed to
+                                                        positioning Lagos as a premier hub for international remote
+                                                        services, harnessing the city’s vibrant talent pool to
+                                                        provide exceptional support
+                                                        to our global clients. By strengthening our presence in
+                                                        Nigeria, we empower local
+                                                        talent while fostering authentic partnerships built on trust
+                                                        and collaboration.
+                                                        Together, we’ll create a path to success where your goals
+                                                        are our highest priority.</p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps"><span style="color: #fe681c">Establish</span> </h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps">Lagos as
+                                a Service Hub
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">4. We are committed to
+                                    positioning Lagos as a premier hub for international remote
+                                    services, harnessing the city’s vibrant talent pool to
+                                    provide exceptional support
+                                    to our global clients. By strengthening our presence in
+                                    Nigeria, we empower local
+                                    talent while fostering authentic partnerships built on trust
+                                    and collaboration.
+                                    Together, we’ll create a path to success where your goals
+                                    are our highest priority.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="works-component">
+                        <div class="w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+
+
+
+                                <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
+                                        class="card-link w-inline-block">
+                                        <div class="card-image">
+                                            <div class="button-projects"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
+                                                    class="project-arrow" />
+                                                <div class="white-circle"></div>
+                                            </div><img alt="Aquemini" loading="lazy"
+                                                src="/portfolio_colors/assets/images/image20.png" class="image" />
+                                            <div class="mask-frame bottom"></div>
+                                        </div>
+                                        {{-- <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
+                                            class="works-info">
+                                            <div class="work-name">
+                                                <div class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                    Establish Lagos as
+                                                    a Service Hub</div>
+                                                <div class="dot overflow-hide-mobile"></div>
+                                                <div class="opacity-80">
+                                                    <p class="text-weight-regular">4. We are committed to
+                                                        positioning Lagos as a premier hub for international remote
+                                                        services, harnessing the city’s vibrant talent pool to
+                                                        provide exceptional support
+                                                        to our global clients. By strengthening our presence in
+                                                        Nigeria, we empower local
+                                                        talent while fostering authentic partnerships built on trust
+                                                        and collaboration.
+                                                        Together, we’ll create a path to success where your goals
+                                                        are our highest priority.</p>
+                                                </div>
+                                            </div>
+                                            <div class="work-year">
+                                                <div class="opacity-80">
+                                                    <p class="text-size-small text-weight-medium">
+                                                        <img src="/onboarding/IandM-white-logo.png" style="height: 30px"
+                                                            alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> --}}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{-- Company Objectives section --}}
+        {{-- <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="works-home-wrapper no-margin-mobile">
@@ -366,10 +962,10 @@
                             class="header align-mobile">
                             <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps first-letter-styled">Company</h2>
+                                class="heading-9 caps ">Company</h2>
                             <h2 data-w-id="a3412a01-b997-3225-490e-c28d4eb8a22b"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps">Objectives</h2>
+                                class="heading-9 caps"><span style="color: #fe681c">Objectives</span></h2>
                         </div>
 
                         <div class="opacity-80">
@@ -377,12 +973,11 @@
                                 At I&M, we are dedicated to achieving excellence and expanding our presence in
                                 the global market. Our strategic objectives focus on fostering growth, enhancing
                                 our capabilities, and establishing a strong operational foundation in Nigeria.
-
-
                             </p>
                             <br>
                             <h4 class="heading-7">We invite you to explore our key short-term goals:</h4>
                         </div>
+
                         <div class="works-component">
                             <div class="w-dyn-list">
                                 <div role="list" class="w-dyn-items">
@@ -401,7 +996,9 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Expansion Our
+                                                    <div
+                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                        Expansion Our
                                                         Global Footprint
                                                     </div>
                                                     <div class="dot overflow-hide-mobile"></div>
@@ -443,7 +1040,9 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Empower Our Team
+                                                    <div
+                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                        Empower Our Team
                                                     </div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
@@ -482,7 +1081,9 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Enhance Efficiency
+                                                    <div
+                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                        Enhance Efficiency
                                                     </div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
@@ -517,7 +1118,9 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Establish Lagos as
+                                                    <div
+                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
+                                                        Establish Lagos as
                                                         a Service Hub</div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
@@ -549,57 +1152,58 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
+
         {{-- Market Potential --}}
         <section>
             <div class="padding-global">
-                <div class="w-layout-blockcontainer container medium w-container">
-                    <div class="testimonial-wrapper">
-                        <div data-easing="ease-in-out-quart" data-duration-in="300" data-duration-out="100" class="">
-                            <div class="tabs-content w-tab-content">
-                                <div class="tab-content ">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">
-
-                                                {{-- <span style="color: #fe681c">M</span> --}}
-                                                Hidden Market Potential
-                                            </h3>
-                                        </div>
-                                        <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size">The global shift towards flexible,
-                                                remote work is transforming industries and creating
-                                                exciting growth opportunities. With remote work services, especially in
-                                                international
-                                                recruitment, expanding by 20-30% annually, now is the perfect time to
-                                                partner with us at
-                                                I&M.
-                                                As demand for specialized services in compliance, remote team
-                                                management, and
-                                                technological solutions rises, we are uniquely positioned to lead the
-                                                market. Our
-                                                expertise spans various industries, including IT, marketing, and
-                                                engineering, focusing on
-                                                remote-enabled work models that help companies enhance their
-                                                international
-                                                footprint.
-                                                By choosing I&M, you’re not just keeping pace with the changing
-                                                landscape; you’re
-                                                stepping into a future filled with potential and success. Let's embark
-                                                on this journey
-                                                together and elevate your business to new heights!</p>
-                                        </div>
-                                    </div>
-                                </div>
-
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Hidden</h2>
                             </div>
-
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps"> Market <span style="color: #fe681c">Potential</span>
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">The global shift towards flexible,
+                                    remote work is transforming industries and creating
+                                    exciting growth opportunities. With remote work services, especially in
+                                    international
+                                    recruitment, expanding by 20-30% annually, now is the perfect time to
+                                    partner with us at
+                                    I&M.
+                                    As demand for specialized services in compliance, remote team
+                                    management, and
+                                    technological solutions rises, we are uniquely positioned to lead the
+                                    market. Our
+                                    expertise spans various industries, including IT, marketing, and
+                                    engineering, focusing on
+                                    remote-enabled work models that help companies enhance their
+                                    international
+                                    footprint.
+                                    By choosing I&M, you’re not just keeping pace with the changing
+                                    landscape; you’re
+                                    stepping into a future filled with potential and success. Let's embark
+                                    on this journey
+                                    together and elevate your business to new heights!
+                                </p>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         {{-- Our services section --}}
         <section>
             <div class="padding-global">
@@ -607,7 +1211,7 @@
                     <div class="works-home-3-wrapper">
 
                         <div class="testimonial-header">
-                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">
+                            <h3 class="heading-9 caps first-letter-styled">
                                 Our Services to Support Your Global Growth
                             </h3>
                         </div>
@@ -619,7 +1223,8 @@
                                     <div role="listitem" class="works-3-item w-dyn-item"><a
                                             data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2"
                                             href="/works/sweater-weather" class="home-projects-wrapper w-inline-block">
-                                            <div class="home-projects-image home-3"><img loading="lazy" style="height: 300px; width: 300px; border-radius: 10px"
+                                            <div class="home-projects-image home-3"><img loading="lazy"
+                                                    style="height: 300px; width: 300px; border-radius: 10px"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
                                                     alt="" class="image" /></div>
                                             <div class="home-projects-content">
@@ -628,7 +1233,9 @@
                                                         <div class="text-size-small first-letter-styled">01</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Remote Talent
+                                                        <h2
+                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
+                                                            Remote Talent
                                                             Placement:
                                                         </h2>
                                                         <div class="opacity-80">
@@ -654,14 +1261,17 @@
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px" class="image" /></div>
+                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px"
+                                                    class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
                                                     <div class="home-projects-number">
                                                         <div class="text-size-small first-letter-styled">02</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Compliance and
+                                                        <h2
+                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
+                                                            Compliance and
                                                             Legal Consulting:</h2>
                                                         <div class="opacity-80">
                                                             <p>Hiring remote workers across borders comes with legal and
@@ -685,14 +1295,17 @@
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px" class="image" /></div>
+                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px"
+                                                    class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
                                                     <div class="home-projects-number">
                                                         <div class="text-size-small first-letter-styled">03</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Remote Team
+                                                        <h2
+                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
+                                                            Remote Team
                                                             Onboarding and Management:</h2>
                                                         <div class="opacity-80">
                                                             <p> We make remote team integration smooth and effective,
@@ -717,14 +1330,17 @@
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px" class="image" /></div>
+                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px"
+                                                    class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
                                                     <div class="home-projects-number">
                                                         <div class="text-size-small first-letter-styled">04</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Technological
+                                                        <h2
+                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
+                                                            Technological
                                                             Solutions for Remote Work:</h2>
                                                         <div class="opacity-80">
                                                             <p>I&M provides innovative platforms that simplify
@@ -749,69 +1365,57 @@
                 </div>
             </div>
         </section>
+
         {{-- Employee development --}}
+
         <section>
             <div class="padding-global">
-                <div class="w-layout-blockcontainer container medium w-container">
-                    <div class="testimonial-wrapper">
-                        <div data-current="Tab 2" data-easing="ease-in-out-quart" data-duration-in="300"
-                            data-duration-out="100" class="tabs w-tabs">
-                            <div class="tabs-content w-tab-content">
-                                <div data-w-tab="Tab 1" class="tab-content w-tab-pane w--tab-active">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Employee
-                                                Development
-
-                                            </h3>
-                                        </div>
-                                        <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size first-letter-styled">
-                                                {{--
-                                            <h6 class="heading-6">Our Commitment to Meaningful Partnerships</h6> --}}
-                                            <br>
-                                            At I&M, we understand
-                                            that continuous learning and development are
-                                            vital for success
-                                            in today’s fast-paced business environment. To
-                                            better serve our German clients, our
-                                            employees have successfully completed German
-                                            language training (B1 level), enabling
-                                            more effective communication and stronger
-                                            partnerships.
-                                            <br>
-                                            We're also committed to enhancing our team's
-                                            skills in French, allowing us to broaden
-                                            our global reach and improve our service
-                                            offerings. By investing in our employees’
-                                            growth, we ensure that they are equipped to meet
-                                            your needs and exceed your
-                                            expectations, making us the ideal partner for
-                                            your business. Together, we can navigate
-                                            new markets and achieve greater success.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Employee</h2>
                             </div>
-                            <div class="tabs-menu w-tab-menu"><a data-w-tab="Tab 1"
-                                    class="tab-link w-inline-block w-tab-link w--current">
-                                    <div class="testimonial-info">
-
-                                        <div class="testimonial-writer">
-                                            <div class="text-size-large"><span style="color: #fe681c">1</span></div>
-                                        </div>
-                                    </div>
-                                </a>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps"><span style="color: #fe681c">Development</span>
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">At I&M, we understand
+                                    that continuous learning and development are
+                                    vital for success
+                                    in today’s fast-paced business environment. To
+                                    better serve our German clients, our
+                                    employees have successfully completed German
+                                    language training (B1 level), enabling
+                                    more effective communication and stronger
+                                    partnerships.
+                                    <br>
+                                    We're also committed to enhancing our team's
+                                    skills in French, allowing us to broaden
+                                    our global reach and improve our service
+                                    offerings. By investing in our employees’
+                                    growth, we ensure that they are equipped to meet
+                                    your needs and exceed your
+                                    expectations, making us the ideal partner for
+                                    your business. Together, we can navigate
+                                    new markets and achieve greater success.
+                                </p>
                             </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         {{--Our display --}}
-
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
@@ -828,7 +1432,8 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div class="first-letter-styled"><a href="#" class="text-size-xlarge">Success Through Strong
+                                                <div class="first-letter-styled"><a href="#"
+                                                        class="text-size-xlarge">Success Through Strong
                                                         Partnerships (Our Clients)</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Our partnership with
@@ -866,7 +1471,8 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div class="first-letter-styled"><a href="#" class="text-size-xlarge">Our Clients</a></div>
+                                                <div class="first-letter-styled"><a href="#"
+                                                        class="text-size-xlarge">Our Clients</a></div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Currently, we serve
                                                         primarily German
                                                         customers, who value our
@@ -903,7 +1509,8 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div class="first-letter-styled"><a href="#" class="text-size-xlarge">Unlock Global Talent for Your
+                                                <div class="first-letter-styled"><a href="#"
+                                                        class="text-size-xlarge">Unlock Global Talent for Your
                                                         Business</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Working with us opens
@@ -943,7 +1550,7 @@
         </section>
 
         {{-- Our vision and mission --}}
-        <section id="vision">
+        {{-- <section id="vision">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
                     <div class="testimonial-wrapper">
@@ -953,7 +1560,9 @@
                                 <div data-w-tab="Tab 1" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Our Vision &
+                                            <h3
+                                                class="text-size-display text-weight-regular mobile-size first-letter-styled">
+                                                Our Vision &
                                                 Mission: "I Am Because We Are"
 
                                             </h3>
@@ -977,7 +1586,9 @@
                                 <div data-w-tab="Tab 2" class="tab-content w-tab-pane w--tab-active">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Our Vision &
+                                            <h3
+                                                class="text-size-display text-weight-regular mobile-size first-letter-styled">
+                                                Our Vision &
                                                 Mission: "I Am Because We Are"
                                             </h3>
                                         </div>
@@ -1002,7 +1613,9 @@
                                 <div data-w-tab="Tab 3" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Our Vision &
+                                            <h3
+                                                class="text-size-display text-weight-regular mobile-size first-letter-styled">
+                                                Our Vision &
                                                 Mission: "I Am Because We Are"
                                             </h3>
                                         </div>
@@ -1051,44 +1664,115 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-         {{-- Closing Statment --}}
-         <section>
+        <section>
             <div class="padding-global">
-                <div class="w-layout-blockcontainer container medium w-container">
-                    <div class="testimonial-wrapper">
-                        <div data-easing="ease-in-out-quart" data-duration-in="300" data-duration-out="100" class="">
-                            <div class="tabs-content w-tab-content">
-                                <div class="tab-content ">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-light mobile-size first-letter-styled">
-                                                Closing Statement
-                                            </h3>
-                                            {{-- <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
-                                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                                class="heading-9">Achieving Success with Lean Management</h2> --}}
-                                        </div>
-                                        <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size">"Together, we can tap into the incredible potential of Nigeria’s talent, building
-                                                connections that cross borders and transform dreams into reality. Let’s create a future
-                                                where every opportunity brings us closer, inspiring hope, innovation, and success for
-                                                all."
-                                                <br>
-                                                'Unity is strength.'</p>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="w-layout-blockcontainer container w-container">
 
+                    <div style="margin-top: 200px" class="testimonial-header">
+                        <h3 class="heading-9 caps">
+                            <div></div>Our
+                            <span style="color: #fe681c">Vision</span>  &
+                            Mission: "I Am Because We Are"
+                        </h3>
+                    </div>
+
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Our Commitment</h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps">to Meaningful <span style="color: #fe681c">Partnerships.</span>
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile"> At I&M, we focus on values like diligence, respect, transparency, and unity
+                                    in everything
+                                    we do. We believe that by working closely together, we can create real value
+                                    for your
+                                    business. When you partner with us, you gain more than just a service—we’re
+                                    committed to your long-term success and building a strong, lasting
+                                    relationship. Let’s
+                                    achieve great things together.
+                                </p>
                             </div>
 
+                        </div>
+                    </div>
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Empowering</h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps"><span style="color: #fe681c">Talent,</span> Driving Success
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">At I&M, we are passionate about creating opportunities that empower young
+                                    talent in
+                                    Nigeria to reach their full potential. At the same time, we support
+                                    companies around the
+                                    world in achieving their goals with efficiency and sustainability. By
+                                    partnering with us,
+                                    you’re not just gaining access to skilled professionals—you’re helping to
+                                    shape a
+                                    brighter future for both your business and the next generation of leaders.
+                                    Let’s work
+                                    together to create lasting impact and success.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Growing</h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps"><span style="color: #fe681c">Together,</span>Achieving Success
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">Our collaborations are about more than just business—they are about
+                                    creating
+                                    meaningful connections. By partnering with us, you’ll experience the
+                                    incredible work
+                                    ethic and vibrant culture of Nigeria firsthand. Together, we’ll grow, learn
+                                    from each other,
+                                    and shape a future of shared success. Let’s build something lasting, where
+                                    every step
+                                    forward is a step toward greater impact and growth.
+                                </p>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         {{-- Contact us section --}}
         <section id="contact">
@@ -1102,10 +1786,13 @@
                             <div class="contact-content-wrapepr">
 
                                 <p class="text-style-italic text-weight-light first-letter-styled">Let’s Connect!</p>
-                                <h6 class="text-weight-light">Are you ready to boost your business with Nigeria’s exceptional talent while promoting a
-                                    sustainable future? At I&M, we’re here to help you grow with skilled professionals and
+                                <h6 class="text-weight-light">Are you ready to boost your business with Nigeria’s
+                                    exceptional talent while promoting a
+                                    sustainable future? At I&M, we’re here to help you grow with skilled professionals
+                                    and
                                     innovative solutions that benefit both your business and the environment.
-                                    Don’t miss this chance to succeed together—reach out today and let’s start this exciting
+                                    Don’t miss this chance to succeed together—reach out today and let’s start this
+                                    exciting
                                     journey! Your future awaits!
                                 </h6>
                                 <div class="contact-email-wrapper"><a href="#" class="contact-email w-inline-block">
@@ -1197,6 +1884,42 @@
 
 
 
+                    {{-- Closing Statment --}}
+        <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Unity is</h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps"><span style="color: #fe681c">Strength.</span>
+                            </h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">"Together, we can tap into the
+                                    incredible potential of Nigeria’s talent, building
+                                    connections that cross borders and transform dreams into reality. Let’s
+                                    create a future
+                                    where every opportunity brings us closer, inspiring hope, innovation,
+                                    and success for
+                                    all."
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
                 <div class="overflow-hidden">
                     <section>
@@ -1211,7 +1934,8 @@
                                             </div><a href="/contact/contact-1"
                                                 data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
                                                 class="cta-button w-inline-block">
-                                                <h3 class="heading-footer first-letter-styled">Your Gateway to Nigeria’s Premier Remote
+                                                <h3 class="heading-footer first-letter-styled">Your Gateway to Nigeria’s
+                                                    Premier Remote
                                                     Talent
                                                 </h3>
                                                 <div class="cta-button-line"></div>
