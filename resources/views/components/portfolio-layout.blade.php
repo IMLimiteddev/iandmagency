@@ -234,14 +234,14 @@
                         <div class="heading-hero">
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-1-interaction ">Youthful</h1>
+                                class="heading-7 caps">Youthful</h1>
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-1-interaction">Creative</h1>
+                                class="heading-7 caps">Creative</h1>
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="color: #000000; margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-1-interaction">
-                                <span class="dynamic-text">Dynamic<span style="color: #fe681c">.</span></span>
+                                class="heading-7 caps">
+                                <span class="dynamic-text">Dynamic.</span>
                             </h1>
                             {{-- <input type="color"> --}}
 
@@ -276,6 +276,7 @@
                 </div>
             </div>
         </section>
+
         {{-- About us section --}}
         <section id="about">
             <div class="padding-global">
@@ -315,8 +316,11 @@
                         </div>
                     </div>
                 </div>
+                <hr>
+
             </div>
         </section>
+
         {{-- Why nigeria section --}}
         <section>
             <div class="padding-global">
@@ -351,6 +355,7 @@
                 </div>
             </div>
         </section>
+
         {{-- Design section --}}
         <section>
             <div class="padding-global">
@@ -374,7 +379,8 @@
                 </div>
             </div>
         </section>
-        {{-- Market Potential --}}
+
+        {{-- Lean Management --}}
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container medium w-container">
@@ -663,201 +669,219 @@
                 </div>
             </div>
         </section>
-        {{-- Employee development --}}
+        {{-- Our services section --}}
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
-                    <div class="blog-posts-component">
-                        <div class="blog-posts-wrapper">
-                            <div data-delay="4000" data-animation="outin" class="slider w-slider" data-autoplay="true"
-                                data-easing="ease" data-hide-arrows="false" data-disable-swipe="false"
-                                data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-                                <div class="w-slider-mask">
+                    <div class="works-home-3-wrapper">
 
-                                    <div class="w-slide">
-                                        <div class="first-blog-card-cms show-mobile w-dyn-list">
-                                            <div role="list" class="collection-list w-dyn-items">
-                                                <div id="w-node-_898bbfe9-3c0d-bbd9-8b13-dd20f699b1d0-43d62ef2"
-                                                    data-w-id="898bbfe9-3c0d-bbd9-8b13-dd20f699b1d0" role="listitem"
-                                                    class="collection-item w-dyn-item">
-                                                    <div class="slider-content-wrapper">
-                                                        <div class="big-card-content">
-                                                            <div class="blog-slider-card">
-                                                                <div class="max-width-40vw"><a
-                                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
-                                                                        class="heading-9">Employee
-                                                                        Development
-                                                                    </a></div>
-                                                                <div class="opacity-80 max-width-blog slier"><p
-                                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
-                                                                        class="text-weight-small">At I&M, we understand
-                                                                        that continuous learning and development are
-                                                                        vital for success
-                                                                        in today’s fast-paced business environment. To
-                                                                        better serve our German clients, our
-                                                                        employees have successfully completed German
-                                                                        language training (B1 level), enabling
-                                                                        more effective communication and stronger
-                                                                        partnerships.
-                                                                        <br>
-                                                                        We're also committed to enhancing our team's
-                                                                        skills in French, allowing us to broaden
-                                                                        our global reach and improve our service
-                                                                        offerings. By investing in our employees’
-                                                                        growth, we ensure that they are equipped to meet
-                                                                        your needs and exceed your
-                                                                        expectations, making us the ideal partner for
-                                                                        your business. Together, we can navigate
-                                                                        new markets and achieve greater success.
+                        <div class="testimonial-header">
+                            <h3 class="text-size-display text-weight-regular mobile-size">
+                                Our Services to Support Your Global Growth
+                            </h3>
+                        </div>
 
-                                                                </p></div>
-                                                            </div>
 
+                        <div class="works-3-component">
+                            <div class="w-dyn-list">
+                                <div role="list" class="works-3-list w-dyn-items">
+                                    <div role="listitem" class="works-3-item w-dyn-item"><a
+                                            data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2"
+                                            href="/works/sweater-weather" class="home-projects-wrapper w-inline-block">
+                                            <div class="home-projects-image home-3"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
+                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                            <div class="home-projects-content">
+                                                <div class="home-projects-left-content">
+                                                    <div class="home-projects-number">
+                                                        <div class="text-size-small">01</div>
+                                                    </div>
+                                                    <div class="home-project-name">
+                                                        <h2 class="text-size-xhuge text-weight-regular">1. Remote Talent
+                                                            Placement:
+                                                        </h2>
+                                                        <div class="opacity-80">
+                                                            <p>We help companies find top international talent,
+                                                                providing access to a global
+                                                                pool of skilled professionals in engineering, IT,
+                                                                marketing, and software
+                                                                development and more. Whatever your needs, we ensure you
+                                                                connect with the
+                                                                right experts to power your business. </p>
                                                         </div>
-                                                    </div><a id="w-node-_898bbfe9-3c0d-bbd9-8b13-dd20f699b1ec-43d62ef2"
-                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
-                                                        class="blog-card-image first-card-blog w-inline-block">
-                                                        <div class="overlay-slider"></div><img
-                                                            style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                                            loading="lazy" alt=""
-                                                            src="/portfolio_colors/assets/images/image8_enhanced.jpg"
-                                                            class="image" />
-                                                        <div class="mask-frame"></div>
-                                                        <div class="overlay-slider-left"></div>
-                                                    </a>
+                                                    </div>
+                                                </div>
+                                                <div data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32cec0"
+                                                    class="home-projects-arrow"><img loading="lazy"
+                                                        src="/portfolio_colors/assets/images/grey-arrow.svg" alt="Arrow"
+                                                        class="arrow" />
                                                 </div>
                                             </div>
+                                        </a></div>
+                                    <div role="listitem" class="works-3-item w-dyn-item"><a
+                                            data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2" href="#"
+                                            class="home-projects-wrapper w-inline-block">
+                                            <div class="home-projects-image home-3"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
+                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                            <div class="home-projects-content">
+                                                <div class="home-projects-left-content">
+                                                    <div class="home-projects-number">
+                                                        <div class="text-size-small">02</div>
+                                                    </div>
+                                                    <div class="home-project-name">
+                                                        <h2 class="text-size-xhuge text-weight-regular">Compliance and
+                                                            Legal Consulting:</h2>
+                                                        <div class="opacity-80">
+                                                            <p>Hiring remote workers across borders comes with legal and
+                                                                tax challenges. Our
+                                                                expert consulting services help you navigate
+                                                                international regulations, ensuring
+                                                                your business stays compliant while growing your remote
+                                                                team. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32cec0"
+                                                    class="home-projects-arrow"><img loading="lazy"
+                                                        src="/portfolio_colors/assets/images/grey-arrow.svg" alt="Arrow"
+                                                        class="arrow" />
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                    <div role="listitem" class="works-3-item w-dyn-item"><a
+                                            data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2" href="#"
+                                            class="home-projects-wrapper w-inline-block">
+                                            <div class="home-projects-image home-3"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
+                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                            <div class="home-projects-content">
+                                                <div class="home-projects-left-content">
+                                                    <div class="home-projects-number">
+                                                        <div class="text-size-small">03</div>
+                                                    </div>
+                                                    <div class="home-project-name">
+                                                        <h2 class="text-size-xhuge text-weight-regular">Remote Team
+                                                            Onboarding and Management:</h2>
+                                                        <div class="opacity-80">
+                                                            <p> We make remote team integration smooth and effective,
+                                                                with customized
+                                                                onboarding processes that help teams hit the ground
+                                                                running. Our tools and
+                                                                strategies improve team collaboration and productivity,
+                                                                no matter where your
+                                                                team members are based. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32cec0"
+                                                    class="home-projects-arrow"><img loading="lazy"
+                                                        src="/portfolio_colors/assets/images/grey-arrow.svg" alt="Arrow"
+                                                        class="arrow" />
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                    <div role="listitem" class="works-3-item w-dyn-item"><a
+                                            data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2" href="/works/outliers"
+                                            class="home-projects-wrapper w-inline-block">
+                                            <div class="home-projects-image home-3"><img loading="lazy"
+                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
+                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                            <div class="home-projects-content">
+                                                <div class="home-projects-left-content">
+                                                    <div class="home-projects-number">
+                                                        <div class="text-size-small">04</div>
+                                                    </div>
+                                                    <div class="home-project-name">
+                                                        <h2 class="text-size-xhuge text-weight-regular">Technological
+                                                            Solutions for Remote Work:</h2>
+                                                        <div class="opacity-80">
+                                                            <p>I&M provides innovative platforms that simplify
+                                                                communication, collaboration,
+                                                                and project management for remote teams. These tools
+                                                                ensure your remote
+                                                                operations are seamless, efficient, and effective. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32cec0"
+                                                    class="home-projects-arrow"><img loading="lazy"
+                                                        src="/portfolio_colors/assets/images/grey-arrow.svg" alt="Arrow"
+                                                        class="arrow" />
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- Employee development --}}
+        <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container medium w-container">
+                    <div class="testimonial-wrapper">
+                        <div data-current="Tab 2" data-easing="ease-in-out-quart" data-duration-in="300"
+                            data-duration-out="100" class="tabs w-tabs">
+                            <div class="tabs-content w-tab-content">
+                                <div data-w-tab="Tab 1" class="tab-content w-tab-pane w--tab-active">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-header">
+                                            <h3 class="text-size-display text-weight-regular mobile-size">Employee
+                                                Development
+
+                                            </h3>
+                                        </div>
+                                        <div class="testimonial-quote">
+                                            <p class="text-size-xlarge mobile-size">
+                                                {{--
+                                            <h6 class="heading-6">Our Commitment to Meaningful Partnerships</h6> --}}
+                                            <br>
+                                            At I&M, we understand
+                                            that continuous learning and development are
+                                            vital for success
+                                            in today’s fast-paced business environment. To
+                                            better serve our German clients, our
+                                            employees have successfully completed German
+                                            language training (B1 level), enabling
+                                            more effective communication and stronger
+                                            partnerships.
+                                            <br>
+                                            We're also committed to enhancing our team's
+                                            skills in French, allowing us to broaden
+                                            our global reach and improve our service
+                                            offerings. By investing in our employees’
+                                            growth, we ensure that they are equipped to meet
+                                            your needs and exceed your
+                                            expectations, making us the ideal partner for
+                                            your business. Together, we can navigate
+                                            new markets and achieve greater success.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {{-- Our services section --}}
-        <section id="services" style="margin-bottom: 400px">
-            <div class="padding-global">
-                <div class="w-layout-blockcontainer container medium w-container">
-                    <div class="main-sticky-wrapper">
-                        <div id="w-node-_12090b61-063d-a1db-c3d2-b335ff977dbf-2d74513d"
-                            class="main-sticky-title to-hide">
-                            <div class="max-width-28vw">
-                                {{-- <div data-w-id="3cd57464-46ce-1a90-f646-4fd14c883ca6" style="opacity:0"
-                                    class="slide-in">
-                                    <h2 class="text-size-display text-weight-medium">Design solutions that speak to
-                                        your
-                                        brand’s</h2>
-                                </div> --}}
-                                <div class="utility-margin-top">
-                                    <div class="max-width-30vw opacity-75">
-                                        {{-- <p class="text-size-medium header-4">OUR SERVICES</p> --}}
-                                        <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
-                                            style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                            class="heading-3 caps">our</h2>
-                                        <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
-                                            style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                            class="heading-3 caps">Services to Support Your Global Growth</h2>
+                            <div class="tabs-menu w-tab-menu"><a data-w-tab="Tab 1"
+                                    class="tab-link w-inline-block w-tab-link w--current">
+                                    <div class="testimonial-info">
+
+                                        <div class="testimonial-writer">
+                                            <div class="text-size-large"><span style="color: #fe681c">1</span></div>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                        </div>
-                        <div id="w-node-ec91489a-dd11-2dd4-8cdb-3ad8b83aad8a-2d74513d" class="time-line-wrapper">
-                            <div class="timeline-marker">
-                                <div class="timeline-circle">
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div data-w-id="952d0a2f-4be9-f7e9-0c83-2f25d9044ed1" style="height:10%"
-                                    class="timeline-fill"></div>
-                            </div>
-                        </div>
-                        <div id="w-node-f12d0135-e5a4-99eb-6f06-796dd7c726ea-2d74513d"
-                            class="main-sticky-content max-width-36vw utility-box-gap">
-                            <div class="max-width-30vw to-show">
-
-                                <div class="max-width-30vw opacity-75">
-                                    <h2 class="heading-3 caps">Our Services to Support Your Global Growth
-
-                                </div>
-                            </div>
-
-
-                            <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med "> 1. Remote Talent Placement:
-                                    We help companies find top international talent, providing access to a global
-                                    pool of skilled professionals in engineering, IT, marketing, and software
-                                    development and more. Whatever your needs, we ensure you connect with the
-                                    right experts to power your business.
-                                </p>
-                            </div>
-                            {{-- <div style="background-image: url(/portfolio_colors/assets/images/image3.jpg) "
-                                class="max-width-30vw our-text">
-                                <p class="text-size-huge text-weight-med te">1. Remote Talent Placement:
-                                    We help companies find the best international professionals, ensuring they
-                                    access the global talent pool to meet their needs, with a special focus on
-                                    engineering, IT, marketing, and software development.</p>
-                            </div> --}}
-                            <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med ">2. Compliance and Legal Consulting:
-                                    Hiring remote workers across borders comes with legal and tax challenges. Our
-                                    expert consulting services help you navigate international regulations, ensuring
-                                    your business stays compliant while growing your remote team.
-                                </p>
-                            </div>
-                            {{-- <div style="background-image: url(/portfolio_colors/assets/images/image11.jpg) "
-                                class="max-width-30vw our-text">
-                                <p class="text-size-huge text-weight-med te">2. Compliance and Legal Consulting:
-                                    We offer advisory services to ensure companies remain compliant with
-                                    international legal and tax regulations while hiring remote workers.</p>
-                            </div> --}}
-                            <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med ">3. Remote Team Onboarding and Management:
-                                    We make remote team integration smooth and effective, with customized
-                                    onboarding processes that help teams hit the ground running. Our tools and
-                                    strategies improve team collaboration and productivity, no matter where your
-                                    team members are based.</p>
-                            </div>
-                            {{-- <div style="background-image: url(/portfolio_colors/assets/images/image1.jpg) "
-                                class="max-width-30vw our-text">
-                                <p class="text-size-huge text-weight-med te">3. Remote Team Onboarding and
-                                    Management:
-                                    Our services include integrating and increasing the productivity of remote
-                                    teams through tailored onboarding processes and tools for effective team
-                                    management.</p>
-                            </div> --}}
-                            <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med ">4. Technological Solutions for Remote Work:
-                                    I&M provides innovative platforms that simplify communication, collaboration,
-                                    and project management for remote teams. These tools ensure your remote
-                                    operations are seamless, efficient, and effective.
-                                </p>
-                            </div>
-                            <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med">Let us help you build a successful, efficient
-                                    remote workforce. Together, we’ll create the
-                                    right solutions to fuel your business growth.
-                                </p>
-                            </div>
-                            {{-- <div style="background-image: url(/portfolio_colors/assets/images/image2.jpg) "
-                                class="max-width-30vw our-text">
-                                <p class="text-size-huge text-weight-med te">4. Technological Solutions for Remote
-                                    Work:
-                                    I&M offers innovative platforms that streamline collaboration,
-                                    communication, and project management for remote teams, ensuring
-                                    smooth and efficient operations</p>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         {{--Our display --}}
-        <section class="vision-hide">
+
+        <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="blog-posts-component">
@@ -1040,7 +1064,7 @@
                                         </div>
                                         <div class="testimonial-quote">
                                             <p class="text-size-xlarge mobile-size">
-                                            <h6 class="heading-6">Our Commitment to Meaningful Partnerships</h6>
+                                            <h6 class="heading-7">Our Commitment to Meaningful Partnerships</h6>
                                             <br>
                                             At I&M, we focus on values like diligence, respect, transparency, and unity
                                             in everything
@@ -1063,7 +1087,7 @@
                                         </div>
                                         <div class="testimonial-quote">
                                             <p class="text-size-xlarge mobile-size">
-                                            <h6 class="heading-6">Empowering Talent, Driving Success</h6>
+                                            <h6 class="heading-7">Empowering Talent, Driving Success</h6>
                                             <br>
                                             At I&M, we are passionate about creating opportunities that empower young
                                             talent in
@@ -1088,7 +1112,7 @@
                                         </div>
                                         <div class="testimonial-quote">
                                             <p class="text-size-xlarge mobile-size">
-                                            <h6 class="heading-6">Growing Together, Achieving Success
+                                            <h6 class="heading-7">Growing Together, Achieving Success
                                             </h6>
                                             <br> Our collaborations are about more than just business—they are about
                                             creating
@@ -1133,6 +1157,43 @@
             </div>
         </section>
 
+         {{-- Closing Statment --}}
+         <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container medium w-container">
+                    <div class="testimonial-wrapper">
+                        <div data-easing="ease-in-out-quart" data-duration-in="300" data-duration-out="100" class="">
+                            <div class="tabs-content w-tab-content">
+                                <div class="tab-content ">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-header">
+                                            <h3 class="text-size-display text-weight-light mobile-size">
+                                                Closing Statement
+                                            </h3>
+                                            {{-- <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
+                                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                class="heading-9">Achieving Success with Lean Management</h2> --}}
+                                        </div>
+                                        <div class="testimonial-quote">
+                                            <p class="text-size-xlarge mobile-size">"Together, we can tap into the incredible potential of Nigeria’s talent, building
+                                                connections that cross borders and transform dreams into reality. Let’s create a future
+                                                where every opportunity brings us closer, inspiring hope, innovation, and success for
+                                                all."
+                                                <br>
+                                                'Unity is strength.'</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         {{-- Contact us section --}}
         <section id="contact">
             <div>
@@ -1144,13 +1205,13 @@
 
                             <div class="contact-content-wrapepr">
 
-                                <p class="text-style-italic text-weight-light">Contact us</p>
-                                <h1 class="text-size-xxhuge">Let&#x27;s work
-                                    together
-                                    <span class="text-color-grey text-style-italic text-weight-light">&amp;</span> get
-                                    you
-                                    a professional.
-                                </h1>
+                                <p class="text-style-italic text-weight-light">Let’s Connect!</p>
+                                <h6 class="text-weight-light">Are you ready to boost your business with Nigeria’s exceptional talent while promoting a
+                                    sustainable future? At I&M, we’re here to help you grow with skilled professionals and
+                                    innovative solutions that benefit both your business and the environment.
+                                    Don’t miss this chance to succeed together—reach out today and let’s start this exciting
+                                    journey! Your future awaits!
+                                </h6>
                                 <div class="contact-email-wrapper"><a href="#" class="contact-email w-inline-block">
                                         <div class="email-line"></div>
                                         <div class="text-size-medium">info@imengin.com</div><img loading="lazy"
@@ -1312,115 +1373,6 @@
             </div>
 
         </section>
-
-        {{-- <section>
-            <div class="padding-global">
-                <div class="w-layout-blockcontainer container w-container">
-                    <div class="hero-header about">
-                        <div class="header-works cms">
-
-                            <div class="w-layout-blockcontainer container w-container">
-                                <div class="works-template">
-                                    <div class="work-content">
-
-                                        <div class="rich-text align-center w-richtext">
-
-                                            <h3>The global shift towards flexible, remote work is driving
-                                                significant growth in our industry. Remote work services,
-                                                particularly in international recruitment, are growing by 20-
-                                                30% annually. The demand for specialized services in
-                                                compliance, remote team management, and technological
-                                                solutions is increasing, providing significant opportunities for
-                                                I&M to lead the market.
-                                                We operate in a wide range of industries, including IT,
-                                                marketing, and engineering, focusing on remote-enabled
-                                                work models for companies aiming to enhance their
-                                                international footprint.</h3>
-                                        </div>
-                                    </div>
-                                    <div class="work-template-images">
-                                        <img alt="Aquemini" loading="lazy"
-                                            src="/portfolio_colors/assets/images/Untitled design (6).png" sizes="85vw"
-                                            srcset="/portfolio_colors/assets/images/Untitled design (6).png 500w,
-                                                /portfolio_colors/assets/images/Untitled design (6).png 800w,
-                                                /portfolio_colors/assets/images/Untitled design (6).png 1080w,
-                                                /portfolio_colors/assets/images/Untitled design (6).png 2124w"
-                                            class="image" />
-                                        <div class="mask-frame"></div>
-                                    </div>
-                                    <div class="work-template-images margin-bottom"><img alt="Aquemini" loading="lazy"
-                                            src="/portfolio_colors/assets/images/blog-20images-20-1-.jpg" sizes="85vw"
-                                            srcset="/portfolio_colors/assets/images/blog-20images-20-1-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-1-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-1-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-1-p-1600.jpg 1600w, /portfolio_colors/assets/blog-20images-20-1-.jpg 2124w"
-                                            class="image" />
-                                        <div class="mask-frame"></div>
-                                    </div>
-                                    <div class="work-content">
-                                        <div class="rich-text align-center w-richtext">
-                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in
-                                                reprehenderit in
-                                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
-                                        </div>
-                                    </div>
-                                    <div class="work-template-images margin-bottom"><img alt="Aquemini" loading="lazy"
-                                            src="/portfolio_colors/assets/images/blog-20images-20-4-.jpg" sizes="85vw"
-                                            srcset="/portfolio_colors/assets/images/blog-20images-20-4-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-4-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-4-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-4-p-1600.jpg 1600w, /portfolio_colors/assets/blog-20images-20-4-.jpg 2124w"
-                                            class="image" />
-                                        <div class="mask-frame"></div>
-                                    </div>
-                                    <div class="work-content">
-                                        <div class="rich-text align-center w-richtext">
-                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in
-                                                reprehenderit in
-                                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
-                                        </div>
-                                    </div>
-                                    <div class="work-template-images vertical"><img alt="Aquemini" loading="lazy"
-                                            src="/portfolio_colors/assets/images/blog-20images-20-5-.jpg"
-                                            sizes="(max-width: 767px) 85vw, (max-width: 991px) 42vw, 43vw"
-                                            srcset="/portfolio_colors/assets/images/blog-20images-20-5-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-5-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-5-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-5-.jpg 1270w"
-                                            class="image" />
-                                        <div class="mask-frame"></div>
-                                    </div>
-                                    <div class="work-template-images vertical right"><img alt="Aquemini" loading="lazy"
-                                            src="/portfolio_colors/assets/images/blog-20images-20-3-.jpg"
-                                            sizes="(max-width: 767px) 85vw, (max-width: 991px) 42vw, 43vw"
-                                            srcset="/portfolio_colors/assets/images/blog-20images-20-3-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-3-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-3-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-3-.jpg 1270w"
-                                            class="image" />
-                                        <div class="mask-frame"></div>
-                                    </div>
-                                    <div class="work-content">
-                                        <div class="rich-text align-center w-richtext">
-                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor in
-                                                reprehenderit in
-                                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
-                                        </div>
-                                    </div>
-                                    <div class="work-template-images"><img alt="Aquemini" loading="lazy"
-                                            src="/portfolio_colors/assets/images/blog-20images-20-2-.jpg" sizes="85vw"
-                                            srcset="/portfolio_colors/assets/images/blog-20images-20-2-p-500.jpg 500w, /portfolio_colors/assets/blog-20images-20-2-p-800.jpg 800w, /portfolio_colors/assets/blog-20images-20-2-p-1080.jpg 1080w, /portfolio_colors/assets/blog-20images-20-2-p-1600.jpg 1600w, /portfolio_colors/assets/blog-20images-20-2-p-2000.jpg 2000w, /portfolio_colors/assets/blog-20images-20-2-.jpg 2560w"
-                                            class="image" />
-                                        <div class="mask-frame"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-
 
     </div>
 
