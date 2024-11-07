@@ -5678,6 +5678,10 @@ blockquote {
     color: #00000000;
 }
 
+.first-letter-styled::first-letter {
+    color: #fe681c;  /* Change color */
+}
+
 @media (max-width: 495px) {
     .heading-hero {
         display: flex;

@@ -129,61 +129,11 @@
                                 <div class="text-size-small caps text-weight-bold"><img style="height: 50px"
                                         src="/logos/IandM-no-white-bg-logo-.png" alt=""></div>
                             </div>
-
-                            <div id="google_translate_element"></div>
-
-                            {{-- <div class="dropdown w-dropdown-toggle">
-                                <div class="text-size-small caps text-weight-bold">Home</div>
-                            </div>
-                            <nav class="dropdown-list w-dropdown-list"><a href="/home/home-1" aria-current="page"
-                                    class="dropdown-link w-dropdown-link w--current">Home 1</a><a href="/home/home-2"
-                                    class="dropdown-link w-dropdown-link">Home 2</a><a href="/home/home-3"
-                                    class="dropdown-link w-dropdown-link">Home 3</a></nav> --}}
                         </div>
 
                     </nav>
                     <nav role="navigation" id="w-node-a0814933-dfa2-4581-2ed5-24b9b1fe3048-b1fe301d"
                         class="nav-menu w-nav-menu">
-
-                        {{-- <a href="#">Home</a> --}}
-                        {{-- <div data-delay="100" data-hover="true" class="dropdown-navbar responsive w-dropdown">
-                            <div class="dropdown w-dropdown-toggle">
-                                <div class="text-size-small caps text-weight-bold">Home</div>
-                                <div class="dropdown-icon w-icon-dropdown-toggle"></div>
-                            </div>
-                            <nav class="dropdown-list w-dropdown-list"><a href="/home/home-1" aria-current="page"
-                                    class="dropdown-link w-dropdown-link w--current">Home 1</a><a href="/home/home-2"
-                                    class="dropdown-link w-dropdown-link">Home 2</a><a href="/home/home-3"
-                                    class="dropdown-link w-dropdown-link">Home 3</a></nav>
-                        </div>
-                        <div data-delay="100" data-hover="true" class="dropdown-navbar responsive w-dropdown">
-                            <div class="dropdown w-dropdown-toggle">
-                                <div class="text-size-small caps text-weight-bold">About</div>
-                                <div class="dropdown-icon w-icon-dropdown-toggle"></div>
-                            </div>
-                            <nav class="dropdown-list w-dropdown-list"><a href="/about/about-1"
-                                    class="dropdown-link w-dropdown-link">About 1</a><a href="/about/about-2"
-                                    class="dropdown-link w-dropdown-link">About 2</a><a href="/about/about-3"
-                                    class="dropdown-link w-dropdown-link">About 3</a></nav>
-                        </div>
-                        <div data-delay="100" data-hover="true" class="dropdown-navbar responsive w-dropdown">
-                            <div class="dropdown w-dropdown-toggle">
-                                <div class="text-size-small caps text-weight-bold">Works</div>
-                                <div class="dropdown-icon w-icon-dropdown-toggle"></div>
-                            </div>
-                            <nav class="dropdown-list w-dropdown-list"><a href="/work/work-1"
-                                    class="dropdown-link w-dropdown-link">Works 1</a><a href="/work/work-2"
-                                    class="dropdown-link w-dropdown-link">Works 2</a><a href="/work/work-3"
-                                    class="dropdown-link w-dropdown-link">Works 3</a></nav>
-                        </div>
-                        <div data-delay="100" data-hover="true" class="dropdown-navbar responsive w-dropdown">
-                            <div class="dropdown w-dropdown-toggle">
-                                <div class="text-size-small caps text-weight-bold">Contact</div>
-                                <div class="dropdown-icon w-icon-dropdown-toggle"></div>
-                            </div>
-                            <nav class="dropdown-list w-dropdown-list"><a href="/contact/contact-2"
-                                    class="dropdown-link w-dropdown-link">Contact</a></nav>
-                        </div><a href="/contact/contact-1" class="dropdown responsive w-nav-link">Contact</a> --}}
                     </nav>
                     <a href="#" aria-current="page" class="brand-link w-inline-block w--current"><img
                             style="margin-top: 5px; height: 20px; width: 20px;" src="/logos/IandM-no-white-bg-logo-.png"
@@ -241,28 +191,9 @@
                             <h1 data-w-id="5c280569-3c95-794a-1c61-d15206dc1297"
                                 style="color: #000000; margin: 20px; -webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="heading-7 caps">
-                                <span class="dynamic-text">Dynamic.</span>
+                                <span class="dynamic-text">Dynamic<span style="color: #fe681c">.</span></span>
                             </h1>
-                            {{-- <input type="color"> --}}
 
-                            <!-- <h1 data-w-id="2a7a2c11-364c-d838-f491-63b7d1961fed"
-								style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-								class="heading-1-interaction">o</h1>
-							<h1 data-w-id="0f17404d-24b4-a5c8-1877-3f54f95a1868"
-								style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-								class="heading-1-interaction">l</h1>
-							<h1 data-w-id="6564c2d0-c31a-21b9-3ab5-91a81a2fa52c"
-								style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-								class="heading-1-interaction">o</h1>
-							<h1 data-w-id="3f5a61f9-9181-5faf-efd6-b0a2744f1eb8"
-								style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-								class="heading-1-interaction">u</h1>
-							<h1 data-w-id="262ceb32-7732-fcb1-a1c1-9db04ce13263"
-								style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-								class="heading-1-interaction">r</h1>
-							<h1 data-w-id="62e4a988-c426-cbec-bd28-25767158be83"
-								style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-								class="heading-1-interaction">s</h1> -->
                         </div>
                     </div>
                 </div>
@@ -292,7 +223,7 @@
                             </div> --}}
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps">who <br> we are</h2>
+                                class="heading-9 caps first-letter-styled">who <br> we are</h2>
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
@@ -332,7 +263,7 @@
                             <div class="overflow-hidden-header align-mobile">
                                 <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                     style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    class="heading-9 caps">Why</h2>
+                                    class="heading-9 caps first-letter-styled">Why</h2>
                             </div>
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
@@ -390,7 +321,7 @@
                                 <div class="tab-content ">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-light mobile-size">
+                                            <h3 class="text-size-display text-weight-light mobile-size first-letter-styled">
                                                 Achieving Success with Lean Management
                                             </h3>
                                             {{-- <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
@@ -435,7 +366,7 @@
                             class="header align-mobile">
                             <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps">Company</h2>
+                                class="heading-9 caps first-letter-styled">Company</h2>
                             <h2 data-w-id="a3412a01-b997-3225-490e-c28d4eb8a22b"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="heading-9 caps">Objectives</h2>
@@ -470,7 +401,7 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Expansion Our
+                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Expansion Our
                                                         Global Footprint
                                                     </div>
                                                     <div class="dot overflow-hide-mobile"></div>
@@ -512,7 +443,7 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Empower Our Team
+                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Empower Our Team
                                                     </div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
@@ -551,7 +482,7 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Enhance Efficiency
+                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Enhance Efficiency
                                                     </div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
@@ -586,7 +517,7 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Establish Lagos as
+                                                    <div class="text-size-xlarge text-weight-medium first-letter-styled">Establish Lagos as
                                                         a Service Hub</div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
@@ -629,7 +560,7 @@
                                 <div class="tab-content ">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">
+                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">
 
                                                 {{-- <span style="color: #fe681c">M</span> --}}
                                                 Hidden Market Potential
@@ -676,7 +607,7 @@
                     <div class="works-home-3-wrapper">
 
                         <div class="testimonial-header">
-                            <h3 class="text-size-display text-weight-regular mobile-size">
+                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">
                                 Our Services to Support Your Global Growth
                             </h3>
                         </div>
@@ -688,16 +619,16 @@
                                     <div role="listitem" class="works-3-item w-dyn-item"><a
                                             data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2"
                                             href="/works/sweater-weather" class="home-projects-wrapper w-inline-block">
-                                            <div class="home-projects-image home-3"><img loading="lazy"
+                                            <div class="home-projects-image home-3"><img loading="lazy" style="height: 300px; width: 300px; border-radius: 10px"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                                    alt="" class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
                                                     <div class="home-projects-number">
-                                                        <div class="text-size-small">01</div>
+                                                        <div class="text-size-small first-letter-styled">01</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular">1. Remote Talent
+                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Remote Talent
                                                             Placement:
                                                         </h2>
                                                         <div class="opacity-80">
@@ -723,14 +654,14 @@
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px" class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
                                                     <div class="home-projects-number">
-                                                        <div class="text-size-small">02</div>
+                                                        <div class="text-size-small first-letter-styled">02</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular">Compliance and
+                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Compliance and
                                                             Legal Consulting:</h2>
                                                         <div class="opacity-80">
                                                             <p>Hiring remote workers across borders comes with legal and
@@ -754,14 +685,14 @@
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px" class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
                                                     <div class="home-projects-number">
-                                                        <div class="text-size-small">03</div>
+                                                        <div class="text-size-small first-letter-styled">03</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular">Remote Team
+                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Remote Team
                                                             Onboarding and Management:</h2>
                                                         <div class="opacity-80">
                                                             <p> We make remote team integration smooth and effective,
@@ -786,14 +717,14 @@
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
                                                     src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" sizes="(max-width: 991px) 85vw, 25vw" class="image" /></div>
+                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px" class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
                                                     <div class="home-projects-number">
-                                                        <div class="text-size-small">04</div>
+                                                        <div class="text-size-small first-letter-styled">04</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2 class="text-size-xhuge text-weight-regular">Technological
+                                                        <h2 class="text-size-xhuge text-weight-regular first-letter-styled">Technological
                                                             Solutions for Remote Work:</h2>
                                                         <div class="opacity-80">
                                                             <p>I&M provides innovative platforms that simplify
@@ -829,13 +760,13 @@
                                 <div data-w-tab="Tab 1" class="tab-content w-tab-pane w--tab-active">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Employee
+                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Employee
                                                 Development
 
                                             </h3>
                                         </div>
                                         <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size">
+                                            <p class="text-size-xlarge mobile-size first-letter-styled">
                                                 {{--
                                             <h6 class="heading-6">Our Commitment to Meaningful Partnerships</h6> --}}
                                             <br>
@@ -897,7 +828,7 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge">Success Through Strong
+                                                <div class="first-letter-styled"><a href="#" class="text-size-xlarge">Success Through Strong
                                                         Partnerships (Our Clients)</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Our partnership with
@@ -935,7 +866,7 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge">Our Clients</a></div>
+                                                <div class="first-letter-styled"><a href="#" class="text-size-xlarge">Our Clients</a></div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Currently, we serve
                                                         primarily German
                                                         customers, who value our
@@ -972,7 +903,7 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge">Unlock Global Talent for Your
+                                                <div class="first-letter-styled"><a href="#" class="text-size-xlarge">Unlock Global Talent for Your
                                                         Business</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Working with us opens
@@ -1002,42 +933,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- <div data-w-id="b01f902c-63ef-dc1c-228a-296f7a241b13" style="opacity:1"
-                                        role="listitem" class="blog-card w-dyn-item"><a href="#"
-                                            class="blog-card-image w-inline-block"><img alt="Our Clients" loading="lazy"
-                                                src="/portfolio_colors/assets/images/image13.jpg" class="image" />
-                                            <div class="mask-frame"></div>
-                                        </a>
-                                        <div class="blog-bottom-content">
-                                            <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge">Location & Future Plans </a>
-                                                </div>
-                                                <div class="opacity-80 max-width-blog"><a href="#">Our headquarters are
-                                                        in Lagos, Nigeria—a rapidly
-                                                        growing economic hub in Africa. Lagos provides us
-                                                        with the ideal environment for growth and
-                                                        development. We aim to establish the city as the
-                                                        centre of our international activities, building a solid
-                                                        infrastructure to attract more skilled professionals and
-                                                        enhance our service offerings globally.
-                                                        As we expand, we will continue to prioritize fair
-                                                        working conditions for our employees and sustainable
-                                                        growth for our clients, making Nigeria an attractive
-                                                        destination for international business.</a>
-                                                </div><a href="#"
-                                                    class="writter-wrapper margin-top color-cards w-inline-block">
 
-                                                    <div class="writter-info">
-                                                        <div class="writter-date">
-                                                            <div class="text-size-small">I</div>
-                                                            <div class="dot"></div>
-                                                            <div class="text-size-small">M</div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -1057,7 +953,7 @@
                                 <div data-w-tab="Tab 1" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision &
+                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Our Vision &
                                                 Mission: "I Am Because We Are"
 
                                             </h3>
@@ -1081,7 +977,7 @@
                                 <div data-w-tab="Tab 2" class="tab-content w-tab-pane w--tab-active">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision &
+                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Our Vision &
                                                 Mission: "I Am Because We Are"
                                             </h3>
                                         </div>
@@ -1106,7 +1002,7 @@
                                 <div data-w-tab="Tab 3" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision &
+                                            <h3 class="text-size-display text-weight-regular mobile-size first-letter-styled">Our Vision &
                                                 Mission: "I Am Because We Are"
                                             </h3>
                                         </div>
@@ -1167,7 +1063,7 @@
                                 <div class="tab-content ">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-light mobile-size">
+                                            <h3 class="text-size-display text-weight-light mobile-size first-letter-styled">
                                                 Closing Statement
                                             </h3>
                                             {{-- <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
@@ -1205,7 +1101,7 @@
 
                             <div class="contact-content-wrapepr">
 
-                                <p class="text-style-italic text-weight-light">Let’s Connect!</p>
+                                <p class="text-style-italic text-weight-light first-letter-styled">Let’s Connect!</p>
                                 <h6 class="text-weight-light">Are you ready to boost your business with Nigeria’s exceptional talent while promoting a
                                     sustainable future? At I&M, we’re here to help you grow with skilled professionals and
                                     innovative solutions that benefit both your business and the environment.
@@ -1315,7 +1211,7 @@
                                             </div><a href="/contact/contact-1"
                                                 data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
                                                 class="cta-button w-inline-block">
-                                                <h3 class="heading-footer">Your Gateway to Nigeria’s Premier Remote
+                                                <h3 class="heading-footer first-letter-styled">Your Gateway to Nigeria’s Premier Remote
                                                     Talent
                                                 </h3>
                                                 <div class="cta-button-line"></div>
