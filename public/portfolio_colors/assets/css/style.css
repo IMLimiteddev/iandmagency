@@ -3857,6 +3857,9 @@ blockquote {
 .text-weight-medium {
     font-weight: 500;
 }
+.text-weight-small {
+    font-weight: 100px;
+}
 .text-weight-med {
     font-weight: 200;
 }
@@ -5710,7 +5713,7 @@ blockquote {
 
 @media (max-width: 768px) {
     .dynamic-text {
-        color: #FFFFFFFF; 
+        color: #FFFFFFFF;
     }
 }
 @media (max-width: 768px) {
@@ -8236,7 +8239,7 @@ blockquote {
 
     .heading-3 {
         letter-spacing: 0;
-        font-size: 5rem;
+        font-size: 1rem;
     }
 
     .heading-6 {

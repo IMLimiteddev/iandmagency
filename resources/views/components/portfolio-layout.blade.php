@@ -130,6 +130,8 @@
                                         src="/logos/IandM-no-white-bg-logo-.png" alt=""></div>
                             </div>
 
+                            <div id="google_translate_element"></div>
+
                             {{-- <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold">Home</div>
                             </div>
@@ -143,13 +145,7 @@
                     <nav role="navigation" id="w-node-a0814933-dfa2-4581-2ed5-24b9b1fe3048-b1fe301d"
                         class="nav-menu w-nav-menu">
 
-                        <div style="margin-right: 50px; height: 100px; width: 100px" class="dropdown responsive w-nav-link">
-
-                            <div id="google_translate_element"></div>
-
-
-                        </div>
-                        {{-- <a href="#" >Home</a> --}}
+                        {{-- <a href="#">Home</a> --}}
                         {{-- <div data-delay="100" data-hover="true" class="dropdown-navbar responsive w-dropdown">
                             <div class="dropdown w-dropdown-toggle">
                                 <div class="text-size-small caps text-weight-bold">Home</div>
@@ -288,38 +284,68 @@
                         <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
                             style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                             class="who-we-are">
-                            <div class="overflow-hidden-header align-mobile">
+                            {{-- <div class="overflow-hidden-header align-mobile">
                                 <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                     style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    class="heading-3 caps"><span style="color: #fe681c">W</span>ho</h2>
-                            </div>
+                                    class="heading-9 caps"></h2>
+                            </div> --}}
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-3 caps">we are</h2>
+                                class="heading-9 caps">who <br> we are</h2>
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile">Welcome to I&M Limited, an innovative company
-                                    based in Nigeria, Africa's most populous country with approximately 230 million
-                                    residents. This dynamic environment allows us to draw from a diverse pool of talent
-                                    who share our vision of achieving great things together.In our recruitment agency ,
-                                    we combine lean and kaizen principles with African methods such as Ubuntu and
-                                    Jugaad. This is how we create efficient, flexible and sustainable solutions for your
-                                    company. Ubuntu stands for close cooperation based on trust and respect, while
-                                    Jugaad emphasises creative, resource-saving approaches. The result: customised
-                                    recruitment that responds quickly to your needs and delivers real added value - for
-                                    your success.</p>
+                                <p class="text-size-huge size-mobile">I&M Limited connects top Nigerian talent with
+                                    global companies through remote
+                                    work opportunities. We bridge the skills gap by offering businesses access to
+                                    highly skilled professionals, regardless of location. Our mission is to empower
+                                </p>
                             </div>
                             <div data-w-id="609759a9-d06c-3cc7-9f92-fcaef3a0f569" class="slide-in">
                                 <p class="text-size-huge text-color-light size-mobile">
-                                    <span class="font-color">Nigeria is not only the seventh most populous country in
-                                        the world,</span> but it also offers immense diversity and enormous potential
-                                    for
-                                    economic and cultural partnerships. This dynamic environment allows us to draw from
-                                    a diverse pool of talented individuals who share our vision of achieving greatness.
+                                    <span class="font-color">Nigerian professionals with international roles that allow
+                                        them to thrive globally
+                                        while working locally, </span> ensuring fair work conditions, career growth, and
+                                    well-being.
+                                    With I&M, companies find reliable, flexible and remote staffing solutions,
+                                    creating win-win partnerships for both employers and employees.
 
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- Why nigeria section --}}
+        <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+                            <div class="overflow-hidden-header align-mobile">
+                                <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
+                                    style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading-9 caps">Why</h2>
+                            </div>
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps">Nigeria ? A Dynamic Talent Market with Untapped Potential</h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">Nigeria boasts over 200 million people, with one
+                                    of the youngest and most
+                                    dynamic workforces worldwide. With a median age of just 18, Nigeria’s youth is
+                                    fueling remarkable growth across sectors—especially in tech and digital
+                                    services. By partnering with us, you gain direct access to a motivated, adaptable
+                                    talent pool ready to bring fresh perspectives, innovation, and dedication to your
+                                    team.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -358,24 +384,29 @@
                                 <div class="tab-content ">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size">
-                                                <span style="color: #fe681c">L</span>ean
-                                                Management as a Principle for Efficiency and Success
-
+                                            <h3 class="text-size-display text-weight-light mobile-size">
+                                                Achieving Success with Lean Management
                                             </h3>
+                                            {{-- <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
+                                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                class="heading-9">Achieving Success with Lean Management</h2> --}}
                                         </div>
                                         <div class="testimonial-quote">
                                             <p class="text-size-xlarge mobile-size">Our corporate structure is based on
-                                                lean management principles, allowing us to operate efficiently and
-                                                flexibly. By regularly reviewing and adjusting our processes, we enhance
-                                                effectiveness across all business areas—from personnel management to
-                                                strategic decisions. Every employee is part of a continuous improvement
-                                                process and shares responsibility, which strengthens motivation.
+                                                lean management principles, allowing us to
+                                                operate efficiently and flexibly. By regularly reviewing and adjusting
+                                                our
+                                                processes, we enhance effectiveness across all business areas—from
+                                                personnel
+                                                management to strategic decisions. Every employee is part of a
+                                                continuous
+                                                improvement process and shares responsibility, which strengthens
+                                                motivation.
                                                 Together, we are strong and flexible enough to balance processes and
-                                                create space for new challenges.
-
-                                                At I&M Limited, we are ready to support you with commitment, innovation,
-                                                and strong partnerships.</p>
+                                                create
+                                                space for new challenges. At I&M Limited, we are ready to support you
+                                                with
+                                                commitment, innovation, and strong partnerships.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -398,10 +429,22 @@
                             class="header align-mobile">
                             <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-4 caps"><span style="color: #fe681c">C</span>ompany</h2>
+                                class="heading-9 caps">Company</h2>
                             <h2 data-w-id="a3412a01-b997-3225-490e-c28d4eb8a22b"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-4 caps">Objectives</h2>
+                                class="heading-9 caps">Objectives</h2>
+                        </div>
+
+                        <div class="opacity-80">
+                            <p class="text-weight-regular">Our Vision for Growth and Excellence
+                                At I&M, we are dedicated to achieving excellence and expanding our presence in
+                                the global market. Our strategic objectives focus on fostering growth, enhancing
+                                our capabilities, and establishing a strong operational foundation in Nigeria.
+
+
+                            </p>
+                            <br>
+                            <h4 class="heading-7">We invite you to explore our key short-term goals:</h4>
                         </div>
                         <div class="works-component">
                             <div class="w-dyn-list">
@@ -421,13 +464,20 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Expansion
+                                                    <div class="text-size-xlarge text-weight-medium">Expansion Our
+                                                        Global Footprint
                                                     </div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
-                                                        <p class="text-weight-regular">1. Expand our customer base to
-                                                            reach
-                                                            more international markets.
+                                                        <p class="text-weight-regular">1. By leveraging Nigeria's
+                                                            vibrant talent pool and competitive advantages, we can
+                                                            provide exceptional personnel services that meet the diverse
+                                                            needs of
+                                                            international clients. Our commitment to quality and
+                                                            efficiency positions us as
+                                                            the ideal partner for companies looking to expand their
+                                                            global footprint with
+                                                            skilled professionals from Nigeria.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -456,11 +506,18 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Development</div>
+                                                    <div class="text-size-xlarge text-weight-medium">Empower Our Team
+                                                    </div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
-                                                        <p class="text-weight-regular">2. Further develop the skills and
-                                                            expertise of our employees</p>
+                                                        <p class="text-weight-regular">2. We understand that our team is
+                                                            the backbone of our success, which is why we
+                                                            prioritize their growth and development. By empowering our
+                                                            employees with
+                                                            continuous training and resources, we ensure they are
+                                                            equipped with the
+                                                            expertise and innovation needed to elevate your business to
+                                                            new heights.</p>
                                                     </div>
                                                 </div>
                                                 <div class="work-year">
@@ -488,12 +545,15 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Efficiency</div>
+                                                    <div class="text-size-xlarge text-weight-medium">Enhance Efficiency
+                                                    </div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
-                                                        <p class="text-weight-regular">3. Optimize internal processes
-                                                            for
-                                                            better efficiency. </p>
+                                                        <p class="text-weight-regular">3. We are dedicated to improving
+                                                            our processes for greater efficiency, enabling us to
+                                                            respond swiftly to your needs. This means you can count on
+                                                            us for timely, high-quality service that supports your
+                                                            success and keeps your projects on track. </p>
                                                     </div>
                                                 </div>
                                                 <div class="work-year">
@@ -520,13 +580,20 @@
                                             <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
                                                 class="works-info">
                                                 <div class="work-name">
-                                                    <div class="text-size-xlarge text-weight-medium">Presence</div>
+                                                    <div class="text-size-xlarge text-weight-medium">Establish Lagos as
+                                                        a Service Hub</div>
                                                     <div class="dot overflow-hide-mobile"></div>
                                                     <div class="opacity-80">
-                                                        <p class="text-weight-regular">4. Strengthen our operational
-                                                            presence in Nigeria and establish
-                                                            Lagos as a hub for international
-                                                            remote services.</p>
+                                                        <p class="text-weight-regular">4. We are committed to
+                                                            positioning Lagos as a premier hub for international remote
+                                                            services, harnessing the city’s vibrant talent pool to
+                                                            provide exceptional support
+                                                            to our global clients. By strengthening our presence in
+                                                            Nigeria, we empower local
+                                                            talent while fostering authentic partnerships built on trust
+                                                            and collaboration.
+                                                            Together, we’ll create a path to success where your goals
+                                                            are our highest priority.</p>
                                                     </div>
                                                 </div>
                                                 <div class="work-year">
@@ -558,22 +625,32 @@
                                         <div class="testimonial-header">
                                             <h3 class="text-size-display text-weight-regular mobile-size">
 
-                                                <span style="color: #fe681c">M</span>arket Potential
+                                                {{-- <span style="color: #fe681c">M</span> --}}
+                                                Hidden Market Potential
                                             </h3>
                                         </div>
                                         <div class="testimonial-quote">
                                             <p class="text-size-xlarge mobile-size">The global shift towards flexible,
-                                                remote work is driving
-                                                significant growth in our industry. Remote work services,
-                                                particularly in international recruitment, are growing by 20-
-                                                30% annually. The demand for specialized services in
-                                                compliance, remote team management, and technological
-                                                solutions is increasing, providing significant opportunities for
-                                                I&M to lead the market.
-                                                We operate in a wide range of industries, including IT,
-                                                marketing, and engineering, focusing on remote-enabled
-                                                work models for companies aiming to enhance their
-                                                international footprint.</p>
+                                                remote work is transforming industries and creating
+                                                exciting growth opportunities. With remote work services, especially in
+                                                international
+                                                recruitment, expanding by 20-30% annually, now is the perfect time to
+                                                partner with us at
+                                                I&M.
+                                                As demand for specialized services in compliance, remote team
+                                                management, and
+                                                technological solutions rises, we are uniquely positioned to lead the
+                                                market. Our
+                                                expertise spans various industries, including IT, marketing, and
+                                                engineering, focusing on
+                                                remote-enabled work models that help companies enhance their
+                                                international
+                                                footprint.
+                                                By choosing I&M, you’re not just keeping pace with the changing
+                                                landscape; you’re
+                                                stepping into a future filled with potential and success. Let's embark
+                                                on this journey
+                                                together and elevate your business to new heights!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -608,20 +685,32 @@
                                                             <div class="blog-slider-card">
                                                                 <div class="max-width-40vw"><a
                                                                         href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
-                                                                        class="text-size-xxhuge text-weight-medium"><span
-                                                                            style="color: #fe681c">E</span>mployee
-                                                                        Benefits</a></div>
-                                                                <div class="opacity-80 max-width-blog slier"><a
-                                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
-                                                                        class="text-size-huge">Benefits: Language
-                                                                        courses, further training, housing, and meal
-                                                                        options.
-                                                                        Sustainable Work Environment: In our modern
-                                                                        office building, we rely on sustainable
-                                                                        technology. Our IT system is powered by solar
-                                                                        energy, a clear commitment to our corporate
-                                                                        philosophy.
+                                                                        class="heading-9">Employee
+                                                                        Development
                                                                     </a></div>
+                                                                <div class="opacity-80 max-width-blog slier"><p
+                                                                        href="/blog-posts/7-of-the-best-examples-of-beautiful-blog-design"
+                                                                        class="text-weight-small">At I&M, we understand
+                                                                        that continuous learning and development are
+                                                                        vital for success
+                                                                        in today’s fast-paced business environment. To
+                                                                        better serve our German clients, our
+                                                                        employees have successfully completed German
+                                                                        language training (B1 level), enabling
+                                                                        more effective communication and stronger
+                                                                        partnerships.
+                                                                        <br>
+                                                                        We're also committed to enhancing our team's
+                                                                        skills in French, allowing us to broaden
+                                                                        our global reach and improve our service
+                                                                        offerings. By investing in our employees’
+                                                                        growth, we ensure that they are equipped to meet
+                                                                        your needs and exceed your
+                                                                        expectations, making us the ideal partner for
+                                                                        your business. Together, we can navigate
+                                                                        new markets and achieve greater success.
+
+                                                                </p></div>
                                                             </div>
 
                                                         </div>
@@ -667,10 +756,10 @@
                                         {{-- <p class="text-size-medium header-4">OUR SERVICES</p> --}}
                                         <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                             style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                            class="heading-3 caps"><span style="color: #fe681c">O</span>ur</h2>
+                                            class="heading-3 caps">our</h2>
                                         <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                             style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                            class="heading-3 caps">services</h2>
+                                            class="heading-3 caps">Services to Support Your Global Growth</h2>
                                     </div>
                                 </div>
                             </div>
@@ -691,17 +780,18 @@
                             <div class="max-width-30vw to-show">
 
                                 <div class="max-width-30vw opacity-75">
-                                    <h2 class="heading-3 caps"><span style="color: #fe681c">O</span>ur services
+                                    <h2 class="heading-3 caps">Our Services to Support Your Global Growth
 
                                 </div>
                             </div>
 
 
                             <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med "> Our collaborations bring business success
-                                    and allow partners to experience the Nigerian work ethic and culture firsthand.
-                                    Growing together, learning from one another, and shaping the future – that is our
-                                    vision.
+                                <p class="text-size-huge text-weight-med "> 1. Remote Talent Placement:
+                                    We help companies find top international talent, providing access to a global
+                                    pool of skilled professionals in engineering, IT, marketing, and software
+                                    development and more. Whatever your needs, we ensure you connect with the
+                                    right experts to power your business.
                                 </p>
                             </div>
                             {{-- <div style="background-image: url(/portfolio_colors/assets/images/image3.jpg) "
@@ -712,8 +802,10 @@
                                     engineering, IT, marketing, and software development.</p>
                             </div> --}}
                             <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med ">Resumes and Initial Contact: We provide a
-                                    selection of resumes and organize introductory meetings if there is interest.
+                                <p class="text-size-huge text-weight-med ">2. Compliance and Legal Consulting:
+                                    Hiring remote workers across borders comes with legal and tax challenges. Our
+                                    expert consulting services help you navigate international regulations, ensuring
+                                    your business stays compliant while growing your remote team.
                                 </p>
                             </div>
                             {{-- <div style="background-image: url(/portfolio_colors/assets/images/image11.jpg) "
@@ -723,8 +815,11 @@
                                     international legal and tax regulations while hiring remote workers.</p>
                             </div> --}}
                             <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med ">Targeted Pre-Selection: We handle the
-                                    pre-selection of suitable candidates who ideally meet your requirements.</p>
+                                <p class="text-size-huge text-weight-med ">3. Remote Team Onboarding and Management:
+                                    We make remote team integration smooth and effective, with customized
+                                    onboarding processes that help teams hit the ground running. Our tools and
+                                    strategies improve team collaboration and productivity, no matter where your
+                                    team members are based.</p>
                             </div>
                             {{-- <div style="background-image: url(/portfolio_colors/assets/images/image1.jpg) "
                                 class="max-width-30vw our-text">
@@ -735,8 +830,16 @@
                                     management.</p>
                             </div> --}}
                             <div class="max-width-30vw ">
-                                <p class="text-size-huge text-weight-med ">Comprehensive Support: From the initial
-                                    contact to the collaboration stage, we are a reliable partner at every step.
+                                <p class="text-size-huge text-weight-med ">4. Technological Solutions for Remote Work:
+                                    I&M provides innovative platforms that simplify communication, collaboration,
+                                    and project management for remote teams. These tools ensure your remote
+                                    operations are seamless, efficient, and effective.
+                                </p>
+                            </div>
+                            <div class="max-width-30vw ">
+                                <p class="text-size-huge text-weight-med">Let us help you build a successful, efficient
+                                    remote workforce. Together, we’ll create the
+                                    right solutions to fuel your business growth.
                                 </p>
                             </div>
                             {{-- <div style="background-image: url(/portfolio_colors/assets/images/image2.jpg) "
@@ -762,8 +865,7 @@
                             <div class="first-blog-card-cms show-mobile w-dyn-list">
                                 <div role="list" class="blog-cards-list w-dyn-items">
                                     <div data-w-id="b01f902c-63ef-dc1c-228a-296f7a241b13" style="opacity:1"
-                                        role="listitem" class="blog-card w-dyn-item"><a
-                                            href="/blog-posts/5-things-about-branding"
+                                        role="listitem" class="blog-card w-dyn-item"><a href="#"
                                             class="blog-card-image w-inline-block"><img alt="5 Things About Branding"
                                                 loading="lazy" src="/portfolio_colors/assets/images/image7.jpg"
                                                 class="image" />
@@ -771,20 +873,20 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="/blog-posts/5-things-about-branding"
-                                                        class="text-size-xlarge"><span
-                                                            style="color: #fe681c">S</span>uccess Through Strong
-                                                        Partnerships</a>
+                                                <div><a href="#" class="text-size-xlarge">Success Through Strong
+                                                        Partnerships (Our Clients)</a>
                                                 </div>
-                                                <div class="opacity-80 max-width-blog"><a
-                                                        href="/blog-posts/5-things-about-branding">Our partnership with
+                                                <div class="opacity-80 max-width-blog"><a href="#">Our partnership with
                                                         D&M Rolladentechnik in Germany serves as an example of
                                                         successful collaboration. In the field of technical drawings,
                                                         our engineering team has worked closely with German colleagues
                                                         to develop and successfully implement projects. Such
                                                         partnerships demonstrate how international collaboration leads
-                                                        to success.</a>
-                                                </div><a href="/blog-posts/5-things-about-branding"
+                                                        to success. <br> Let’s build success together through
+                                                        collaboration
+                                                        that transcends borders.
+                                                    </a>
+                                                </div><a href="#"
                                                     class="writter-wrapper margin-top color-cards w-inline-block">
 
                                                     <div class="writter-info">
@@ -809,8 +911,7 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge"><span
-                                                            style="color: #fe681c">O</span>ur Clients</a></div>
+                                                <div><a href="#" class="text-size-xlarge">Our Clients</a></div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Currently, we serve
                                                         primarily German
                                                         customers, who value our
@@ -847,16 +948,20 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div><a href="#" class="text-size-xlarge"><span
-                                                            style="color: #fe681c">A</span>ccess to Qualified
-                                                        Professionals for Your Company</a>
+                                                <div><a href="#" class="text-size-xlarge">Unlock Global Talent for Your
+                                                        Business</a>
                                                 </div>
-                                                <div class="opacity-80 max-width-blog"><a href="#">Take advantage of the
-                                                        opportunity to bring qualified professionals from a broad talent
-                                                        pool into your team. With remote work models, you can benefit
-                                                        from flexibility, cost savings, and ecological progress, while
-                                                        simultaneously fostering cultural diversity and innovation
-                                                        within your company.</a>
+                                                <div class="opacity-80 max-width-blog"><a href="#">Working with us opens
+                                                        the door to a world of top-tier professionals, handpicked to
+                                                        elevate your team. Through flexible remote work solutions, you
+                                                        gain access to a diverse
+                                                        talent pool, driving cost savings, sustainability, and
+                                                        operational efficiency. Embrace the
+                                                        power of cultural diversity and innovation, as fresh
+                                                        perspectives from around the globe
+                                                        fuel your company’s growth. Let us help you create a more agile,
+                                                        dynamic workforce
+                                                        that’s ready to meet the challenges of tomorrow.</a>
                                                 </div><a href="#"
                                                     class="writter-wrapper margin-top color-cards w-inline-block">
 
@@ -928,16 +1033,23 @@
                                 <div data-w-tab="Tab 1" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size"><span
-                                                    style="color: #fe681c">O</span>ur Vision and
-                                                Mission
+                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision &
+                                                Mission: "I Am Because We Are"
+
                                             </h3>
                                         </div>
                                         <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size">Our goal is to live and promote
-                                                values such as diligence, respect, transparency, and unity. Through
-                                                dedicated collaboration, we aim to create added value in each of our
-                                                partnerships.
+                                            <p class="text-size-xlarge mobile-size">
+                                            <h6 class="heading-6">Our Commitment to Meaningful Partnerships</h6>
+                                            <br>
+                                            At I&M, we focus on values like diligence, respect, transparency, and unity
+                                            in everything
+                                            we do. We believe that by working closely together, we can create real value
+                                            for your
+                                            business. When you partner with us, you gain more than just a service—we’re
+                                            committed to your long-term success and building a strong, lasting
+                                            relationship. Let’s
+                                            achieve great things together.
                                             </p>
                                         </div>
                                     </div>
@@ -945,32 +1057,48 @@
                                 <div data-w-tab="Tab 2" class="tab-content w-tab-pane w--tab-active">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size"><span
-                                                    style="color: #fe681c">O</span>ur Vision and
-                                                Mission
+                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision &
+                                                Mission: "I Am Because We Are"
                                             </h3>
                                         </div>
                                         <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size">We strive to create opportunities
-                                                that empower young people in Nigeria to realize their potential, while
-                                                also supporting companies worldwide in achieving their goals efficiently
-                                                and sustainably.</p>
+                                            <p class="text-size-xlarge mobile-size">
+                                            <h6 class="heading-6">Empowering Talent, Driving Success</h6>
+                                            <br>
+                                            At I&M, we are passionate about creating opportunities that empower young
+                                            talent in
+                                            Nigeria to reach their full potential. At the same time, we support
+                                            companies around the
+                                            world in achieving their goals with efficiency and sustainability. By
+                                            partnering with us,
+                                            you’re not just gaining access to skilled professionals—you’re helping to
+                                            shape a
+                                            brighter future for both your business and the next generation of leaders.
+                                            Let’s work
+                                            together to create lasting impact and success.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div data-w-tab="Tab 3" class="tab-content w-tab-pane">
                                     <div class="testimonial-content">
                                         <div class="testimonial-header">
-                                            <h3 class="text-size-display text-weight-regular mobile-size"><span
-                                                    style="color: #fe681c">O</span>ur Vision and
-                                                Mission
+                                            <h3 class="text-size-display text-weight-regular mobile-size">Our Vision &
+                                                Mission: "I Am Because We Are"
                                             </h3>
                                         </div>
                                         <div class="testimonial-quote">
-                                            <p class="text-size-xlarge mobile-size"> Our collaborations bring business
-                                                success and allow partners to experience the Nigerian work ethic and
-                                                culture firsthand. Growing together, learning from one another, and
-                                                shaping the future – that is our vision.
+                                            <p class="text-size-xlarge mobile-size">
+                                            <h6 class="heading-6">Growing Together, Achieving Success
+                                            </h6>
+                                            <br> Our collaborations are about more than just business—they are about
+                                            creating
+                                            meaningful connections. By partnering with us, you’ll experience the
+                                            incredible work
+                                            ethic and vibrant culture of Nigeria firsthand. Together, we’ll grow, learn
+                                            from each other,
+                                            and shape a future of shared success. Let’s build something lasting, where
+                                            every step
+                                            forward is a step toward greater impact and growth.
                                             </p>
                                         </div>
                                     </div>
@@ -1017,7 +1145,7 @@
                             <div class="contact-content-wrapepr">
 
                                 <p class="text-style-italic text-weight-light">Contact us</p>
-                                <h1 class="text-size-xxhuge"><span style="color: #fe681c">L</span>et&#x27;s work
+                                <h1 class="text-size-xxhuge">Let&#x27;s work
                                     together
                                     <span class="text-color-grey text-style-italic text-weight-light">&amp;</span> get
                                     you
@@ -1031,7 +1159,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <a href="{{route('welcome')}}" class="back-button w-inline-block">
+                            <a href="#" class="back-button w-inline-block">
                                 <img loading="lazy" src="/portfolio_colors/assets/images/back-20arrow.svg"
                                     alt="Back Arrow" class="back-arrow" />
                                 <div class="no-break">
@@ -1126,10 +1254,9 @@
                                             </div><a href="/contact/contact-1"
                                                 data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d523"
                                                 class="cta-button w-inline-block">
-                                                <h3 class="heading-footer"> <span
-                                                        style="color: #fe681c">U</span>nlocking Potential, One
-                                                    Professional at a
-                                                    Time.</h3>
+                                                <h3 class="heading-footer">Your Gateway to Nigeria’s Premier Remote
+                                                    Talent
+                                                </h3>
                                                 <div class="cta-button-line"></div>
                                             </a>
                                         </div>
@@ -1298,14 +1425,15 @@
     </div>
 
     <script type="text/javascript">
-    function googleTranslateElementInit() {
+        function googleTranslateElementInit() {
         new google.translate.TranslateElement(
             {pageLanguage: 'en'},
             'google_translate_element'
         );
     }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 
 
     <script src="/portfolio_colors/assets/js/jquery.js" type="text/javascript"></script>
