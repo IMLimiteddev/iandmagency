@@ -3,15 +3,27 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>I&M</title>
-    <meta content="Recriute agency." name="description" />
-    <meta content="Colours - Webflow Ecommerce website template" property="og:title" />
-    <meta content="Recriute agency." property="og:description" />
-    <meta content="/portfolio_colors/assets/images/colours-20opengraph.jpg" property="og:image" />
-    <meta content="Recriute agency." property="twitter:title" />
-    <meta content="Recriute agency." property="twitter:description" />
-    <meta content="/portfolio_colors/assets/images/colours-20opengraph.jpg" property="twitter:image" />
-    <meta property="og:type" content="website" />
+    <title>I&M Limited</title>
+    <meta
+        content="Connecting top remote talent with forward-thinking companies worldwide, we specialize in simplifying the recruitment process for remote positions. Our platform brings you highly skilled professionals
+        tailored to meet your business needs, whether you're looking for developers, designers, customer support experts,
+        or other specialized remote roles. With a commitment to quality, efficiency, and global reach,
+        we make it easy for companies to find their perfect remote match—anywhere in the world."
+        name="description" />
+
+        <meta property="og:title" content="Connect with Top Nigerian Remote Talent" />
+        <meta property="og:description" content="Helping global companies discover skilled Nigerian professionals ready to excel remotely. Find top talent in tech, customer support, design, and more." />
+        <meta property="og:image" content="https://iandmlimited.com/logos/IandM-no-white-bg-logo-.png" />
+        <meta property="og:url" content="https://iandmlimited.com" />
+        <meta property="og:type" content="website" />
+
+    <meta content="Connect with Top Nigerian Remote Talent" property="twitter:title" />
+    <meta content="Connecting top remote talent with forward-thinking companies worldwide, we specialize in simplifying the recruitment process for remote positions. Our platform brings you highly skilled professionals
+        tailored to meet your business needs, whether you're looking for developers, designers, customer support experts,
+        or other specialized remote roles. With a commitment to quality, efficiency, and global reach,
+        we make it easy for companies to find their perfect remote match—anywhere in the world." property="twitter:description" />
+
+    <meta content="https://iandmlimited.com/logos/IandM-no-white-bg-logo-.png" property="twitter:image" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
@@ -107,8 +119,8 @@
     <script type="text/javascript">
         !function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
     </script>
-    <link href="/portfolio_colors/onboarding/IandM-no-white-bg-logo-.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="/portfolio_colors/onboarding/IandM-no-white-bg-logo-.png" rel="apple-touch-icon" />
+    <link href="/onboarding/IandM-no-white-bg-logo-.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="/onboarding/IandM-no-white-bg-logo-.png" rel="apple-touch-icon" />
     {{-- <script type="text/javascript">
         window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };
     </script> --}}
@@ -117,8 +129,8 @@
 </head>
 
 <body>
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
-        role="banner" class="navbar w-nav">
+    <div id="home" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
+        data-easing2="ease" role="banner" class="navbar w-nav">
         <div class="padding-global">
             <div class="container w-container">
                 <div class="navbar-component">
@@ -126,7 +138,7 @@
                         class="nav-menu w-nav-menu">
                         <div data-delay="100" data-hover="true" class="dropdown-navbar w-dropdown">
                             <div class="dropdown w-dropdown-toggle">
-                                <div class="text-size-small caps text-weight-bold"><img style="height: 50px"
+                                <div class="text-size-small caps text-weight-bold"><img style="height: 50px; width: 50px"
                                         src="/logos/IandM-no-white-bg-logo-.png" alt=""></div>
                             </div>
                         </div>
@@ -152,7 +164,7 @@
                     {{-- <div class="brand-logo"><img src="/onboarding/IandM-no-bg-logo-.png" loading="lazy" alt="" />
                     </div> --}}
                     <div class="vertical-line"></div>
-                    <div class="bottom-navbar-links"><a href="{{route('welcome')}}" aria-current="page"
+                    <div class="bottom-navbar-links"><a href="#home" aria-current="page"
                             class="bottom-link w-inline-block w--current">
                             <div class="text-size-small caps text-weight-medium">home</div>
                         </a><a href="#about" class="bottom-link w-inline-block">
@@ -247,6 +259,7 @@
                         </div>
                     </div>
                 </div>
+
                 <hr>
 
             </div>
@@ -364,14 +377,18 @@
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
 
-                    <div class="testimonial-header">
-                        <h3 class="heading-9 caps">
-                            <div></div>
-                            <span style="color: #fe681c">Company </span> Objectives
-                        </h3>
-                    </div>
 
-                    <div style="margin-top: 10px" class="opacity-80">
+                    <div>
+                        <hr>
+                    </div>
+                    {{-- <div class="testimonial-header">
+                        <h3 class="heading-10 caps">
+                            <div></div>Company
+                            <span style="color: #fe681c">Objectives </span>
+                        </h3>
+                    </div> --}}
+
+                    {{-- <div style="margin-top: 10px" class="opacity-80">
                         <p class="text-weight-regular">Our Vision for Growth and Excellence
                             At I&M, we are dedicated to achieving excellence and expanding our presence in
                             the global market. Our strategic objectives focus on fostering growth, enhancing
@@ -379,7 +396,7 @@
                         </p>
                         <br>
                         <h4 class="heading-8">We invite you to explore our key short-term goals:</h4>
-                    </div>
+                    </div> --}}
 
                     <div class="who-we-component">
                         <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
@@ -388,17 +405,17 @@
                             <div class="overflow-hidden-header align-mobile">
                                 <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                     style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    class="heading-9 caps"><span style="color: #fe681c">Expansion</span> </h2>
+                                    class="heading-9 caps">Expansion </h2>
                             </div>
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="heading-9 caps">Our
-                                Global Footprint
+                                Global <span style="color: #fe681c">Footprint</span>
                             </h2>
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile">1. By leveraging Nigeria's
+                                <p class="text-size-huge size-mobile">By leveraging Nigeria's
                                     vibrant talent pool and competitive advantages, we can
                                     provide exceptional personnel services that meet the diverse
                                     needs of
@@ -424,7 +441,7 @@
                                                     class="project-arrow" />
                                                 <div class="white-circle"></div>
                                             </div><img alt="Sweater Weather" loading="lazy"
-                                                src="/portfolio_colors/assets/images/Untitled Project.jpg"
+                                                src="/portfolio_colors/IandM-images/IandM 1 desktop.jpg"
                                                 class="image" />
                                             <div class="mask-frame bottom"></div>
                                         </div>
@@ -604,7 +621,7 @@
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile">2. We understand that our team is
+                                <p class="text-size-huge size-mobile">We understand that our team is
                                     the backbone of our success, which is why we
                                     prioritize their growth and development. By empowering our
                                     employees with
@@ -630,9 +647,8 @@
                                                     src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
                                                     class="project-arrow" />
                                                 <div class="white-circle"></div>
-                                            </div><img alt="Madera" loading="lazy"
-                                                src="/portfolio_colors/assets/images/image6_enhanced.jpg"
-                                                class="image" />
+                                            </div><img alt="Team" loading="lazy"
+                                                src="/portfolio_colors/IandM-images/IandM 5 train.jpg" class="image" />
                                             <div class="mask-frame bottom"></div>
                                         </div>
                                         {{-- <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
@@ -765,7 +781,7 @@
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile">3. We are dedicated to improving
+                                <p class="text-size-huge size-mobile">We are dedicated to improving
                                     our processes for greater efficiency, enabling us to
                                     respond swiftly to your needs. This means you can count on
                                     us for timely, high-quality service that supports your
@@ -788,7 +804,7 @@
                                                     class="project-arrow" />
                                                 <div class="white-circle"></div>
                                             </div><img alt="Aquemini" loading="lazy"
-                                                src="/portfolio_colors/assets/images/image5_enhanced.jpg"
+                                                src="/portfolio_colors/IandM-images/IandM 10 Enhance.jpg"
                                                 class="image" />
                                             <div class="mask-frame bottom"></div>
                                         </div>
@@ -875,13 +891,13 @@
                             </div>
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps">Lagos as
+                                class="heading-9 caps">Nigeria as
                                 a Service Hub
                             </h2>
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile">4. We are committed to
+                                <p class="text-size-huge size-mobile">We are committed to
                                     positioning Lagos as a premier hub for international remote
                                     services, harnessing the city’s vibrant talent pool to
                                     provide exceptional support
@@ -900,9 +916,6 @@
                     <div class="works-component">
                         <div class="w-dyn-list">
                             <div role="list" class="w-dyn-items">
-
-
-
                                 <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
                                         class="card-link w-inline-block">
                                         <div class="card-image">
@@ -911,7 +924,8 @@
                                                     class="project-arrow" />
                                                 <div class="white-circle"></div>
                                             </div><img alt="Aquemini" loading="lazy"
-                                                src="/portfolio_colors/assets/images/image20.png" class="image" />
+                                                src="/portfolio_colors/IandM-images/IandM 14 Nigeria overview.jpg"
+                                                class="image" />
                                             <div class="mask-frame bottom"></div>
                                         </div>
                                         {{-- <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
@@ -1208,13 +1222,16 @@
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
+                    <div>
+                        <hr>
+                    </div>
                     <div class="works-home-3-wrapper">
 
-                        <div class="testimonial-header">
+                        {{-- <div class="testimonial-header">
                             <h3 class="heading-9 caps first-letter-styled">
                                 Our Services to Support Your Global Growth
                             </h3>
-                        </div>
+                        </div> --}}
 
 
                         <div class="works-3-component">
@@ -1225,7 +1242,7 @@
                                             href="/works/sweater-weather" class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
                                                     style="height: 300px; width: 300px; border-radius: 10px"
-                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
+                                                    src="/portfolio_colors/IandM-images/IandM 17 concentrated.jpg"
                                                     alt="" class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
@@ -1233,9 +1250,8 @@
                                                         <div class="text-size-small first-letter-styled">01</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2
-                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
-                                                            Remote Talent
+                                                        <h2 class="text-size-xhuge text-weight-regular">
+                                                            Remote<span class="color-it"> Talent</span>
                                                             Placement:
                                                         </h2>
                                                         <div class="opacity-80">
@@ -1260,8 +1276,8 @@
                                             data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2" href="#"
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
-                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px"
+                                                    src="/portfolio_colors/IandM-images/IandM 22 corperate.jpg" alt=""
+                                                    style="height: 300px; width: 300px; border-radius: 10px"
                                                     class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
@@ -1269,10 +1285,9 @@
                                                         <div class="text-size-small first-letter-styled">02</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2
-                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
+                                                        <h2 class="text-size-xhuge text-weight-regular">
                                                             Compliance and
-                                                            Legal Consulting:</h2>
+                                                            Legal <span class="color-it"> Consulting</span>:</h2>
                                                         <div class="opacity-80">
                                                             <p>Hiring remote workers across borders comes with legal and
                                                                 tax challenges. Our
@@ -1294,8 +1309,8 @@
                                             data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2" href="#"
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
-                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px"
+                                                    src="/portfolio_colors/IandM-images/IandM 21 people.jpg" alt=""
+                                                    style="height: 300px; width: 300px; border-radius: 10px"
                                                     class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
@@ -1303,10 +1318,10 @@
                                                         <div class="text-size-small first-letter-styled">03</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2
-                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
+                                                        <h2 class="text-size-xhuge text-weight-regular">
                                                             Remote Team
-                                                            Onboarding and Management:</h2>
+                                                            <span class="color-it">Onboarding</span> and Management:
+                                                        </h2>
                                                         <div class="opacity-80">
                                                             <p> We make remote team integration smooth and effective,
                                                                 with customized
@@ -1329,8 +1344,8 @@
                                             data-w-id="6c9a0b8a-02a1-9dc3-239d-f0c0ca32ceb2" href="/works/outliers"
                                             class="home-projects-wrapper w-inline-block">
                                             <div class="home-projects-image home-3"><img loading="lazy"
-                                                    src="/portfolio_colors/assets/images/colours-20works-20images-2001.jpg"
-                                                    alt="" style="height: 300px; width: 300px; border-radius: 10px"
+                                                    src="/portfolio_colors/IandM-images/IandM 24 technology.jpg" alt=""
+                                                    style="height: 300px; width: 300px; border-radius: 10px"
                                                     class="image" /></div>
                                             <div class="home-projects-content">
                                                 <div class="home-projects-left-content">
@@ -1338,10 +1353,10 @@
                                                         <div class="text-size-small first-letter-styled">04</div>
                                                     </div>
                                                     <div class="home-project-name">
-                                                        <h2
-                                                            class="text-size-xhuge text-weight-regular first-letter-styled">
+                                                        <h2 class="text-size-xhuge text-weight-regular ">
                                                             Technological
-                                                            Solutions for Remote Work:</h2>
+                                                            <span class="color-it">Solutions</span> for Remote Work:
+                                                        </h2>
                                                         <div class="opacity-80">
                                                             <p>I&M provides innovative platforms that simplify
                                                                 communication, collaboration,
@@ -1426,18 +1441,17 @@
                                     <div data-w-id="b01f902c-63ef-dc1c-228a-296f7a241b13" style="opacity:1"
                                         role="listitem" class="blog-card w-dyn-item"><a href="#"
                                             class="blog-card-image w-inline-block"><img alt="5 Things About Branding"
-                                                loading="lazy" src="/portfolio_colors/assets/images/image7.jpg"
+                                                loading="lazy" src="/portfolio_colors/IandM-images/IandM 8 together.jpg"
                                                 class="image" />
                                             <div class="mask-frame"></div>
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div class="first-letter-styled"><a href="#"
-                                                        class="text-size-xlarge">Success Through Strong
-                                                        Partnerships (Our Clients)</a>
+                                                <div><a href="#" class="text-size-xlarge">Success Through Strong
+                                                        <span class="color-it">Partnerships</span> (Our Clients)</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Our partnership with
-                                                        D&M Rolladentechnik in Germany serves as an example of
+                                                        D&M KG in Germany serves as an example of
                                                         successful collaboration. In the field of technical drawings,
                                                         our engineering team has worked closely with German colleagues
                                                         to develop and successfully implement projects. Such
@@ -1471,8 +1485,8 @@
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div class="first-letter-styled"><a href="#"
-                                                        class="text-size-xlarge">Our Clients</a></div>
+                                                <div><a href="#" class="text-size-xlarge">Our <span
+                                                            class="color-it">Clients</span></a></div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Currently, we serve
                                                         primarily German
                                                         customers, who value our
@@ -1504,13 +1518,14 @@
                                     <div data-w-id="b01f902c-63ef-dc1c-228a-296f7a241b13" style="opacity:1"
                                         role="listitem" class="blog-card w-dyn-item"><a href="#"
                                             class="blog-card-image w-inline-block"><img alt="Our Clients" loading="lazy"
-                                                src="/portfolio_colors/assets/images/image13.jpg" class="image" />
+                                                src="/portfolio_colors/IandM-images/IandM 27 Sheggz seated.jpg"
+                                                class="image" />
                                             <div class="mask-frame"></div>
                                         </a>
                                         <div class="blog-bottom-content">
                                             <div class="blog-second-card">
-                                                <div class="first-letter-styled"><a href="#"
-                                                        class="text-size-xlarge">Unlock Global Talent for Your
+                                                <div><a href="#" class="text-size-xlarge">Unlock Global <span
+                                                            class="color-it">Talent</span> for Your
                                                         Business</a>
                                                 </div>
                                                 <div class="opacity-80 max-width-blog"><a href="#">Working with us opens
@@ -1672,9 +1687,8 @@
 
                     <div style="margin-top: 200px" class="testimonial-header">
                         <h3 class="heading-9 caps">
-                            <div></div>Our
-                            <span style="color: #fe681c">Vision</span>  &
-                            Mission: "I Am Because We Are"
+                            <div></div>
+                            <span class="color-it">"I Am Because We Are"</span>
                         </h3>
                     </div>
 
@@ -1694,7 +1708,8 @@
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile"> At I&M, we focus on values like diligence, respect, transparency, and unity
+                                <p class="text-size-huge size-mobile"> At I&M, we focus on values like diligence,
+                                    respect, transparency, and unity
                                     in everything
                                     we do. We believe that by working closely together, we can create real value
                                     for your
@@ -1707,6 +1722,11 @@
 
                         </div>
                     </div>
+
+                    {{-- Lines --}}
+                    <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52b" class="divider-line-footer"></div>
+
+
                     <div class="who-we-component">
                         <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
                             style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
@@ -1723,7 +1743,8 @@
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile">At I&M, we are passionate about creating opportunities that empower young
+                                <p class="text-size-huge size-mobile">At I&M, we are passionate about creating
+                                    opportunities that empower young
                                     talent in
                                     Nigeria to reach their full potential. At the same time, we support
                                     companies around the
@@ -1739,6 +1760,10 @@
 
                         </div>
                     </div>
+
+                    {{-- Lines --}}
+                    <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52b" class="divider-line-footer"></div>
+
                     <div class="who-we-component">
                         <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
                             style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
@@ -1746,16 +1771,17 @@
                             <div class="overflow-hidden-header align-mobile">
                                 <h2 data-w-id="705ba279-0e66-021a-0338-fa535ba4960a"
                                     style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    class="heading-9 caps">Growing</h2>
+                                    class="heading-9 caps">Growing <span style="color: #fe681c">Together,</span></h2>
                             </div>
                             <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
                                 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps"><span style="color: #fe681c">Together,</span>Achieving Success
+                                class="heading-9 caps">Achieving Success
                             </h2>
                         </div>
                         <div class="max-width-36vw utility-box-gap">
                             <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
-                                <p class="text-size-huge size-mobile">Our collaborations are about more than just business—they are about
+                                <p class="text-size-huge size-mobile">Our collaborations are about more than just
+                                    business—they are about
                                     creating
                                     meaningful connections. By partnering with us, you’ll experience the
                                     incredible work
@@ -1769,122 +1795,14 @@
 
                         </div>
                     </div>
+
+                    {{-- Lines --}}
+                    <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52b" class="divider-line-footer"></div>
                 </div>
             </div>
         </section>
 
-
-        {{-- Contact us section --}}
-        <section id="contact">
-            <div>
-                <div class="padding-global small">
-                    <div class="contact-component">
-                        <div data-w-id="306d7d83-f732-8433-32f6-5206932eb07c" style="opacity:1"
-                            class="contact-left-content">
-
-
-                            <div class="contact-content-wrapepr">
-
-                                <p class="text-style-italic text-weight-light first-letter-styled">Let’s Connect!</p>
-                                <h6 class="text-weight-light">Are you ready to boost your business with Nigeria’s
-                                    exceptional talent while promoting a
-                                    sustainable future? At I&M, we’re here to help you grow with skilled professionals
-                                    and
-                                    innovative solutions that benefit both your business and the environment.
-                                    Don’t miss this chance to succeed together—reach out today and let’s start this
-                                    exciting
-                                    journey! Your future awaits!
-                                </h6>
-                                <div class="contact-email-wrapper"><a href="#" class="contact-email w-inline-block">
-                                        <div class="email-line"></div>
-                                        <div class="text-size-medium">info@imengin.com</div><img loading="lazy"
-                                            src="/portfolio_colors/assets/images/copy-20icon.svg" alt="Copy Icon"
-                                            class="copy-icon" />
-                                    </a>
-                                </div>
-                            </div>
-                            <a href="#" class="back-button w-inline-block">
-                                <img loading="lazy" src="/portfolio_colors/assets/images/back-20arrow.svg"
-                                    alt="Back Arrow" class="back-arrow" />
-                                <div class="no-break">
-                                    <div>Back to home</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div data-w-id="306d7d83-f732-8433-32f6-5206932eb091" style="opacity:1"
-                            class="contact-right-content">
-                            {{-- <div class="contact-right-content"> --}}
-                                <div id="w-node-_306d7d83-f732-8433-32f6-5206932eb092-e90cf757"
-                                    data-w-id="306d7d83-f732-8433-32f6-5206932eb092" style="opacity:0"
-                                    class="contact-form-header">
-                                    <div href="#" class="navbar-left-content"><img loading="lazy"
-                                            src="/portfolio_colors/assets/images/logo.svg" alt="Logo icon"
-                                            class="navbar-logo-image" />
-                                        <div class="navbar-logo-text">
-                                            <div class="text-weight-medium">Contact us</div>
-                                        </div>
-                                    </div>
-                                    <div class="text-weight-light">I&M</div>
-                                </div>
-                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb09c" style="opacity:1"
-                                    class="contact-form">
-                                    <div class="w-form">
-                                        <form id="email-form" name="email-form" data-name="Email Form" method="get"
-                                            class="form" data-wf-page-id="671131609b81cf89e90cf757"
-                                            data-wf-element-id="306d7d83-f732-8433-32f6-5206932eb09e"><label
-                                                for="name">Name</label><input class="text-field w-input" maxlength="256"
-                                                name="name" data-name="Name" placeholder="Enter your name" type="text"
-                                                id="name" required="" /><label for="email">Email Address</label><input
-                                                class="text-field w-input" maxlength="256" name="email"
-                                                data-name="Email" placeholder="Enter your e-mail" type="email"
-                                                id="email" required="" /><label for="field">Message</label><textarea
-                                                id="field" name="field" maxlength="5000" data-name="Field"
-                                                placeholder="Your message/portfolio_colors/assets."
-                                                class="message-field w-input"></textarea>
-                                            <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0a8"
-                                                class="button-405 large"><input type="submit"
-                                                    data-wait="Please wait/portfolio_colors/assets."
-                                                    class="submit-button w-button" value="Submit" />
-                                                <div class="button-contact">
-                                                    <div class="text-weight-medium">Send Message</div>
-                                                </div>
-                                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0ac"
-                                                    class="button-hover-color">
-                                                    <img data-w-id="306d7d83-f732-8433-32f6-5206932eb0ad" loading="lazy"
-                                                        alt="Mail Icon" src="/portfolio_colors/assets/images/mail.svg"
-                                                        class="button-icon" />
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <div class="success-message w-form-done"><img loading="lazy"
-                                                src="/portfolio_colors/assets/images/logo-20blue.svg"
-                                                alt="Logo blue icon" class="success-message-image" />
-                                            <div>Thank you! Your submission has been received!</div>
-                                        </div>
-                                        <div class="error-message w-form-fail">
-                                            <div>Oops! Something went wrong while submitting the form.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0b5" style="opacity:0"
-                                    class="contact-footer">
-                                    <p class="text-color-grey">Thank you for visiting my portfolio! I&#x27;m excited
-                                        to
-                                        hear from
-                                        you. If you have any questions, comments, or project inquiries, please
-                                        don&#x27;t hesitate
-                                        to get in touch with me.  I&#x27;ll do my best to get back to you as soon as
-                                        possible within
-                                        24 hours!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                    {{-- Closing Statment --}}
+        {{-- Closing Statment --}}
         <section>
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
@@ -1917,16 +1835,143 @@
                         </div>
                     </div>
                 </div>
+                {{-- Lines --}}
+                <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52b" class="divider-line-footer"></div>
             </div>
         </section>
 
+
+
+
+        {{-- Contact us section --}}
+        <section id="contact">
+            <div>
+                <div class="padding-global small">
+                    <div class="contact-component">
+                        <div data-w-id="306d7d83-f732-8433-32f6-5206932eb07c" style="opacity:1"
+                            class="contact-left-content">
+
+
+                            <div class="contact-content-wrapepr">
+
+                                <p class="text-style-italic text-weight-light color-it">Let’s Connect!</p>
+                                <h6 class="text-weight-light">Are you ready to boost your business with Nigeria’s
+                                    exceptional talent while promoting a
+                                    sustainable future? At I&M, we’re here to help you grow with skilled professionals
+                                    and
+                                    innovative solutions that benefit both your business and the environment.
+                                    Don’t miss this chance to succeed together—reach out today and let’s start this
+                                    exciting
+                                    journey! Your future awaits!
+                                </h6>
+                                <div class="contact-email-wrapper"><a href="#" class="contact-email w-inline-block">
+                                        <div class="email-line"></div>
+                                        <div class="text-size-medium">info@imengin.com</div><img loading="lazy"
+                                            src="/portfolio_colors/assets/images/copy-20icon.svg" alt="Copy Icon"
+                                            class="copy-icon" />
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#home" class="back-button w-inline-block">
+                                <img loading="lazy" src="/portfolio_colors/assets/images/back-20arrow.svg"
+                                    alt="Back Arrow" class="back-arrow" />
+                                <div class="no-break">
+                                    <div>Back to home</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-w-id="306d7d83-f732-8433-32f6-5206932eb091" style="opacity:1"
+                            class="contact-right-content">
+                            {{-- <div class="contact-right-content"> --}}
+                                <div id="w-node-_306d7d83-f732-8433-32f6-5206932eb092-e90cf757"
+                                    data-w-id="306d7d83-f732-8433-32f6-5206932eb092" style="opacity:0"
+                                    class="contact-form-header">
+                                    <div href="#" class="navbar-left-content"><img loading="lazy"
+                                            src="/portfolio_colors/assets/images/logo.svg" alt="Logo icon"
+                                            class="navbar-logo-image" />
+                                        <div class="navbar-logo-text">
+                                            <div class="text-weight-medium">Contact us</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-weight-light">I&M</div>
+                                </div>
+                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb09c" style="opacity:1"
+                                    class="contact-form">
+                                    <div class="w-form">
+                                        <form id="email-form" name="email-form" data-name="Email Form" method="get"
+                                            class="form" data-wf-page-id="671131609b81cf89e90cf757"
+                                            data-wf-element-id="306d7d83-f732-8433-32f6-5206932eb09e">
+                                            <label for="name">Name</label>
+                                            <input class="text-field w-input" maxlength="256" name="name"
+                                                data-name="Name" placeholder="Enter your name" type="text" id="name"
+                                                required="" />
+                                            <label for="email">Email Address</label>
+                                            <input class="text-field w-input" maxlength="256" name="email"
+                                                data-name="Email" placeholder="Enter your e-mail" type="email"
+                                                id="email" required="" />
+                                            <label for="field">Message</label>
+                                            <textarea id="field" name="field" maxlength="5000" data-name="Field"
+                                                placeholder="Your message/portfolio_colors/assets."
+                                                class="message-field w-input">
+                                            </textarea>
+                                            {{-- <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0a8"
+                                                class="button-405 large">
+                                                <input type="submit" data-wait="Please wait/portfolio_colors/assets."
+                                                    class="submit-button w-button" value="Submit" />
+                                                <div class="button-contact">
+                                                    <div class="text-weight-medium">Send Message</div>
+                                                </div>
+
+
+                                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0ac"
+                                                    class="button-hover-color">
+                                                    <img data-w-id="306d7d83-f732-8433-32f6-5206932eb0ad" loading="lazy"
+                                                        alt="Mail Icon" src="/portfolio_colors/assets/images/mail.svg"
+                                                        class="button-icon" />
+                                                </div>
+                                            </div> --}}
+
+                                            <a href="#contact" data-w-id="aceb7894-5f4c-c97e-0527-d57d17abc63c"
+                                                class="main-button-navbar button-hero mobile w-inline-block">
+                                                <div class="relative">
+                                                    <div class="text-weight-medium">Send message</div>
+                                                </div>
+                                                <div class="button-mask-pricing"></div>
+
+                                            </a>
+                                        </form>
+                                        <div class="success-message w-form-done"><img loading="lazy"
+                                                src="/portfolio_colors/assets/images/logo-20blue.svg"
+                                                alt="Logo blue icon" class="success-message-image" />
+                                            <div>Thank you! Your submission has been received!</div>
+                                        </div>
+                                        <div class="error-message w-form-fail">
+                                            <div>Oops! Something went wrong while submitting the form.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0b5" style="opacity:0"
+                                    class="contact-footer">
+                                    <p class="text-color-grey">Thank you for visiting my portfolio! I&#x27;m excited
+                                        to
+                                        hear from
+                                        you. If you have any questions, comments, or project inquiries, please
+                                        don&#x27;t hesitate
+                                        to get in touch with me.  I&#x27;ll do my best to get back to you as soon as
+                                        possible within
+                                        24 hours!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="overflow-hidden">
                     <section>
                         <div class="padding-global">
                             <div class="w-layout-blockcontainer container w-container">
                                 <div class="footer-wrapper">
-                                    <div class="cta-wrapper">
+                                    {{-- <div class="cta-wrapper">
                                         <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d51f" class="cta-header">
                                             <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d520"
                                                 class="overflow-hiden-footer">
@@ -1960,17 +2005,16 @@
                                                     </svg></div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="footer-bottom-content">
-                                        <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52b"
-                                            class="divider-line-footer"></div>
-                                        <div class="footer-content">
+
+                                        {{-- <div class="footer-content">
                                             <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d52d" class="footer-email">
                                                 <div class="text-size-huge">info@imengin.com </div>
                                             </div>
 
 
-                                        </div>
+                                        </div> --}}
                                         <div data-w-id="cedc70e1-6e36-a4f3-c5a3-8bf4c405d53e"
                                             class="footer-links-wrapper">
                                             <div class="credits-wrapper"><a href="#" target="_blank"
@@ -1978,8 +2022,7 @@
                                                     <p class="paragraph">Design &amp; Developed by <span
                                                             class="text-color-white"><span
                                                                 style="color: #fe681c">code</span>Brown</span></p>
-                                                </a><a href="https://webflow.com/" target="_blank"
-                                                    class="credits w-inline-block">
+                                                </a><a href="#" target="_blank" class="credits w-inline-block">
 
                                                 </a></div>
 

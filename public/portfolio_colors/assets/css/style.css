@@ -5682,6 +5682,10 @@ blockquote {
     color: #fe681c;  /* Change color */
 }
 
+.color-it {
+    color: #fe681c;
+}
+
 @media (max-width: 495px) {
     .heading-hero {
         display: flex;
@@ -7552,6 +7556,16 @@ blockquote {
     align-items: center;
     display: flex;
 }
+
+/* .hov{
+    cursor: pointer;
+    background-color: #fe681c;
+    transition: background-color 0.3s ease;
+
+}
+.hov:hover{
+    color: #000;
+} */
 
 .main-button-navbar {
     grid-column-gap: 4.75rem;
