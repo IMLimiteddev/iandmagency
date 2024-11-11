@@ -220,6 +220,42 @@
             </div>
         </section>
 
+        {{-- Why Orange section --}}
+        <section>
+            <div class="padding-global">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="who-we-component">
+                        <div data-w-id="ff48da87-9957-af0c-f82e-f74bce602b69"
+                            style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="who-we-are">
+
+                            <h2 data-w-id="110a66de-c01b-8ca1-5129-a1bc3f04211e"
+                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="heading-9 caps ">The Power<br>of<span style="color: #fe681c"> Orange</span></h2>
+                        </div>
+                        <div class="max-width-36vw utility-box-gap">
+                            <div data-w-id="2fa4545a-da5a-815c-c76c-6ba3c441f838" class="slide-in">
+                                <p class="text-size-huge size-mobile">
+                                    <span style="color: #fe681c">Orange</span> symbolizes enthusiasm, creativity, and the vibrant energy of youth—
+                                    qualities we cherish at I&M. We believe in the potential of Nigeria’s young talent
+                                    to ignite innovation and drive success.
+
+                                </p>
+                            </div>
+                            <div data-w-id="609759a9-d06c-3cc7-9f92-fcaef3a0f569" class="slide-in">
+                                <p class="text-size-huge text-color-light size-mobile">
+                                    <span class="font-color">Together, we can harness this energy to build a brighter future for your business.
+                                         </span>Let’s collaborate and transform our shared vision into something extraordinary!
+                                        Your journey to success starts with us!
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         {{-- About us section --}}
         <section id="about">
             <div class="padding-global">
@@ -368,9 +404,6 @@
                 </div>
             </div>
         </section>
-
-        {{-- <div id="google_translate_element"></div> --}}
-
 
         {{-- Company Objectives section --}}
         <section>
@@ -966,208 +999,6 @@
             </div>
         </section>
 
-        {{-- Company Objectives section --}}
-        {{-- <section>
-            <div class="padding-global">
-                <div class="w-layout-blockcontainer container w-container">
-                    <div class="works-home-wrapper no-margin-mobile">
-                        <div data-w-id="1e4159d3-28d3-4831-24f8-dc0a7ba29c61"
-                            style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                            class="header align-mobile">
-                            <h2 data-w-id="7b3047c9-6cb2-2f68-8a6b-22de7c4f8273"
-                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps ">Company</h2>
-                            <h2 data-w-id="a3412a01-b997-3225-490e-c28d4eb8a22b"
-                                style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                class="heading-9 caps"><span style="color: #fe681c">Objectives</span></h2>
-                        </div>
-
-                        <div class="opacity-80">
-                            <p class="text-weight-regular">Our Vision for Growth and Excellence
-                                At I&M, we are dedicated to achieving excellence and expanding our presence in
-                                the global market. Our strategic objectives focus on fostering growth, enhancing
-                                our capabilities, and establishing a strong operational foundation in Nigeria.
-                            </p>
-                            <br>
-                            <h4 class="heading-7">We invite you to explore our key short-term goals:</h4>
-                        </div>
-
-                        <div class="works-component">
-                            <div class="w-dyn-list">
-                                <div role="list" class="w-dyn-items">
-                                    <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
-                                            class="card-link w-inline-block">
-                                            <div class="card-image">
-                                                <div class="button-projects"><img loading="lazy"
-                                                        src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
-                                                        class="project-arrow" />
-                                                    <div class="white-circle"></div>
-                                                </div><img alt="Sweater Weather" loading="lazy"
-                                                    src="/portfolio_colors/assets/images/Untitled Project.jpg"
-                                                    class="image" />
-                                                <div class="mask-frame bottom"></div>
-                                            </div>
-                                            <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
-                                                class="works-info">
-                                                <div class="work-name">
-                                                    <div
-                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
-                                                        Expansion Our
-                                                        Global Footprint
-                                                    </div>
-                                                    <div class="dot overflow-hide-mobile"></div>
-                                                    <div class="opacity-80">
-                                                        <p class="text-weight-regular">1. By leveraging Nigeria's
-                                                            vibrant talent pool and competitive advantages, we can
-                                                            provide exceptional personnel services that meet the diverse
-                                                            needs of
-                                                            international clients. Our commitment to quality and
-                                                            efficiency positions us as
-                                                            the ideal partner for companies looking to expand their
-                                                            global footprint with
-                                                            skilled professionals from Nigeria.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="work-year">
-                                                    <div class="opacity-80">
-                                                        <p class="text-size-small text-weight-medium">
-                                                            <img src="/onboarding/IandM-white-logo.png"
-                                                                style="height: 30px" alt="">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a></div>
-                                    <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
-                                            class="card-link w-inline-block">
-                                            <div class="card-image">
-                                                <div class="button-projects"><img loading="lazy"
-                                                        src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
-                                                        class="project-arrow" />
-                                                    <div class="white-circle"></div>
-                                                </div><img alt="Madera" loading="lazy"
-                                                    src="/portfolio_colors/assets/images/image6_enhanced.jpg"
-                                                    class="image" />
-                                                <div class="mask-frame bottom"></div>
-                                            </div>
-                                            <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
-                                                class="works-info">
-                                                <div class="work-name">
-                                                    <div
-                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
-                                                        Empower Our Team
-                                                    </div>
-                                                    <div class="dot overflow-hide-mobile"></div>
-                                                    <div class="opacity-80">
-                                                        <p class="text-weight-regular">2. We understand that our team is
-                                                            the backbone of our success, which is why we
-                                                            prioritize their growth and development. By empowering our
-                                                            employees with
-                                                            continuous training and resources, we ensure they are
-                                                            equipped with the
-                                                            expertise and innovation needed to elevate your business to
-                                                            new heights.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="work-year">
-                                                    <div class="opacity-80">
-                                                        <p class="text-size-small text-weight-medium">
-                                                            <img src="/onboarding/IandM-white-logo.png"
-                                                                style="height: 30px" alt="">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a></div>
-                                    <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
-                                            class="card-link w-inline-block">
-                                            <div class="card-image">
-                                                <div class="button-projects"><img loading="lazy"
-                                                        src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
-                                                        class="project-arrow" />
-                                                    <div class="white-circle"></div>
-                                                </div><img alt="Aquemini" loading="lazy"
-                                                    src="/portfolio_colors/assets/images/image5_enhanced.jpg"
-                                                    class="image" />
-                                                <div class="mask-frame bottom"></div>
-                                            </div>
-                                            <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
-                                                class="works-info">
-                                                <div class="work-name">
-                                                    <div
-                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
-                                                        Enhance Efficiency
-                                                    </div>
-                                                    <div class="dot overflow-hide-mobile"></div>
-                                                    <div class="opacity-80">
-                                                        <p class="text-weight-regular">3. We are dedicated to improving
-                                                            our processes for greater efficiency, enabling us to
-                                                            respond swiftly to your needs. This means you can count on
-                                                            us for timely, high-quality service that supports your
-                                                            success and keeps your projects on track. </p>
-                                                    </div>
-                                                </div>
-                                                <div class="work-year">
-                                                    <div class="opacity-80">
-                                                        <p class="text-size-small text-weight-medium">
-                                                            <img src="/onboarding/IandM-white-logo.png"
-                                                                style="height: 30px" alt="">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a></div>
-                                    <div role="listitem" class="portfolio-collection-list w-dyn-item"><a href="#"
-                                            class="card-link w-inline-block">
-                                            <div class="card-image">
-                                                <div class="button-projects"><img loading="lazy"
-                                                        src="/portfolio_colors/assets/images/icon.svg" alt="Arrow"
-                                                        class="project-arrow" />
-                                                    <div class="white-circle"></div>
-                                                </div><img alt="Aquemini" loading="lazy"
-                                                    src="/portfolio_colors/assets/images/image20.png" class="image" />
-                                                <div class="mask-frame bottom"></div>
-                                            </div>
-                                            <div data-w-id="0ba3e832-e20a-f036-4c52-2996b4374712" style="opacity:0"
-                                                class="works-info">
-                                                <div class="work-name">
-                                                    <div
-                                                        class="text-size-xlarge text-weight-medium first-letter-styled">
-                                                        Establish Lagos as
-                                                        a Service Hub</div>
-                                                    <div class="dot overflow-hide-mobile"></div>
-                                                    <div class="opacity-80">
-                                                        <p class="text-weight-regular">4. We are committed to
-                                                            positioning Lagos as a premier hub for international remote
-                                                            services, harnessing the city’s vibrant talent pool to
-                                                            provide exceptional support
-                                                            to our global clients. By strengthening our presence in
-                                                            Nigeria, we empower local
-                                                            talent while fostering authentic partnerships built on trust
-                                                            and collaboration.
-                                                            Together, we’ll create a path to success where your goals
-                                                            are our highest priority.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="work-year">
-                                                    <div class="opacity-80">
-                                                        <p class="text-size-small text-weight-medium">
-                                                            <img src="/onboarding/IandM-white-logo.png"
-                                                                style="height: 30px" alt="">
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-
         {{-- Market Potential --}}
         <section>
             <div class="padding-global">
@@ -1219,7 +1050,7 @@
         </section>
 
         {{-- Our services section --}}
-        <section>
+        <section id="services">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
                     <div>
@@ -1681,7 +1512,7 @@
             </div>
         </section> --}}
 
-        <section>
+        <section id="vision">
             <div class="padding-global">
                 <div class="w-layout-blockcontainer container w-container">
 
@@ -1910,26 +1741,11 @@
                                                 data-name="Email" placeholder="Enter your e-mail" type="email"
                                                 id="email" required="" />
                                             <label for="field">Message</label>
-                                            <textarea id="field" name="field" maxlength="5000" data-name="Field"
-                                                placeholder="Your message/portfolio_colors/assets."
+                                            <textarea id="field" name="field"  data-name="Field"
+
                                                 class="message-field w-input">
                                             </textarea>
-                                            {{-- <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0a8"
-                                                class="button-405 large">
-                                                <input type="submit" data-wait="Please wait/portfolio_colors/assets."
-                                                    class="submit-button w-button" value="Submit" />
-                                                <div class="button-contact">
-                                                    <div class="text-weight-medium">Send Message</div>
-                                                </div>
 
-
-                                                <div data-w-id="306d7d83-f732-8433-32f6-5206932eb0ac"
-                                                    class="button-hover-color">
-                                                    <img data-w-id="306d7d83-f732-8433-32f6-5206932eb0ad" loading="lazy"
-                                                        alt="Mail Icon" src="/portfolio_colors/assets/images/mail.svg"
-                                                        class="button-icon" />
-                                                </div>
-                                            </div> --}}
 
                                             <a href="#contact" data-w-id="aceb7894-5f4c-c97e-0527-d57d17abc63c"
                                                 class="main-button-navbar button-hero mobile w-inline-block">
