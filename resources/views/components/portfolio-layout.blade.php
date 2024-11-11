@@ -128,8 +128,9 @@
     <script type="text/javascript" src="/portfolio_colors/assets/assets/js/script.js"></script>
 </head>
 
-<body>
-    <div id="home" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
+<body >
+    <div id="home"></div>
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
         data-easing2="ease" role="banner" class="navbar w-nav">
         <div class="padding-global">
             <div class="container w-container">
