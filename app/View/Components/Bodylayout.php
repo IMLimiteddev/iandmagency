@@ -2,10 +2,12 @@
 
 namespace App\View\Components;
 
+use App\Models\Information;
 use Illuminate\View\Component;
 
 class Bodylayout extends Component
 {
+    // public $infos;
     /**
      * Create a new component instance.
      *
@@ -23,6 +25,8 @@ class Bodylayout extends Component
      */
     public function render()
     {
-        return view('components.bodylayout');
+        return view('components.bodylayout', [
+            'infos'=>Information::all(),
+        ]);
     }
 }

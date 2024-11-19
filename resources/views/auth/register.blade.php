@@ -54,56 +54,90 @@
     <x-slot name="body">
         <!-- Info Section -->
         <div class="login-section">
-            <div class="image-layer" style="background-image: url(/onboarding/images/background/12.jpg);"></div>
+            <div class="image-layer" style="background-image: url(/onboarding/images/background/Black-men.jpg);"></div>
             <div class="outer-box">
                 <!-- Login Form -->
                 <div class="login-form default-form">
+
+
                     <div class="form-inner">
                         <h3>Create Account</h3>
 
-                        <!--Login Form-->
-                        <form method="post" action="#">
-                            <div class="form-group">
-                                <div class="btn-box row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <a href="#" class="theme-btn btn-style-two"><i class="la la-user"></i>
-                                            Candidate </a>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12">
-                                        <a href="#" class="theme-btn btn-style-two"><i class="la la-briefcase"></i>
-                                            Employer </a>
-                                    </div>
-                                </div>
-                            </div>
+                        @if ($errors->any())
+                        <div class="p-4 mb-4 bg-red-100 rounded-lg text-red-700">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
 
-                            <div class="form-group">
-                                <label>Email Address</label>
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input id="password-field" type="password" name="password" value=""
-                                    placeholder="Password">
-                            </div>
-
-                            <div class="form-group">
-                                <button class="theme-btn btn-style-two " type="submit" name="Register">Register</button>
-                            </div>
-                        </form>
-
-                        <div class="bottom-box">
-                            <div class="divider"><span>or</span></div>
+                        <!-- Form Selector Buttons -->
+                        <div class="form-group">
                             <div class="btn-box row">
                                 <div class="col-lg-6 col-md-12">
-                                    <a href="#" class="theme-btn social-btn-two facebook-btn"><i
-                                            class="fab fa-facebook-f"></i> Log In via Facebook</a>
+                                    <button id="candidateBtn" class="theme-btn btn-style-three active"><i class="la la-user"></i> Candidate</button>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
-                                    <a href="#" class="theme-btn social-btn-two google-btn"><i
-                                            class="fab fa-google"></i> Log In via Gmail</a>
+                                    <button id="employerBtn" class="theme-btn btn-style-three"><i class="la la-briefcase"></i> Employer</button>
                                 </div>
                             </div>
+                        </div>
+
+                        <!-- Candidate Form -->
+                        <div id="candidateForm" class="form-section">
+                            <form method="post" action="{{route('register')}}">
+                                @csrf
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                                <input type="hidden" name="who" value="candidate">
+
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input id="password-field" type="password" name="password" value="" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <input id="password-field" type="password" name="password_confirmation" value="" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <button class="theme-btn btn-style-three" type="submit" name="Register">Register</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Employer Form -->
+                        <div id="employerForm" class="form-section" style="display: none;">
+                            <form method="post" action="{{route('register')}}">
+                                @csrf
+                                <div class="form-group">
+                                    <label>Company Name</label>
+                                    <input type="text" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Company Email</label>
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                                <input type="hidden" name="who" value="employer">
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input id="password-field" type="password" name="password" value="" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <input id="password-field" type="password" name="password_confirmation" value="" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <button class="theme-btn btn-style-three" type="submit" name="Register">Register</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

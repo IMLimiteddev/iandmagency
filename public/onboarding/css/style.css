@@ -300,7 +300,7 @@ p,
 .ud-btn-transparent,
 .ud-btn-border-theme{
   background-color: transparent;
-  border: 1px solid var(--bs-yellow);
+  border: 1px solid var(--bs-black);
   border-radius: 12px;
   display: inline-block;
   font-size: 15px;
@@ -12872,11 +12872,11 @@ Candidate Detail Section
   background-position: center;
   background-size: cover;
   background-size: cover;
-  padding: 80px 0 30px;
+  padding: 200px 0px 30px;
 }
 .page-title.style-two.at-slv7,
 .candidate-detail-section .upper-box.ub1-v4{
-  background-color: #C2E4FF;
+  background-color: #f6ad3e;
   background-image: none;
 }
 .page-title.style-two.at-slv6{

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -23,6 +24,8 @@ class User extends Authenticatable
         'password',
     ];
 
+
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -41,4 +44,22 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function isAdmin()
+    {
+        return $this->where('code', 7)->exists();
+    }
+    public function isCandidate()
+    {
+        return $this->where('code', 0)->exists();
+    }
+    public function isEmployer()
+    {
+        return $this->where('code', 8)->exists();
+    }
+    public function info(): HasOne
+    {
+        return $this->hasOne(Information::class, 'user_id', 'id');
+    }
 }

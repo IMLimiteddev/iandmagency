@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashController;
 use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -42,5 +43,29 @@ Route::prefix('web/')->group(function () {
     Route::get('/portfolio', [OnboardingController::class, 'portfolio_colors'])->name('portfolio.colors');
 
 });
+
+
+Route::prefix('dash')->group(function () {
+
+    Route::get('/update-profile-view', [DashController::class, 'profileView'])->name('candidate.profile.view');
+    Route::post('/update-profile', [DashController::class, 'profileUpdate'])->name('candidate.profile.update');
+
+});
+
+Route::prefix('candidate')->group(function () {
+
+    Route::get('/details/{info_id}', [OnboardingController::class, 'candidateDetails'])->name('onboarding.candidate.details');
+
+});
+
+
+Route::prefix('engage')->group(function () {
+
+    Route::post('/notify-candidate-admin/{user_id}', [OnboardingController::class, 'candidateEngage'])->name('candidate.engagement.notification');
+
+});
+
+
+
 
 require __DIR__.'/auth.php';

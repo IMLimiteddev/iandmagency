@@ -5,7 +5,7 @@
          <!--Page Title-->
     <section style="background-color: #f6ad3e" class="page-title style-two at-slv7">
         <div class="auto-container">
-          
+
           <!-- Job Search Form -->
           <div class="row">
             <div style="margin-top: 100px " class="col-lg-12 ">
@@ -21,7 +21,7 @@
                 <!-- Form Group -->
                 <div class="form-group col-lg-4">
                   <span class="icon flaticon-search-1"></span>
-                  <input type="text" name="field_name" placeholder="Job title, keywords, or company">
+                  <input type="text" name="field_name" placeholder="Candidate title, keywords, or company">
                 </div>
 
                 <!-- Form Group -->
@@ -140,188 +140,37 @@
 
                 <div class="row">
                   <!-- Candidate block Four -->
+
+                  @foreach ($infos as $info)
                   <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
                     <div class="inner-box text-start">
                       <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="/onboarding/images/resource/candidate-1.png" alt=""></span>
+                        <span class="thumb mx-0"><img src="/profile_picture/{{$info->image}}" alt=""></span>
                         <div class="ml15">
-                          <h3 class="name"><a href="#">Anuoluwa Dejare</a></h3>
+                          <h3 class="name"><a href="#">{{$info->first_name}} {{$info->last_name}}</a></h3>
                           <span class="cat">Engineer</span>
                         </div>
                       </div>
                       <ul class="job-info justify-content-start at-clv7 mt-2">
                         <li class="ms-0"><span class="icon fal fa-location-dot"></span> Lagos, NG</li>
-                        <li><span class="icon fal fa-circle-dollar"></span> ₦30,000 / hour</li>
+
                       </ul>
-                      <p class="text">Hi, I am Anuoluwa Dejare, a professional Enginer with 4+ years of experience.</p>
+                      <p class="text">Hi, I am {{$info->first_name}} {{$info->last_name}}, a professional Enginer with 4+ years of experience.</p>
                       <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">Mechanical</a></li>
-                        <li><a href="#">Enginer</a></li>
-                        <li><a href="#">Expert</a></li>
+                        <li class="ms-0"><a href="#">{{$info->department}}</a></li>
+                        {{-- <li><a href="#">Enginer</a></li>
+                        <li><a href="#">Expert</a></li> --}}
                       </ul>
                       <div class="d-grid">
                         <div class="d-grid">
-                        <a href="#" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
+                        <a href="{{route('onboarding.candidate.details', $info->id)}}" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
                       </div>
                       </div>
                     </div>
                   </div>
-                  <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
-                    <div class="inner-box text-start">
-                      <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="/onboarding/images/resource/candidate-1.png" alt=""></span>
-                        <div class="ml15">
-                          <h3 class="name"><a href="#">Anuoluwa Dejare</a></h3>
-                          <span class="cat">Engineer</span>
-                        </div>
-                      </div>
-                      <ul class="job-info justify-content-start at-clv7 mt-2">
-                        <li class="ms-0"><span class="icon fal fa-location-dot"></span> Lagos, NG</li>
-                        <li><span class="icon fal fa-circle-dollar"></span> ₦30,000 / hour</li>
-                      </ul>
-                      <p class="text">Hi, I am Anuoluwa Dejare, a professional Enginer with 4+ years of experience.</p>
-                      <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">Mechanical</a></li>
-                        <li><a href="#">Enginer</a></li>
-                        <li><a href="#">Expert</a></li>
-                      </ul>
-                      <div class="d-grid">
-                        <div class="d-grid">
-                        <a href="#" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
-                    <div class="inner-box text-start">
-                      <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="/onboarding/images/resource/candidate-1.png" alt=""></span>
-                        <div class="ml15">
-                          <h3 class="name"><a href="#">Anuoluwa Dejare</a></h3>
-                          <span class="cat">Engineer</span>
-                        </div>
-                      </div>
-                      <ul class="job-info justify-content-start at-clv7 mt-2">
-                        <li class="ms-0"><span class="icon fal fa-location-dot"></span> Lagos, NG</li>
-                        <li><span class="icon fal fa-circle-dollar"></span> ₦30,000 / hour</li>
-                      </ul>
-                      <p class="text">Hi, I am Anuoluwa Dejare, a professional Enginer with 4+ years of experience.</p>
-                      <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">Mechanical</a></li>
-                        <li><a href="#">Enginer</a></li>
-                        <li><a href="#">Expert</a></li>
-                      </ul>
-                      <div class="d-grid">
-                        <div class="d-grid">
-                        <a href="#" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
-                    <div class="inner-box text-start">
-                      <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="/onboarding/images/resource/candidate-1.png" alt=""></span>
-                        <div class="ml15">
-                          <h3 class="name"><a href="#">Anuoluwa Dejare</a></h3>
-                          <span class="cat">Engineer</span>
-                        </div>
-                      </div>
-                      <ul class="job-info justify-content-start at-clv7 mt-2">
-                        <li class="ms-0"><span class="icon fal fa-location-dot"></span> Lagos, NG</li>
-                        <li><span class="icon fal fa-circle-dollar"></span> ₦30,000 / hour</li>
-                      </ul>
-                      <p class="text">Hi, I am Anuoluwa Dejare, a professional Enginer with 4+ years of experience.</p>
-                      <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">Mechanical</a></li>
-                        <li><a href="#">Enginer</a></li>
-                        <li><a href="#">Expert</a></li>
-                      </ul>
-                      <div class="d-grid">
-                        <div class="d-grid">
-                        <a href="#" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
-                    <div class="inner-box text-start">
-                      <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="/onboarding/images/resource/candidate-1.png" alt=""></span>
-                        <div class="ml15">
-                          <h3 class="name"><a href="#">Anuoluwa Dejare</a></h3>
-                          <span class="cat">Engineer</span>
-                        </div>
-                      </div>
-                      <ul class="job-info justify-content-start at-clv7 mt-2">
-                        <li class="ms-0"><span class="icon fal fa-location-dot"></span> Lagos, NG</li>
-                        <li><span class="icon fal fa-circle-dollar"></span> ₦30,000 / hour</li>
-                      </ul>
-                      <p class="text">Hi, I am Anuoluwa Dejare, a professional Enginer with 4+ years of experience.</p>
-                      <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">Mechanical</a></li>
-                        <li><a href="#">Enginer</a></li>
-                        <li><a href="#">Expert</a></li>
-                      </ul>
-                      <div class="d-grid">
-                        <div class="d-grid">
-                        <a href="#" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
-                    <div class="inner-box text-start">
-                      <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="/onboarding/images/resource/candidate-1.png" alt=""></span>
-                        <div class="ml15">
-                          <h3 class="name"><a href="#">Anuoluwa Dejare</a></h3>
-                          <span class="cat">Engineer</span>
-                        </div>
-                      </div>
-                      <ul class="job-info justify-content-start at-clv7 mt-2">
-                        <li class="ms-0"><span class="icon fal fa-location-dot"></span> Lagos, NG</li>
-                        <li><span class="icon fal fa-circle-dollar"></span> ₦30,000 / hour</li>
-                      </ul>
-                      <p class="text">Hi, I am Anuoluwa Dejare, a professional Enginer with 4+ years of experience.</p>
-                      <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">Mechanical</a></li>
-                        <li><a href="#">Enginer</a></li>
-                        <li><a href="#">Expert</a></li>
-                      </ul>
-                      <div class="d-grid">
-                        <div class="d-grid">
-                        <a href="#" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
-                    <div class="inner-box text-start">
-                      <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="/onboarding/images/resource/candidate-1.png" alt=""></span>
-                        <div class="ml15">
-                          <h3 class="name"><a href="#">Anuoluwa Dejare</a></h3>
-                          <span class="cat">Engineer</span>
-                        </div>
-                      </div>
-                      <ul class="job-info justify-content-start at-clv7 mt-2">
-                        <li class="ms-0"><span class="icon fal fa-location-dot"></span> Lagos, NG</li>
-                        <li><span class="icon fal fa-circle-dollar"></span> ₦30,000 / hour</li>
-                      </ul>
-                      <p class="text">Hi, I am Anuoluwa Dejare, a professional Enginer with 4+ years of experience.</p>
-                      <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">Mechanical</a></li>
-                        <li><a href="#">Enginer</a></li>
-                        <li><a href="#">Expert</a></li>
-                      </ul>
-                      <div class="d-grid">
-                        <div class="d-grid">
-                        <a href="#" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
+                  @endforeach
+
+
                 </div>
 
                 <!-- Listing Show More -->

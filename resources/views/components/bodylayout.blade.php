@@ -6,7 +6,7 @@
                 <div class="inner-column wow fadeInUp">
                     <div class="title-box">
                         <h6 id="typingText"></h6>
-                        <div class="text text-white">Find Jobs, Employment & Career Opportunities</div>
+                        <div class="text text-white">Find Candidates, Employment & Career Opportunities</div>
                     </div>
 
                     <!-- Job Search Form -->
@@ -25,7 +25,7 @@
                                 <!-- Form Group -->
                                 <div class="form-group col-lg-3 col-md-12 col-sm-12 text-right">
                                     <button type="submit" class="theme-btn btn-style-two"><span class="text-white">Find
-                                            Jobs</span></button>
+                                            Candidates</span></button>
                                 </div>
                             </div>
                         </form>
@@ -135,8 +135,8 @@
     <div class="auto-container">
         <div class="d-flex align-items-center justify-content-between wow fadeInUp">
             <div class="sec-title">
-                <h2>Popular Job Categories</h2>
-                <div class="text">2020 jobs live - 293 added today.</div>
+                <h2>Popular Candidates Categories</h2>
+                <div class="text">2020 Candidates live - 293 added today.</div>
             </div>
             <a href="#" class="text ud-btn2">View All Categories <i class="fal fa-long-arrow-right"></i></a>
         </div>
@@ -158,7 +158,7 @@
                 <div class="inner-box text-start">
                     <div class="content justify-content-start d-block">
                         <span class="icon flaticon-promotion"></span>
-                        <p>86 open positions)</p>
+                        <p>(86 open positions)</p>
                         <h4><a href="#">Marketing</a></h4>
                         <p class="text">Sit amet, consectetur adipiscing <br class="d-none d-xl-block"> elit, sed do
                             eiusmod.</p>
@@ -170,7 +170,7 @@
                 <div class="inner-box text-start">
                     <div class="content justify-content-start d-block">
                         <span class="icon flaticon-vector"></span>
-                        <p>43 open positions)</p>
+                        <p>(43 open positions)</p>
                         <h4><a href="#">Design</a></h4>
                         <p class="text">Sit amet, consectetur adipiscing <br class="d-none d-xl-block"> elit, sed do
                             eiusmod.</p>
@@ -198,7 +198,7 @@
 <section class="job-section-two">
     <div class="auto-container">
         <div class="sec-title text-center">
-            <h2 >Featured Jobs</h2>
+            <h2>Featured Candidates</h2>
             <div class="text-white">Know your worth and find the job that qualify your life</div>
         </div>
 
@@ -367,21 +367,25 @@
             <div class="text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor</div>
         </div>
 
+        @foreach ($infos as $info)
+
         <div class="carousel-outer wow fadeInUp">
             <div class="candidates-carousel owl-carousel owl-theme default-dots">
                 <!-- Candidate Block -->
                 <div class="candidate-block">
                     <div class="inner-box">
-                        <figure class="image"><img src="/onboarding/images/resource/candidate-1.png" alt=""></figure>
-                        <h4 class="name">Darlene Robertson</h4>
-                        <span class="designation">UI Designer</span>
+                        <figure><img style="border-radius: 10px" src="/profile_picture/{{$info->image}}" alt="{{$info->image}}"></figure>
+                        <h4 class="name">{{$info->first_name}} {{$info->last_name}}</h4>
+                        <span class="designation">{{$info->department}}</span>
                         <div class="location"><i class="flaticon-map-locator"></i> Lagos, NG</div>
-                        <a href="#" class="theme-btn btn-style-two"><span class="btn-title">View Profile</span></a>
+                        <a href="{{route('onboarding.candidate.details', $info->id)}}" class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
                     </div>
                 </div>
 
             </div>
         </div>
+
+        @endforeach
     </div>
 </section>
 <!-- End Candidates Section -->
