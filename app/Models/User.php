@@ -48,15 +48,15 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->code === 3187;
+        return $this->code == 3187;
     }
     public function isCandidate()
     {
-        return $this->code === 3188;
+        return $this->code == 3188;
     }
     public function isEmployer()
     {
-        return $this->code === 3189;
+        return $this->code == 3189;
     }
     public function info(): HasOne
     {
