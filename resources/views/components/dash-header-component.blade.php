@@ -9,14 +9,14 @@
                 <li class="relative ml-5 pl-0.5 before:content-[''] before:w-[14px] before:h-[14px] before:bg-chevron-black before:transform before:rotate-[-90deg] before:bg-[length:100%] before:-ml-[1.125rem] before:absolute before:my-auto before:inset-y-0 dark:before:bg-chevron-white">
                     <a href="#">Dashboards</a>
                 </li>
-                <li class="relative ml-5 pl-0.5 before:content-[''] before:w-[14px] before:h-[14px] before:bg-chevron-black before:transform before:rotate-[-90deg] before:bg-[length:100%] before:-ml-[1.125rem] before:absolute before:my-auto before:inset-y-0 dark:before:bg-chevron-white text-slate-600 cursor-text dark:text-slate-400">
+                {{-- <li class="relative ml-5 pl-0.5 before:content-[''] before:w-[14px] before:h-[14px] before:bg-chevron-black before:transform before:rotate-[-90deg] before:bg-[length:100%] before:-ml-[1.125rem] before:absolute before:my-auto before:inset-y-0 dark:before:bg-chevron-white text-slate-600 cursor-text dark:text-slate-400">
                     <a href="#">Update Profile</a>
-                </li>
+                </li> --}}
             </ol>
         </nav>
         <!-- END: Breadcrumb -->
         <!-- BEGIN: Search -->
-        <div class="relative hidden flex-1 justify-center xl:flex" data-tw-toggle="modal" data-tw-target="#quick-search">
+        {{-- <div class="relative hidden flex-1 justify-center xl:flex" data-tw-toggle="modal" data-tw-target="#quick-search">
             <div class="flex w-[350px] cursor-pointer items-center rounded-[0.5rem] border bg-slate-50 px-3.5 py-2 text-slate-400 transition-colors hover:bg-slate-100">
                 <i data-tw-merge="" data-lucide="search" class="stroke-[1] h-[18px] w-[18px]"></i>
                 <div class="ml-2.5 mr-auto">Quick search...</div>
@@ -227,8 +227,32 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- END: Search -->
+
+        {{-- User Label --}}
+        <div class="relative hidden flex-1 justify-center xl:flex" >
+
+            @if (Auth::user() && Auth::user()->isAdmin())
+                <div class="flex w-[200px] cursor-pointer items-center rounded-[0.5rem] border bg-slate-50 px-3.5 py-2 text-slate-400 transition-colors hover:bg-slate-100">
+                    ADMIN DASHBOARD
+                </div>
+            @endif
+            @if (Auth::user() && Auth::user()->isCandidate())
+                <div class="flex w-[200px] cursor-pointer items-center rounded-[0.5rem] border bg-slate-50 px-3.5 py-2 text-slate-400 transition-colors hover:bg-slate-100">
+                    USER DASHBOARD
+                </div>
+            @endif
+            @if (Auth::user() && Auth::user()->isEmployer())
+                <div class="flex w-[200px] cursor-pointer items-center rounded-[0.5rem] border bg-slate-50 px-3.5 py-2 text-slate-400 transition-colors hover:bg-slate-100">
+                    EMPLOYER DASHBOARD
+                </div>
+            @endif
+
+        </div>
+        {{-- User lable end --}}
+
+
         <!-- BEGIN: Notification & User Menu -->
         <div class="flex flex-1 items-center">
             <div class="ml-auto flex items-center gap-1">
@@ -260,8 +284,11 @@
                         </div>
                         <a href="dagger-settings.html" class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i data-tw-merge="" data-lucide="users" class="stroke-[1] mr-2 h-4 w-4"></i>
                             Profile Info</a>
-                        <a href="dagger-login.html" class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i data-tw-merge="" data-lucide="power" class="stroke-[1] mr-2 h-4 w-4"></i>
-                            Logout</a>
+
+                            <form action="{{route('logout')}}" method="POST">@csrf
+                                    <button type="submit" class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i data-tw-merge="" data-lucide="power" class="stroke-[1] mr-2 h-4 w-4"></i> Logout</button>
+                            </form>
+
                     </div>
                 </div>
             </div>

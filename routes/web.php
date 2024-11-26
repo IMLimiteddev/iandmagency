@@ -45,16 +45,25 @@ Route::prefix('web/')->group(function () {
 });
 
 
-Route::prefix('dash')->group(function () {
+Route::prefix('candidate-dash')->group(function () {
 
     Route::get('/update-profile-view', [DashController::class, 'profileView'])->name('candidate.profile.view');
     Route::post('/update-profile', [DashController::class, 'profileUpdate'])->name('candidate.profile.update');
+
+    Route::get('/update-education-view', [DashController::class, 'educationView'])->name('candidate.education.view');
+    Route::post('/update-education', [DashController::class, 'educationUpdate'])->name('candidate.education.update');
+
+    Route::get('/update-work-view', [DashController::class, 'workView'])->name('candidate.work.view');
+    Route::post('/update-work', [DashController::class, 'workUpdate'])->name('candidate.work.update');
+
+    Route::get('/update-media-view', [DashController::class, 'mediaView'])->name('candidate.media.view');
+    Route::post('/update-media', [DashController::class, 'mediaUpdate'])->name('candidate.media.update');
 
 });
 
 Route::prefix('candidate')->group(function () {
 
-    Route::get('/details/{info_id}', [OnboardingController::class, 'candidateDetails'])->name('onboarding.candidate.details');
+    Route::get('/details/{info_email}', [OnboardingController::class, 'candidateDetails'])->name('onboarding.candidate.details');
 
 });
 
@@ -69,3 +78,4 @@ Route::prefix('engage')->group(function () {
 
 
 require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\EngagementNotification;
 use App\Models\Information;
+use App\Models\Request as ModelsRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -26,7 +27,7 @@ class OnboardingController extends Controller
     public function candidates_list()
     {
 
-        $infos = Information::all();
+        $infos = Information::with('medias')->get();
         return view('onboarding.candidates-list', compact('infos'));
     }
     public function employer_list()
@@ -55,10 +56,10 @@ class OnboardingController extends Controller
         return view('onboarding.portfolio-colors');
     }
 
-    public function candidateDetails($info_id)
+    public function candidateDetails($info_email)
     {
 
-        $information = Information::findOrFail($info_id);
+        $information = Information::whereEmail($info_email)->first();
         $user = User::where('id', $information->user_id)->get();
         return view('onboarding.candidate.single', compact('user', 'information'));
     }
@@ -67,18 +68,25 @@ class OnboardingController extends Controller
     {
 
 
-        $user = User::findOrFail($user_id);
+            $user = User::findOrFail($user_id);
+            $information = Information::where('user_id', $user->id)->first();
 
-        $messageContent = $request->message;
+            $messageContent = $request->message;
 
-        // dd($message);
+            $req = new ModelsRequest();
+            $req->request_message = $request->message;
+            $req->company_email = $request->company_email;
+            $req->company_name = $request->company_name;
+            $req->user_id = $user->id;
+            $req->information_id = $information->id;
+            $req->save();
 
-        Mail::to($request->email)
-            ->cc('clintonace09@gmail.com')
-            ->send(new EngagementNotification($messageContent));
+            Mail::to($request->email)
+                ->cc('clintonace09@gmail.com')
+                ->send(new EngagementNotification($messageContent, $information, $user, $req));
 
-            Alert::success('Success', 'Email Sent Successfully to both parties. Hold on for a reply.');
+                Alert::success('Success', 'Email Sent Successfully to both parties. Hold on for a reply.');
 
-            return back();
+                return back();
     }
 }

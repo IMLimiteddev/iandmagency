@@ -15,15 +15,21 @@ class EngagementNotification extends Mailable
 
 
     public $messageContent;
+    public $information;
+    public $user;
+    public $req;
 
     /**
      * Create a new message instance.
      *
      * @param string $messageContent
      */
-    public function __construct($messageContent)
+    public function __construct($messageContent, $information, $user, $req)
     {
         $this->messageContent = $messageContent;
+        $this->information = $information;
+        $this->user = $user;
+        $this->req = $req;
     }
 
     /**
@@ -34,8 +40,16 @@ class EngagementNotification extends Mailable
     public function build()
     {
         return $this
-            ->subject('A Client Reached Out to You')
-            ->markdown('emails.plain') // Specify your Blade template
-            ->with(['message' => $this->messageContent]); // Pass the message to the view
+        ->subject('A Client Reached Out to You')
+        ->markdown('emails.plain')
+        ->with([
+            'message' => $this->messageContent,
+            'information' => $this->information,
+            'user' => $this->user,
+            'req' => $this->req,
+        ]) ->attach(storage_path('app\public\IandM-no-white-bg-logo-.png'), [
+            'as' => 'IandM-no-white-bg-logo.png',
+            'mime' => 'image/png',
+        ]);
     }
 }

@@ -8912,6 +8912,16 @@ Login Section
   height: 100%;
   width: 42%;
   background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.login-section .image-layerr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 42%;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -12251,6 +12261,7 @@ Candidates Section
   position: relative;
   padding: 0 15px;
   margin-bottom: 30px;
+
 }
 
 .candidate-block .inner-box {

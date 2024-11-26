@@ -12,30 +12,35 @@
                     <div class="candidate-block-five at-v5">
                         <div class="inner-box d-block d-lg-flex">
                             <div class="content mb-3 mb-xl-0">
-                                <figure><img style="border-radius: 80px" src="/profile_picture/{{$information->image}}" alt=""></figure>
+                                <figure><img style="border-radius: 80px" src="{{$information->image}}" alt=""></figure>
                                 <h4 class="name"><a href="#">{{$information->first_name}}
                                         {{$information->last_name}}</a></h4>
                                 <ul class="candidate-info at-sv5">
                                     <li class="designation">{{$information->department}}</li>
-                                    <li><span class="icon dark-color fal fa-location-dot"></span><br> Lagos, NG</li>
+                                    <li>Location: {{$information->country}}</li>
                                     {{-- <li><span class="icon dark-color fal fa-circle-dollar"></span> $294 / hour</li>
                                     --}}
                                     {{-- <li><span class="fas fa-star review-color"></span> 4.5 (8 Reviews)</li> --}}
                                 </ul>
+
+                                @php
+                                $professionalSkillsArray = explode(', ', $information->professional_skills);
+                                @endphp
                                 <ul class="post-tags at-sv5">
-                                    <li class="mb-2 mb-xl-0"><a href="#"> {{$information->department}}</a></li>
-                                    <li class="mb-2 mb-xl-0"><a href="#"> {{$information->department}}</a></li>
-                                    {{-- <li><a href="#"> {{$information->department}}</a></li> --}}
+
+                                    @foreach ($professionalSkillsArray as $skills)
+                                    <li class="mb-2 mb-xl-0"><a href="#"> {{$skills}}</a></li>
+                                    @endforeach
                                 </ul>
+
+                                <div class=" mt-3 btn-box d-block d-sm-flex">
+
+                                    <a href="{{$information->medias->first()->cv_upload}}"
+                                        class="theme-btn btn-style-three">Download CV <i
+                                            class="fal fa-long-arrow-right text-white d-block ml15"></i></a>
+                                </div>
                             </div>
-                            <div class="btn-box d-block d-sm-flex">
-                                <a href="#" style="color: black" class="ud-btn-transparent mr20 mb-2 mb-sm-0">Follow <i
-                                        class="fal fa-long-arrow-right"></i></a>
-                                <a href="#" style="color: black" class="ud-btn-transparent mr20 mb-2 mb-sm-0">Invite <i
-                                        class="fal fa-long-arrow-right"></i></a>
-                                <a href="#" class="theme-btn btn-style-three">Download CV <i
-                                        class="fal fa-long-arrow-right text-white d-block ml15"></i></a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -54,42 +59,29 @@
                                     <div class="upper-title">
                                         <h3 class="fz30 fw500 mb-4">Education</h3>
                                     </div>
+
+                                    @foreach ($information->educationalExperiences()->get() as $item)
+
                                     <!-- Resume BLock -->
                                     <div class="resume-block at-sv5">
                                         <div class="inner">
-                                            <span class="name">M</span>
+                                            <span class="name">E</span>
                                             <div class="title-box">
                                                 <div class="info-box">
-                                                    <h3>Bachlors in Fine Arts</h3>
-                                                    <span>Modern College</span>
+                                                    <h3>{{$item->degree}}</h3>
+                                                    <span>{{$item->school}}</span>
                                                 </div>
                                                 <div class="edit-box">
-                                                    <span class="year">2012 - 2014</span>
+                                                    <span class="year">{{$item->education_start_yr}} -
+                                                        {{$item->education_end_yr}}</span>
                                                 </div>
                                             </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Proin a ipsum tellus. Interdum et malesuada fames ac ante <br
-                                                    class="d-none d-lg-block"> ipsum primis in faucibus.</div>
+                                            <div class="text">{{$item->educational_description}}</div>
                                         </div>
                                     </div>
-                                    <!-- Resume BLock -->
-                                    <div class="resume-block at-sv5">
-                                        <div class="inner">
-                                            <span class="name">H</span>
-                                            <div class="title-box">
-                                                <div class="info-box">
-                                                    <h3>Computer Science</h3>
-                                                    <span>Harvard University</span>
-                                                </div>
-                                                <div class="edit-box">
-                                                    <span class="year">2008 - 2012</span>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Proin a ipsum tellus. Interdum et malesuada fames ac ante <br
-                                                    class="d-none d-lg-block"> ipsum primis in faucibus.</div>
-                                        </div>
-                                    </div>
+                                    @endforeach
+
+
                                 </div>
                                 <hr class="opacity-100">
                                 <!-- Resume / Work & Experience -->
@@ -97,82 +89,30 @@
                                     <div class="upper-title">
                                         <h3 class="fz30 fw500 mb-4">Work & Experience</h3>
                                     </div>
+                                    @foreach ($information->workExperiences()->get() as $item)
+
                                     <!-- Resume BLock -->
                                     <div class="resume-block at-sv5">
                                         <div class="inner">
-                                            <span class="name">S</span>
+                                            <span class="name">W</span>
                                             <div class="title-box">
                                                 <div class="info-box">
-                                                    <h3>Product Designer</h3>
-                                                    <span>Spotify Inc.</span>
+                                                    <h3>{{$item->role}}</h3>
+                                                    <span>{{$item->company_name}}</span>
                                                 </div>
                                                 <div class="edit-box">
-                                                    <span class="year">2008 - 2012</span>
+                                                    <span class="year">{{$item->work_start_yr}} -
+                                                        {{$item->work_end_yr}}</span>
                                                 </div>
                                             </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum
-                                                primis in faucibus.</div>
+                                            <div class="text">{{$item->job_description}}</div>
                                         </div>
                                     </div>
-                                    <!-- Resume BLock -->
-                                    <div class="resume-block at-sv5">
-                                        <div class="inner">
-                                            <span class="name">D</span>
-                                            <div class="title-box">
-                                                <div class="info-box">
-                                                    <h3>Sr UX Engineer</h3>
-                                                    <span>Dropbox Inc.</span>
-                                                </div>
-                                                <div class="edit-box">
-                                                    <span class="year">2012 - 2014</span>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum
-                                                primis in faucibus.</div>
-                                        </div>
-                                    </div>
+                                    @endforeach
+
                                 </div>
-                                <hr class="opacity-100">
-                                <!-- Resume / Awards -->
-                                <div class="resume-outer theme-yellow at-sv5">
-                                    <div class="upper-title">
-                                        <h3 class="fz30 fw500 mb-4">Honors & awards</h3>
-                                    </div>
-                                    <!-- Resume BLock -->
-                                    <div class="resume-block at-sv5">
-                                        <div class="inner">
-                                            <span class="name"></span>
-                                            <div class="title-box">
-                                                <div class="info-box">
-                                                    <h3>Perfect Attendance Programs</h3>
-                                                    <p class="text fz15 mb-0">29 April 2023</p>
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum
-                                                primis in faucibus.</div>
-                                        </div>
-                                    </div>
-                                    <!-- Resume BLock -->
-                                    <div class="resume-block at-sv5">
-                                        <div class="inner">
-                                            <span class="name"></span>
-                                            <div class="title-box">
-                                                <div class="info-box">
-                                                    <h3>Top Performer Recognition</h3>
-                                                    <p class="text fz15 mb-0">29 April 2023</p>
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum
-                                                primis in faucibus.</div>
-                                        </div>
-                                    </div>
-                                </div>
+
+
                                 <hr class="opacity-100">
                                 <!-- Portfolio -->
                                 <div class="portfolio-outer">
@@ -182,48 +122,43 @@
                                                 <h3 class="fz30 fw500 mb-4">Projects</h3>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6">
-                                            <figure class="image">
-                                                <a href="images/resource/portfolio-1.jpg" class="lightbox-image"><img
-                                                        src="/onboarding/images/resource/portfolio-1.jpg" alt=""></a>
-                                                <span class="icon flaticon-plus"></span>
-                                            </figure>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6">
-                                            <figure class="image">
-                                                <a href="images/resource/portfolio-2.jpg" class="lightbox-image"><img
-                                                        src="/onboarding/images/resource/portfolio-2.jpg" alt=""></a>
-                                                <span class="icon flaticon-plus"></span>
-                                            </figure>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6">
-                                            <figure class="image">
-                                                <a href="images/resource/portfolio-3.jpg" class="lightbox-image"><img
-                                                        src="/onboarding/images/resource/portfolio-3.jpg" alt=""></a>
-                                                <span class="icon flaticon-plus"></span>
-                                            </figure>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6">
-                                            <figure class="image">
-                                                <a href="images/resource/portfolio-4.jpg" class="lightbox-image"><img
-                                                        src="/onboarding/images/resource/portfolio-4.jpg" alt=""></a>
-                                                <span class="icon flaticon-plus"></span>
-                                            </figure>
-                                        </div>
+                                        @foreach ($information->medias()->get() as $item)
+                                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                                <figure class="image">
+                                                    <a href="{{$item->media_upload }}" class="lightbox-image"><img
+                                                            src="{{ $item->media_upload }}" alt=""></a>
+                                                    <span class="icon flaticon-plus"></span>
+                                                </figure>
+                                            </div>
+                                        @endforeach
+
                                     </div>
                                 </div>
 
                                 <!-- Video Box -->
                                 <div class="video-outer">
-                                    <h3 class="fz30 fw500 mb-4">Video</h3>
+                                    <h3 class="fz30 fw500 mb-4">Introduction Video</h3>
                                     <div class="video-box">
-                                        <figure class="image">
-                                            <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now"
+
+                                        @foreach ($information->medias()->where('intro_video',"!=", null)->get() as $item)
+
+                                        {{-- <figure class="image">
+                                            <a href="{{$item->intro_video}}" class="play-now"
                                                 data-fancybox="gallery" data-caption="">
-                                                <img src="/onboarding/images/resource/video-img.jpg" alt="">
+
+                                                <img src="{{$item->intro_video}}" alt="">
                                                 <i class="icon flaticon-play-button-3" aria-hidden="true"></i>
                                             </a>
-                                        </figure>
+                                        </figure> --}}
+
+                                        <video controls autoplay muted loop poster="poster-image.jpg" width="640" height="360">
+                                            {{-- <i class="icon flaticon-play-button-3" aria-hidden="true"></i> --}}
+                                            <source src="{{$item->intro_video}}" type="video/mp4">
+                                            {{-- <source src="video.ogg" type="video/ogg"> --}}
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        @endforeach
+
                                     </div>
                                 </div>
                             </div>
@@ -235,60 +170,48 @@
                                     <h4 class="widget-title">Information</h4>
                                     <div class="widget-content">
                                         <ul class="job-overview at-sv5">
-                                            <li>
-                                                <i class="icon far fa-circle-dollar"></i>
-                                                <div class="ml15">
-                                                    <h5>Offer Salary</h5>
-                                                    <span>$10 / hour</span>
-                                                </div>
-                                            </li>
+
                                             <li>
                                                 <i class="icon flaticon-title"></i>
                                                 <div class="ml15">
                                                     <h5>Experience Time</h5>
-                                                    <span>2 Year</span>
+                                                    <span>{{$information->experience_yr}} Year</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="icon far fa-mars"></i>
                                                 <div class="ml15">
                                                     <h5>Gender</h5>
-                                                    <span>Male</span>
+                                                    <span>{{$information->gender}}</span>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <i class="icon far fa-user"></i>
-                                                <div class="ml15">
-                                                    <h5>Age</h5>
-                                                    <span>25-30</span>
-                                                </div>
-                                            </li>
+
                                             <li>
                                                 <i class="icon flaticon-exercise"></i>
                                                 <div class="ml15">
                                                     <h5>Qualification</h5>
-                                                    <span>Associate Degree</span>
+                                                    <span>{{$information->educationalExperiences()->first()->degree}}</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="icon fal fa-language"></i>
                                                 <div class="ml15">
                                                     <h5>Language:</h5>
-                                                    <span>English, German, Spanish</span>
+                                                    <span>{{$information->languages}}</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="icon flaticon-email-3"></i>
                                                 <div class="ml15">
                                                     <h5>Email</h5>
-                                                    <span>candidate@apus.com</span>
+                                                    <span>{{$information->email}}</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="icon flaticon-telephone-1"></i>
                                                 <div class="ml15">
                                                     <h5>Phone Number</h5>
-                                                    <span>3323534200594</span>
+                                                    <span>{{$information->phone}}</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -320,32 +243,38 @@
                                 </div> --}}
 
                                 <div class="sidebar-widget contact-widget">
-                                    <h4 class="widget-title">Engage Candidate</h4>
+                                    <h4 class="widget-title">Book Candidate</h4>
                                     <div class="widget-content">
-                                      <!-- Comment Form -->
-                                      <div class="default-form">
-                                        <!--Comment Form-->
-                                        <form action="{{route('candidate.engagement.notification', $information->user_id)}}"  method="POST">
-                                            @csrf
-                                          <div class="row clearfix">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                              <input type="text" name="name" placeholder="Company Name" required>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                              <input type="email" name="email" placeholder="Company Email" required>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                              <textarea class="darma" name="message" placeholder="What you want."></textarea>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                              <button class="theme-btn btn-style-three" type="submit" name="submit-form">Engage</button>
-                                            </div>
-                                          </div>
-                                        </form>
-                                      </div>
+                                        <!-- Comment Form -->
+                                        <div class="default-form">
+                                            <!--Comment Form-->
+                                            <form
+                                                action="{{route('candidate.engagement.notification', $information->user_id)}}"
+                                                method="POST">
+                                                @csrf
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                        <input type="text" name="company_name" placeholder="Company Name"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                        <input type="email" name="company_email" placeholder="Company Email"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                        <textarea class="darma" name="message"
+                                                            placeholder="What you want."></textarea>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                        <button class="theme-btn btn-style-three" type="submit"
+                                                            name="submit-form">Book</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
 
-                                  </div>
+                                </div>
                                 <div class="p-0">
                                     <!-- Job Skills -->
                                     <h4 class="widget-title fz18 mb25 fw500">Professional Skills</h4>

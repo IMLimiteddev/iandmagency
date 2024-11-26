@@ -367,25 +367,26 @@
             <div class="text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor</div>
         </div>
 
-        @foreach ($infos as $info)
+
 
         <div class="carousel-outer wow fadeInUp">
             <div class="candidates-carousel owl-carousel owl-theme default-dots">
                 <!-- Candidate Block -->
+                @foreach ($infos as $info)
                 <div class="candidate-block">
                     <div class="inner-box">
-                        <figure><img style="border-radius: 10px" src="/profile_picture/{{$info->image}}" alt="{{$info->image}}"></figure>
+                        <figure><img style="border-radius: 10px; height: 200px; width: 200px" src="{{$info->image}}" alt="{{$info->image}}"></figure>
                         <h4 class="name">{{$info->first_name}} {{$info->last_name}}</h4>
                         <span class="designation">{{$info->department}}</span>
                         <div class="location"><i class="flaticon-map-locator"></i> Lagos, NG</div>
-                        <a href="{{route('onboarding.candidate.details', $info->id)}}" class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
+                        <a href="{{route('onboarding.candidate.details', $info->email)}}" class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
                     </div>
                 </div>
-
+                @endforeach
             </div>
         </div>
 
-        @endforeach
+
     </div>
 </section>
 <!-- End Candidates Section -->

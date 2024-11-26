@@ -4172,6 +4172,10 @@ select {
     width: 23px
 }
 
+.w-\[25\%\] {
+    width: 25%
+}
+
 .w-\[26px\] {
     width: 26px
 }
@@ -4240,6 +4244,9 @@ select {
     width: 54px
 }
 
+.w-\[50\%\] {
+    width: 50%
+}
 .w-\[55\%\] {
     width: 55%
 }
@@ -4278,6 +4285,9 @@ select {
 
 .w-\[97\%\] {
     width: 97%
+}
+.w-\[100\%\] {
+    width: 100%
 }
 
 .w-auto {

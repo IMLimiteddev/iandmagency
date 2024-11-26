@@ -605,7 +605,6 @@
                                                 </div>
                                             </div>
                                             <div class="ml-3 text-xs text-slate-500">
-                                                4+ Members
                                             </div>
                                         </div>
                                     </div>

@@ -48,15 +48,15 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->where('code', 7)->exists();
+        return $this->code === 3187;
     }
     public function isCandidate()
     {
-        return $this->where('code', 0)->exists();
+        return $this->code === 3188;
     }
     public function isEmployer()
     {
-        return $this->where('code', 8)->exists();
+        return $this->code === 3189;
     }
     public function info(): HasOne
     {
