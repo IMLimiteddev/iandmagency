@@ -81,7 +81,7 @@ class OnboardingController extends Controller
             $req->information_id = $information->id;
             $req->save();
 
-            Mail::to($request->email)
+            Mail::to($request->company_email)
                 ->cc('clintonace09@gmail.com')
                 ->send(new EngagementNotification($messageContent, $information, $user, $req));
 
