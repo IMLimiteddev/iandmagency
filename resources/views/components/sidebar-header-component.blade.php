@@ -24,7 +24,8 @@
                     <!-- END: Second Child -->
                 </li> --}}
                 <li>
-                    <a href="{{route('dashboard')}}" class="side-menu__link  {{Route::currentRouteName()== 'dashboard' ? 'side-menu__link--active': ''}}">
+                    <a href="{{route('dashboard')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'dashboard' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="activity-square"
                             class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Dashboard</div>
@@ -90,7 +91,8 @@
                 </li>
 
                 <li>
-                    <a href="{{route('admin.all.candidates')}}" class="side-menu__link  {{Route::currentRouteName()== 'admin.all.candidates' ? 'side-menu__link--active': ''}}">
+                    <a href="{{route('admin.all.candidates')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.all.candidates' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="user-square"
                             class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">All Candidates</div>
@@ -109,7 +111,8 @@
                 </li>
 
                 <li>
-                    <a href="{{route('admin.all.requests')}}" class="side-menu__link  {{Route::currentRouteName()== 'admin.all.requests' ? 'side-menu__link--active': ''}}">
+                    <a href="{{route('admin.all.requests')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.all.requests' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="mail-check"
                             class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">All Request</div>
@@ -122,8 +125,7 @@
                 </li>
                 <li>
                     <a href="{{route('admin.book.event')}}" class="side-menu__link">
-                        <i data-tw-merge="" data-lucide="bell"
-                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <i data-tw-merge="" data-lucide="bell" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Book Event</div>
                         <div class="side-menu__link__badge">
                             4
@@ -140,9 +142,9 @@
                 </li>
 
                 <li>
-                    <a href="{{route('admin.all.companies')}}" class="side-menu__link {{Route::currentRouteName()== 'admin.all.companies' ? 'side-menu__link--active': ''}}">
-                        <i data-tw-merge="" data-lucide="building"
-                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                    <a href="{{route('admin.all.companies')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'admin.all.companies' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="building" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">All Companies</div>
                         <div class="side-menu__link__badge">
                             4
@@ -158,7 +160,8 @@
                 </li>
 
                 <li>
-                    <a href="{{route('candidate.profile.view')}}" class="side-menu__link  {{Route::currentRouteName()== 'candidate.profile.view' ? 'side-menu__link--active': ''}}">
+                    <a href="{{route('candidate.profile.view')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'candidate.profile.view' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="gantt-chart-square"
                             class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Update Profile</div>
@@ -166,11 +169,57 @@
                     <!-- BEGIN: Second Child -->
                     <!-- END: Second Child -->
                 </li>
+                <li>
+                    <a href="{{route('candidate.profile.display')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'candidate.profile.display' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="user" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Profile</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+                <li>
+                    <a href="{{route('candidate.events.display')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'candidate.events.display' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="bell" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Events</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
                 @endif
+
+
+                <li class="side-menu__divider">
+                    Shutdown
+                </li>
+
+                <li>
+
+                    <form action="{{route('logout')}}" method="POST">
+
+                        @csrf
+
+                        <button class="side-menu__link" type="submit"> <i data-tw-merge="" data-lucide="power"
+                                class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                            <div class="side-menu__link__title">
+                                Logout</div>
+                        </button>
+                    </form>
+                    {{-- <a href="{{route('admin.all.companies')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'admin.all.companies' ? 'side-menu__link--active': ''}}">
+
+                        <div class="side-menu__link__title">Logout</div>
+
+                    </a> --}}
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
 
                 {{-- <li>
                     <a href="dagger-inbox.html" class="side-menu__link ">
-                        <i data-tw-merge="" data-lucide="gantt-chart-square" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <i data-tw-merge="" data-lucide="gantt-chart-square"
+                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Inbox</div>
                         <div class="side-menu__link__badge">
                             4

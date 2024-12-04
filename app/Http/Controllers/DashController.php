@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use App\Models\Education;
 use App\Models\Information;
 use App\Models\Media;
@@ -23,6 +24,23 @@ class DashController extends Controller
         $user = Auth::user();
         return view('candidate.update-profile', compact('user'));
     }
+    public function profileDisplay()
+    {
+
+        $data['user'] = Auth::user();
+        $data['works'] = Work::where('user_id', $data['user']->id)->get();
+        $data['eds'] = Education::where('user_id', $data['user']->id)->get();
+        $data['medias'] = Media::where('user_id', $data['user']->id)->get();
+        return view('candidate.profile', $data);
+    }
+    public function eventDisplay()
+    {
+
+        $data['user'] = Auth::user();
+        $data['bookings'] = Booking::where('candidate_email', $data['user']->email)->get();
+        return view('candidate.events', $data);
+    }
+
     public function profileUpdate(Request $request)
     {
 
@@ -104,8 +122,6 @@ class DashController extends Controller
         return back();
 
     }
-
-
     public function educationView()
     {
 
@@ -165,8 +181,6 @@ class DashController extends Controller
         Alert::info('Info', 'You already have an Educational record, please navigate to edit if you wish to edit this info.');
         return back();
     }
-
-
     public function workView()
     {
 

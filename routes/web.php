@@ -49,6 +49,8 @@ Route::prefix('candidate-dash')->group(function () {
 
     Route::get('/update-profile-view', [DashController::class, 'profileView'])->name('candidate.profile.view');
     Route::post('/update-profile', [DashController::class, 'profileUpdate'])->name('candidate.profile.update');
+    Route::get('/profile-view', [DashController::class, 'profileDisplay'])->name('candidate.profile.display');
+
 
     Route::get('/update-education-view', [DashController::class, 'educationView'])->name('candidate.education.view');
     Route::post('/update-education', [DashController::class, 'educationUpdate'])->name('candidate.education.update');
@@ -58,6 +60,10 @@ Route::prefix('candidate-dash')->group(function () {
 
     Route::get('/update-media-view', [DashController::class, 'mediaView'])->name('candidate.media.view');
     Route::post('/update-media', [DashController::class, 'mediaUpdate'])->name('candidate.media.update');
+
+
+    Route::get('/event-view', [DashController::class, 'eventDisplay'])->name('candidate.events.display');
+
 
 });
 
