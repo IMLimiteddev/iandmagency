@@ -206,14 +206,7 @@
                                 Logout</div>
                         </button>
                     </form>
-                    {{-- <a href="{{route('admin.all.companies')}}"
-                        class="side-menu__link {{Route::currentRouteName()== 'admin.all.companies' ? 'side-menu__link--active': ''}}">
-
-                        <div class="side-menu__link__title">Logout</div>
-
-                    </a> --}}
-                    <!-- BEGIN: Second Child -->
-                    <!-- END: Second Child -->
+                    
                 </li>
 
                 {{-- <li>
