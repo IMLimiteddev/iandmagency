@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use App\Models\Company;
+use App\Models\Request as ModelsRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -60,6 +62,24 @@ class CompanyController extends Controller
         Alert::success('Success', 'Company details save.');
         return back();
 
+    }
+
+    public function eventsDisplay()
+    {
+
+        $data['user']= Auth::user();
+        $data['company'] = Company::where('user_id', $data['user']->id)->first();
+        $data['bookings']= Booking::where('company_email', $data['user']->email)->first();
+        return view('company.events', $data);
+    }
+    public function requestsDisplay()
+    {
+
+
+        $data['user']= Auth::user();
+        $data['company'] = Company::where('user_id', $data['user']->id)->first();
+        $data['reqs']= ModelsRequest::where('company_email', $data['user']->email)->first();
+        return view('company.request', $data);
     }
 
 

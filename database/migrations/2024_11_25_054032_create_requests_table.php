@@ -15,12 +15,9 @@ return new class extends Migration
     {
         Schema::create('requests', function (Blueprint $table) {
             $table->id();
-
-            // $table->integer('candidate_id')->nullable();
             $table->longText('request_message')->nullable();
             $table->string('company_name')->nullable();
             $table->string('company_email')->nullable();
-
 
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

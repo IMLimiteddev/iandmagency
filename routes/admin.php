@@ -21,5 +21,9 @@ Route::prefix('admin')->group(function () {
     Route::get('/book-event', [AdminController::class, 'bookEvent'])->name('admin.book.event');
     Route::post('/book', [AdminController::class, 'book'])->name('admin.book');
 
+
+    Route::get('/all-users', [AdminController::class, 'allUsers'])->name('admin.all.users');
+
+
 });
 

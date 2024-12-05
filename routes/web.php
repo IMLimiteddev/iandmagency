@@ -89,6 +89,7 @@ Route::prefix('company')->middleware('company')->group(function () {
 
 
     Route::get('events-display', [CompanyController::class, 'eventsDisplay'])->name('company.events.display');
+    Route::get('requests-display', [CompanyController::class, 'requestsDisplay'])->name('company.requests.display');
 
 });
 

@@ -85,8 +85,13 @@ class AdminController extends Controller
 
     public function allCandidates()
     {
-        $users = User::with('info')->get();
+        $users = User::with('info')->whereCode(3188)->get();
         return view('admin.all-candidates', compact('users'));
+    }
+    public function allUsers()
+    {
+        $users = User::with('info')->get();
+        return view('admin.all-users', compact('users'));
     }
 
     public function singleCandidate($email)

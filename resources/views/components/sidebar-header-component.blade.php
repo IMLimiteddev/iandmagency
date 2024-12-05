@@ -95,7 +95,33 @@
                         class="side-menu__link  {{Route::currentRouteName()== 'admin.all.candidates' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="user-square"
                             class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
-                        <div class="side-menu__link__title">All Candidates</div>
+                        <div class="side-menu__link__title">Candidates</div>
+                        <div class="side-menu__link__badge">
+                            4
+                        </div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+
+                <li>
+                    <a href="{{route('admin.all.companies')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'admin.all.companies' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="building" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Companies</div>
+                        <div class="side-menu__link__badge">
+                            4
+                        </div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+
+                <li>
+                    <a href="{{route('admin.all.users')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'admin.all.users' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="users" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Users On app</div>
                         <div class="side-menu__link__badge">
                             4
                         </div>
@@ -127,25 +153,6 @@
                     <a href="{{route('admin.book.event')}}" class="side-menu__link">
                         <i data-tw-merge="" data-lucide="bell" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Book Event</div>
-                        <div class="side-menu__link__badge">
-                            4
-                        </div>
-                    </a>
-                    <!-- BEGIN: Second Child -->
-                    <!-- END: Second Child -->
-                </li>
-                @endif
-
-                @if (Auth::user() && Auth::user()->isAdmin())
-                <li class="side-menu__divider">
-                    Manage Employer
-                </li>
-
-                <li>
-                    <a href="{{route('admin.all.companies')}}"
-                        class="side-menu__link {{Route::currentRouteName()== 'admin.all.companies' ? 'side-menu__link--active': ''}}">
-                        <i data-tw-merge="" data-lucide="building" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
-                        <div class="side-menu__link__title">All Companies</div>
                         <div class="side-menu__link__badge">
                             4
                         </div>
@@ -239,8 +246,8 @@
                 </li>
 
                 <li>
-                    <a href="{{route('company.profile.view')}}"
-                        class="side-menu__link {{Route::currentRouteName()== 'company.profile.view' ? 'side-menu__link--active': ''}}">
+                    <a href="{{route('company.requests.display')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'company.requests.display' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="hand" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Request</div>
 
