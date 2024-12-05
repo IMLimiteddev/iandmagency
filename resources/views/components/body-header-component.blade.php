@@ -5,7 +5,7 @@
                 <div>
                     <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                         <div class="text-base font-medium group-[.mode--light]:text-white">
-                            User dashboard
+                             Dashboard
                         </div>
                         <ul data-tw-merge="" role="tablist" class="p-0.5 border dark:border-darkmode-400 flex box w-auto rounded-[0.6rem] border-slate-200 bg-white group-[.mode--light]:!border-transparent group-[.mode--light]:!bg-white/[0.12] md:ml-auto">
                             <li id="example-1-tab" data-tw-merge="" role="presentation" class="focus-visible:outline-none flex-1 bg-slate-50 first:rounded-l-[0.6rem] last:rounded-r-[0.6rem] group-[.mode--light]:bg-transparent [&_button.active]:text-current group-[.mode--light]:[&_button.active]:border-transparent group-[.mode--light]:[&_button.active]:bg-white/[0.12]">

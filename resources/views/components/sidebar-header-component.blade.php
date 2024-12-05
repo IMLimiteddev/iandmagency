@@ -154,11 +154,11 @@
                     <!-- END: Second Child -->
                 </li>
                 @endif
+
                 @if (Auth::user() && Auth::user()->isCandidate())
                 <li class="side-menu__divider">
                     Manage Profile
                 </li>
-
                 <li>
                     <a href="{{route('candidate.profile.view')}}"
                         class="side-menu__link  {{Route::currentRouteName()== 'candidate.profile.view' ? 'side-menu__link--active': ''}}">
@@ -190,10 +190,71 @@
                 @endif
 
 
+                @if (Auth::user() && Auth::user()->isEmployer())
+                <li class="side-menu__divider">
+                    Manage Company
+                </li>
+
+                <li>
+                    <a href="{{route('company.profile.view')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'company.profile.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="building" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Company Profile Update</div>
+
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+                <li>
+                    <a href="{{route('company.profile.display')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'company.profile.display' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="user" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Company Profile.</div>
+
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+                @endif
+
+                @if (Auth::user() && Auth::user()->isEmployer())
+                <li class="side-menu__divider">
+                    Manage Events
+                </li>
+
+                <li>
+                    <a href="{{route('company.events.display')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'company.events.display' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="bell" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Events</div>
+
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+                @endif
+                @if (Auth::user() && Auth::user()->isEmployer())
+                <li class="side-menu__divider">
+                    Manage Request
+                </li>
+
+                <li>
+                    <a href="{{route('company.profile.view')}}"
+                        class="side-menu__link {{Route::currentRouteName()== 'company.profile.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="hand" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Request</div>
+
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+
+                @endif
+
+
                 <li class="side-menu__divider">
                     Shutdown
                 </li>
-
                 <li>
 
                     <form action="{{route('logout')}}" method="POST">
@@ -206,7 +267,7 @@
                                 Logout</div>
                         </button>
                     </form>
-                    
+
                 </li>
 
                 {{-- <li>

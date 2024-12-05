@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\DashController;
 use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
@@ -74,11 +75,23 @@ Route::prefix('candidate')->group(function () {
 });
 
 
-Route::prefix('engage')->group(function () {
+Route::prefix('engage')->middleware('company')->group(function () {
 
     Route::post('/notify-candidate-admin/{user_id}', [OnboardingController::class, 'candidateEngage'])->name('candidate.engagement.notification');
 
 });
+
+Route::prefix('company')->middleware('company')->group(function () {
+
+    Route::get('profile-view', [CompanyController::class, 'profileView'])->name('company.profile.view');
+    Route::post('profile-update', [CompanyController::class, 'profileUpdate'])->name('company.profile.update');
+    Route::get('profile', [CompanyController::class, 'profile'])->name('company.profile.display');
+
+
+    Route::get('events-display', [CompanyController::class, 'eventsDisplay'])->name('company.events.display');
+
+});
+
 
 
 
