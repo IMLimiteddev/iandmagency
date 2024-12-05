@@ -1,5 +1,9 @@
 <x-app-layout>
 
+    @section('title')
+    <h1>Company Profile Set-up</h1>
+    @endsection
+
 
     <x-slot name="content">
 

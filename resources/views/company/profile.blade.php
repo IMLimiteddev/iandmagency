@@ -1,6 +1,10 @@
 
 <x-app-layout>
 
+    @section('title')
+    <h1>Company Profile</h1>
+    @endsection
+
 
     <x-slot name="content">
 

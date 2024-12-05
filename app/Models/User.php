@@ -63,4 +63,15 @@ class User extends Authenticatable
     {
         return $this->hasOne(Information::class, 'user_id', 'id');
     }
+
+    /**
+     * Get the company associated with the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function company(): HasOne
+    {
+        return $this->hasOne(Company::class, 'user_id', 'id');
+
+    }
 }

@@ -1,5 +1,9 @@
 <x-app-layout>
 
+    @section('title')
+    <h1>Dashboard</h1>
+    @endsection
+
 
     <x-slot name="content">
 

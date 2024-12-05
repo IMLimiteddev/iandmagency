@@ -2,6 +2,8 @@
 
 namespace App\View\Components;
 
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\Component;
 
 class DashHeaderComponent extends Component
@@ -23,6 +25,9 @@ class DashHeaderComponent extends Component
      */
     public function render()
     {
-        return view('components.dash-header-component');
+
+        $data['users'] = User::all();
+        $data['user'] = Auth::user();
+        return view('components.dash-header-component', $data);
     }
 }

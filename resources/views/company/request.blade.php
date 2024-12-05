@@ -1,5 +1,9 @@
 <x-app-layout>
 
+    @section('title')
+    <h1>Request</h1>
+    @endsection
+
 
     <x-slot name="content">
 
