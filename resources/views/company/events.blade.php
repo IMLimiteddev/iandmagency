@@ -44,13 +44,14 @@
                                         @if ($bookings != null)
 
                                         @foreach ($bookings as $booking)
+
                                         <div
                                             class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
                                             <a class="text-[0.94rem] font-medium text-primary" href="#">
                                                 Booked Event
                                             </a>
                                             <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                {{$booking?->details}}
+                                                {{$booking->details}}
                                             </div>
                                             <div data-tw-merge="" data-tw-placement="bottom-end"
                                                 class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
@@ -104,13 +105,13 @@
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">Start Time:</div>
                                                     <div class="ml-auto text-slate-500">
-                                                        {{$booking?->start_time}}
+                                                        {{$booking?->start_date}}
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">End Time:</div>
                                                     <div class="ml-auto text-slate-500">
-                                                        {{$booking?->end_time}}
+                                                        {{$booking?->end_date}}
                                                     </div>
                                                 </div>
 

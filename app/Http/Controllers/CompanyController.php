@@ -68,8 +68,8 @@ class CompanyController extends Controller
     {
 
         $data['user']= Auth::user();
-        $data['company'] = Company::where('user_id', $data['user']->id)->first();
-        $data['bookings']= Booking::where('company_email', $data['user']->email)->first();
+        $data['company'] = Company::where('user_id', $data['user']->id)->get();
+        $data['bookings']= Booking::where('company_email', $data['user']->email)->get();
         return view('company.events', $data);
     }
     public function requestsDisplay()
@@ -77,8 +77,8 @@ class CompanyController extends Controller
 
 
         $data['user']= Auth::user();
-        $data['company'] = Company::where('user_id', $data['user']->id)->first();
-        $data['reqs']= ModelsRequest::where('company_email', $data['user']->email)->first();
+        $data['company'] = Company::where('user_id', $data['user']->id)->get();
+        $data['reqs']= ModelsRequest::where('company_email', $data['user']->email)->get();
         return view('company.request', $data);
     }
 

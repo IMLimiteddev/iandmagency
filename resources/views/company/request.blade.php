@@ -84,7 +84,7 @@
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">Candidate Name:</div>
                                                     <div class="ml-auto text-slate-500">
-                                                        {{$req?->info->first_name}} {{$req?->info->last_name}}
+                                                        {{$req?->info?->first_name}} {{$req?->info?->last_name}}
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">

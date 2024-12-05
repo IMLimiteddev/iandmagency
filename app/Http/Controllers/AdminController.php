@@ -30,8 +30,6 @@ class AdminController extends Controller
             'details'=>'required',
         ]);
 
-        // dd($request->all());
-
         $book = new Booking();
         $book->company_email = $request->company_email;
         $book->candidate_email = $request->candidate_email;
@@ -61,8 +59,9 @@ class AdminController extends Controller
 
     public function bookEvent()
     {
-        $infos = Information::all();
-        return view('admin.book-event', compact( 'infos'));
+        $data['infos'] = Information::all();
+        $data['companies'] = Company::all();
+        return view('admin.book-event', $data);
     }
 
     public function activateUser($info)
@@ -88,6 +87,7 @@ class AdminController extends Controller
         $users = User::with('info')->whereCode(3188)->get();
         return view('admin.all-candidates', compact('users'));
     }
+
     public function allUsers()
     {
         $users = User::with('info')->get();

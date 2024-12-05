@@ -155,13 +155,13 @@
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">Start Time:</div>
                                                     <div class="ml-auto text-slate-500">
-                                                        {{$booking?->start_time}}
+                                                        {{$booking?->start_date}}
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">End Time:</div>
                                                     <div class="ml-auto text-slate-500">
-                                                        {{$booking?->end_time}}
+                                                        {{$booking?->end_date}}
                                                     </div>
                                                 </div>
                                                 {{-- <div class="flex items-center">

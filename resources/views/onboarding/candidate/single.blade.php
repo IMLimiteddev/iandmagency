@@ -244,6 +244,7 @@
 
                                 <div class="sidebar-widget contact-widget">
                                     <h4 class="widget-title">Book Candidate</h4>
+                                    <em>Note we set your email using the email you registered with us.</em>
                                     <div class="widget-content">
                                         <!-- Comment Form -->
                                         <div class="default-form">
@@ -258,8 +259,8 @@
                                                             required>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                        <input type="email" name="company_email" placeholder="Company Email"
-                                                            required>
+                                                        <input type="email" name="company_email" value="{{Auth::user()?->email}}" placeholder="Company Email"
+                                                            required readonly>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                                         <textarea class="darma" name="message"
