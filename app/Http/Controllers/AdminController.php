@@ -82,9 +82,26 @@ class AdminController extends Controller
         }
     }
 
+    public function allCompanies()
+    {
+
+        $users = User::whereCode(3189)->where('is_new', true)->get();
+        foreach ($users as $user) {
+            $user->is_new = false;
+            $user->save();
+        }
+
+        $data['companies'] = Company::all();
+        return view('admin.all-company', $data);
+    }
+
     public function allCandidates()
     {
         $users = User::with('info')->whereCode(3188)->get();
+        foreach ($users->where('is_new', true) as $user) {
+            $user->is_new = false;
+            $user->save();
+        }
         return view('admin.all-candidates', compact('users'));
     }
 
@@ -92,6 +109,17 @@ class AdminController extends Controller
     {
         $users = User::with('info')->get();
         return view('admin.all-users', compact('users'));
+    }
+
+    public function allRequest()
+    {
+        $data['reqs'] = ModelsRequest::all();
+
+        foreach ($data['reqs']->where('is_new', true) as $req) {
+            $req->is_new = false;
+            $req->save();
+        }
+        return view('admin.all-request', $data);
     }
 
     public function singleCandidate($email)
@@ -104,11 +132,7 @@ class AdminController extends Controller
         return view('admin.single-candidate', compact('user', 'works', 'eds', 'medias'));
     }
 
-    public function allRequest()
-    {
-        $reqs = ModelsRequest::all();
-        return view('admin.all-request', compact('reqs'));
-    }
+
 
     public function singleRequest()
     {
@@ -116,10 +140,5 @@ class AdminController extends Controller
         return view('admin.single-request');
     }
 
-    public function allCompanies()
-    {
 
-        $companies = Company::all();
-        return view('admin.all-company', compact('companies'));
-    }
 }

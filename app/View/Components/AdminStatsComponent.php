@@ -4,14 +4,14 @@ namespace App\View\Components;
 
 use App\Models\Booking;
 use App\Models\Company;
-use App\Models\Information;
 use App\Models\Request;
 use App\Models\User;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\View\Component;
 
-class BodyHeaderComponent extends Component
+class AdminStatsComponent extends Component
 {
+
+ 
     /**
      * Create a new component instance.
      *
@@ -19,7 +19,8 @@ class BodyHeaderComponent extends Component
      */
     public function __construct()
     {
-        //
+
+
     }
 
     /**
@@ -30,12 +31,10 @@ class BodyHeaderComponent extends Component
     public function render()
     {
 
-        $data['users']= User::where('code', 3188)->get();
-        $data['infos']= Information::all();
-        $data['companies'] = Company::all();
+        $data['users'] = User::all();
         $data['requests'] = Request::all();
+        $data['companies'] = Company::all();
         $data['events'] = Booking::all();
-        $data['user'] = Auth::user();
-        return view('components.body-header-component', $data);
+        return view('components.admin-stats-component', $data);
     }
 }

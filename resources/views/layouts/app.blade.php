@@ -91,6 +91,11 @@
 
 <body>
 
+    @php
+        $users= \App\Models\User::all();
+        $requests = \App\Models\Request::all();
+    @endphp
+
     @include('sweetalert::alert')
 
     <div>
@@ -506,8 +511,12 @@
                     </div>
                     <x-dash-header-component />
                 </div>
-                <x-sidebar-header-component />
+
+
+                <x-sidebar-header-component :users="$users" :requests="$requests" />
             </div>
+
+
             {{$content}}
         </div>
     </div>

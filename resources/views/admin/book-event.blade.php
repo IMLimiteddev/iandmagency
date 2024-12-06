@@ -94,7 +94,7 @@
                                                             <option selected disabled>--Select company</option>
 
 
-                                                            @foreach ($comapnies as $company)
+                                                            @foreach ($companies as $company)
 
                                                             <option value="{{$company->company_email}}">{{$company->company_name}}</option>
 

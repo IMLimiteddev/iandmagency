@@ -96,9 +96,13 @@
                         <i data-tw-merge="" data-lucide="user-square"
                             class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Candidates</div>
+                        @if ($users->where('is_new', true)->where('code', 3188)->count() > 0)
+
                         <div class="side-menu__link__badge">
-                            4
+                            {{$users->where('is_new', true)->where('code', 3188)->count()}}
                         </div>
+                        @endif
+
                     </a>
                     <!-- BEGIN: Second Child -->
                     <!-- END: Second Child -->
@@ -109,9 +113,12 @@
                         class="side-menu__link {{Route::currentRouteName()== 'admin.all.companies' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="building" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Companies</div>
+                        @if ($users->where('is_new', true)->where('code', 3189)->count() > 0)
+
                         <div class="side-menu__link__badge">
-                            4
+                            {{$users->where('is_new', true)->where('code', 3189)->count()}}
                         </div>
+                        @endif
                     </a>
                     <!-- BEGIN: Second Child -->
                     <!-- END: Second Child -->
@@ -122,9 +129,7 @@
                         class="side-menu__link {{Route::currentRouteName()== 'admin.all.users' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="users" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Users On app</div>
-                        <div class="side-menu__link__badge">
-                            4
-                        </div>
+
                     </a>
                     <!-- BEGIN: Second Child -->
                     <!-- END: Second Child -->
@@ -133,7 +138,7 @@
 
                 @if (Auth::user() && Auth::user()->isAdmin())
                 <li class="side-menu__divider">
-                    Manage Request
+                    Manage Requests/Events
                 </li>
 
                 <li>
@@ -141,10 +146,13 @@
                         class="side-menu__link  {{Route::currentRouteName()== 'admin.all.requests' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="mail-check"
                             class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
-                        <div class="side-menu__link__title">All Request</div>
+                        <div class="side-menu__link__title">Requests</div>
+                        @if ($requests->where('is_new', true)->count() > 0)
+
                         <div class="side-menu__link__badge">
-                            4
+                            {{$requests->where('is_new', true)->count()}}
                         </div>
+                        @endif
                     </a>
                     <!-- BEGIN: Second Child -->
                     <!-- END: Second Child -->
@@ -153,9 +161,7 @@
                     <a href="{{route('admin.book.event')}}" class="side-menu__link">
                         <i data-tw-merge="" data-lucide="bell" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Book Event</div>
-                        <div class="side-menu__link__badge">
-                            4
-                        </div>
+
                     </a>
                     <!-- BEGIN: Second Child -->
                     <!-- END: Second Child -->

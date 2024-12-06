@@ -8,69 +8,10 @@
             <div class="container">
                 <div class="grid grid-cols-12 gap-x-6 gap-y-10">
                     <div class="col-span-12">
-                        <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
-                            <div class="text-base font-medium group-[.mode--light]:text-white">
-                                Company
-                            </div>
+                        <x-admin-stats-component />
 
-                        </div>
                         <div class="mt-3.5 flex flex-col gap-8">
-                            <div class="box box--stacked flex flex-col p-5">
-                                <div class="grid grid-cols-4 gap-5">
-                                    <div
-                                        class="box col-span-4 rounded-[0.6rem] border border-dashed border-slate-300/80 p-5 shadow-sm md:col-span-2 xl:col-span-1">
-                                        <div class="text-base text-slate-500">Registered Companies</div>
-                                        <div class="mt-1.5 text-2xl font-medium">457,204</div>
-                                        <div class="absolute inset-y-0 right-0 mr-5 flex flex-col justify-center">
-                                            <div
-                                                class="flex items-center rounded-full border border-danger/10 bg-danger/10 py-[2px] pl-[7px] pr-1 text-xs font-medium text-danger">
-                                                3%
-                                                <i data-tw-merge="" data-lucide="chevron-down"
-                                                    class="ml-px h-4 w-4 stroke-[1.5]"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="box col-span-4 rounded-[0.6rem] border border-dashed border-slate-300/80 p-5 shadow-sm md:col-span-2 xl:col-span-1">
-                                        <div class="text-base text-slate-500">Active Companies</div>
-                                        <div class="mt-1.5 text-2xl font-medium">122,721</div>
-                                        <div class="absolute inset-y-0 right-0 mr-5 flex flex-col justify-center">
-                                            <div
-                                                class="flex items-center rounded-full border border-success/10 bg-success/10 py-[2px] pl-[7px] pr-1 text-xs font-medium text-success">
-                                                2%
-                                                <i data-tw-merge="" data-lucide="chevron-up"
-                                                    class="ml-px h-4 w-4 stroke-[1.5]"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="box col-span-4 rounded-[0.6rem] border border-dashed border-slate-300/80 p-5 shadow-sm md:col-span-2 xl:col-span-1">
-                                        <div class="text-base text-slate-500">Engaged Companies</div>
-                                        <div class="font-mediumm mt-1.5 text-2xl">489,223</div>
-                                        <div class="absolute inset-y-0 right-0 mr-5 flex flex-col justify-center">
-                                            <div
-                                                class="flex items-center rounded-full border border-danger/10 bg-danger/10 py-[2px] pl-[7px] pr-1 text-xs font-medium text-danger">
-                                                3%
-                                                <i data-tw-merge="" data-lucide="chevron-down"
-                                                    class="ml-px h-4 w-4 stroke-[1.5]"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="box col-span-4 rounded-[0.6rem] border border-dashed border-slate-300/80 p-5 shadow-sm md:col-span-2 xl:col-span-1">
-                                        <div class="text-base text-slate-500">Contact</div>
-                                        <div class="font-mediumm mt-1.5 text-2xl">411,259</div>
-                                        <div class="absolute inset-y-0 right-0 mr-5 flex flex-col justify-center">
-                                            <div
-                                                class="flex items-center rounded-full border border-success/10 bg-success/10 py-[2px] pl-[7px] pr-1 text-xs font-medium text-success">
-                                                8%
-                                                <i data-tw-merge="" data-lucide="chevron-up"
-                                                    class="ml-px h-4 w-4 stroke-[1.5]"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="box box--stacked flex flex-col">
                                 <div class="flex flex-col gap-y-2 p-5 sm:flex-row sm:items-center">
                                     <div>
@@ -98,12 +39,18 @@
                                                 </td>
                                                 <td data-tw-merge=""
                                                     class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
-                                                    Position
+                                                    Email
                                                 </td>
                                                 <td data-tw-merge=""
                                                     class="px-5 border-b dark:border-darkmode-300 w-52 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
-                                                    Profile Completeness
+                                                    Country
                                                 </td>
+
+                                                <td data-tw-merge=""
+                                                    class="px-5 border-b dark:border-darkmode-300 w-52 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                                    Phone
+                                                </td>
+
                                                 <td data-tw-merge=""
                                                     class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
                                                     Status
@@ -119,7 +66,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {{-- @foreach ($users as $user)
+                                            @foreach ($companies as $company)
                                             <tr data-tw-merge="" class="[&_td]:last:border-b-0">
                                                 <td data-tw-merge=""
                                                     class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
@@ -132,42 +79,61 @@
 
                                                         <div class="ml-3.5">
                                                             <a class="whitespace-nowrap font-medium" href="#">
-                                                                {{$user?->name}}
+                                                                {{$company?->company_name}}
                                                             </a>
                                                             <div
                                                                 class="mt-0.5 whitespace-nowrap text-xs text-slate-500">
-                                                                {{$user?->email}}
+                                                                {{$company?->company_email}}
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td data-tw-merge=""
-                                                    class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
-                                                    <a class="whitespace-nowrap font-medium" href="#">
-                                                        {{$user?->info?->department ? $user?->info?->department : "Not
-                                                        added yet" }}
-                                                    </a>
-                                                    <div class="mt-0.5 whitespace-nowrap text-xs text-slate-500">
-                                                        {{$user?->info?->department ? $user?->info?->department : "Not
-                                                        added yet" }}
+                                                    class="px-5 border-b dark:border-darkmode-300 w-80 border-dashed py-4 dark:bg-darkmode-600">
+                                                    <div class="flex items-center">
+
+                                                        <div class="ml-3.5">
+                                                            <a class="whitespace-nowrap font-medium" href="#">
+                                                                {{$company?->company_email}}
+                                                            </a>
+
+                                                        </div>
                                                     </div>
                                                 </td>
                                                 <td data-tw-merge=""
-                                                    class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
-                                                    <div class="w-40">
-                                                        <div class="text-xs text-slate-500">
-                                                            60%
-                                                        </div>
-                                                        <div class="mt-1.5 flex h-1 rounded-sm border bg-slate-50">
+                                                    class="px-5 border-b dark:border-darkmode-300 w-80 border-dashed py-4 dark:bg-darkmode-600">
+                                                    <div class="flex items-center">
+
+                                                        <div class="ml-3.5">
+                                                            <a class="whitespace-nowrap font-medium" href="#">
+                                                                {{$company?->country}}
+                                                            </a>
                                                             <div
-                                                                class="first:rounded-l-sm last:rounded-r-sm border border-primary/20 -m-px bg-primary/90 w-[25%]">
+                                                                class="mt-0.5 whitespace-nowrap text-xs text-slate-500">
+                                                                {{$company?->company_address}}
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </td>
+
+                                                <td data-tw-merge=""
+                                                    class="px-5 border-b dark:border-darkmode-300 w-80 border-dashed py-4 dark:bg-darkmode-600">
+                                                    <div class="flex items-center">
+
+                                                        <div class="ml-3.5">
+                                                            <a class="whitespace-nowrap font-medium" href="#">
+                                                                {{$company?->company_phone}}
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                
+
                                                 <td data-tw-merge=""
                                                     class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
-                                                    @if ($user?->info?->is_active == 1)
+
+                                                    @if ($company?->is_active == 1)
 
                                                     <div class="flex items-center justify-center text-success">
                                                         <i data-tw-merge="" data-lucide="database"
@@ -190,15 +156,17 @@
                                                     </div>
 
                                                     @endif
+
+
                                                 </td>
                                                 <td data-tw-merge=""
                                                     class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
                                                     <div class="ml-3.5">
                                                         <a class="whitespace-nowrap font-medium" href="#">
-                                                            {{$user?->created_at}}
+                                                            {{$company?->created_at}}
                                                         </a>
                                                         <div class="mt-0.5 whitespace-nowrap text-xs text-slate-500">
-                                                            {{$user?->created_at->diffForHumans()}}
+                                                            {{$company?->created_at->diffForHumans()}}
                                                         </div>
                                                     </div>
                                                 </td>
@@ -232,18 +200,18 @@
                                                                             data-tw-merge="" data-lucide="trash2"
                                                                             class="stroke-[1] mr-2 h-4 w-4"></i>
                                                                         Delete</a>
-                                                                    <a href="{{route('admin.single.candidate', $user->email)}}"
+                                                                    {{-- <a href="{{route('admin.single.candidate', $comapny->email)}}"
                                                                         class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-success"><i
                                                                             data-tw-merge="" data-lucide="eye"
                                                                             class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                                        View</a>
+                                                                        View</a> --}}
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            @endforeach --}}
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>

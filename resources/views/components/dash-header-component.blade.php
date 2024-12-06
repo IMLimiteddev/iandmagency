@@ -340,6 +340,14 @@
                         src="{{$user?->company?->company_logo}}" alt="codeBrown">
                 </button>
                 @endif
+                @if (Auth::user() && Auth::user()->isAdmin())
+
+                <button
+                    data-tw-toggle="dropdown" aria-expanded="false"
+                    class="cursor-pointer image-fit h-[36px] w-[36px] overflow-hidden rounded-full border-[3px] border-slate-200/70"><img
+                        src="/dash/dist/images/users/avatar.jpeg" alt="codeBrown">
+                </button>
+                @endif
                 <div data-transition="" data-selector=".show" data-enter="transition-all ease-linear duration-150"
                     data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
                     data-enter-to="!mt-1 visible opacity-100 translate-y-0"

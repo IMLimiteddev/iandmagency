@@ -28,10 +28,10 @@
                                     </div>
                                     <div class="mt-12 flex items-center">
                                         <div class="text-2xl font-medium text-white">
-                                            0
+                                            {{$companies?->count()}}
                                         </div>
                                         <div class="ml-3.5 flex items-center rounded-full border border-success/50 bg-success/50 py-[2px] pl-[7px] pr-1 text-xs font-medium text-white/90">
-                                            0%
+                                            {{$companies?->count()/0.1}}%
                                             <i data-tw-merge="" data-lucide="chevron-up" class="ml-px h-4 w-4 stroke-[1.5]"></i>
                                         </div>
                                     </div>
@@ -45,9 +45,9 @@
                                         <i data-tw-merge="" data-lucide="app-window" class="stroke-[1] h-6 w-6 fill-primary/10 text-primary"></i>
                                     </div>
                                     <div class="mt-12 flex items-center">
-                                        <div class="text-2xl font-medium">0</div>
+                                        <div class="text-2xl font-medium">{{$requests?->count()}}</div>
                                         <div class="ml-3.5 flex items-center rounded-full border border-danger/50 bg-danger/70 py-[2px] pl-[7px] pr-1 text-xs font-medium text-white/90">
-                                            0%
+                                            {{$requests?->count()/0.1}}%
                                             <i data-tw-merge="" data-lucide="chevron-down" class="ml-px h-4 w-4 stroke-[1.5]"></i>
                                         </div>
                                     </div>
@@ -61,9 +61,9 @@
                                         <i data-tw-merge="" data-lucide="box" class="stroke-[1] h-6 w-6 fill-info/10 text-info"></i>
                                     </div>
                                     <div class="mt-12 flex items-center">
-                                        <div class="text-2xl font-medium">0</div>
+                                        <div class="text-2xl font-medium">{{$events?->count()}}</div>
                                         <div class="ml-3.5 flex items-center rounded-full border border-success/50 bg-success/70 py-[2px] pl-[7px] pr-1 text-xs font-medium text-white/90">
-                                            0%
+                                            {{$events?->count()/0.1}}%
                                             <i data-tw-merge="" data-lucide="chevron-up" class="ml-px h-4 w-4 stroke-[1.5]"></i>
                                         </div>
                                     </div>
@@ -77,14 +77,14 @@
                                         <i data-tw-merge="" data-lucide="layout" class="stroke-[1] h-6 w-6 fill-primary/10 text-primary"></i>
                                     </div>
                                     <div class="mt-12 flex items-center">
-                                        <div class="text-2xl font-medium">0</div>
+                                        <div class="text-2xl font-medium">{{$users?->count()}}</div>
                                         <div class="ml-3.5 flex items-center rounded-full border border-success/50 bg-success/70 py-[2px] pl-[7px] pr-1 text-xs font-medium text-white/90">
-                                            0%
+                                            {{$users?->count()/0.1}}%
                                             <i data-tw-merge="" data-lucide="chevron-up" class="ml-px h-4 w-4 stroke-[1.5]"></i>
                                         </div>
                                     </div>
                                     <div class="mt-1 text-base text-slate-500">
-                                        Total Engagements
+                                        Total Candidates
                                     </div>
 
                                 </div>
@@ -104,11 +104,11 @@
                     <div class="box box--stacked mt-3.5 p-5">
                         <div class="mb-5 flex flex-col items-center gap-y-2 border-b border-dashed border-slate-300/70 pb-5 sm:flex-row">
                             <div class="image-fit h-14 w-14 overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                <img src="/dash/dist/images/users/user2-50x50.jpg" alt="Tailwise - Admin Dashboard Template">
+                                <img src="{{$user?->company?->company_logo}}" alt="Tailwise - Admin Dashboard Template">
                             </div>
                             <div class="text-center sm:ml-4 sm:text-left">
                                 <div class="text-base font-medium">
-                                    Meryl Streep
+                                    {{}}
                                 </div>
                                 <div class="mt-0.5 text-slate-500">
                                    Engineering

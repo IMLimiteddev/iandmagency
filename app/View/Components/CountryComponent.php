@@ -4,21 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class SidebarHeaderComponent extends Component
+class CountryComponent extends Component
 {
-
-    public $users;
-    public $requests;
-
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($users, $requests)
+    public function __construct()
     {
-        $this->users = $users;
-        $this->requests = $requests;
+        //
     }
 
     /**
@@ -28,6 +23,6 @@ class SidebarHeaderComponent extends Component
      */
     public function render()
     {
-        return view('components.sidebar-header-component');
+        return view('components.country-component');
     }
 }
