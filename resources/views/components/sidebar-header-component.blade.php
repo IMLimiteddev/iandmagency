@@ -158,7 +158,7 @@
                     <!-- END: Second Child -->
                 </li>
                 <li>
-                    <a href="{{route('admin.book.event')}}" class="side-menu__link">
+                    <a href="{{route('admin.book.event')}}" class="side-menu__link {{Route::currentRouteName()== 'admin.book.event' ? 'side-menu__link--active': ''}}">
                         <i data-tw-merge="" data-lucide="bell" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                         <div class="side-menu__link__title">Book Event</div>
 

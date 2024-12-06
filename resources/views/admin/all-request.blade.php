@@ -9,12 +9,15 @@
                 <div class="container">
                     <div class="grid grid-cols-12 gap-x-6 gap-y-10">
                         <div class="col-span-12">
+
+                            <x-admin-stats-component />
+
                             {{-- <div class="flex flex-col mt-4 gap-y-3 md:mt-0 md:h-10 md:flex-row md:items-center">
                                 <div class="text-base font-medium group-[.mode--light]:text-white">
                                     Inbox
                                 </div>
                                 <div class="flex flex-col gap-x-3 gap-y-2 sm:flex-row md:ml-auto">
-      
+
                               <button data-tw-merge=""
                                         class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary group-[.mode--light]:!border-transparent group-[.mode--light]:!bg-white/[0.12] group-[.mode--light]:!text-slate-200"><i
                                             data-tw-merge="" data-lucide="mail-plus"
@@ -28,12 +31,12 @@
                                 </div>
                             </div> --}}
 
-                            <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
+                            {{-- <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                                 <div class="text-base font-medium group-[.mode--light]:text-dark">
                                     Requests
                                 </div>
 
-                            </div>
+                            </div> --}}
                             <div class="mt-3.5 flex flex-col gap-5 sm:flex-row">
 
                                 <div class="w-full pb-10 overflow-hidden">
@@ -47,8 +50,8 @@
                                                         class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 rounded-[0.5rem] pl-9 sm:w-64">
                                                 </div>
                                             </div>
-                                            {{-- <div class="flex flex-col gap-x-3 gap-y-2 sm:ml-auto sm:flex-row">
-                                                <div data-tw-merge="" data-tw-placement="bottom-end"
+                                            <div class="flex flex-col gap-x-3 gap-y-2 sm:ml-auto sm:flex-row">
+                                                {{-- <div data-tw-merge="" data-tw-placement="bottom-end"
                                                     class="dropdown relative"><button data-tw-merge=""
                                                         data-tw-toggle="dropdown" aria-expanded="false"
                                                         class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&:hover:not(:disabled)]:bg-secondary/20 [&:hover:not(:disabled)]:dark:bg-darkmode-100/10 w-full sm:w-auto"><i
@@ -75,9 +78,14 @@
 
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
+                                            </div>
 
-                                            </div> --}}
+                                            <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
+                                                <div class="text-base font-medium 2xl:group-[.mode--light]:text-white">
+                                                    All Request
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="mt-0.5 px-5">
 
@@ -86,7 +94,7 @@
                                                 @foreach ($reqs as $item)
 
 
-                                                <a target="blank" href="{{route('admin.single.request')}}">
+                                                <a target="blank" href="{{route('admin.single.request', $item->id)}}">
                                                     <div
                                                         class="overflow-x-auto rounded-[0.6rem] border border-slate-200/70 border-t-slate-200/60 shadow-sm sm:overflow-x-visible">
                                                         <div
@@ -135,13 +143,13 @@
                                                 @endforeach
                                             </div>
                                         </div>
-                                        <div
+                                        {{-- <div
                                             class="flex flex-col items-center p-5 text-center text-slate-500/80 sm:flex-row sm:text-left">
                                             <div>4.41 GB (25%) of 17 GB used Manage</div>
                                             <div class="mt-2 sm:ml-auto sm:mt-0">
                                                 Last request activity: 36 minutes ago
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>

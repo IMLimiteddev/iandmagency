@@ -12,7 +12,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/single-candidate/{email}', [AdminController::class, 'singleCandidate'])->name('admin.single.candidate');
 
     Route::get('/all-requests', [AdminController::class, 'allRequest'])->name('admin.all.requests');
-    Route::get('/single-request', [AdminController::class, 'singleRequest'])->name('admin.single.request');
+    Route::get('/single-request/{request_id}', [AdminController::class, 'singleRequest'])->name('admin.single.request');
 
     Route::get('/all-companies', [AdminController::class, 'allCompanies'])->name('admin.all.companies');
     // Route::get('/single-request', [AdminController::class, 'singleRequest'])->name('admin.single.request');

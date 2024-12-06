@@ -134,10 +134,10 @@ class AdminController extends Controller
 
 
 
-    public function singleRequest()
+    public function singleRequest($request_id)
     {
-
-        return view('admin.single-request');
+        $data['request'] = ModelsRequest::findOrFail($request_id);
+        return view('admin.single-request', $data);
     }
 
 

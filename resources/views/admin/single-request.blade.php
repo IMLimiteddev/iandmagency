@@ -28,9 +28,12 @@
                                             class="transition duration-200 border shadow-sm inline-flex items-center justify-center px-3 font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary/70 text-slate-500 dark:border-darkmode-400 dark:bg-darkmode-400 dark:text-slate-300 [&:hover:not(:disabled)]:bg-slate-100 [&:hover:not(:disabled)]:border-slate-100 [&:hover:not(:disabled)]:dark:border-darkmode-300/80 [&:hover:not(:disabled)]:dark:bg-darkmode-300/80 rounded-[0.6rem] bg-white py-3"><i
                                                 data-tw-merge="" data-lucide="download"
                                                 class="mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                            <span class="max-w-[3.8rem] truncate sm:max-w-none">
-                                                Download request
-                                            </span>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+
+                                                <span class="max-w-[3.8rem] truncate sm:max-w-none">
+                                                    Download request
+                                                </span>
+                                            </a>
                                             <i data-tw-merge="" data-lucide="chevron-down"
                                                 class="ml-2 h-4 w-4 stroke-[1.3]"></i></button>
                                         <div data-transition="" data-selector=".show"
@@ -77,7 +80,7 @@
                                                 Company Request
                                             </a>
                                             <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Team retreat in a scenic location
+                                                Description: {{$request->request_message}}
                                             </div>
                                             <div data-tw-merge="" data-tw-placement="bottom-end"
                                                 class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
@@ -117,64 +120,20 @@
                                                     <div class="ml-auto">
                                                         <div
                                                             class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Alcon NG.</span>
+                                                            <span class="-mt-px">{{$request->company_name}}</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
+                                                    <div class="text-slate-500">Company Email:</div>
                                                     <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        All Day
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atMeryl Streep"
-                                                                    src="/dash/dist/images/users/user2-50x50.jpg"
-                                                                    alt="Tailwise - Admin Dashboard Template"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atCate Blanchett"
-                                                                    src="/dash/dist/images/users/user8-50x50.jpg"
-                                                                    alt="Tailwise - Admin Dashboard Template"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atAngelina Jolie"
-                                                                    src="/dash/dist/images/users/user4-50x50.jpg"
-                                                                    alt="Tailwise - Admin Dashboard Template"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atLeonardo DiCaprio"
-                                                                    src="/dash/dist/images/users/user3-50x50.jpg"
-                                                                    alt="Tailwise - Admin Dashboard Template"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (76+)
-                                                            </div>
+                                                        <div
+                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
+                                                            <span class="-mt-px">{{$request->company_email}}</span>
                                                         </div>
                                                     </div>
                                                 </div>
+                                               
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">Registration Link:</div>
                                                     <div class="ml-auto">
