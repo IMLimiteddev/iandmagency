@@ -35,15 +35,21 @@ class AdminController extends Controller
         $book->candidate_email = $request->candidate_email;
         $book->start_date = $request->start_date;
         $book->end_date = $request->end_date;
+        $book->start_time = $request->start_time;
+        $book->end_time = $request->end_time;
         $book->link = $request->link;
+        $book->participants= $request->participant;
         $book->details = $request->details;
         $book->save();
 
         $message = [
             'start_date' => $book->start_date,
             'end_date' => $book->end_date,
+            'start_time' => $book->start_time,
+            'end_time' => $book->end_time,
             'link' => $book->link,
             'details' => $book->details,
+            'participant' => $book->participants,
         ];
 
         Mail::to('clintonace09@gmail.com')

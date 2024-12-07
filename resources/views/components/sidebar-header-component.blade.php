@@ -166,6 +166,15 @@
                     <!-- BEGIN: Second Child -->
                     <!-- END: Second Child -->
                 </li>
+                <li>
+                    <a href="{{route('admin.all.events')}}" class="side-menu__link {{Route::currentRouteName()== 'admin.all.events' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="play" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Events</div>
+
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
                 @endif
 
                 @if (Auth::user() && Auth::user()->isCandidate())

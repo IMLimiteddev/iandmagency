@@ -31,6 +31,18 @@
         <td style="text-align: left; padding: 8px; border: 1px solid #ddd;"> End date</td>
         <td style="text-align: left; padding: 8px; border: 1px solid #ddd;">{{ $message['end_date']}} </td>
     </tr>
+    <tr>
+        <td style="text-align: left; padding: 8px; border: 1px solid #ddd;"> Meeting Participants</td>
+        <td style="text-align: left; padding: 8px; border: 1px solid #ddd;">{{ $message['participant']}} </td>
+    </tr>
+    <tr>
+        <td style="text-align: left; padding: 8px; border: 1px solid #ddd;"> Start time</td>
+        <td style="text-align: left; padding: 8px; border: 1px solid #ddd;">{{ $message['start_time']}} </td>
+    </tr>
+    <tr>
+        <td style="text-align: left; padding: 8px; border: 1px solid #ddd;"> End time</td>
+        <td style="text-align: left; padding: 8px; border: 1px solid #ddd;">{{ $message['end_time']}} </td>
+    </tr>
 
 </table>
 
