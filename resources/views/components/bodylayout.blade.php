@@ -132,60 +132,42 @@
     <div class="auto-container">
         <div class="d-flex align-items-center justify-content-between wow fadeInUp">
             <div class="sec-title">
-                <h2>Popular Candidates Categories</h2>
-                <div class="text">2020 Candidates live - 293 added today.</div>
+                <h2>Popular Candidates Sector</h2>
+                <div class="text">2024 Candidates live - 200 added today.</div>
             </div>
-            <a href="#" class="text ud-btn2">View All Categories <i class="fal fa-long-arrow-right"></i></a>
+            <a href="#" class="text ud-btn2">View All Sectors<i class="fal fa-long-arrow-right"></i></a>
         </div>
         <div class="row wow fadeInUp">
+            @if ($department->isEmpty())
+
+            <!-- Category Block -->
+            <div class="category-block-two at-home22 col-xl-3 col-sm-6">
+                <div class="inner-box text-start">
+                    <div class="content justify-content-start d-block">
+
+                        <p class="text">No Sector added yet!</p>
+                    </div>
+                </div>
+            </div>
+            @else
+
+            @foreach ($department as $d)
+
             <!-- Category Block -->
             <div class="category-block-two at-home22 col-xl-3 col-sm-6">
                 <div class="inner-box text-start">
                     <div class="content justify-content-start d-block">
                         <span class="icon flaticon-money justify-content-start-1"></span>
-                        <p>(2 open positions)</p>
-                        <h4><a href="#">Accounting / Finance</a></h4>
-                        <p class="text">Sit amet, consectetur adipiscing <br class="d-none d-xl-block"> elit, sed do
-                            eiusmod.</p>
+
+                        <h4><a href="#">{{$d->name}}</a></h4>
+                        
                     </div>
                 </div>
             </div>
-            <!-- Category Block -->
-            <div class="category-block-two at-home22 col-xl-3 col-sm-6">
-                <div class="inner-box text-start">
-                    <div class="content justify-content-start d-block">
-                        <span class="icon flaticon-promotion"></span>
-                        <p>(86 open positions)</p>
-                        <h4><a href="#">Marketing</a></h4>
-                        <p class="text">Sit amet, consectetur adipiscing <br class="d-none d-xl-block"> elit, sed do
-                            eiusmod.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Block -->
-            <div class="category-block-two at-home22 col-xl-3 col-sm-6">
-                <div class="inner-box text-start">
-                    <div class="content justify-content-start d-block">
-                        <span class="icon flaticon-vector"></span>
-                        <p>(43 open positions)</p>
-                        <h4><a href="#">Design</a></h4>
-                        <p class="text">Sit amet, consectetur adipiscing <br class="d-none d-xl-block"> elit, sed do
-                            eiusmod.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Category Block -->
-            <div class="category-block-two at-home22 col-xl-3 col-sm-6">
-                <div class="inner-box text-start">
-                    <div class="content justify-content-start d-block">
-                        <span class="icon flaticon-web-programming"></span>
-                        <p>(12 open positions)</p>
-                        <h4><a href="#">Development</a></h4>
-                        <p class="text">Sit amet, consectetur adipiscing <br class="d-none d-xl-block"> elit, sed do
-                            eiusmod.</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
+            @endif
+
         </div>
     </div>
 </section>
@@ -202,7 +184,7 @@
         <div class="row wow fadeInUp">
             <!-- Job Block-two -->
 
-            @if ($companies == null)
+            @if ($companies->isEmpty())
 
 
             <div class="job-block-two col-lg-12">
@@ -334,7 +316,7 @@
             <div class="testimonial-carousel-three owl-carousel owl-theme default-dots">
 
                 <!--Testimonial Block -->
-                @if ($testimonies == null)
+                @if ($testimonies->isEmpty())
 
                 <div class="testimonial-block">
                     <div class="inner-box">

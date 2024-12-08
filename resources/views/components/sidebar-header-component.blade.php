@@ -179,6 +179,43 @@
 
                 @if (Auth::user() && Auth::user()->isAdmin())
                 <li class="side-menu__divider">
+                    Admin Tools
+                </li>
+
+                <li>
+                    <a href="{{route('admin.dept.view')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.dept.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="layers"
+                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Department</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+                <li>
+                    <a href="{{route('admin.hobby.view')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.hobby.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="zap"
+                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Hobby</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+                <li>
+                    <a href="{{route('admin.skill.view')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.skill.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="target"
+                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Skill</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+
+                @endif
+                @if (Auth::user() && Auth::user()->isAdmin())
+                <li class="side-menu__divider">
                     Site Builder
                 </li>
 

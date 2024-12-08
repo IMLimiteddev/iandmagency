@@ -650,6 +650,8 @@
 crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
 
+@yield('script')
+
 @yield('cancelScript')
 
     {{-- <script>

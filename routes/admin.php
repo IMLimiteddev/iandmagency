@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SiteBuilderController;
+use App\Http\Controllers\ToolController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->middleware('admin')->group(function () {
@@ -39,6 +40,22 @@ Route::prefix('admin')->middleware('admin')->group(function () {
      Route::get('/build-testimonies-view', [SiteBuilderController::class, 'testimoniesView'])->name('admin.testimonies.view');
      Route::post('/build-testimonies', [SiteBuilderController::class, 'storeTestimony'])->name('admin.testimonies');
 
+    });
+
+
+    Route::prefix('tools')->middleware('admin')->group(function () {
+
+     Route::get('/dept-tool-view', [ToolController::class, 'deptView'])->name('admin.dept.view');
+     Route::get('/skill-tool-view', [ToolController::class, 'skillView'])->name('admin.skill.view');
+     Route::get('/hobby-tool-view', [ToolController::class, 'hobbyView'])->name('admin.hobby.view');
+
+     Route::post('/dept-create', [ToolController::class, 'deptCreate'])->name('admin.dept.create');
+     Route::post('/skill-create', [ToolController::class, 'skillCreate'])->name('admin.skill.create');
+     Route::post('/hobby-create', [ToolController::class, 'hobbyCreate'])->name('admin.hobby.create');
+
+     Route::post('/dept-edit', [ToolController::class, 'deptEdit'])->name('admin.dept.edit');
+     Route::post('/skill-edit', [ToolController::class, 'skillEdit'])->name('admin.skill.edit');
+     Route::post('/hobby-edit', [ToolController::class, 'hobbyEdit'])->name('admin.hobby.edit');
     });
 
 });
