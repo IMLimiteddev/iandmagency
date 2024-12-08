@@ -177,6 +177,24 @@
                 </li>
                 @endif
 
+                @if (Auth::user() && Auth::user()->isAdmin())
+                <li class="side-menu__divider">
+                    Site Builder
+                </li>
+
+                <li>
+                    <a href="{{route('admin.testimonies.view')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.testimonies.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="chrome"
+                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Testimony</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+
+                @endif
+
                 @if (Auth::user() && Auth::user()->isCandidate())
                 <li class="side-menu__divider">
                     Manage Profile

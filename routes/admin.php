@@ -2,6 +2,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SiteBuilderController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->middleware('admin')->group(function () {
@@ -31,5 +32,14 @@ Route::prefix('admin')->middleware('admin')->group(function () {
 
 
     Route::get('/all-users', [AdminController::class, 'allUsers'])->name('admin.all.users');
+
+
+    Route::prefix('site-builder')->middleware('admin')->group(function () {
+
+     Route::get('/build-testimonies-view', [SiteBuilderController::class, 'testimoniesView'])->name('admin.testimonies.view');
+     Route::post('/build-testimonies', [SiteBuilderController::class, 'storeTestimony'])->name('admin.testimonies');
+
+    });
+
 });
 

@@ -375,11 +375,13 @@
                 @foreach ($infos as $info)
                 <div class="candidate-block">
                     <div class="inner-box">
-                        <figure><img style="border-radius: 10px; height: 200px; width: 200px" src="{{$info->image}}" alt="{{$info->image}}"></figure>
+                        <figure><img style="border-radius: 10px; height: 200px; width: 200px" src="{{$info->image}}"
+                                alt="{{$info->image}}"></figure>
                         <h4 class="name">{{$info->first_name}} {{$info->last_name}}</h4>
                         <span class="designation">{{$info->department}}</span>
                         <div class="location"><i class="flaticon-map-locator"></i> Lagos, NG</div>
-                        <a href="{{route('onboarding.candidate.details', $info->email)}}" class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
+                        <a href="{{route('onboarding.candidate.details', $info->email)}}"
+                            class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
                     </div>
                 </div>
                 @endforeach
@@ -391,70 +393,59 @@
 </section>
 <!-- End Candidates Section -->
 
-<!-- Testimonial Section Two -->
-<section class="testimonial-section-two">
-    <div class="container-fluid">
-        <div class="testimonial-left"><img src="/onboarding/images/resource/testimonial-left.png" alt=""></div>
-        <div class="testimonial-right"><img src="/onboarding/images/resource/testimonial-right.png" alt=""></div>
+<!-- Testimonial Section -->
+<section class="testimonial-section style-two">
+    <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title text-center">
             <h2>Testimonials From Our Customers</h2>
-            <div class="text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor</div>
+            <div class="text">Great reviews from our customers.</div>
         </div>
 
         <div class="carousel-outer wow fadeInUp">
+
             <!-- Testimonial Carousel -->
-            <div class="testimonial-carousel owl-carousel owl-theme">
+            <div class="testimonial-carousel-three owl-carousel owl-theme default-dots">
 
                 <!--Testimonial Block -->
-                <div class="testimonial-block-two">
+                @if ($testimonies == null)
+
+                <div class="testimonial-block">
                     <div class="inner-box">
-                        <div class="thumb"><img src="/onboarding/images/resource/testi-thumb-1.png" alt=""></div>
-                        <h4 class="title">Great quality!</h4>
-                        <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out
-                            quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level
-                            of quality</div>
+                        {{-- <h4 class="title">{{$t?->title}}</h4> --}}
+                        <div class="text">No testimonies yet!</div>
                         <div class="info-box">
-                            <h4 class="name">Brooklyn Simmons</h4>
-                            <span class="designation">Web Developer</span>
+                            {{-- <div class="thumb"><img src="{{$t?->logo}}" alt="codeBrown"></div> --}}
+                            {{-- <h4 class="name">{{$t?->name}}</h4> --}}
+
                         </div>
                     </div>
                 </div>
 
-                <!--Testimonial Block -->
-                <div class="testimonial-block-two">
-                    <div class="inner-box">
-                        <div class="thumb"><img src="/onboarding/images/resource/testi-thumb-1.png" alt=""></div>
-                        <h4 class="title">Great quality!</h4>
-                        <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out
-                            quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level
-                            of quality</div>
-                        <div class="info-box">
-                            <h4 class="name">Brooklyn Simmons</h4>
-                            <span class="designation">Web Developer</span>
-                        </div>
-                    </div>
-                </div>
+                @else
+                @foreach ($testimonies as $t)
 
-                <!--Testimonial Block -->
-                <div class="testimonial-block-two">
+                <div class="testimonial-block">
                     <div class="inner-box">
-                        <div class="thumb"><img src="/onboarding/images/resource/testi-thumb-1.png" alt=""></div>
-                        <h4 class="title">Great quality!</h4>
-                        <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out
-                            quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level
-                            of quality</div>
+                        <h4 class="title">{{$t?->title}}</h4>
+                        <div class="text">{{$t?->testimony}}</div>
                         <div class="info-box">
-                            <h4 class="name">Brooklyn Simmons</h4>
-                            <span class="designation">Web Developer</span>
+                            <div class="thumb"><img style="height: 71px; width: 71px; border-radius:50%;" src="{{$t?->logo}}" alt="codeBrown"></div>
+                            <h4 class="name">{{$t?->name}}</h4>
+
                         </div>
                     </div>
                 </div>
+                @endforeach
+                @endif
+
+
             </div>
         </div>
     </div>
 </section>
 <!-- End Testimonial Section -->
+
 
 <!-- Call To Action Two -->
 <section class="call-to-action-two" style="background-color:black;">

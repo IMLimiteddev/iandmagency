@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use App\Models\Information;
+use App\Models\Testimony;
 use Illuminate\View\Component;
 
 class Bodylayout extends Component
@@ -25,8 +26,9 @@ class Bodylayout extends Component
      */
     public function render()
     {
-        return view('components.bodylayout', [
-            'infos'=>Information::all(),
-        ]);
+
+        $data['infos'] = Information::all();
+        $data['testimonies'] = Testimony::all();
+        return view('components.bodylayout', $data);
     }
 }
