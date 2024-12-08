@@ -1,6 +1,6 @@
 @extends('vendor.mail.html.layout')
 
-@section('header', 'Booking Notification')
+@section('header', 'Booking Cancellation')
 
 @section('content')
 
@@ -9,8 +9,8 @@
 </div>
 
   <!-- Candidate Details Section -->
-  <h1>Meeting details</h1>
-  <p>A meeting was booked, find below the meeting details:</p>
+  <h1>Meeting Cancelled</h1>
+  <p>This meeting was cancelled recently. Find below the details of the meeting.</p>
   <hr>
 
   <h3>Details:</h3>

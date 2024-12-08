@@ -74,25 +74,19 @@
                                         class="focus-visible:outline-none flex-1 bg-slate-50 first:rounded-l-[0.6rem] last:rounded-r-[0.6rem] [&[aria-selected='true']_button]:text-current">
                                         <button data-tw-merge="" data-tw-target="#example-2" role="tab"
                                             class="cursor-pointer appearance-none px-3 border border-transparent transition-colors dark:text-slate-400 [&.active]:text-slate-700 dark:border-transparent [&.active]:border [&.active]:shadow-sm [&.active]:font-medium [&.active]:border-slate-200 [&.active]:bg-white [&.active]:dark:text-slate-300 [&.active]:dark:bg-darkmode-400 [&.active]:dark:border-darkmode-400 flex w-full items-center justify-center whitespace-nowrap rounded-[0.6rem] py-2.5 text-[0.94rem] text-slate-500 xl:w-40">Events
-                                            <span
-                                                class="ml-2 flex h-5 items-center justify-center rounded-full border border-theme-1/10 bg-theme-1/10 px-1.5 text-xs font-medium text-theme-1/70">
-                                                7
-                                            </span></button>
+                                        </button>
                                     </li>
 
                                     <li id="example-4-tab" data-tw-merge="" role="presentation"
                                         class="focus-visible:outline-none flex-1 bg-slate-50 first:rounded-l-[0.6rem] last:rounded-r-[0.6rem] [&[aria-selected='true']_button]:text-current">
                                         <button data-tw-merge="" data-tw-target="#example-4" role="tab"
                                             class="cursor-pointer appearance-none px-3 border border-transparent transition-colors dark:text-slate-400 [&.active]:text-slate-700 dark:border-transparent [&.active]:border [&.active]:shadow-sm [&.active]:font-medium [&.active]:border-slate-200 [&.active]:bg-white [&.active]:dark:text-slate-300 [&.active]:dark:bg-darkmode-400 [&.active]:dark:border-darkmode-400 flex w-full items-center justify-center whitespace-nowrap rounded-[0.6rem] py-2.5 text-[0.94rem] text-slate-500 xl:w-40">Requests
-                                            <span
-                                                class="ml-2 flex h-5 items-center justify-center rounded-full border border-theme-1/10 bg-theme-1/10 px-1.5 text-xs font-medium text-theme-1/70">
-                                                5
-                                            </span></button>
+                                        </button>
                                     </li>
 
                                 </ul>
                                 <div class="flex items-center gap-3 2xl:ml-auto">
-                                    <div data-tw-merge="" data-tw-placement="bottom-end"
+                                    {{-- <div data-tw-merge="" data-tw-placement="bottom-end"
                                         class="dropdown relative mr-auto 2xl:mr-0"><button data-tw-merge=""
                                             data-tw-toggle="dropdown" aria-expanded="false"
                                             class="transition duration-200 border shadow-sm inline-flex items-center justify-center px-3 font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary/70 text-slate-500 dark:border-darkmode-400 dark:bg-darkmode-400 dark:text-slate-300 [&:hover:not(:disabled)]:bg-slate-100 [&:hover:not(:disabled)]:border-slate-100 [&:hover:not(:disabled)]:dark:border-darkmode-300/80 [&:hover:not(:disabled)]:dark:bg-darkmode-300/80 rounded-[0.6rem] bg-white py-3"><i
@@ -122,7 +116,7 @@
 
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     {{-- <div data-tw-merge="" data-tw-placement="bottom-end"
                                         class="dropdown relative inline-block"><button data-tw-merge=""
                                             data-tw-toggle="dropdown" aria-expanded="false"
@@ -550,7 +544,7 @@
                                                                                         class="mt-1 text-center text-xs text-slate-500">
                                                                                         Click to view file
                                                                                     </div>
-                                                                                    
+
                                                                                 </div>
                                                                             </div>
 
@@ -574,20 +568,22 @@
                                         <div class="relative col-span-12 row-start-1 xl:col-span-4 xl:col-start-9">
                                             <div class="sticky top-[6.2rem] flex flex-col gap-y-7">
                                                 <div class="box box--stacked flex flex-col p-5">
-                                                    <div>Profile Completion progress (83%)</div>
+                                                    <div>Profile Completion progress
+                                                        ({{$user?->info?->profile_completion_percentage ?
+                                                        $user?->info?->profile_completion_percentage : 0}}%)</div>
                                                     <div class="mt-3.5 flex h-2">
                                                         <div
-                                                            class="h-full w-[25%] border border-primary/50 bg-primary/50 first:rounded-l last:rounded-r">
+                                                            class="h-full w-[{{$user?->info?->profile_completion_percentage ? $user?->info?->profile_completion_percentage : 0}}%] border border-primary/50 bg-primary/50 first:rounded-l last:rounded-r">
                                                         </div>
                                                         <div
-                                                            class="h-full w-[100%] border border-slate-300 bg-slate-100 first:rounded-l last:rounded-r">
+                                                            class="h-full w-[%] border border-slate-300 bg-slate-100 first:rounded-l last:rounded-r">
                                                         </div>
                                                     </div>
-                                                    <a href="#" data-tw-merge=""
+                                                    {{-- <a href="#" data-tw-merge=""
                                                         class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed dark:border-primary mt-5 w-full border-primary/20 bg-white text-primary hover:bg-primary/20"><i
                                                             data-tw-merge="" data-lucide="inbox"
                                                             class="mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                        Profile Settings</a>
+                                                        Profile Settings</a> --}}
                                                 </div>
                                                 <div class="box box--stacked flex flex-col p-5">
                                                     <div
@@ -750,13 +746,18 @@
                                     data-leave-to="!p-0 !h-0 overflow-hidden invisible opacity-0" id="example-2"
                                     role="tabpanel" aria-labelledby="example-2-tab" class="tab-pane">
                                     <div class="mt-3.5 grid grid-cols-12 gap-x-6 gap-y-10">
+
+                                        @if ($bookings != null)
+
+                                        @foreach ($bookings as $booking)
+
                                         <div
                                             class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
                                             <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Company Retreat
+                                                Booked Event
                                             </a>
                                             <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Team retreat in a scenic location
+                                                {{$booking->details}}
                                             </div>
                                             <div data-tw-merge="" data-tw-placement="bottom-end"
                                                 class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
@@ -775,17 +776,25 @@
                                                     class="dropdown-menu absolute z-[9999] hidden">
                                                     <div data-tw-merge=""
                                                         class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
+                                                        <a href="{{route('admin.remake.event', $booking?->id)}}"
+                                                            target="blank"
                                                             class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
+                                                                data-tw-merge="" data-lucide="refresh-ccw"
                                                                 class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
+                                                            Reschedule</a>
+
+                                                        <form action="{{route('admin.cancel.event', $booking?->id)}}"
+                                                            method="POST">
+                                                            @csrf
+
+                                                            <button type="submit" onclick="confirmation(event)"
+                                                                class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
+                                                                    data-tw-merge="" data-lucide="trash"
+                                                                    class="stroke-[1] mr-2 h-4 w-4"></i>
+                                                                Cancel</button>
+
+                                                        </form>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -796,1049 +805,92 @@
                                                     <div class="ml-auto">
                                                         <div
                                                             class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Left4code</span>
+                                                            <span class="-mt-px">IandM Management</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
+                                                    <div class="text-slate-500">Company Email:</div>
+                                                    <div class="ml-auto">
+                                                        <div
+                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
+                                                            <span class="-mt-px">{{$booking?->company_email}}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Candidate Email:</div>
+                                                    <div class="ml-auto">
+                                                        <div
+                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
+                                                            <span class="-mt-px">{{$booking?->candidate_email}}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Participants:</div>
                                                     <div class="ml-auto">
                                                         <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
+                                                            {{$booking?->participants}}
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
+                                                    <div class="text-slate-500">Start Date:</div>
                                                     <div class="ml-auto text-slate-500">
-                                                        All Day
+                                                        {{$booking?->start_date}}
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atMeryl Streep"
-                                                                    src="/dash/dist/images/users/user2-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atCate Blanchett"
-                                                                    src="/dash/dist/images/users/user8-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atAngelina Jolie"
-                                                                    src="/dash/dist/images/users/user4-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atLeonardo DiCaprio"
-                                                                    src="/dash/dist/images/users/user3-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (76+)
-                                                            </div>
-                                                        </div>
+                                                    <div class="text-slate-500">End Date:</div>
+                                                    <div class="ml-auto text-slate-500">
+                                                        {{$booking?->end_date}}
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
+                                                    <div class="text-slate-500">Start Time:</div>
+                                                    <div class="ml-auto text-slate-500">
+                                                        {{-- {{$booking?->start_time}} --}}
+                                                        {{ date('h:i A', strtotime($booking?->start_time)) }}
+
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">End Time:</div>
+                                                    <div class="ml-auto text-slate-500">
+                                                        {{-- {{$booking?->end_time}} --}}
+                                                        {{ date('h:i A', strtotime($booking?->end_time)) }}
+
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Meeting Created At:</div>
+                                                    <div class="ml-auto text-slate-500">
+                                                        {{$booking?->created_at->diffForHumans()}}
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Meeting Link:</div>
                                                     <div class="ml-auto">
                                                         <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
                                                             href="#">
-                                                            https://left4code.com/company-retreat
+                                                            {{$booking?->link}}
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
+                                        @else
                                         <div
                                             class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
                                             <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Community Cleanup
+                                                No event booked Yet.
                                             </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Volunteer event to clean up the neighborhood
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Local Community Association</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        09:00 AM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atAngelina Jolie"
-                                                                    src="/dash/dist/images/users/user4-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atJohnny Depp"
-                                                                    src="/dash/dist/images/users/user7-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atCate Blanchett"
-                                                                    src="/dash/dist/images/users/user8-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atJennifer Lawrence"
-                                                                    src="/dash/dist/images/users/user6-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (83+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/community-cleanup
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
-                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Marketing Workshop
-                                            </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Workshop on modern marketing strategies
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Marketing Pro</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        11:15 AM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atJohnny Depp"
-                                                                    src="/dash/dist/images/users/user7-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atMeryl Streep"
-                                                                    src="/dash/dist/images/users/user2-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atTom Hanks"
-                                                                    src="/dash/dist/images/users/user1-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atBrad Pitt"
-                                                                    src="/dash/dist/images/users/user5-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (35+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/marketing-workshop
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
-                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Team Building Workshop
-                                            </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Team-building activities and games
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Team Builders Inc.</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        10:00 AM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atCate Blanchett"
-                                                                    src="/dash/dist/images/users/user8-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atTom Hanks"
-                                                                    src="/dash/dist/images/users/user1-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atJennifer Lawrence"
-                                                                    src="/dash/dist/images/users/user6-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atJulia Roberts"
-                                                                    src="/dash/dist/images/users/user10-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (54+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/team-building
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
-                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Networking Mixer
-                                            </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Networking event for professionals
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Networking Pro</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        07:30 PM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atDenzel Washington"
-                                                                    src="/dash/dist/images/users/user9-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atJulia Roberts"
-                                                                    src="/dash/dist/images/users/user10-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atMeryl Streep"
-                                                                    src="/dash/dist/images/users/user2-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atBrad Pitt"
-                                                                    src="/dash/dist/images/users/user5-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (98+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/networking-mixer
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
-                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Tech Conference
-                                            </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Annual tech conference for developers
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Tech Events Inc.</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        09:00 AM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atLeonardo DiCaprio"
-                                                                    src="/dash/dist/images/users/user3-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atBrad Pitt"
-                                                                    src="/dash/dist/images/users/user5-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atTom Hanks"
-                                                                    src="/dash/dist/images/users/user1-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atDenzel Washington"
-                                                                    src="/dash/dist/images/users/user9-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (73+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/tech-conference
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
-                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Holiday Party
-                                            </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Annual holiday celebration and party
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Left4code</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        08:00 PM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atLeonardo DiCaprio"
-                                                                    src="/dash/dist/images/users/user3-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atAngelina Jolie"
-                                                                    src="/dash/dist/images/users/user4-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atJennifer Lawrence"
-                                                                    src="/dash/dist/images/users/user6-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atCate Blanchett"
-                                                                    src="/dash/dist/images/users/user8-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (31+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/holiday-party
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
-                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Customer Workshop
-                                            </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Hands-on workshop for our customers
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">Left4code</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        10:30 AM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atLeonardo DiCaprio"
-                                                                    src="/dash/dist/images/users/user3-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atJennifer Lawrence"
-                                                                    src="/dash/dist/images/users/user6-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atCate Blanchett"
-                                                                    src="/dash/dist/images/users/user8-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atAngelina Jolie"
-                                                                    src="/dash/dist/images/users/user4-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (68+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/customer-workshop
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
-                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Webinar: AI in Healthcare
-                                            </a>
-                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                Online webinar on AI applications in healthcare
-                                            </div>
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Organizer:</div>
-                                                    <div class="ml-auto">
-                                                        <div
-                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
-                                                            <span class="-mt-px">AI Experts</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Available Seats:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center">
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 active [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                            <i data-tw-merge="" data-lucide="armchair"
-                                                                class="stroke-[1] w-5 h-5 mr-1 text-slate-400 fill-slate-100 [&amp;.active]:text-pending/80 [&amp;.active]:fill-pending/10 [&.active]:text-pending/80 [&.active]:fill-pending/10"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Time:</div>
-                                                    <div class="ml-auto text-slate-500">
-                                                        03:00 PM
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Attendees:</div>
-                                                    <div class="ml-auto">
-                                                        <div class="flex items-center justify-center">
-                                                            <div class="image-fit zoom-in h-6 w-6">
-                                                                <img data-placement="top" title="Uploaded atBrad Pitt"
-                                                                    src="/dash/dist/images/users/user5-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atJulia Roberts"
-                                                                    src="/dash/dist/images/users/user10-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atDenzel Washington"
-                                                                    src="/dash/dist/images/users/user9-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="image-fit zoom-in -ml-2 h-6 w-6">
-                                                                <img data-placement="top"
-                                                                    title="Uploaded atCate Blanchett"
-                                                                    src="/dash/dist/images/users/user8-50x50.jpg"
-                                                                    alt="codeBrown"
-                                                                    class="tooltip cursor-pointer rounded-full border-2 border-white">
-                                                            </div>
-                                                            <div class="ml-1 text-slate-500">
-                                                                (48+)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <div class="text-slate-500">Registration Link:</div>
-                                                    <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
-                                                            https://left4code.com/ai-webinar
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        @endif
+
                                     </div>
                                 </div>
 
@@ -1853,8 +905,20 @@
                                     data-leave-to="!p-0 !h-0 overflow-hidden invisible opacity-0" id="example-4"
                                     role="tabpanel" aria-labelledby="example-4-tab" class="tab-pane">
                                     <div class="mt-3.5 grid grid-cols-12 gap-x-6 gap-y-10">
+
+
+                                        @if ($user?->requests != null)
+
+                                        @foreach ($user?->requests as $req)
+
                                         <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
+                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
+                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
+                                                Request
+                                            </a>
+                                            <div class="mb-5 mt-1 leading-relaxed text-slate-500">
+                                                {{$req?->request_message}}
+                                            </div>
                                             <div data-tw-merge="" data-tw-placement="bottom-end"
                                                 class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
                                                     data-tw-toggle="dropdown" aria-expanded="false"
@@ -1872,707 +936,69 @@
                                                     class="dropdown-menu absolute z-[9999] hidden">
                                                     <div data-tw-merge=""
                                                         class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
+                                                        <a href="{{route('admin.respond.request', $req?->id)}}"
+                                                            target="blank"
                                                             class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
+                                                                data-tw-merge="" data-lucide="message-circle"
                                                                 class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
+                                                            Respond</a>
+
+
+
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user4-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Angelina Jolie
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        San Francisco, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        July 10, 2012
+                                            <div
+                                                class="mt-auto flex flex-col gap-3 border-t border-dashed border-slate-300/70 pt-5">
+
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Company Name:</div>
+                                                    <div class="ml-auto">
+                                                        <div
+                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
+                                                            <span class="-mt-px">{{$req?->company_name}}</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Account Management
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Account Executive
-                                                        </span>
-                                                    </span>
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Company Email:</div>
+                                                    <div class="ml-auto">
+                                                        <div
+                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
+                                                            <span class="-mt-px">{{$req?->company_email}}</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    73+ Connections
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Response:</div>
+                                                    <div class="ml-auto">
+                                                        <div
+                                                            class="flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs text-success">
+                                                            <span class="-mt-px">{{$req?->response}}</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary ml-auto px-4"><i
-                                                        data-tw-merge="" data-lucide="check"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connected</button>
+                                                <div class="flex items-center">
+                                                    <div class="text-slate-500">Request Created At:</div>
+                                                    <div class="ml-auto text-slate-500">
+                                                        {{$req?->created_at->diffForHumans()}}
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
+                                        @endforeach
+                                        @else
                                         <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user1-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Tom Hanks
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        New York, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        January 15, 2010
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Sales Department
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Sales Manager
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    82+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary ml-auto px-4"><i
-                                                        data-tw-merge="" data-lucide="check"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connected</button>
-                                            </div>
+                                            class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
+                                            <a class="text-[0.94rem] font-medium text-primary" href="#">
+                                                No Request yet.
+                                            </a>
                                         </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user7-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Johnny Depp
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        Denver, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        October 7, 2013
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Product Management
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Product Manager
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    54+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary ml-auto px-4"><i
-                                                        data-tw-merge="" data-lucide="check"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connected</button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user5-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Brad Pitt
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        Seattle, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        September 3, 2016
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Data Analytics
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Data Analyst
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    77+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed text-primary dark:border-primary [&:hover:not(:disabled)]:bg-primary/10 ml-auto border-primary/50 px-4"><i
-                                                        data-tw-merge="" data-lucide="user-plus"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connect</button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user6-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Jennifer Lawrence
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        Miami, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        February 18, 2019
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            CRM Team
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            CRM Administrator
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    66+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed text-primary dark:border-primary [&:hover:not(:disabled)]:bg-primary/10 ml-auto border-primary/50 px-4"><i
-                                                        data-tw-merge="" data-lucide="user-plus"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connect</button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user10-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Julia Roberts
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        Austin, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        August 9, 2014
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Engineering
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Software Engineer
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    22+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed text-primary dark:border-primary [&:hover:not(:disabled)]:bg-primary/10 ml-auto border-primary/50 px-4"><i
-                                                        data-tw-merge="" data-lucide="user-plus"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connect</button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user3-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Leonardo DiCaprio
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        Chicago, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        May 5, 2018
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Support Team
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Support Specialist
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    91+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary ml-auto px-4"><i
-                                                        data-tw-merge="" data-lucide="check"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connected</button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user8-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Cate Blanchett
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        Houston, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        June 12, 2017
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Project Management
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Project Manager
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    44+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary ml-auto px-4"><i
-                                                        data-tw-merge="" data-lucide="check"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connected</button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="box box--stacked col-span-12 flex flex-col md:col-span-6 xl:col-span-4">
-                                            <div data-tw-merge="" data-tw-placement="bottom-end"
-                                                class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
-                                                    data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                        data-lucide="more-vertical"
-                                                        class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                                </button>
-                                                <div data-transition="" data-selector=".show"
-                                                    data-enter="transition-all ease-linear duration-150"
-                                                    data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave="transition-all ease-linear duration-150"
-                                                    data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                    data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                    class="dropdown-menu absolute z-[9999] hidden">
-                                                    <div data-tw-merge=""
-                                                        class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Copy
-                                                            Link</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-10 flex flex-col items-center px-5 pb-10">
-                                                <div
-                                                    class="image-fit h-[72px] w-[72px] overflow-hidden rounded-full border-[3px] border-slate-200/70">
-                                                    <img src="/dash/dist/images/users/user2-50x50.jpg" alt="codeBrown">
-                                                </div>
-                                                <div class="mt-3 text-[0.94rem] font-medium text-primary">
-                                                    Meryl Streep
-                                                </div>
-                                                <div class="mt-2 flex items-center justify-center gap-3">
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="hotel"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        Los Angeles, USA
-                                                    </div>
-                                                    <div class="flex items-center text-slate-500">
-                                                        <i data-tw-merge="" data-lucide="calendar"
-                                                            class="mr-1.5 h-3.5 w-3.5 stroke-[1.3]"></i>
-                                                        March 22, 2015
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mt-5 flex flex-wrap items-center justify-center gap-2 sm:flex-row">
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Marketing Department
-                                                        </span>
-                                                    </span>
-                                                    <span
-                                                        class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
-                                                        <span class="-mt-px truncate">
-                                                            Marketing Coordinator
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center border-t border-slate-200/80 px-5 py-4">
-                                                <div class="text-slate-500">
-                                                    29+ Connections
-                                                </div>
-                                                <button data-tw-merge=""
-                                                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed text-primary dark:border-primary [&:hover:not(:disabled)]:bg-primary/10 ml-auto border-primary/50 px-4"><i
-                                                        data-tw-merge="" data-lucide="user-plus"
-                                                        class="-ml-0.5 mr-2 h-4 w-4 stroke-[1.3]"></i>
-                                                    Connect</button>
-                                            </div>
-                                        </div>
+                                        @endif
+
+
+
                                     </div>
                                 </div>
 
@@ -2585,5 +1011,29 @@
             </div>
         </div>
     </x-slot>
+
+    @section('cancelScript')
+
+    <script>
+        function confirmation(ev) {
+            ev.preventDefault(); // Prevent the default form submission
+
+            swal({
+                title: "Are you sure you want to cancel this event?",
+                text: "A mail will be sent to the company and the candidate to notify them of this cancellation. You will not be able to revert this!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willCancel) => {
+                if (willCancel) {
+                    // Submit the parent form if confirmed
+                    ev.target.closest('form').submit();
+                }
+            });
+        }
+
+    </script>
+    @endsection
 
 </x-app-layout>
