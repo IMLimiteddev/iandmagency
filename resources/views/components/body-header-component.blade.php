@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 flex flex-col gap-y-10 xl:col-span-6">
+            {{-- <div class="col-span-12 flex flex-col gap-y-10 xl:col-span-6">
                 <div>
                     <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                         <div class="text-base font-medium">Lead Company</div>
@@ -179,8 +179,8 @@
 
                     </div>
                 </div>
-            </div>
-            <div class="col-span-12 flex flex-col gap-y-10 xl:col-span-6">
+            </div> --}}
+            {{-- <div class="col-span-12 flex flex-col gap-y-10 xl:col-span-6">
                 <div>
                     <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                         <div class="text-base font-medium">Latest Projects</div>
@@ -211,19 +211,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{-- <div class="flex flex-col items-center gap-y-2 sm:flex-row">
-                                    <div class="text-slate-500 sm:w-36">
-                                        Creative Director
-                                    </div>
-                                    <div class="flex items-center sm:ml-5 sm:h-7">
-                                        <div class="image-fit zoom-in box h-6 w-6 overflow-hidden rounded-full border-2 border-slate-200/70">
-                                            <img src="/dash/dist/images/users/user6-50x50.jpg" alt="Tailwise - Admin Dashboard Template">
-                                        </div>
-                                        <div class="ml-2.5 underline decoration-primary/30 decoration-dotted underline-offset-[3px]">
 
-                                        </div>
-                                    </div>
-                                </div> --}}
                             </div>
                         </div>
                         <div>
@@ -260,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

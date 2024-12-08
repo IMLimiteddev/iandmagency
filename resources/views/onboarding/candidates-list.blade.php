@@ -27,7 +27,7 @@
                 <!-- Form Group -->
                 <div class="form-group col-lg-3 location">
                   <span class="icon flaticon-map-locator"></span>
-                  <input type="text" name="field_name" placeholder="City or postcode">
+                  <input type="text" id="" name="field_name" placeholder="City or postcode">
                 </div>
 
                 <!-- Form Group -->
@@ -35,14 +35,9 @@
                   <span class="icon flaticon-briefcase"></span>
                   <select class="chosen-select">
                     <option value="">All Categories</option>
-                    <option value="44">Accounting / Finance</option>
-                    <option value="106">Automotive Jobs</option>
-                    <option value="46">Customer</option>
-                    <option value="48">Design</option>
-                    <option value="47">Development</option>
-                    <option value="45">Health and Care</option>
-                    <option value="105">Marketing</option>
-                    <option value="107">Project Management</option>
+                    @foreach ($depts as $dp)
+                    <option value="{{$dp->name}}">{{$dp->name}}</option>
+                    @endforeach
                   </select>
                 </div>
 
@@ -54,7 +49,7 @@
             </form>
           </div>
           <!-- Job Search Form -->
-          <div class="row">
+          {{-- <div class="row">
             <div class="col-xl-7">
                 <!-- ls Switcher -->
                 <div class="ls-switcher at-slv7-main-list">
@@ -106,7 +101,7 @@
                   </div>
                 </div>
             </div>
-          </div>
+          </div> --}}
         </div>
       </section>
       <!--End Page Title-->
@@ -123,7 +118,7 @@
                 <!-- ls Switcher -->
                 <div class="ls-switcher at-slv7">
                   <div class="showing-result">
-                    <div class="text">Showing <strong>41-60</strong> of <strong>944</strong> candidates</div>
+                    <div class="text">Showing <strong>1-60</strong> of <strong>all</strong> candidates</div>
                   </div>
                   <div class="sort-by">
                     <select class="chosen-select">
@@ -174,11 +169,11 @@
                 </div>
 
                 <!-- Listing Show More -->
-                <div class="ls-show-more">
+                {{-- <div class="ls-show-more">
                   <p>Showing 36 of 497 Jobs</p>
                   <div class="bar"><span class="bar-inner" style="width: 20%"></span></div>
                   <button class="show-more">Show More</button>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div>

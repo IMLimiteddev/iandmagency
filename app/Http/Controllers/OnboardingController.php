@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\EngagementNotification;
+use App\Models\Department;
 use App\Models\Information;
 use App\Models\Request as ModelsRequest;
 use App\Models\User;
@@ -27,8 +28,9 @@ class OnboardingController extends Controller
     public function candidates_list()
     {
 
-        $infos = Information::with('medias')->get();
-        return view('onboarding.candidates-list', compact('infos'));
+        $data['infos'] = Information::with('medias')->get();
+        $data['depts'] = Department::all();
+        return view('onboarding.candidates-list', $data);
     }
     public function employer_list()
     {

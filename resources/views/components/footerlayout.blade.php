@@ -22,9 +22,7 @@
                       <li><a href="#">NG Jobs</a></li>
                       <li><a href="#">NG Jobs</a></li>
                       <li><a href="#">NG Jobs</a></li>
-                      <li><a href="#">Emplois en France</a></li>
-                      <li><a href="#">Jobs in Deutschland</a></li>
-                      <li><a href="#">Vacatures China</a></li>
+
                     </ul>
                   </div>
                 </div>
@@ -38,9 +36,7 @@
                     <ul class="list">
                       <li><a href="#">Privacy & Securty</a></li>
                       <li><a href="#">Terms of Service</a></li>
-                      <li><a href="#">Communications</a></li>
                       <li><a href="#">Referral Terms</a></li>
-                      <li><a href="#">Lending Licnses</a></li>
                       <li><a href="#">Disclaimers</a></li>
                     </ul>
 
@@ -48,7 +44,6 @@
                       <li><a href="#">Support</a></li>
                       <li><a href="#">How It Works</a></li>
                       <li><a href="#">For Employers</a></li>
-                      <li><a href="#">Underwriting</a></li>
                       <li><a href="#">Contact Us</a></li>
                     </ul>
                   </div>

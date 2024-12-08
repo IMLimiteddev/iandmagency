@@ -29,7 +29,7 @@ class Bodylayout extends Component
     public function render()
     {
 
-        $data['infos'] = Information::all();
+        $data['infos'] = Information::where('is_active', 1)->latest()->get();
         $data['testimonies'] = Testimony::all();
         $data['companies'] = Company::all();
         $data['department'] = Department::all();

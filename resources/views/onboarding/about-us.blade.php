@@ -7,10 +7,10 @@
     <section  class="page-title">
         <div class="auto-container">
           <div style="margin-top: 100px " class="title-outer">
-            <h1>Services</h1>
+            <h1>About Us</h1>
             <ul class="page-breadcrumb">
-              <li><a href="#">Home</a></li>
-              <li>Services</li>
+              <li><a href="{{route('welcome')}}">Home</a></li>
+              <li>About Us</li>
             </ul>
           </div>
         </div>

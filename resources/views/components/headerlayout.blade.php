@@ -21,6 +21,14 @@
                         {{-- <li class="current"> --}}
 
                         <li>
+                            <a href="{{route('welcome')}}">
+                                <span>Home</span>
+                            </a>
+
+
+                        </li>
+
+                        <li>
                             <span>
                                 <a style="color: white" href="{{route('portfolio.colors')}}">
                                     Portfolio
@@ -107,6 +115,7 @@
 
                         {{-- <li><a href="{{route('candidates.list')}}">Candidates List</a></li> --}}
 
+
                         <li>
                             <a href="{{route('candidates.list')}}">
                                 <span>Candidate List</span>
@@ -114,13 +123,13 @@
 
 
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="{{route('employer.list')}}">
                                 <span>Company List</span>
                             </a>
 
 
-                        </li>
+                        </li> --}}
 
                         <li>
                             <a href="{{route('contact.us')}}">
@@ -139,7 +148,7 @@
 
                         <!-- Only for Mobile View -->
                         <li class="mm-add-listing">
-                            <a href="#" class="theme-btn btn-style-one">Job Post</a>
+                            <a href="#" class="theme-btn btn-style-three">Job Post</a>
 
                         </li>
                     </ul>
