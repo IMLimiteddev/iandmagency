@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Company;
 use App\Models\Information;
 use App\Models\Testimony;
 use Illuminate\View\Component;
@@ -29,6 +30,7 @@ class Bodylayout extends Component
 
         $data['infos'] = Information::all();
         $data['testimonies'] = Testimony::all();
+        $data['companies'] = Company::all();
         return view('components.bodylayout', $data);
     }
 }

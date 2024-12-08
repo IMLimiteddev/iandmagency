@@ -13,17 +13,14 @@
                     <div class="job-search-form">
                         <form action="#">
                             <div class="row">
-                                <div class="form-group col-lg-5 col-md-12 col-sm-12">
+                                <div class="form-group col-lg-7 col-md-12 col-sm-12">
                                     <span class="icon flaticon-search-1"></span>
-                                    <input type="text" name="field_name" placeholder="Job title, keywords, or company">
+                                    <input type="text" name="role" placeholder="Department of candidate">
                                 </div>
                                 <!-- Form Group -->
-                                <div class="form-group col-lg-4 col-md-12 col-sm-12 location">
-                                    <span class="icon flaticon-map-locator"></span>
-                                    <input type="text" name="field_name" placeholder="City or postcode">
-                                </div>
+
                                 <!-- Form Group -->
-                                <div class="form-group col-lg-3 col-md-12 col-sm-12 text-right">
+                                <div class="form-group col-lg-3 col-md-12 col-sm-12 text-left">
                                     <button type="submit" class="theme-btn btn-style-two"><span class="text-white">Find
                                             Candidates</span></button>
                                 </div>
@@ -72,7 +69,7 @@
     <div class="auto-container">
         <div class="sec-title text-center">
             <h2>How It Works</h2>
-            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+            <div class="text">Streamline your hiring or job search journey with our simple and efficient process tailored to your needs.</div>
         </div>
 
         <div class="row grid-base pt-50 wow fadeInUp">
@@ -85,7 +82,7 @@
                     </div>
 
                     <h5 class="title">Register With Us</h5>
-                    <p class="text">The latest design trends meet hand-crafted templates in Sassio Collection.</p>
+                    <p class="text">Sign up to access a global network of talented professionals and employers.</p>
                 </div>
             </div>
 
@@ -97,7 +94,7 @@
                     </div>
 
                     <h5 class="title">Create Your Profile</h5>
-                    <p class="text">The latest design trends meet hand-crafted templates in Sassio Collection.</p>
+                    <p class="text">Showcase your skills, experience, or company needs to stand out to the right audience.</p>
                 </div>
             </div>
 
@@ -109,7 +106,7 @@
                     </div>
 
                     <h5 class="title">Upload Your Resume</h5>
-                    <p class="text">The latest design trends meet hand-crafted templates in Sassio Collection.</p>
+                    <p class="text">Upload your resume or job details to simplify connections with the perfect candidates or roles.</p>
                 </div>
             </div>
 
@@ -121,7 +118,7 @@
                     </div>
 
                     <h5 class="title">Now Take a Rest</h5>
-                    <p class="text">The latest design trends meet hand-crafted templates in Sassio Collection.</p>
+                    <p class="text">Leave the rest to us! Sit back as we match talent and opportunities seamlessly.</p>
                 </div>
             </div>
 
@@ -198,122 +195,53 @@
 <section class="job-section-two">
     <div class="auto-container">
         <div class="sec-title text-center">
-            <h2>Featured Candidates</h2>
-            <div class="text-white">Know your worth and find the job that qualify your life</div>
+            <h2>Featured Companies</h2>
+            <div class="text-white">Know your worth and find the candidates that qualify to work for you.</div>
         </div>
 
         <div class="row wow fadeInUp">
             <!-- Job Block-two -->
+
+            @if ($companies == null)
+
+
             <div class="job-block-two col-lg-12">
                 <div class="inner-box">
                     <div class="content">
-                        <span class="company-logo"><img src="/onboarding/images/resource/company-logo/1-1.png"
-                                alt=""></span>
-                        <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
-                        <ul class="job-info">
-                            <li><span class="icon flaticon-briefcase"></span> Segment</li>
-                            <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
-                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
 
-                        </ul>
+                        <h4><a href="#">No Company Yet !</a></h4>
+
                     </div>
-                    <ul class="job-other-info">
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                        <li class="time">Full Time</li>
-                    </ul>
-                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+
                 </div>
             </div>
+
+            @else
+
+            @foreach ($companies as $c)
+
             <div class="job-block-two col-lg-12">
                 <div class="inner-box">
                     <div class="content">
-                        <span class="company-logo"><img src="/onboarding/images/resource/company-logo/1-1.png"
+                        <span class="company-logo"><img src="{{$c?->company_logo}}"
                                 alt=""></span>
-                        <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                        <h4><a href="#">{{$c?->company_name}}</a></h4>
                         <ul class="job-info">
-                            <li><span class="icon flaticon-briefcase"></span> Segment</li>
-                            <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
-                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                            <li><span class="icon flaticon-briefcase"></span> {{$c?->company_sector}}</li>
+                            <li><span class="icon flaticon-map-locator"></span> Country: {{$c?->country}}</li>
+                            <li><span class="icon flaticon-clock-3"></span>Joined: {{$c?->created_at->diffForHumans()}}</li>
 
                         </ul>
                     </div>
-                    <ul class="job-other-info">
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                        <li class="time">Full Time</li>
-                    </ul>
-                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                </div>
-            </div>
-            <div class="job-block-two col-lg-12">
-                <div class="inner-box">
-                    <div class="content">
-                        <span class="company-logo"><img src="/onboarding/images/resource/company-logo/1-1.png"
-                                alt=""></span>
-                        <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
-                        <ul class="job-info">
-                            <li><span class="icon flaticon-briefcase"></span> Segment</li>
-                            <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
-                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
 
-                        </ul>
-                    </div>
-                    <ul class="job-other-info">
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                        <li class="time">Full Time</li>
-                    </ul>
-                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
                 </div>
             </div>
-            <div class="job-block-two col-lg-12">
-                <div class="inner-box">
-                    <div class="content">
-                        <span class="company-logo"><img src="/onboarding/images/resource/company-logo/1-1.png"
-                                alt=""></span>
-                        <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
-                        <ul class="job-info">
-                            <li><span class="icon flaticon-briefcase"></span> Segment</li>
-                            <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
-                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-
-                        </ul>
-                    </div>
-                    <ul class="job-other-info">
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                        <li class="time">Full Time</li>
-                    </ul>
-                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                </div>
-            </div>
-            <div class="job-block-two col-lg-12">
-                <div class="inner-box">
-                    <div class="content">
-                        <span class="company-logo"><img src="/onboarding/images/resource/company-logo/1-1.png"
-                                alt=""></span>
-                        <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
-                        <ul class="job-info">
-                            <li><span class="icon flaticon-briefcase"></span> Segment</li>
-                            <li><span class="icon flaticon-map-locator"></span> Lagos, NG</li>
-                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-
-                        </ul>
-                    </div>
-                    <ul class="job-other-info">
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                        <li class="time">Full Time</li>
-                    </ul>
-                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                </div>
-            </div>
+            @endforeach
+            @endif
 
         </div>
-
         <div class="btn-box">
-            <a href="#" class="theme-btn btn-style-three bg-blue"><span class="btn-title">Load More Listing</span></a>
+            <a href="{{route('employer.list')}}" class="theme-btn btn-style-three bg-blue"><span class="btn-title">Load More Listing</span></a>
         </div>
     </div>
 </section>
@@ -328,9 +256,8 @@
                 <div class="inner-box">
                     <div class="content">
                         <h3 class="title">Employers</h3>
-                        <p class="text">Sit amet, consectetur adipiscing elit<br class="d-none d-lg-block"> tempor
-                            incididunt.</p>
-                        <a href="#" class="theme-btn btn-style-two bdrs12">Post Your Job For Free <i
+                        <p class="text">Discover top-tier talent tailored <br class="d-none d-lg-block"> to your business needs. <br class="d-none d-lg-block"> Post your job for free and connect with skilled <br class="d-none d-lg-block"> professionals ready to drive your success. </p>
+                        <a href="{{route('register')}}" class="theme-btn btn-style-three bdrs12">Post Your Job For Free <i
                                 class="fal fa-long-arrow-right ms-3"></i></a>
                     </div>
                     <figure class="image d-none d-xl-block"><img src="/onboarding/images/index-22/home22-banner-1.png"
@@ -344,9 +271,8 @@
                 <div class="inner-box">
                     <div class="content">
                         <h3 class="title">Candidate</h3>
-                        <p class="text">Sit amet, consectetur adipiscing elit<br class="d-none d-lg-block"> tempor
-                            incididunt.</p>
-                        <a href="#" class="theme-btn btn-style-two bdrs12">Upload Your CV <i
+                        <p class="text">Make the next step in your career.<br class="d-none d-lg-block">  Upload your CV and get matched with exciting <br class="d-none d-lg-block"> opportunities at leading companies worldwide.</p>
+                        <a href="{{route('register')}}" class="theme-btn btn-style-three bdrs12">Upload Your CV <i
                                 class="fal fa-long-arrow-right ms-3"></i></a>
                     </div>
                     <figure class="image d-none d-xl-block"><img src="/onboarding/images/index-22/home22-banner-2.png"
@@ -364,7 +290,7 @@
     <div class="auto-container">
         <div class="sec-title">
             <h2>Featured Candidates</h2>
-            <div class="text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor</div>
+            <div class="text">Meet top-tier professionals actively seeking new opportunities. Handpicked candidates with proven field expertise, ready to drive your business forward.</div>
         </div>
 
 
@@ -375,12 +301,12 @@
                 @foreach ($infos as $info)
                 <div class="candidate-block">
                     <div class="inner-box">
-                        <figure><img style="border-radius: 10px; height: 200px; width: 200px" src="{{$info->image}}"
-                                alt="{{$info->image}}"></figure>
-                        <h4 class="name">{{$info->first_name}} {{$info->last_name}}</h4>
-                        <span class="designation">{{$info->department}}</span>
-                        <div class="location"><i class="flaticon-map-locator"></i> Lagos, NG</div>
-                        <a href="{{route('onboarding.candidate.details', $info->email)}}"
+                        <figure><img style="border-radius: 10px; height: 200px; width: 200px" src="{{$info?->image}}"
+                                alt="{{$info?->image}}"></figure>
+                        <h4 class="name">{{$info?->first_name}} {{$info?->last_name}}</h4>
+                        <span class="designation">{{$info?->department}}</span>
+                        <div class="location"><i class="flaticon-map-locator"></i> {{$info?->country}}</div>
+                        <a href="{{route('onboarding.candidate.details', $info?->email)}}"
                             class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
                     </div>
                 </div>
@@ -456,8 +382,8 @@
         </div>
 
         <div class="btn-box">
-            <a href="#" class="theme-btn btn-style-three">Search Job</a>
-            <a href="#" class="theme-btn btn-style-three">Apply Job Now</a>
+            <a href="{{route('candidates.list')}}" class="theme-btn btn-style-three">Search Candidate</a>
+            <a href="{{route('candidates.list')}}" class="theme-btn btn-style-three">Request For a Candidate</a>
         </div>
     </div>
 </section>
@@ -469,12 +395,12 @@
         <div class="outer-box">
             <div class="sec-title">
                 <h2>Let employers find you</h2>
-                <div class="text">Advertise your jobs to millions of monthly users and search 15.8 million CVs in our
+                <div class="text">Advertise your Portfolio to millions of monthly users and be among 15.8 million search in our
                     database.</div>
             </div>
 
             <div class="btn-box">
-                <a href="#" class="theme-btn btn-style-two bg-black"><span class="text-white">Search Job</span></a>
+                <a href="{{route('candidates.list')}}" class="theme-btn btn-style-two bg-black"><span class="text-white">Search Job</span></a>
             </div>
         </div>
     </div>

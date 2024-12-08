@@ -6,7 +6,7 @@
         <div class="row">
           <div class="big-column col-xl-4 col-lg-3 col-md-12">
             <div class="footer-column about-widget">
-              <div class="logo"><a href="#"><img style="height: 60px; width: 60px;" src="/logos/IandM-no-bg-logo-.png" alt=""></a></div>
+              <div class="logo"><a href="#"><img style="height: 80px; width: 80px;" src="/onboarding/IandM-no-bg-logo-.png" alt=""></a></div>
               <p class="phone-num"><span>Call us </span><a href="#">123 456 7890</a></p>
               <p class="address">329 Olashola Street, North Garden VIC<br> 3051, Nigeria. <br><a href="#" class="email">support@iandm.com</a></p>
             </div>
@@ -86,12 +86,12 @@
       <div class="auto-container">
         <div class="outer-box">
           <div class="copyright-text">© 2021 <a href="#">codeBrown</a>. All Right Reserved.</div>
-          <div class="social-links">
+          {{-- <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>
