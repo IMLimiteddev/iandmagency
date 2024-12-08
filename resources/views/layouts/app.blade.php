@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="/dash/dist/css/themes/dagger.css">
     <link rel="stylesheet" href="/dash/dist/css/app.css"> <!-- END: CSS Assets-->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/css/intlTelInput.css">
+
+
     <style>
         /* The container for the toggle */
         .toggle-switch {
@@ -650,9 +653,14 @@
 crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}&libraries=places" async defer></script>
+
+
 @yield('script')
 
 @yield('cancelScript')
+
+@yield('autocomplete')
 
     {{-- <script>
         async function fetchCountries() {

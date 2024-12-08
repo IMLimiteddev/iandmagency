@@ -103,13 +103,7 @@
 
                         </li> --}}
 
-                        <li>
-                            <a href="{{route('about.us')}}">
-                                <span>About us</span>
-                            </a>
 
-
-                        </li>
 
                         {{-- <li><a href="{{route('candidates.list')}}">Candidates List</a></li> --}}
 
@@ -120,11 +114,26 @@
 
 
                         </li>
+                        <li>
+                            <a href="{{route('employer.list')}}">
+                                <span>Company List</span>
+                            </a>
+
+
+                        </li>
 
                         <li>
                             <a href="{{route('contact.us')}}">
                                 <span>Sustainability</span>
                             </a>
+
+                        </li>
+
+                        <li>
+                            <a href="{{route('about.us')}}">
+                                <span>About us</span>
+                            </a>
+
 
                         </li>
 

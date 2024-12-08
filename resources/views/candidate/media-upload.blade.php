@@ -64,7 +64,7 @@
                                         <div class="flex flex-col items-center md:flex-row">
 
 
-                                            <input data-tw-merge="" type="file" accept="image/*" name="cv_upload" class="disabled:bg-slate-100 disabled:cursor-not-allowed
+                                            <input data-tw-merge="" type="file"  name="cv_upload" class="disabled:bg-slate-100 disabled:cursor-not-allowed
                                                     dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent
                                                     [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed
                                                     [&[readonly]]:dark:bg-darkmode-800/50

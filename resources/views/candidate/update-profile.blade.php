@@ -32,6 +32,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <em>Note: Save your progress and continue you do not have to refill after you have submitted.</em>
+                            
                             <div class="mt-7">
                                 <div class="box box--stacked flex flex-col">
                                     <div class="p-7">
@@ -56,7 +58,7 @@
                                                     </div>
                                                     <div
                                                         class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
-                                                        Upload a clear and recent profile photo.
+                                                        Upload a clear and recent profile photo. Not more than 2mb.
                                                     </div>
                                                 </div>
                                             </div>
@@ -207,7 +209,7 @@
                                                 </div>
                                             </div>
                                             <div class="mt-3 w-full flex-1 xl:mt-0">
-                                                <input data-tw-merge="" type="text" name="email"
+                                                <input data-tw-merge="" readonly type="text" name="email"
                                                     value="{{Auth::user()->email}}"
                                                     placeholder="julia.roberts@left4code.com"
                                                     class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10">
@@ -233,11 +235,7 @@
                                                 </div>
                                             </div>
                                             <div class="mt-3 w-full flex-1 xl:mt-0">
-                                                <select name="country" id="countries-list"
-                                                    class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10">
-                                                    <option selected disabled>-- Select --</option>
-                                                    <option value="Nigeria">Nigeria</option>
-                                                </select>
+                                                <x-country-component />
                                             </div>
                                         </div>
 
@@ -260,11 +258,7 @@
                                                 </div>
                                             </div>
                                             <div class="mt-3 w-full flex-1 xl:mt-0">
-                                                <select name="languages" id="countries-list"
-                                                    class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10">
-                                                    <option selected disabled>-- Select --</option>
-                                                    <option value="English">English</option>
-                                                </select>
+                                                <x-language-component />
                                             </div>
                                         </div>
 
@@ -287,8 +281,8 @@
                                                 </div>
                                             </div>
                                             <div class="mt-3 w-full flex-1 xl:mt-0">
-                                                <input data-tw-merge="" type="text" name="address"
-                                                    placeholder="Enter address"
+                                                <input data-tw-merge="" type="text" name="address" id="autocompleteP"
+                                                    placeholder="eg. Lagos, Nigeria."
                                                     class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:rounded-none [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:md:mt-0">
 
                                             </div>
@@ -316,39 +310,41 @@
                                                 <label>Professional Skills</label>
                                                 <div class="flex flex-col mt-2 sm:flex-row">
 
-                                                    {{-- @foreach ($professional_skills as $pf)
-
-
+                                                    @foreach ($skills as $pf)
                                                     <div data-tw-merge class="flex items-center mr-2 mr-2"><input
                                                             data-tw-merge type="checkbox"
                                                             class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
-                                                            id="checkbox-switch-4" value="professional_skill[]">
+                                                            id="checkbox-switch-4" value="{{$pf?->name}}" name="professional_skills[]">
                                                         <label data-tw-merge for="checkbox-switch-4"
-                                                            class="cursor-pointer ml-2">{{$pf->skill}}</label>
+                                                            class="cursor-pointer ml-2">{{$pf?->name}}</label>
                                                     </div>
-                                                    @endforeach --}}
+                                                    @endforeach
 
-                                                    <div data-tw-merge class="flex items-center mr-2 mr-2"><input
+
+                                                    {{-- <div data-tw-merge class="flex items-center mr-2 mr-2"><input
                                                             data-tw-merge type="checkbox"
                                                             class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
-                                                            id="checkbox-switch-4" name="professional_skills[0]" value="1">
+                                                            id="checkbox-switch-4" name="professional_skills[0]"
+                                                            value="1">
                                                         <label data-tw-merge for="checkbox-switch-4"
                                                             class="cursor-pointer ml-2">Tping</label>
                                                     </div>
                                                     <div data-tw-merge class="flex items-center mr-2 mr-2"><input
                                                             data-tw-merge type="checkbox"
                                                             class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
-                                                            id="checkbox-switch-4" name="professional_skills[1]" value="2">
+                                                            id="checkbox-switch-4" name="professional_skills[1]"
+                                                            value="2">
                                                         <label data-tw-merge for="checkbox-switch-4"
                                                             class="cursor-pointer ml-2">Tping</label>
                                                     </div>
                                                     <div data-tw-merge class="flex items-center mr-2 mr-2"><input
                                                             data-tw-merge type="checkbox"
                                                             class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
-                                                            id="checkbox-switch-4" name="professional_skills[2]" value="3">
+                                                            id="checkbox-switch-4" name="professional_skills[2]"
+                                                            value="3">
                                                         <label data-tw-merge for="checkbox-switch-4"
                                                             class="cursor-pointer ml-2">Tping</label>
-                                                    </div>
+                                                    </div> --}}
 
                                                 </div>
                                             </div>
@@ -376,19 +372,19 @@
                                                 <label>Hobbies</label>
                                                 <div class="flex flex-col mt-2 sm:flex-row">
 
-                                                    {{-- @foreach ($professional_skills as $pf)
+                                                    @foreach ($hobbies as $hb)
 
 
                                                     <div data-tw-merge class="flex items-center mr-2 mr-2"><input
                                                             data-tw-merge type="checkbox"
                                                             class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
-                                                            id="checkbox-switch-4" value="professional_skill[]">
+                                                            id="checkbox-switch-4" value="{{$hb?->name}}" name="hobbies[]">
                                                         <label data-tw-merge for="checkbox-switch-4"
-                                                            class="cursor-pointer ml-2">{{$pf->skill}}</label>
+                                                            class="cursor-pointer ml-2">{{$hb?->name}}</label>
                                                     </div>
-                                                    @endforeach --}}
+                                                    @endforeach
 
-                                                    <div data-tw-merge class="flex items-center mr-2 mr-2"><input
+                                                    {{-- <div data-tw-merge class="flex items-center mr-2 mr-2"><input
                                                             data-tw-merge type="checkbox"
                                                             class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
                                                             id="checkbox-switch-4" name="hobbies[0]" value="1">
@@ -408,7 +404,7 @@
                                                             id="checkbox-switch-4" name="hobbies[2]" value="3">
                                                         <label data-tw-merge for="checkbox-switch-4"
                                                             class="cursor-pointer ml-2">Tping</label>
-                                                    </div>
+                                                    </div> --}}
 
                                                 </div>
                                             </div>
@@ -439,11 +435,11 @@
                                                         placeholder="+1 (234) 567-8901"
                                                         class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:rounded-none [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:md:mt-0">
 
-                                                    <select data-tw-merge=""
+                                                    {{-- <select data-tw-merge=""
                                                         class="disabled:bg-slate-100 disabled:cursor-not-allowed disabled:dark:bg-darkmode-800/50 [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md py-2 px-3 pr-8 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 group-[.form-inline]:flex-1 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 md:w-36 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:rounded-none [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:md:mt-0">
                                                         <option value="office">Office</option>
                                                         <option value="home">Home</option>
-                                                    </select>
+                                                    </select> --}}
                                                 </div>
                                                 {{-- <a class="-mb-1 mt-3.5 flex items-center font-medium text-primary"
                                                     href="#">
@@ -506,7 +502,7 @@
 
                                                     <textarea data-tw-merge="" id="editor"
                                                         class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:rounded-none [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:md:mt-0"
-                                                        name="bio" id="" cols="30" rows="10"></textarea>
+                                                        name="bio" id="" cols="30" rows="10" placeholder="Write a detailed summary about yourself."></textarea>
 
                                                 </div>
 
@@ -533,21 +529,14 @@
                                                     <option selected disabled>
                                                         -- Select --
                                                     </option>
-                                                    <option value="Engineering">
-                                                        Engineering
+                                                    @foreach ($depts as $d)
+
+                                                    <option value="{{$d?->name}}">
+                                                        {{$d?->name}}
                                                     </option>
-                                                    <option value="Product Management">
-                                                        Product Management
-                                                    </option>
-                                                    <option value="Human Resources">
-                                                        Human Resources
-                                                    </option>
-                                                    <option value="Sales Department">
-                                                        Sales Department
-                                                    </option>
-                                                    <option value="Data Analytics">
-                                                        Data Analytics
-                                                    </option>
+
+                                                    @endforeach
+
                                                 </select>
                                             </div>
                                         </div>
@@ -570,5 +559,46 @@
             </div>
         </div>
     </x-slot>
+
+    @section('autocomplete')
+
+
+    <script>
+        function initAutocomplete() {
+    // Initialize Autocomplete for each input
+    const inputP = document.getElementById('autocompleteP');
+    const autocompleteP = new google.maps.places.Autocomplete(inputP, { types: ['geocode'] });
+
+
+
+    // Event listener for autocompleteP
+    autocompleteP.addListener('place_changed', function () {
+        const place = autocompleteP.getPlace();
+        if (place.geometry) {
+        console.log('Place P details:', place);
+        } else {
+        console.log('No details available for input P: ' + inputP.value);
+        }
+    });
+
+
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function () {
+    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+        initAutocomplete();
+    } else {
+        // Retry if Google Maps hasn't loaded yet
+        const retryInit = setInterval(() => {
+        if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+            initAutocomplete();
+            clearInterval(retryInit);
+        }
+        }, 100); // Retry every 100 ms until loaded
+    }
+    });
+    </script>
+    @endsection
 
 </x-app-layout>

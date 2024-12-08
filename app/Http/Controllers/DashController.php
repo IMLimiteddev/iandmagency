@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Booking;
+use App\Models\Department;
 use App\Models\Education;
+use App\Models\Hobby;
 use App\Models\Information;
 use App\Models\Media;
+use App\Models\Skill;
 use App\Models\User;
 use App\Models\Work;
 use Illuminate\Http\Request;
@@ -21,8 +24,12 @@ class DashController extends Controller
     public function profileView()
     {
 
-        $user = Auth::user();
-        return view('candidate.update-profile', compact('user'));
+        $data['user'] = Auth::user();
+        $data['depts'] = Department::all();
+        $data['skills'] = Skill::all();
+        $data['hobbies'] = Hobby::all();
+
+        return view('candidate.update-profile', $data);
     }
     public function profileDisplay()
     {

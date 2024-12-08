@@ -103,7 +103,7 @@
                                                                 <div
                                                                     class="px-4 py-3 ml-8 before:content-[''] before:ml-1 before:absolute before:w-5 before:h-5 before:bg-slate-200 before:rounded-full before:inset-y-0 before:my-auto before:left-0 before:dark:bg-darkmode-300 before:z-10 after:content-[''] after:absolute after:w-1.5 after:h-1.5 after:bg-slate-500 after:rounded-full after:inset-y-0 after:my-auto after:left-0 after:ml-[11px] after:dark:bg-darkmode-200 after:z-10">
                                                                     <a class="font-medium text-primary" href="#">
-                                                                        {{$work?->company_name ? $work->company_name :
+                                                                        {{$work?->company_name ? $work?->company_name :
                                                                         "Not Added Yet."}}
                                                                     </a>
 
@@ -119,7 +119,7 @@
                                                                             class="flex items-center rounded-md border border-primary/10 bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
                                                                             <span class="-mt-px truncate">
                                                                                 {{ $work?->job_description ?
-                                                                                $work->job_description : "Not Added
+                                                                                $work?->job_description : "Not Added
                                                                                 Yet."}}
                                                                             </span>
                                                                         </span>
@@ -140,7 +140,7 @@
                                                                                 class="mr-1.5 h-1.5 w-1.5 rounded-full group-[.info]:bg-info/80 group-[.primary]:bg-primary/80 group-[.success]:bg-success/80 group-[.warning]:bg-warning/80"></span>
                                                                             --}}
                                                                             <span class="-mt-px">
-                                                                                {{$work?->role ? $work->role : "Not
+                                                                                {{$work?->role ? $work?->role : "Not
                                                                                 Added Yet."}}
                                                                             </span>
                                                                         </span>
@@ -151,7 +151,7 @@
                                                                         <div class="mt-1.5 text-xs text-slate-500">
                                                                             Start date:
                                                                             {{$work?->work_start_yr ?
-                                                                            $work->work_start_yr : "Not Added Yet."}}
+                                                                            $work?->work_start_yr : "Not Added Yet."}}
                                                                         </div>
 
 
@@ -163,7 +163,7 @@
 
                                                                         <div class="mt-1.5 text-xs text-slate-500">
                                                                             End date:
-                                                                            {{$work?->work_end_yr ? $work->work_end_yr :
+                                                                            {{$work?->work_end_yr ? $work?->work_end_yr :
                                                                             "Not Added Yet."}}
                                                                         </div>
                                                                     </div>
@@ -314,13 +314,13 @@
                                                                             null) as $media)
 
 
-                                                                            <a href="{{$media->media_upload}}">
-                                                                                <label for="">{{$media->title}}</label>
+                                                                            <a href="{{$media?->media_upload}}">
+                                                                                <label for="">{{$media?->title}}</label>
 
                                                                                 <div
                                                                                     class="image-fit h-24 cursor-pointer overflow-hidden border border-slate-100 saturate-[.6] hover:saturate-100">
                                                                                     <img data-action="zoom"
-                                                                                        src="{{$media->media_upload}}"
+                                                                                        src="{{$media?->media_upload}}"
                                                                                         alt="pdf">
                                                                                 </div>
                                                                             </a>
@@ -358,7 +358,7 @@
                                                                             null) as $media)
 
 
-                                                                            <a href="{{$media->intro_video}}"
+                                                                            <a href="{{$media?->intro_video}}"
                                                                                 target="blank">
                                                                                 {{-- <label
                                                                                     for="">{{$media->title}}</label>
@@ -367,7 +367,7 @@
                                                                                 <div
                                                                                     class="image-fit h-200 cursor-pointer overflow-hidden border border-slate-100 saturate-[.6] hover:saturate-100">
                                                                                     <video
-                                                                                        src="{{$media->intro_video}}"></video>
+                                                                                        src="{{$media?->intro_video}}"></video>
                                                                                 </div>
                                                                             </a>
                                                                             @endforeach
@@ -405,7 +405,7 @@
 
                                                                         @foreach ($medias?->where('cv_upload',"!=",
                                                                         null) as $media)
-                                                                        <a href="{{$media->cv_upload}}" target="_blank"
+                                                                        <a href="{{$media?->cv_upload}}" target="_blank"
                                                                             rel="noopener noreferrer">
                                                                             <div
                                                                                 class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2">
@@ -490,7 +490,7 @@
                                                                     <i data-tw-merge="" data-lucide="clock"
                                                                         class="mr-2 h-4 w-4 stroke-[1.3] text-slate-500"></i>
                                                                     Is active:
-                                                                    @if ($user?->info->is_active == 1)
+                                                                    @if ($user?->info?->is_active == 1)
 
                                                                     <div
                                                                         class="ml-1 flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs font-medium text-success">

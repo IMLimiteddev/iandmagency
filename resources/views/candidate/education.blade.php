@@ -26,6 +26,8 @@
                                 </div>
                             </div>
                         </div>
+                        <em>Note: Save your progress and continue you do not have to refill after you have submitted.</em>
+
                         <form action="{{route('candidate.education.update')}}" enctype="multipart/form-data"
                             method="POST">
 
