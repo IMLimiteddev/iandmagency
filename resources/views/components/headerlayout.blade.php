@@ -138,13 +138,13 @@
 
                         </li>
 
-                        <li>
+                        {{-- <li>
                             <a href="{{route('about.us')}}">
                                 <span>About us</span>
                             </a>
 
 
-                        </li>
+                        </li> --}}
 
                         <!-- Only for Mobile View -->
                         <li class="mm-add-listing">

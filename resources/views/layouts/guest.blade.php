@@ -5,25 +5,23 @@
 <head>
     <meta charset="utf-8" />
     <title>I&M Limited</title>
-    <meta
-        content="Connecting top remote talent with forward-thinking companies worldwide, we specialize in simplifying the recruitment process for remote positions. Our platform brings you highly skilled professionals
-        tailored to meet your business needs, whether you're looking for developers, designers, customer support experts,
-        or other specialized remote roles. With a commitment to quality, efficiency, and global reach,
-        we make it easy for companies to find their perfect remote match—anywhere in the world."
-        name="description" />
+    <meta name="description" content="Connecting top remote talent with companies worldwide. Find skilled professionals for roles like developers, designers, and support experts tailored to your needs." />
 
-        <meta property="og:title" content="Connect with Top Nigerian Remote Talent" />
-        <meta property="og:description" content="Helping global companies discover skilled Nigerian professionals ready to excel remotely. Find top talent in tech, customer support, design, and more." />
-        <meta property="og:image" content="https://iandmlimited.com/logos/IandM-no-white-bg-logo-.png" />
-        <meta property="og:url" content="https://iandmlimited.com" />
-        <meta property="og:type" content="website" />
-        <meta name="google-site-verification" content="t-LZsEXUGJN1fsfkAALqn5VatLkolFDlMIPP4i6HedU" />
+
+    <meta property="og:title" content="Connect with Top Nigerian Remote Talent" />
+    <meta property="og:description"
+        content="Helping global companies discover skilled Nigerian professionals ready to excel remotely. Find top talent in tech, customer support, design, and more." />
+    <meta property="og:image" content="https://iandmlimited.com/logos/IandM-no-white-bg-logo-.png" />
+    <meta property="og:url" content="https://iandmlimited.com" />
+    <meta property="og:type" content="website" />
+    <meta name="google-site-verification" content="t-LZsEXUGJN1fsfkAALqn5VatLkolFDlMIPP4i6HedU" />
 
     <meta content="Connect with Top Nigerian Remote Talent" property="twitter:title" />
     <meta content="Connecting top remote talent with forward-thinking companies worldwide, we specialize in simplifying the recruitment process for remote positions. Our platform brings you highly skilled professionals
         tailored to meet your business needs, whether you're looking for developers, designers, customer support experts,
         or other specialized remote roles. With a commitment to quality, efficiency, and global reach,
-        we make it easy for companies to find their perfect remote match—anywhere in the world." property="twitter:description" />
+        we make it easy for companies to find their perfect remote match—anywhere in the world."
+        property="twitter:description" />
 
     <meta content="https://iandmlimited.com/logos/IandM-no-white-bg-logo-.png" property="twitter:image" />
     <meta content="summary_large_image" name="twitter:card" />
@@ -37,7 +35,8 @@
     <link rel="shortcut icon" href="/onboarding/IandM-no-white-bg-logo-.png" type="image/x-icon">
     <link rel="icon" href="/onboarding/IandM-no-white-bg-logo-.png" type="image/x-icon">
 
-    {{-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{--
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> --}}
 
     <style>
