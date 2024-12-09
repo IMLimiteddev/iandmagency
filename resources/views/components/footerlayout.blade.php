@@ -8,7 +8,7 @@
             <div class="footer-column about-widget">
               <div class="logo"><a href="#"><img style="height: 80px; width: 80px;" src="/onboarding/IandM-no-bg-logo-.png" alt=""></a></div>
               <p class="phone-num"><span>Call us </span><a href="#">123 456 7890</a></p>
-              <p class="address">329 Olashola Street, North Garden VIC<br> 3051, Nigeria. <br><a href="#" class="email">support@iandm.com</a></p>
+              <p class="address">Connecting top remote talent with companies worldwide. Find skilled professionals for roles like developers, designers, and support experts tailored to your needs.<a href="#" class="email">support@iandm.com</a></p>
             </div>
           </div>
 
