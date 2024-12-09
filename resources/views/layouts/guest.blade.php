@@ -17,6 +17,7 @@
         <meta property="og:image" content="https://iandmlimited.com/logos/IandM-no-white-bg-logo-.png" />
         <meta property="og:url" content="https://iandmlimited.com" />
         <meta property="og:type" content="website" />
+        <meta name="google-site-verification" content="t-LZsEXUGJN1fsfkAALqn5VatLkolFDlMIPP4i6HedU" />
 
     <meta content="Connect with Top Nigerian Remote Talent" property="twitter:title" />
     <meta content="Connecting top remote talent with forward-thinking companies worldwide, we specialize in simplifying the recruitment process for remote positions. Our platform brings you highly skilled professionals
