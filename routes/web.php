@@ -5,6 +5,7 @@ use App\Http\Controllers\DashController;
 use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -95,6 +96,11 @@ Route::prefix('company')->middleware('company')->group(function () {
 
 });
 
+
+// Mail::raw('Testing email functionality for the email', function ($message) {
+//     $message->to('clintonace09@gmail.com')
+//             ->subject('Test Email');
+// });
 
 
 
