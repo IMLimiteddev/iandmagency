@@ -53,11 +53,11 @@ class CustomVerifyEmail extends Notification
             ->markdown('emails.verify-email', [
                 'url' => $verificationUrl,
                 'user' => $notifiable,
-            ])
-            ->attach(storage_path('app\public\IandM-no-white-bg-logo-.png'), [
-                'as' => 'IandM.png',
-                'mime' => 'image/png',
             ]);
+            // ->attach(storage_path('app/public/IandM-no-white-bg-logo-.png'), [
+            //     'as' => 'IandM.png',
+            //     'mime' => 'image/png',
+            // ]);
     }
 
     /**
