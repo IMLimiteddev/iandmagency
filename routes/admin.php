@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->middleware('admin')->group(function () {
 
-    Route::get('/activate-user/{info}', [AdminController::class, 'activateUser'])->name('admin.activate.user');
-    Route::get('/deactivate-user/{info}', [AdminController::class, 'deactivateUser'])->name('admin.deactivate.user');
+    Route::get('/activate-user/{info?}', [AdminController::class, 'activateUser'])->name('admin.activate.user');
+    Route::get('/deactivate-user/{info?}', [AdminController::class, 'deactivateUser'])->name('admin.deactivate.user');
 
     Route::get('/all-candidates', [AdminController::class, 'allCandidates'])->name('admin.all.candidates');
     Route::get('/single-candidate/{email}', [AdminController::class, 'singleCandidate'])->name('admin.single.candidate');

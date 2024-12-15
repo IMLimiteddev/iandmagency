@@ -39,7 +39,7 @@ class BookingCancelNotification extends Mailable
         ->with([
             'message' => $this->message,
 
-        ]) ->attach(storage_path('app\public\IandM-no-white-bg-logo-.png'), [
+        ]) ->attach(storage_path('app/public/IandM-no-white-bg-logo-.png'), [
             'as' => 'IandM-no-white-bg-logo.png',
             'mime' => 'image/png',
         ]);

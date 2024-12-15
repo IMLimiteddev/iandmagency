@@ -155,7 +155,7 @@
                                                                     {{-- <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i data-tw-merge="" data-lucide="check-square" class="stroke-[1] mr-2 h-4 w-4"></i>
                                                                         Edit</a> --}}
 
-                                                                        @if ($user?->info->is_active == 0)
+                                                                        @if ($user?->info?->is_active == 0)
 
                                                                             <a href="{{route('admin.activate.user', $user?->info?->id)}}"  class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-primary"><i data-tw-merge="" data-lucide="check" class="stroke-[1] mr-2 h-4 w-4"></i>
                                                                                 Activate</a>
