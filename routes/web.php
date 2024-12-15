@@ -4,9 +4,13 @@ use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\DashController;
 use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
+use App\Mail\CandidateConfirmationMail;
+use App\Mail\CandidateRescheduleMail;
+use App\Models\Booking;
 use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use RealRashid\SweetAlert\Facades\Alert;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,7 +53,7 @@ Route::prefix('web/')->group(function () {
 });
 
 
-Route::prefix('candidate-dash')->group(function () {
+Route::prefix('candidate-dash')->middleware('candidate')->group(function () {
 
     Route::get('/update-profile-view', [DashController::class, 'profileView'])->name('candidate.profile.view');
     Route::post('/update-profile', [DashController::class, 'profileUpdate'])->name('candidate.profile.update');
@@ -67,6 +71,31 @@ Route::prefix('candidate-dash')->group(function () {
 
 
     Route::get('/event-view', [DashController::class, 'eventDisplay'])->name('candidate.events.display');
+
+    Route::prefix('email')->group(function () {
+        Route::post('confirmation/{id?}/{event?}', function ($id, $event) {
+            $message = [
+                'message' => 'I will be in attendance.',
+                'user' => User::findOrFail($id)->email,
+                'event' => Booking::findOrFail($event)->id,
+            ];
+            Mail::to('clintonace09@gmail.com')->send(new CandidateConfirmationMail($message));
+            Alert::success('Success', 'Mail sent');
+            return back();
+        })->name('candidate.confirm.meeting');
+
+        Route::post('reschedule/{id?}/{event?}', function ($id, $event) {
+            $message = [
+                'message' => 'Can we reschedule.',
+                'user' => User::findOrFail($id)->email,
+                'event' => Booking::findOrFail($event)->id,
+            ];
+
+            Mail::to('clintonace09@gmail.com')->send(new CandidateRescheduleMail($message));
+            Alert::success('Success', 'Mail sent');
+            return back();
+        })->name('candidate.reschedule.mail');
+    });
 
 
 });
@@ -95,6 +124,10 @@ Route::prefix('company')->middleware('company')->group(function () {
     Route::get('requests-display', [CompanyController::class, 'requestsDisplay'])->name('company.requests.display');
 
 });
+
+
+
+
 
 
 // Mail::raw('Testing email functionality for the email', function ($message) {

@@ -56,10 +56,10 @@
                                         <div
                                             class="box box--stacked col-span-12 flex flex-col p-5 md:col-span-6 xl:col-span-4">
                                             <a class="text-[0.94rem] font-medium text-primary" href="#">
-                                                Booked Event
+                                                Booked Event, Event ID #{{$booking?->id}}
                                             </a>
                                             <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                {{$booking->details}}
+                                                {{$booking?->details}}
                                             </div>
                                             <div data-tw-merge="" data-tw-placement="bottom-end"
                                                 class="dropdown absolute right-0 top-0 mr-5 mt-5"><button

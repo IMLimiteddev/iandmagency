@@ -120,16 +120,23 @@
                                                     class="dropdown-menu absolute z-[9999] hidden">
                                                     <div data-tw-merge=""
                                                         class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="copy"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Confirm</a>
-                                                        <a
-                                                            class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                                data-tw-merge="" data-lucide="trash"
-                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                            Reschedule</a>
+
+                                                        <form title="Confirm your meeting." action="{{ route('candidate.confirm.meeting', [Auth::user()->id, $booking?->id]) }}" method="POST">
+                                                            @csrf
+                                                            <button type="submit" class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item">
+                                                                <i data-tw-merge="" data-lucide="copy" class="stroke-[1] mr-2 h-4 w-4"></i>
+                                                                Confirm
+                                                            </button>
+                                                        </form>
+
+                                                        <form title="You can only reschedule 3 times." action="{{ route('candidate.reschedule.mail', [Auth::user()->id, $booking?->id]) }}" method="POST">
+                                                            @csrf
+                                                            <button type="submit" class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item">
+                                                                <i data-tw-merge="" data-lucide="refresh-ccw"  class="stroke-[1] mr-2 h-4 w-4"></i>
+                                                                Reschedule
+                                                            </button>
+                                                        </form>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -148,7 +155,7 @@
                                                     <div class="text-slate-500">Participants:</div>
                                                     <div class="ml-auto">
                                                         <div class="flex items-center">
-                                                                3
+                                                                {{$booking?->participants}}
                                                             </div>
                                                     </div>
                                                 </div>
@@ -205,23 +212,20 @@
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">Meeting Link:</div>
                                                     <div class="ml-auto">
-                                                        <a class="block w-40 truncate whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
-                                                            href="#">
+                                                        <p id="meeting-link" style="cursor: copy" onclick="copyToClipboard()" title="copy" class="block w-40 whitespace-nowrap text-right text-slate-500 underline decoration-slate-500/30 decoration-dotted underline-offset-[3px] md:w-52"
+                                                            href="{{$booking?->link}}">
                                                             {{$booking?->link}}
-                                                        </a>
+                                                    </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         @endforeach
-
-
-
                                     </div>
                                 </div>
 
                                 {{-- Request --}}
-{{--
+                                {{--
                                 <div data-transition="" data-selector=".active"
                                     data-enter="transition-[visibility,opacity] ease-linear duration-150"
                                     data-enter-from="!p-0 !h-0 overflow-hidden invisible opacity-0"
@@ -955,13 +959,13 @@
                                 </div> --}}
 
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </x-slot>
+
+
 
 </x-app-layout>

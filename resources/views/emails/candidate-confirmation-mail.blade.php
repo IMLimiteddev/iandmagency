@@ -1,6 +1,6 @@
 @extends('vendor.mail.html.layout')
 
-@section('header', 'Booking Notification')
+@section('header', 'Candidate meeting confirmation mail')
 
 @section('content')
 
@@ -9,20 +9,25 @@
 </div>
 
   <!-- Candidate Details Section -->
-  <h1>Mail Recieved Response</h1>
- 
+  <h1>Meeting confirmed Response</h1>
+
 <hr>
 
 <!-- Message Section -->
 <h3>Message:</h3>
 <div class="panel">
-    <span>{{ $message['response'] }}</span>
+    <span>{{ $message['message'] }}</span>
+</div>
+<h3>Email:</h3>
+<div class="panel">
+    <span>{{ $message['user'] }}</span>
+</div>
+<h3>Event Id:</h3>
+<div class="panel">
+    <span>{{ $message['event'] }}</span>
 </div>
 
-<hr>
 
-
-<hr>
 
 <p>Thank you,</p>
 <p><strong>IandM Limited</strong></p>

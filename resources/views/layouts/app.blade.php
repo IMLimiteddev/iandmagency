@@ -656,6 +656,24 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}&libraries=places" async defer></script>
 
 
+<script>
+    function copyToClipboard() {
+        // Get the element containing the link
+        const linkElement = document.getElementById('meeting-link');
+        // Get the text content of the link
+        const linkText = linkElement.innerText;
+
+        // Copy the text to the clipboard
+        navigator.clipboard.writeText(linkText).then(() => {
+            // Show a success message (optional)
+            alert('Meeting link copied to clipboard!');
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+    }
+</script>
+
+
 @yield('script')
 
 @yield('cancelScript')
