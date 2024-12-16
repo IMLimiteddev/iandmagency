@@ -20,6 +20,26 @@ class OnboardingController extends Controller
 
         return view('onboarding.contact-us');
     }
+    public function privacy()
+    {
+
+        return view('onboarding.privacy');
+    }
+    public function disclaimer()
+    {
+
+        return view('onboarding.disclaimer');
+    }
+    public function works()
+    {
+
+        return view('onboarding.works');
+    }
+    public function terms()
+    {
+
+        return view('onboarding.terms');
+    }
     public function about_us()
     {
 

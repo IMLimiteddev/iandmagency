@@ -14,37 +14,20 @@
 
           <div class="big-column col-xl-8 col-lg-9 col-md-12">
             <div class="row">
-              <div class="footer-column col-lg-3 col-md-6 col-sm-12">
-                <div class="footer-widget links-widget">
-                  <h4 class="widget-title">Find Jobs</h4>
-                  <div class="widget-content">
-                    <ul class="list">
-                      <li><a href="#">NG Jobs</a></li>
-                      <li><a href="#">NG Jobs</a></li>
-                      <li><a href="#">NG Jobs</a></li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-
               <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                 <div class="footer-widget links-widget">
-                  <h4 class="widget-title">Frequently Asked Questions</h4>
+                  <h4 class="widget-title">Quick Links</h4>
                   <div class="widget-content d-flex">
                     <ul class="list">
-                      <li><a href="#">Privacy & Securty</a></li>
-                      <li><a href="#">Terms of Service</a></li>
-                      <li><a href="#">Referral Terms</a></li>
-                      <li><a href="#">Disclaimers</a></li>
+                      <li><a href="{{route('privacy')}}">Privacy & Securty</a></li>
+                      <li><a href="{{route('terms')}}">Terms of Service</a></li>
+                      <li><a href="{{route('disclaimer')}}">Disclaimers</a></li>
                     </ul>
 
                     <ul class="list">
-                      <li><a href="#">Support</a></li>
-                      <li><a href="#">How It Works</a></li>
-                      <li><a href="#">For Employers</a></li>
-                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="{{route('works')}}">How It Works</a></li>
+                      <li><a href="{{route('candidates.list')}}">For Employers</a></li>
+                      <li><a href="{{route('contact.us')}}">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
