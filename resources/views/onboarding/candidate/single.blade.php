@@ -33,12 +33,12 @@
                                     @endforeach
                                 </ul>
 
-                                <div class=" mt-3 btn-box d-block d-sm-flex">
+                                {{-- <div class=" mt-3 btn-box d-block d-sm-flex">
 
                                     <a href="{{$information?->medias?->first()?->cv_upload}}"
                                         class="theme-btn btn-style-three">Download CV <i
                                             class="fal fa-long-arrow-right text-white d-block ml15"></i></a>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
@@ -178,13 +178,13 @@
                                                     <span>{{$information?->experience_yr}} Year</span>
                                                 </div>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <i class="icon far fa-mars"></i>
                                                 <div class="ml15">
                                                     <h5>Gender</h5>
                                                     <span>{{$information?->gender}}</span>
                                                 </div>
-                                            </li>
+                                            </li> --}}
 
                                             <li>
                                                 <i class="icon flaticon-exercise"></i>
@@ -200,23 +200,23 @@
                                                     <span>{{$information?->languages}}</span>
                                                 </div>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <i class="icon flaticon-email-3"></i>
                                                 <div class="ml15">
                                                     <h5>Email</h5>
                                                     <span>{{$information?->email}}</span>
                                                 </div>
-                                            </li>
-                                            <li>
+                                            </li> --}}
+                                            {{-- <li>
                                                 <i class="icon flaticon-telephone-1"></i>
                                                 <div class="ml15">
                                                     <h5>Phone Number</h5>
                                                     <span>{{$information?->phone}}</span>
                                                 </div>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
-                                    <div class="d-grid mb15">
+                                    {{-- <div class="d-grid mb15">
                                         <a style="color: black" href="#" class="ud-btn-transparent">Send Message</a>
                                     </div>
                                     <div class="text-center">
@@ -226,7 +226,7 @@
                                             <a class="me-3" href="#"><i class="fab fa-instagram"></i></a>
                                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 {{-- <div class="p-0 mb40">
                                     <!-- Job Skills -->
