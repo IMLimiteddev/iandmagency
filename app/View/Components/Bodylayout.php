@@ -31,7 +31,7 @@ class Bodylayout extends Component
 
         $data['infos'] = Information::where('is_active', 1)->latest()->get();
         $data['testimonies'] = Testimony::all();
-        $data['companies'] = Company::all();
+        $data['companies'] = Company::where('is_active', 1)->latest()->get();
         $data['department'] = Department::all();
         return view('components.bodylayout', $data);
     }
