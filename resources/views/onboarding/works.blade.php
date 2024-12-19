@@ -41,7 +41,19 @@
                 </div>
 
                 <div class="text-box">
-                    <h3>How to Register as a Candidate</h3>
+                    <h3> Why Choose I&M Limited?</h3>
+                </div>
+
+                <div class="text-box">
+                    <p>Access to global remote job opportunities.</p>
+                    <p>Personalized support throughout the hiring process.</p>
+                    <p>Transparent and user-friendly platform.</p>
+                </div>
+
+                <hr>
+
+                <div class="text-box">
+                    <h2>How to Register as a Candidate</h2>
 
                 </div>
                 <div class="text-box">
@@ -79,14 +91,27 @@
 
 
                 <div class="text-box">
-                    <h3>Ready to take the first step? Register Now</h3>
+                    <h3>Ready to take the first step? <a href="{{route('register')}}" target="_blank" rel="noopener noreferrer">Register Now</a></h3>
                 </div>
 
                 <hr>
                 {{-- Company side --}}
 
                 <div class="text-box">
-                    <h3>How to Register as a Company</h3>
+                    <h3> Why Choose I&M Limited?</h3>
+
+                </div>
+
+                <div class="text-box">
+                    <p>Large talent pool of skilled professionals.</p>
+                    <p>Fast and efficient candidate matching.</p>
+                    <p>Compliance and support for international hiring.</p>
+                </div>
+
+                <hr>
+
+                <div class="text-box">
+                    <h2>How to Register as a Company</h2>
 
                 </div>
                 <div class="text-box">
@@ -122,12 +147,14 @@
                 <div class="text-box">
                     <h3>5. Ongoing Support</h3>
 
-                    <p>Get continuous support from our team to ensure a smooth working relationship with your remote employees.</p>
+                    <p>Get continuous support from our team to ensure a smooth working relationship with your remote
+                        employees.</p>
 
                 </div>
                 <div class="text-box">
-                    <h3>Looking for top talent? Register Your Company</h3>
+                    <h3>Looking for top talent? <a href="{{route('register')}}" target="_blank" rel="noopener noreferrer">Register Your Company</a></h3>
                 </div>
+
             </div>
         </section>
         <!-- End TNC Section -->
