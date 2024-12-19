@@ -131,12 +131,12 @@
 
                         </li> --}}
 
-                        <li>
+                        {{-- <li>
                             <a href="{{route('contact.us')}}">
                                 <span>Sustainability</span>
                             </a>
 
-                        </li>
+                        </li> --}}
 
                         {{-- <li>
                             <a href="{{route('about.us')}}">
@@ -148,7 +148,7 @@
 
                         <!-- Only for Mobile View -->
                         <li class="mm-add-listing">
-                            <a href="#" class="theme-btn btn-style-three">Job Post</a>
+                            <a href="{{route('login')}}" class="theme-btn btn-style-three">Login</a>
 
                         </li>
                     </ul>
