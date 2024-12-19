@@ -77,6 +77,7 @@ Route::prefix('candidate-dash')->middleware('candidate')->group(function () {
     Route::post('/edit-media-upload/{media?}', [DashController::class, 'mediaUploadEdit'])->name('candidate.media-upload.edit');
     Route::post('/edit-vid-upload/{media?}', [DashController::class, 'videoEdit'])->name('candidate.intro-video.edit');
     Route::post('/edit-cv-upload/{media?}', [DashController::class, 'cvEdit'])->name('candidate.cv-upload.edit');
+    Route::post('/edit-profile/{media?}', [DashController::class, 'profileEdit'])->name('candidate.profile-info.edit');
 
 
     Route::get('/event-view', [DashController::class, 'eventDisplay'])->name('candidate.events.display');
