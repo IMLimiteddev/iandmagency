@@ -66,12 +66,17 @@ Route::prefix('candidate-dash')->middleware('candidate')->group(function () {
 
     Route::get('/update-education-view', [DashController::class, 'educationView'])->name('candidate.education.view');
     Route::post('/update-education', [DashController::class, 'educationUpdate'])->name('candidate.education.update');
+    Route::post('/edit-education/{ed?}', [DashController::class, 'educationEdit'])->name('candidate.education.edit');
 
     Route::get('/update-work-view', [DashController::class, 'workView'])->name('candidate.work.view');
     Route::post('/update-work', [DashController::class, 'workUpdate'])->name('candidate.work.update');
+    Route::post('/edit-work/{work?}', [DashController::class, 'workEdit'])->name('candidate.work.edit');
 
     Route::get('/update-media-view', [DashController::class, 'mediaView'])->name('candidate.media.view');
     Route::post('/update-media', [DashController::class, 'mediaUpdate'])->name('candidate.media.update');
+    Route::post('/edit-media-upload/{media?}', [DashController::class, 'mediaUploadEdit'])->name('candidate.media-upload.edit');
+    Route::post('/edit-vid-upload/{media?}', [DashController::class, 'videoEdit'])->name('candidate.intro-video.edit');
+    Route::post('/edit-cv-upload/{media?}', [DashController::class, 'cvEdit'])->name('candidate.cv-upload.edit');
 
 
     Route::get('/event-view', [DashController::class, 'eventDisplay'])->name('candidate.events.display');

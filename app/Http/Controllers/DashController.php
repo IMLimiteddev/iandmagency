@@ -138,8 +138,6 @@ class DashController extends Controller
 
     public function educationUpdate(Request $request)
     {
-
-
         $user = Auth::user();
         $info = Information::where('user_id',$user->id)->first();
 
@@ -188,6 +186,38 @@ class DashController extends Controller
         Alert::info('Info', 'You already have an Educational record, please navigate to edit if you wish to edit this info.');
         return back();
     }
+    public function educationEdit(Request $request, $ed)
+    {
+        $user = Auth::user();
+
+        $validatedData = $request->validate([
+            'degree' => 'required|string|max:255',
+            'school' => 'required|string|max:255',
+            'education_start_yr' => 'required|date',
+            'education_end_yr' => 'required|date|after_or_equal:education_start_yr',
+            'educational_description' => 'required|string|max:500',
+            'degree_upload' => 'nullable|file|mimes:jpeg,png,jpg,gif,pdf,doc,docx|max:2048',
+        ]);
+
+        $education = Education::findOrFail($ed);
+
+        if ($request->hasFile('degree_upload')) {
+            $file_name = self::imageUploader($request->file('degree_upload'), $user, 'Degree-uploads');
+            $education->degree_upload = $file_name;
+        }
+
+        $education->update([
+            'degree' => $validatedData['degree'],
+            'school' => $validatedData['school'],
+            'education_start_yr' => $validatedData['education_start_yr'],
+            'education_end_yr' => $validatedData['education_end_yr'],
+            'educational_description' => $validatedData['educational_description'],
+        ]);
+
+        Alert::success('Success', 'Educational Experience Updated Successfully.');
+        return back();
+    }
+
     public function workView()
     {
 
@@ -242,6 +272,33 @@ class DashController extends Controller
         return back();
 
     }
+
+    public function workEdit(Request $request, $work)
+    {
+        $user = Auth::user();
+
+        $validatedData = $request->validate([
+            'company_name' => 'required|string|max:255',
+            'role' => 'required|string|max:255',
+            'work_start_yr' => 'required|date',
+            'work_end_yr' => 'required|date|after_or_equal:work_start_yr',
+            'job_description' => 'required|string|max:500',
+        ]);
+
+        $work = Work::findOrFail($work);
+
+        $work->update([
+            'company_name' => $validatedData['company_name'],
+            'role' => $validatedData['role'],
+            'work_start_yr' => $validatedData['work_start_yr'],
+            'work_end_yr' => $validatedData['work_end_yr'],
+            'job_description' => $validatedData['job_description'],
+        ]);
+
+        Alert::success('Success', 'Work Experience Updated Successfully.');
+        return back();
+    }
+
 
     public function mediaView()
     {
@@ -312,6 +369,88 @@ class DashController extends Controller
         Alert::info('Info', 'You already have the required number of media record, please navigate to edit if you wish to edit this info.');
         return back();
 
+    }
+
+    public function mediaUploadEdit(Request $request, $media)
+    {
+        $user = Auth::user();
+
+        $validatedData = $request->validate([
+            'title' => 'required|string|max:255',
+            'media_upload' => 'nullable|file|mimes:jpeg,png,jpg,gif,pdf,doc,docx|max:2048',
+        ]);
+
+        $md = Media::findOrFail($media);
+
+        if (isset($request->media_upload)) {
+            $file_name=self::imageUploader($request->media_upload, $user, 'Media-uploads');
+
+            }
+
+        $md->update([
+            'title' => $validatedData['title'],
+            'media_upload' => $file_name ?? $md->media_upload,
+        ]);
+
+        Alert::success('Success', 'Media Display Updated Successfully.');
+        return back();
+    }
+
+    public function videoEdit(Request $request, $media)
+    {
+        $user = Auth::user();
+
+        $validatedData = $request->validate([
+            'intro_video' => 'nullable|max:5048',
+        ]);
+
+        $md = Media::findOrFail($media);
+
+        if ($request->hasFile('intro_video')) {
+
+            $file_name = self::videoUploader($request->file('intro_video'), $user, 'Media-uploads');
+
+            $filePath = str_replace('/storage/', 'public/', $md->intro_video);
+
+            if (Storage::exists($filePath)) {
+                Storage::delete($filePath);
+            }
+
+            $md->update([
+                'intro_video' => $file_name ?? $md->intro_video,
+            ]);
+        }
+
+        Alert::success('Success', 'Intro video Updated Successfully.');
+        return back();
+    }
+    public function cvEdit(Request $request, $media)
+    {
+        $user = Auth::user();
+
+        $validatedData = $request->validate([
+            'cv_upload' => 'nullable|max:5048',
+        ]);
+
+        $md = Media::findOrFail($media);
+
+        if ($request->hasFile('cv_upload')) {
+
+            $file_name = self::imageUploader($request->file('cv_upload'), $user, 'Media-uploads');
+
+            $filePath = str_replace('/storage/', 'public/', $md->cv_upload);
+
+            if (Storage::exists($filePath)) {
+                Storage::delete($filePath);
+            }
+
+            $md->update([
+                'cv_upload' => $file_name ?? $md->cv_upload,
+            ]);
+        }
+
+        Alert::success('Success', 'Cv upload Updated Successfully.');
+        return back();
     }
 
 

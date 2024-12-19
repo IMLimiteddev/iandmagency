@@ -26,6 +26,28 @@
                                             1
                                         </div>
                                     </div>
+                                    @if (!Auth::user()->media?->isEmpty())
+
+
+                                    <div
+                                        class="rounded-full border bg-white group-[.mode--light]:!border-white/[0.25] group-[.active]:bg-primary group-[.mode--light]:!bg-transparent group-[.active]:text-white group-[.mode--light]:!text-slate-200 [.group.mode--light_.group.active_&]:!border-white/[0.15] [.group.mode--light_.group.active_&]:!bg-white/[0.12]">
+                                        <div class="flex h-10 w-10 items-center justify-center">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="rounded-full border bg-white group-[.mode--light]:!border-white/[0.25] group-[.active]:bg-primary group-[.mode--light]:!bg-transparent group-[.active]:text-white group-[.mode--light]:!text-slate-200 [.group.mode--light_.group.active_&]:!border-white/[0.15] [.group.mode--light_.group.active_&]:!bg-white/[0.12]">
+                                        <div class="flex h-10 w-10 items-center justify-center">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="rounded-full border bg-white group-[.mode--light]:!border-white/[0.25] group-[.active]:bg-primary group-[.mode--light]:!bg-transparent group-[.active]:text-white group-[.mode--light]:!text-slate-200 [.group.mode--light_.group.active_&]:!border-white/[0.15] [.group.mode--light_.group.active_&]:!bg-white/[0.12]">
+                                        <div class="flex h-10 w-10 items-center justify-center">
+                                            4
+                                        </div>
+                                    </div>
+                                    @endif
                                     <div
                                         class="ml-3.5 whitespace-nowrap font-medium text-slate-500 group-[.active]:text-current group-[.mode--light]:!text-slate-300 [.group.mode--light_.group.active_&]:!text-slate-100">
                                         Display Information
@@ -33,7 +55,7 @@
                                 </div>
                             </div>
                             <em>Note: Save your progress and continue you do not have to refill after you have submitted.</em>
-                            
+
                             <div class="mt-7">
                                 <div class="box box--stacked flex flex-col">
                                     <div class="p-7">

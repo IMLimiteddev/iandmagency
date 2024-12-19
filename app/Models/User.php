@@ -73,6 +73,10 @@ public function sendEmailVerificationNotification()
     {
         return $this->hasOne(Information::class, 'user_id', 'id');
     }
+    public function media(): HasMany
+    {
+        return $this->hasMany(Media::class, 'user_id', 'id');
+    }
 
     /**
      * Get the company associated with the User

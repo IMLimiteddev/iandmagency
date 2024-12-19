@@ -14,5 +14,7 @@ class Media extends Model
         'user_id',
         'information_id',
         'media_upload',
+        'intro_video',
+        'cv_upload',
     ];
 }
