@@ -9,7 +9,7 @@
                     <div class="logo"><a href="#"><img alt="" title="Our Logo"></a></div>
                     <div class="round-logo-container">
 
-                        <img src="/onboarding/IandM-white-logo.png" alt="">
+                        <img height="20px;" width="20px" src="/onboarding/IandM-white-logo.png" alt="">
                     </div>
                 </div>
 
