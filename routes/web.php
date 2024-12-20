@@ -51,7 +51,8 @@ Route::prefix('web/')->group(function () {
     Route::get('/works', [OnboardingController::class, 'works'])->name('works');
     Route::get('/disclaimer', [OnboardingController::class, 'disclaimer'])->name('disclaimer');
 
-    Route::get('/search', [OnboardingController::class, 'candidateSearch'])->name('onboarding.search.candidates');
+    Route::get('/search-candidate', [OnboardingController::class, 'candidateSearch'])->name('onboarding.search.candidates');
+    Route::get('/search-company', [OnboardingController::class, 'companySearch'])->name('onboarding.search.company');
 
 
     Route::get('/portfolio', [OnboardingController::class, 'portfolio_colors'])->name('portfolio.colors');

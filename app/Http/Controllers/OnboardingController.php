@@ -125,4 +125,16 @@ class OnboardingController extends Controller
         return view('onboarding.candidates-list', $data);
 
     }
+    public function companySearch(Request $request)
+    {
+
+        $data['companies']= Company::where('company_name', 'LIKE', '%' . $request->company_name . '%')
+                                    ->where('company_sector', 'LIKE', '%' . $request->department . '%')
+                                    ->latest()->get();
+
+        $data['depts'] = Department::all();
+
+        return view('onboarding.employer-list', $data);
+
+    }
 }

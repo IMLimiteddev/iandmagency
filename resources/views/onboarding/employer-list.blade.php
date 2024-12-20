@@ -15,12 +15,14 @@
                     </div>
                 </div>
                 <div class="job-search-form">
-                    <form method="post" action="#">
+                    <form method="GET" action="{{route('onboarding.search.company')}}">
+
+                        @csrf
                         <div class="row">
                             <!-- Form Group -->
                             <div class="form-group col-lg-4 col-md-12 col-sm-12">
                                 <span class="icon flaticon-search-1"></span>
-                                <input type="text" name="field_name" placeholder="keywords, or company">
+                                <input type="text" name="company_name" placeholder="keywords, or company name">
                             </div>
 
                             <!-- Form Group -->
@@ -32,7 +34,7 @@
                             <!-- Form Group -->
                             <div class="form-group col-lg-3 col-md-12 col-sm-12 location">
                                 <span class="icon flaticon-briefcase"></span>
-                                <select class="chosen-select">
+                                <select class="chosen-select" name="department">
                                     <option selected>All Departments</option>
                                     @foreach ($depts as $d)
 
@@ -45,7 +47,7 @@
 
                             <!-- Form Group -->
                             <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right">
-                                <button type="submit" class="theme-btn btn-style-three ">Find Employers</button>
+                                <button type="submit" class="theme-btn btn-style-three">Find Employers</button>
                             </div>
                         </div>
                     </form>
