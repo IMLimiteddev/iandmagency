@@ -38,6 +38,9 @@ class DashController extends Controller
         $data['works'] = Work::where('user_id', $data['user']->id)->get();
         $data['eds'] = Education::where('user_id', $data['user']->id)->get();
         $data['medias'] = Media::where('user_id', $data['user']->id)->get();
+        $data['depts'] = Department::all();
+        $data['skills'] = Skill::all();
+        $data['hobbies'] = Hobby::all();
         return view('candidate.profile', $data);
     }
     public function eventDisplay()
@@ -129,6 +132,71 @@ class DashController extends Controller
         return back();
 
     }
+    public function profileEdit(Request $request)
+    {
+        $validatedData = $request->validate([
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'dob' => 'required|date',
+            'gender' => 'required|string',
+            'email' => 'required|email',
+            'phone' => 'required|string',
+            'bio' => 'required|string',
+            'department' => 'required|string',
+            'professional_skills' => 'nullable|array',
+            'hobbies' => 'nullable|array',
+            'country' => 'required|string',
+            'languages' => 'required|string',
+            'experience_yr' => 'required|integer',
+            'address' => 'required|string',
+        ]);
+
+        $user = auth()->user();
+        $info = Information::where('user_id', $user->id)->first();
+
+        if (!$info) {
+            Alert::error('Error', 'No profile information found. Please create a profile first.');
+            return back();
+        }
+
+        if ($request->hasFile('image')) {
+            $file_path = self::imageUploader($request->image, $user, 'profile_picture');
+            $validatedData['image'] = $file_path;
+        }
+
+        if (isset($validatedData['professional_skills'])) {
+            $validatedData['professional_skills'] = implode(', ', $validatedData['professional_skills']);
+        }
+
+        if (isset($validatedData['hobbies'])) {
+            $validatedData['hobbies'] = implode(', ', $validatedData['hobbies']);
+        }
+
+        $info->update([
+            'first_name' => $validatedData['first_name'],
+            'last_name' => $validatedData['last_name'],
+            'dob' => $validatedData['dob'],
+            'gender' => $validatedData['gender'] ?? $info->gender, // Use existing gender if not provided
+            'experience_yr' => $validatedData['experience_yr'],
+            'country' => $validatedData['country'],
+            'languages' => $validatedData['languages'],
+            'address' => $validatedData['address'],
+            'email' => $validatedData['email'],
+            'bio' => $validatedData['bio'],
+            'department' => $validatedData['department'],
+            'professional_skills' => $validatedData['professional_skills'] ?? $info->professional_skills, // Use existing value if not updated
+            'hobbies' => $validatedData['hobbies'] ?? $info->hobbies, // Use existing value if not updated
+            'phone' => $validatedData['phone'],
+            'image' => $validatedData['image'] ?? $info->image, // Use existing image if not updated
+        ]);
+
+        Alert::success('Success', 'Profile information updated successfully.');
+
+        return back();
+    }
+
+
     public function educationView()
     {
 

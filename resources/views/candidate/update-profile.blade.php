@@ -303,7 +303,7 @@
                                                 </div>
                                             </div>
                                             <div class="mt-3 w-full flex-1 xl:mt-0">
-                                                <input data-tw-merge="" type="text" name="address" id="autocompleteP"
+                                                <input  type="text" name="address" id="autocompleteN"
                                                     placeholder="eg. Lagos, Nigeria."
                                                     class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:rounded-none [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:md:mt-0">
 
@@ -583,44 +583,7 @@
     </x-slot>
 
     @section('autocomplete')
-
-
-    <script>
-        function initAutocomplete() {
-    // Initialize Autocomplete for each input
-    const inputP = document.getElementById('autocompleteP');
-    const autocompleteP = new google.maps.places.Autocomplete(inputP, { types: ['geocode'] });
-
-
-
-    // Event listener for autocompleteP
-    autocompleteP.addListener('place_changed', function () {
-        const place = autocompleteP.getPlace();
-        if (place.geometry) {
-        console.log('Place P details:', place);
-        } else {
-        console.log('No details available for input P: ' + inputP.value);
-        }
-    });
-
-
-    }
-
-    // Initialize on page load
-    document.addEventListener('DOMContentLoaded', function () {
-    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
-        initAutocomplete();
-    } else {
-        // Retry if Google Maps hasn't loaded yet
-        const retryInit = setInterval(() => {
-        if (typeof google !== 'undefined' && google.maps && google.maps.places) {
-            initAutocomplete();
-            clearInterval(retryInit);
-        }
-        }, 100); // Retry every 100 ms until loaded
-    }
-    });
-    </script>
+    
     @endsection
 
 </x-app-layout>

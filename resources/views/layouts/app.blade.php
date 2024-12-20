@@ -36,6 +36,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/css/intlTelInput.css">
 
+    <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}&libraries=places" async
+        defer></script>
 
     <style>
         /* The container for the toggle */
@@ -95,8 +97,8 @@
 <body>
 
     @php
-        $users= \App\Models\User::all();
-        $requests = \App\Models\Request::all();
+    $users= \App\Models\User::all();
+    $requests = \App\Models\Request::all();
     @endphp
 
     @include('sweetalert::alert')
@@ -649,15 +651,17 @@
         });
     </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
-crossorigin="anonymous" referrerpolicy="no-referrer">
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}&libraries=places" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}&libraries=places" async
+        defer></script>
 
 
-<script>
-    function copyToClipboard() {
+    <script>
+        function copyToClipboard() {
         // Get the element containing the link
         const linkElement = document.getElementById('meeting-link');
         // Get the text content of the link
@@ -671,14 +675,14 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
             console.error('Failed to copy text: ', err);
         });
     }
-</script>
+    </script>
 
 
-@yield('script')
+    @yield('script')
 
-@yield('cancelScript')
+    @yield('cancelScript')
 
-@yield('autocomplete')
+    @yield('autocomplete')
 
     {{-- <script>
         async function fetchCountries() {
@@ -734,7 +738,121 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
 //     .then(response => response)
 //     .then(data => console.log(data))
 //     .catch(err => console.error(err));
-//     </script>
+//
+    </script>
+
+    <script>
+        function initAutocomplete() {
+// Initialize Autocomplete for each input
+const inputP = document.getElementById('autocompleteP');
+const autocompleteP = new google.maps.places.Autocomplete(inputP, { types: ['geocode'] });
+
+const inputN = document.getElementById('autocompleteN');
+const autocompleteN = new google.maps.places.Autocomplete(inputN, { types: ['geocode'] });
+
+// Event listener for autocompleteP
+autocompleteP.addListener('place_changed', function () {
+    const place = autocompleteP.getPlace();
+    if (place.geometry) {
+    console.log('Place P details:', place);
+    } else {
+    console.log('No details available for input P: ' + inputP.value);
+    }
+});
+
+// Event listener for autocompleteN
+autocompleteN.addListener('place_changed', function () {
+    const place = autocompleteN.getPlace();
+    if (place.geometry) {
+    console.log('Place N details:', place);
+    } else {
+    console.log('No details available for input N: ' + inputN.value);
+    }
+});
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function () {
+if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+    initAutocomplete();
+} else {
+    // Retry if Google Maps hasn't loaded yet
+    const retryInit = setInterval(() => {
+    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+        initAutocomplete();
+        clearInterval(retryInit);
+    }
+    }, 100); // Retry every 100 ms until loaded
+}
+});
+
+    </script>
 </body>
 
 </html>
+
+
+{{--
+<div data-tw-backdrop="" aria-hidden="true" tabindex="-1" id="profile-info-{{$user?->info?->id}}"
+    class="modal group bg-gradient-to-b from-theme-1/50 via-theme-2/50 to-black/50 transition-[visibility,opacity] w-screen h-screen fixed left-0 top-0 [&:not(.show)]:duration-[0s,0.2s] [&:not(.show)]:delay-[0.2s,0s] [&:not(.show)]:invisible [&:not(.show)]:opacity-0 [&.show]:visible [&.show]:opacity-100 [&.show]:duration-[0s,0.4s]">
+    <form action="{{route('candidate.profile-info.edit', $user?->info?->id)}}" enctype="multipart/form-data"
+        method="POST">
+        @csrf
+
+        <div data-tw-merge=""
+            class="w-[90%] mx-auto bg-white relative rounded-md shadow-md transition-[margin-top,transform] duration-[0.4s,0.3s] -mt-16 group-[.show]:mt-16 group-[.modal-static]:scale-[1.05] dark:bg-darkmode-600 sm:w-[460px] p-10 text-center">
+            <div class="flex flex-col items-center md:flex-row">
+                Edit Profile info
+            </div>
+
+            <div id="preview-container"
+                class="relative flex h-24 w-24 items-center justify-center rounded-full border border-primary/10 bg-primary/5">
+                <img id="previeww" src="{{$user?->info?->image}}" alt="Profile Preview"
+                    class="hidden h-full w-full rounded-full object-cover" />
+                <i id="placeholder-iconn" data-tw-merge="" data-lucide="user"
+                    class="-mt-1.5 h-[65%] w-[65%] fill-slate-300/70 stroke-slate-400/50 stroke-[0.5]">
+                </i>
+            </div>
+
+
+            <!-- Hidden File Input -->
+            <input type="file" id="upload" name="image" accept="image/*" class="hidden"
+                onchange="handleFileUpload(event)" />
+
+
+
+            <input type="text" name="cv_upload"
+                class=" mb-3 disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:rounded-none [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:md:mt-0">
+
+            <button type="submit" class="mt-4 text-blue-500 hover:text-blue-700"> Edit</button>
+        </div>
+    </form>
+</div>
+
+</x-slot>
+
+
+
+@section('autocomplete')
+
+<script>
+function handleFileUpload(event) {
+const file = event.target.files[0];
+const previeww = document.getElementById('previeww');
+const placeholderIconn = document.getElementById('placeholder-iconn');
+
+if (file) {
+const reader = new FileReader();
+
+reader.onload = function (e) {
+    previeww.src = e.target.result;
+    previeww.classList.remove('hidden');
+    placeholderIconn.classList.add('hidden');
+};
+
+reader.readAsDataURL(file);
+}
+}
+</script>
+@endsection
+ --}}
