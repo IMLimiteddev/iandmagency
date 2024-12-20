@@ -128,7 +128,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                
+
 
                                                 <td data-tw-merge=""
                                                     class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
@@ -190,7 +190,7 @@
                                                                 class="dropdown-menu absolute z-[9999] hidden">
                                                                 <div data-tw-merge=""
                                                                     class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                                    <a
+                                                                    <a  href="{{route('admin.edit.company.view', $company?->id)}}"
                                                                         class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
                                                                             data-tw-merge="" data-lucide="check-square"
                                                                             class="stroke-[1] mr-2 h-4 w-4"></i>
@@ -279,6 +279,8 @@
                 </div>
             </div>
         </div>
+
+
     </x-slot>
 
 </x-app-layout>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Booking;
 use App\Models\Company;
+use App\Models\Department;
 use App\Models\Request as ModelsRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,7 +15,8 @@ class CompanyController extends Controller
     public function profileView()
     {
 
-        return view('company.update-profile');
+        $data['depts'] = Department::latest()->get();
+        return view('company.update-profile', $data);
     }
 
     public function profile()

@@ -7,6 +7,7 @@ use App\Mail\BookingNotification;
 use App\Mail\RequestResponseNotification;
 use App\Models\Booking;
 use App\Models\Company;
+use App\Models\Department;
 use App\Models\Education;
 use App\Models\Information;
 use App\Models\Media;
@@ -114,7 +115,6 @@ class AdminController extends Controller
         return redirect()->route('admin.all.events');
     }
 
-
     public function bookEvent()
     {
         $data['infos'] = Information::all();
@@ -139,6 +139,7 @@ class AdminController extends Controller
             return back();
         }
     }
+
     public function deactivateUser($info)
     {
 
@@ -167,7 +168,66 @@ class AdminController extends Controller
         }
 
         $data['companies'] = Company::all();
+        $data['depts'] = Department::latest()->get();
         return view('admin.all-company', $data);
+    }
+
+    public function editCompanyView($c)
+    {
+        $data['company'] = Company::findOrFail($c);
+        $data['depts'] = Department::latest()->get();
+
+        return view('admin.edit-company', $data);
+
+    }
+
+    public function editCompany(Request $request, $id)
+    {
+        // Validate the incoming request
+        $validatedData = $request->validate([
+            'company_name' => 'nullable|string|max:255',
+            'company_email' => 'nullable|email|max:255',
+            'country' => 'nullable|string|max:255',
+            'company_logo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'company_address' => 'nullable|string',
+            'company_phone' => 'nullable|string|max:20',
+            'company_size' => 'nullable|string|max:50',
+            'company_since' => 'nullable|string|max:10',
+            'company_description' => 'nullable|string',
+            'company_sector' => 'nullable|string|max:100',
+        ]);
+
+        // Retrieve the company record
+        $company = Company::findOrFail($id);
+
+        // Check if the logged-in user owns the company record
+        // if ($company->user_id !== Auth::id()) {
+        //     Alert::error('Error', 'You are not authorized to edit this company.');
+        //     return back();
+        // }
+
+        // Handle the company logo upload
+        if ($request->hasFile('company_logo')) {
+            $image = self::imageUploader($validatedData['company_logo'], $company->company_name, 'Company_logo');
+            $company->company_logo = $image;
+        }
+
+        // Update the company details
+        $company->company_name = $validatedData['company_name'] ?? $company->company_name;
+        $company->company_email = $validatedData['company_email'] ?? $company->company_email;
+        $company->country = $validatedData['country'] ?? $company->country;
+        $company->company_address = $validatedData['company_address'] ?? $company->company_address;
+        $company->company_phone = $validatedData['company_phone'] ?? $company->company_phone;
+        $company->company_size = $validatedData['company_size'] ?? $company->company_size;
+        $company->company_since = $validatedData['company_since'] ?? $company->company_since;
+        $company->company_description = $validatedData['company_description'] ?? $company->company_description;
+        $company->company_sector = $validatedData['company_sector'] ?? $company->company_sector;
+
+        // Save the updated details
+        $company->save();
+
+        Alert::success('Success', 'Company details updated successfully.');
+        return back();
     }
 
     public function allCandidates()
@@ -196,6 +256,7 @@ class AdminController extends Controller
         }
         return view('admin.all-request', $data);
     }
+
     public function allEvents()
     {
         $data['bookings'] = Booking::all();
@@ -270,6 +331,21 @@ class AdminController extends Controller
             $respond->save();
         Alert::success('Success', 'Response Mail sent.');
         return back();
+    }
+
+
+
+
+    public static function imageUploader($fileRequest, $user, $folderName){
+
+
+        $ext = $fileRequest->getClientOriginalExtension();
+        $name = \Str::slug('edited').time().".".$ext;
+        $file_path = $fileRequest->storeAs('public/'.$folderName, $name);
+
+        $file_name = '/'.'storage/'.$folderName.'/'.$name;
+        return $file_name;
+
     }
 
 

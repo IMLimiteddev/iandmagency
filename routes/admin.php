@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->middleware('admin')->group(function () {
 
+
+
     Route::get('/activate-user/{info?}', [AdminController::class, 'activateUser'])->name('admin.activate.user');
     Route::get('/deactivate-user/{info?}', [AdminController::class, 'deactivateUser'])->name('admin.deactivate.user');
 
@@ -20,6 +22,8 @@ Route::prefix('admin')->middleware('admin')->group(function () {
 
 
     Route::get('/all-companies', [AdminController::class, 'allCompanies'])->name('admin.all.companies');
+    Route::post('/edit-company/{company?}', [AdminController::class, 'editCompany'])->name('admin.edit.company');
+    Route::get('/edit-company-view/{company?}', [AdminController::class, 'editCompanyView'])->name('admin.edit.company.view');
     // Route::get('/single-request', [AdminController::class, 'singleRequest'])->name('admin.single.request');
 
 
