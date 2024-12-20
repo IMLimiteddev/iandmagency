@@ -115,4 +115,14 @@ class OnboardingController extends Controller
 
                 return back();
     }
+
+    public function candidateSearch(Request $request)
+    {
+
+        // dd($request->all());
+        $data['infos'] = Information::with('medias')->where('department','LIKE', '%'.$request->department.'%')->latest()->get();
+        $data['depts'] = Department::all();
+        return view('onboarding.candidates-list', $data);
+
+    }
 }

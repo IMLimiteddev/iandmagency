@@ -16,34 +16,35 @@
             </div>
           </div>
           <div class="job-search-form">
-            <form method="post" action="#">
+            <form method="GET" action="{{route('onboarding.search.candidates')}}">
+                @csrf
               <div class="row">
                 <!-- Form Group -->
-                <div class="form-group col-lg-4">
+                {{-- <div class="form-group col-lg-4">
                   <span class="icon flaticon-search-1"></span>
-                  <input type="text" name="field_name" placeholder="Candidate title, keywords, or company">
-                </div>
+                  <input type="text" name="name" placeholder="Candidate name, keywords">
+                </div> --}}
 
-                <!-- Form Group -->
+                {{-- <!-- Form Group -->
                 <div class="form-group col-lg-3 location">
                   <span class="icon flaticon-map-locator"></span>
-                  <input type="text" id="" name="field_name" placeholder="City or postcode">
-                </div>
+                  <input type="text" id="" name="country" placeholder="Nigeria">
+                </div> --}}
 
                 <!-- Form Group -->
-                <div class="form-group col-lg-3 location">
+                <div class="form-group col-lg-6 location">
                   <span class="icon flaticon-briefcase"></span>
-                  <select class="chosen-select">
-                    <option value="">All Categories</option>
-                    @foreach ($depts as $dp)
-                    <option value="{{$dp->name}}">{{$dp->name}}</option>
-                    @endforeach
+                  <select class="chosen-select" name="department">
+                        <option selected>All Department</option>
+                        @foreach ($depts as $dp)
+                        <option value="{{$dp->name}}">{{$dp->name}}</option>
+                        @endforeach
                   </select>
                 </div>
 
                 <!-- Form Group -->
                 <div class="form-group col-lg-2 text-right">
-                  <button type="submit" class="theme-btn btn-style-two">Search</button>
+                  <button type="submit" class="theme-btn btn-style-three">Search</button>
                 </div>
               </div>
             </form>
@@ -120,7 +121,7 @@
                   <div class="showing-result">
                     <div class="text">Showing <strong>1-60</strong> of <strong>all</strong> candidates</div>
                   </div>
-                  <div class="sort-by">
+                  {{-- <div class="sort-by">
                     <select class="chosen-select">
                       <option>Newest</option>
                       <option>New Jobs</option>
@@ -130,7 +131,7 @@
                       <option>Part Time</option>
                       <option>Temporary</option>
                     </select>
-                  </div>
+                  </div> --}}
                 </div>
 
                 <div class="row">

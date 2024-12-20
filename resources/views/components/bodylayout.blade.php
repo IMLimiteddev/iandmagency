@@ -11,11 +11,12 @@
 
                     <!-- Job Search Form -->
                     <div class="job-search-form">
-                        <form action="#">
+                        <form action="{{route('onboarding.search.candidates')}}" method="GET">
+                            @csrf
                             <div class="row">
                                 <div class="form-group col-lg-7 col-md-12 col-sm-12">
                                     <span class="icon flaticon-search-1"></span>
-                                    <input type="text" name="role" placeholder="Department of candidate">
+                                    <input type="text" name="department" placeholder="Department of candidate">
                                 </div>
                                 <!-- Form Group -->
 
