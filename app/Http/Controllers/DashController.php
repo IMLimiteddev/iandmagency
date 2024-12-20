@@ -38,9 +38,9 @@ class DashController extends Controller
         $data['works'] = Work::where('user_id', $data['user']->id)->get();
         $data['eds'] = Education::where('user_id', $data['user']->id)->get();
         $data['medias'] = Media::where('user_id', $data['user']->id)->get();
-        $data['depts'] = Department::all();
-        $data['skills'] = Skill::all();
-        $data['hobbies'] = Hobby::all();
+        // $data['depts'] = Department::all();
+        // $data['skills'] = Skill::all();
+        // $data['hobbies'] = Hobby::all();
         return view('candidate.profile', $data);
     }
     public function eventDisplay()
@@ -130,6 +130,17 @@ class DashController extends Controller
 
         Alert::info('Info', 'You already have a personal record, please navigate to edit if you wish to edit the info.');
         return back();
+
+    }
+
+    public function profileEditView()
+    {
+
+        $data['depts'] = Department::all();
+        $data['skills'] = Skill::all();
+        $data['hobbies'] = Hobby::all();
+        $data['user'] = Auth::user();
+        return view('candidate.profile-edit', $data);
 
     }
     public function profileEdit(Request $request)

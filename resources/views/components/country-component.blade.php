@@ -1,5 +1,5 @@
 
-@if (Route::currentRouteName() == 'candidate.profile.display')
+@if (Route::currentRouteName() == 'candidate.edit.profile.view')
 
     <option value="Nigeria">
         Nigeria</option>

@@ -62,6 +62,7 @@ Route::prefix('candidate-dash')->middleware('candidate')->group(function () {
     Route::get('/update-profile-view', [DashController::class, 'profileView'])->name('candidate.profile.view');
     Route::post('/update-profile', [DashController::class, 'profileUpdate'])->name('candidate.profile.update');
     Route::get('/profile-view', [DashController::class, 'profileDisplay'])->name('candidate.profile.display');
+    Route::get('/profile-edit-view/{info?}', [DashController::class, 'profileEditView'])->name('candidate.edit.profile.view');
 
 
     Route::get('/update-education-view', [DashController::class, 'educationView'])->name('candidate.education.view');
