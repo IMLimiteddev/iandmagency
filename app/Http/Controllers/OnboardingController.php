@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\EngagementNotification;
+use App\Models\Company;
 use App\Models\Department;
 use App\Models\Information;
 use App\Models\Request as ModelsRequest;
@@ -55,8 +56,11 @@ class OnboardingController extends Controller
     public function employer_list()
     {
 
-        return view('onboarding.employer-list');
+        $data['companies']= Company::latest()->get();
+        $data['depts'] = Department::all();
+        return view('onboarding.employer-list', $data);
     }
+
     public function job_list()
     {
 

@@ -160,7 +160,7 @@
                         <span class="icon flaticon-money justify-content-start-1"></span>
 
                         <h4><a href="#">{{$d->name}}</a></h4>
-                        
+
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
             <div class="job-block-two col-lg-12">
                 <div class="inner-box">
                     <div class="content">
-                        <span class="company-logo"><img src="{{$c?->company_logo}}"
+                        <span class="company-logo"><img style="height: 20px; width: 20px;" src="{{$c?->company_logo}}"
                                 alt=""></span>
                         <h4><a href="#">{{$c?->company_name}}</a></h4>
                         <ul class="job-info">

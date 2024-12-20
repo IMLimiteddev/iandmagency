@@ -143,6 +143,7 @@ class DashController extends Controller
         return view('candidate.profile-edit', $data);
 
     }
+
     public function profileEdit(Request $request)
     {
         $validatedData = $request->validate([
@@ -207,7 +208,6 @@ class DashController extends Controller
         return back();
     }
 
-
     public function educationView()
     {
 
@@ -265,6 +265,7 @@ class DashController extends Controller
         Alert::info('Info', 'You already have an Educational record, please navigate to edit if you wish to edit this info.');
         return back();
     }
+    
     public function educationEdit(Request $request, $ed)
     {
         $user = Auth::user();
