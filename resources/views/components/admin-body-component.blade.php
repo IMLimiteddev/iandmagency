@@ -225,10 +225,10 @@
                                                     </button>
                                                     <div data-transition="" data-selector=".show" data-enter="transition-all ease-linear duration-150" data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1" data-enter-to="!mt-1 visible opacity-100 translate-y-0" data-leave="transition-all ease-linear duration-150" data-leave-from="!mt-1 visible opacity-100 translate-y-0" data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1" class="dropdown-menu absolute z-[9999] hidden">
                                                         <div data-tw-merge="" class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                            <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i data-tw-merge="" data-lucide="check-square" class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                                Edit</a>
-                                                            <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-danger"><i data-tw-merge="" data-lucide="trash2" class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                                Delete</a>
+                                                            {{-- <a href="{{route('admin.edit.company.view', $company?->id)}}" class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i data-tw-merge="" data-lucide="check-square" class="stroke-[1] mr-2 h-4 w-4"></i>
+                                                                Edit</a> --}}
+                                                            {{-- <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-danger"><i data-tw-merge="" data-lucide="trash2" class="stroke-[1] mr-2 h-4 w-4"></i>
+                                                                Delete</a> --}}
                                                             <a href="{{route('admin.single.candidate', $user->email)}}" class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-success"><i data-tw-merge="" data-lucide="eye" class="stroke-[1] mr-2 h-4 w-4"></i>
                                                                 View</a>
                                                         </div>
@@ -270,7 +270,7 @@
 
                             <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                                 <div class="text-base font-medium 2xl:group-[.mode--light]:text-white">
-                                    Latest Company 
+                                    Latest Company
                                 </div>
                             </div>
 
@@ -392,7 +392,7 @@
                                                 <i data-tw-merge="" data-lucide="database"
                                                     class="h-3.5 w-3.5 stroke-[1.7]"></i>
                                                 <div class="ml-1.5 whitespace-nowrap">
-                                                    Active
+                                                    <a href="{{route('admin.deactivate.company', $company?->id)}}">Deactivate</a>
                                                 </div>
 
                                             </div>
@@ -403,7 +403,7 @@
                                                 <i data-tw-merge="" data-lucide="database"
                                                     class="h-3.5 w-3.5 stroke-[1.7]"></i>
                                                 <div class="ml-1.5 whitespace-nowrap">
-                                                    Inactive
+                                                    <a href="{{route('admin.activate.company', $company?->id)}}">Activate</a>
                                                 </div>
 
                                             </div>
@@ -443,16 +443,16 @@
                                                         class="dropdown-menu absolute z-[9999] hidden">
                                                         <div data-tw-merge=""
                                                             class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                            <a
+                                                            <a href="{{route('admin.edit.company.view', $company?->id)}}"
                                                                 class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
                                                                     data-tw-merge="" data-lucide="check-square"
                                                                     class="stroke-[1] mr-2 h-4 w-4"></i>
                                                                 Edit</a>
-                                                            <a
+                                                            {{-- <a
                                                                 class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-danger"><i
                                                                     data-tw-merge="" data-lucide="trash2"
                                                                     class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                                Delete</a>
+                                                                Delete</a> --}}
                                                             {{-- <a href="{{route('admin.single.candidate', $comapny->email)}}"
                                                                 class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-success"><i
                                                                     data-tw-merge="" data-lucide="eye"

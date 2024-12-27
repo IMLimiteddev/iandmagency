@@ -139,7 +139,7 @@
                                                         <i data-tw-merge="" data-lucide="database"
                                                             class="h-3.5 w-3.5 stroke-[1.7]"></i>
                                                         <div class="ml-1.5 whitespace-nowrap">
-                                                            Active
+                                                            <a href="{{route('admin.deactivate.company', $company?->id)}}">Deactivate</a>
                                                         </div>
 
                                                     </div>
@@ -150,7 +150,8 @@
                                                         <i data-tw-merge="" data-lucide="database"
                                                             class="h-3.5 w-3.5 stroke-[1.7]"></i>
                                                         <div class="ml-1.5 whitespace-nowrap">
-                                                            Inactive
+                                                            <a href="{{route('admin.activate.company', $company?->id)}}">Activate</a>
+
                                                         </div>
 
                                                     </div>
@@ -195,11 +196,11 @@
                                                                             data-tw-merge="" data-lucide="check-square"
                                                                             class="stroke-[1] mr-2 h-4 w-4"></i>
                                                                         Edit</a>
-                                                                    <a
+                                                                    {{-- <a
                                                                         class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-danger"><i
                                                                             data-tw-merge="" data-lucide="trash2"
                                                                             class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                                        Delete</a>
+                                                                        Delete</a> --}}
                                                                     {{-- <a href="{{route('admin.single.candidate', $comapny->email)}}"
                                                                         class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-success"><i
                                                                             data-tw-merge="" data-lucide="eye"

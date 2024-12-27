@@ -21,6 +21,25 @@ use RealRashid\SweetAlert\Facades\Alert;
 class AdminController extends Controller
 {
 
+
+    public function deactivateCompany($company)
+    {
+
+        $com = Company::findOrFail($company);
+        $com->is_active = 0;
+        $com->save();
+        Alert::success('Success', 'Company Deactivated');
+        return back();
+    }
+    public function activateCompany($company)
+    {
+
+        $com = Company::findOrFail($company);
+        $com->is_active = 1;
+        $com->save();
+        Alert::success('Success', 'Company Activated');
+        return back();
+    }
     public function book(Request $request)
     {
 

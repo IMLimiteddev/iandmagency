@@ -24,6 +24,8 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/all-companies', [AdminController::class, 'allCompanies'])->name('admin.all.companies');
     Route::post('/edit-company/{company?}', [AdminController::class, 'editCompany'])->name('admin.edit.company');
     Route::get('/edit-company-view/{company?}', [AdminController::class, 'editCompanyView'])->name('admin.edit.company.view');
+    Route::get('/company-activate/{company?}', [AdminController::class, 'activateCompany'])->name('admin.activate.company');
+    Route::get('/company-deactivate/{company?}', [AdminController::class, 'deactivateCompany'])->name('admin.deactivate.company');
     // Route::get('/single-request', [AdminController::class, 'singleRequest'])->name('admin.single.request');
 
 
