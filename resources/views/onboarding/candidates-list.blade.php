@@ -37,7 +37,7 @@
                   <select class="chosen-select" name="department">
                         <option selected>All Department</option>
                         @foreach ($depts as $dp)
-                        <option value="{{$dp->name}}">{{$dp->name}}</option>
+                        <option value="{{$dp?->name}}">{{$dp?->name}}</option>
                         @endforeach
                   </select>
                 </div>
@@ -141,25 +141,25 @@
                   <div class="candidate-block-four at-v7 col-lg-4 col-md-6">
                     <div class="inner-box text-start">
                       <div class="d-flex align-items-center">
-                        <span class="thumb mx-0"><img src="{{$info->image}}" alt=""></span>
+                        <span class="thumb mx-0"><img src="{{$info?->image}}" alt=""></span>
                         <div class="ml15">
-                          <h3 class="name"><a href="#">{{$info->first_name}} {{$info->last_name}}</a></h3>
-                          <span class="cat">{{$info->department}}</span>
+                          <h3 class="name"><a href="#">{{$info?->first_name}} {{$info?->last_name}}</a></h3>
+                          <span class="cat">{{$info?->department}}</span>
                         </div>
                       </div>
                       <ul class="job-info justify-content-start at-clv7 mt-2">
-                        <li class="ms-0"><span class="icon fal fa-location-dot"></span>{{$info->country}}</li>
+                        <li class="ms-0"><span class="icon fal fa-location-dot"></span>{{$info?->country}}</li>
 
                       </ul>
-                      <p class="text">Hi, I am {{$info->first_name}} {{$info->last_name}}, a professional Enginer with 4+ years of experience.</p>
+                      <p class="text">Hi, I am {{$info?->first_name}} {{$info?->last_name}}.</p>
                       <ul class="post-tags justify-content-start mt20">
-                        <li class="ms-0"><a href="#">{{$info->department}}</a></li>
+                        <li class="ms-0"><a href="#">{{$info?->department}}</a></li>
                         {{-- <li><a href="#">Enginer</a></li>
                         <li><a href="#">Expert</a></li> --}}
                       </ul>
                       <div class="d-grid">
                         <div class="d-grid">
-                        <a href="{{route('onboarding.candidate.details', $info->email)}}" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
+                        <a href="{{route('onboarding.candidate.details', $info?->email)}}" class="ud-btn-border-theme text-warning">View Profile <i class="fal fa-long-arrow-right"></i></a>
                       </div>
                       </div>
                     </div>

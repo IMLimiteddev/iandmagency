@@ -190,7 +190,7 @@
                                                 <i class="icon flaticon-exercise"></i>
                                                 <div class="ml15">
                                                     <h5>Qualification</h5>
-                                                    <span>{{$information?->educationalExperiences()?->first()->degree}}</span>
+                                                    <span>{{$information?->educationalExperiences()?->first()?->degree}}</span>
                                                 </div>
                                             </li>
                                             <li>
