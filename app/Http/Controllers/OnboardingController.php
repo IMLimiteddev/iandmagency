@@ -49,7 +49,9 @@ class OnboardingController extends Controller
     public function candidates_list()
     {
 
-        $data['infos'] = Information::with('medias')->get();
+        $data['infos'] = Information::with('medias')
+                    ->where('is_active', 1)
+                    ->latest()->get();
         $data['depts'] = Department::all();
         return view('onboarding.candidates-list', $data);
     }
