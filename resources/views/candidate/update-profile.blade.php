@@ -311,15 +311,29 @@
                                                 <label>Professional Skills</label>
                                                 <div class="flex flex-col mt-2 sm:flex-row">
 
-                                                    @foreach ($skills as $pf)
-                                                    <div data-tw-merge class="flex items-center mr-2 mr-2"><input
-                                                            data-tw-merge type="checkbox"
-                                                            class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
-                                                            id="checkbox-switch-4" value="{{$pf?->name}}" name="professional_skills[]">
-                                                        <label data-tw-merge for="checkbox-switch-4"
-                                                            class="cursor-pointer ml-2">{{$pf?->name}}</label>
+                                                    <div class="flex flex-wrap">
+                                                        @foreach($skills as $index => $pf)
+                                                            @if($index % 4 == 0)
+                                                                @if($index != 0)
+                                                                    </div> <!-- Close previous row -->
+                                                                @endif
+                                                                <div class="flex w-full mb-4"> <!-- Start a new row -->
+                                                            @endif
+
+                                                            <div data-tw-merge class="flex items-center mr-4 mb-2 w-1/4">
+                                                                <input data-tw-merge type="checkbox"
+                                                                       class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
+                                                                       id="checkbox-switch-{{$index}}" value="{{$pf?->name}}" name="professional_skills[]">
+                                                                <label data-tw-merge for="checkbox-switch-{{$index}}"
+                                                                       class="cursor-pointer ml-2">{{$pf?->name}}</label>
+                                                            </div>
+
+                                                            @if($loop->last)
+                                                                </div> <!-- Close the last row -->
+                                                            @endif
+                                                        @endforeach
                                                     </div>
-                                                    @endforeach
+
 
 
                                                     {{-- <div data-tw-merge class="flex items-center mr-2 mr-2"><input
@@ -373,17 +387,34 @@
                                                 <label>Hobbies</label>
                                                 <div class="flex flex-col mt-2 sm:flex-row">
 
-                                                    @foreach ($hobbies as $hb)
+
+                                                    {{-- @foreach ($hobbies as $hb) --}}
 
 
-                                                    <div data-tw-merge class="flex items-center mr-2 mr-2"><input
-                                                            data-tw-merge type="checkbox"
-                                                            class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
-                                                            id="checkbox-switch-4" value="{{$hb?->name}}" name="hobbies[]">
-                                                        <label data-tw-merge for="checkbox-switch-4"
-                                                            class="cursor-pointer ml-2">{{$hb?->name}}</label>
+                                                    <div class="flex flex-wrap">
+                                                        @foreach($hobbies as $index => $hb)
+                                                            @if($index % 4 == 0)
+                                                                @if($index != 0)
+                                                                    </div> <!-- Close previous row -->
+                                                                @endif
+                                                                <div class="flex w-full mb-4"> <!-- Start a new row -->
+                                                            @endif
+
+                                                            <div data-tw-merge class="flex items-center mr-4 mb-2 w-1/4">
+                                                                <input data-tw-merge type="checkbox"
+                                                                       class="transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded focus:ring-4 focus:ring-offset-0 focus:ring-primary focus:ring-opacity-20 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;[type='radio']]:checked:bg-primary [&amp;[type='radio']]:checked:border-primary [&amp;[type='radio']]:checked:border-opacity-10 [&amp;[type='checkbox']]:checked:bg-primary [&amp;[type='checkbox']]:checked:border-primary [&amp;[type='checkbox']]:checked:border-opacity-10 [&amp;:disabled:not(:checked)]:bg-slate-100 [&amp;:disabled:not(:checked)]:cursor-not-allowed [&amp;:disabled:not(:checked)]:dark:bg-darkmode-800/50 [&amp;:disabled:checked]:opacity-70 [&amp;:disabled:checked]:cursor-not-allowed [&amp;:disabled:checked]:dark:bg-darkmode-800/50"
+                                                                       id="checkbox-switch-{{$index}}" value="{{$hb?->name}}" name="hobbies[]">
+                                                                <label data-tw-merge for="checkbox-switch-{{$index}}"
+                                                                       class="cursor-pointer ml-2">{{$hb?->name}}</label>
+                                                            </div>
+
+                                                            @if($loop->last)
+                                                                </div> <!-- Close the last row -->
+                                                            @endif
+                                                        @endforeach
                                                     </div>
-                                                    @endforeach
+
+                                                    {{-- @endforeach --}}
 
                                                     {{-- <div data-tw-merge class="flex items-center mr-2 mr-2"><input
                                                             data-tw-merge type="checkbox"
