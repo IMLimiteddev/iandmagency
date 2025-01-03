@@ -73,6 +73,16 @@ public function sendEmailVerificationNotification()
     {
         return $this->hasOne(Information::class, 'user_id', 'id');
     }
+
+    // used for the next button only logic not totally rigth 
+    public function edu(): HasOne
+    {
+        return $this->hasOne(Education::class, 'user_id', 'id');
+    }
+    public function work(): HasOne
+    {
+        return $this->hasOne(Work::class, 'user_id', 'id');
+    }
     public function media(): HasMany
     {
         return $this->hasMany(Media::class, 'user_id', 'id');

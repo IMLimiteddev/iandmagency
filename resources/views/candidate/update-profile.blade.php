@@ -26,28 +26,7 @@
                                             1
                                         </div>
                                     </div>
-                                    @if (!Auth::user()->media?->isEmpty())
 
-
-                                    <div
-                                        class="rounded-full border bg-white group-[.mode--light]:!border-white/[0.25] group-[.active]:bg-primary group-[.mode--light]:!bg-transparent group-[.active]:text-white group-[.mode--light]:!text-slate-200 [.group.mode--light_.group.active_&]:!border-white/[0.15] [.group.mode--light_.group.active_&]:!bg-white/[0.12]">
-                                        <div class="flex h-10 w-10 items-center justify-center">
-                                            2
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="rounded-full border bg-white group-[.mode--light]:!border-white/[0.25] group-[.active]:bg-primary group-[.mode--light]:!bg-transparent group-[.active]:text-white group-[.mode--light]:!text-slate-200 [.group.mode--light_.group.active_&]:!border-white/[0.15] [.group.mode--light_.group.active_&]:!bg-white/[0.12]">
-                                        <div class="flex h-10 w-10 items-center justify-center">
-                                            3
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="rounded-full border bg-white group-[.mode--light]:!border-white/[0.25] group-[.active]:bg-primary group-[.mode--light]:!bg-transparent group-[.active]:text-white group-[.mode--light]:!text-slate-200 [.group.mode--light_.group.active_&]:!border-white/[0.15] [.group.mode--light_.group.active_&]:!bg-white/[0.12]">
-                                        <div class="flex h-10 w-10 items-center justify-center">
-                                            4
-                                        </div>
-                                    </div>
-                                    @endif
                                     <div
                                         class="ml-3.5 whitespace-nowrap font-medium text-slate-500 group-[.active]:text-current group-[.mode--light]:!text-slate-300 [.group.mode--light_.group.active_&]:!text-slate-100">
                                         Display Information
@@ -571,6 +550,16 @@
                                                 data-tw-merge="" data-lucide="pocket"
                                                 class="-ml-2 mr-2 h-4 w-4 stroke-[1.3]"></i>
                                             Submit</button>
+
+
+                                            @if (Auth::user()?->info && !Auth::user()->info->isEmpty)
+                                            <a href="{{ route('candidate.education.view') }}"
+                                               class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed text-primary dark:border-primary [&:hover:not(:disabled)]:bg-primary/10 w-full border-primary/50 px-10 md:w-auto">
+                                                Next
+                                            </a>
+                                        @endif
+
+
                                     </div>
                                 </div>
                             </div>
@@ -583,7 +572,7 @@
     </x-slot>
 
     @section('autocomplete')
-    
+
     @endsection
 
 </x-app-layout>
