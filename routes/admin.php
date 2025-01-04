@@ -2,6 +2,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BroadcastController;
 use App\Http\Controllers\SiteBuilderController;
 use App\Http\Controllers\ToolController;
 use Illuminate\Support\Facades\Route;
@@ -62,6 +63,15 @@ Route::prefix('admin')->middleware('admin')->group(function () {
      Route::post('/dept-edit', [ToolController::class, 'deptEdit'])->name('admin.dept.edit');
      Route::post('/skill-edit', [ToolController::class, 'skillEdit'])->name('admin.skill.edit');
      Route::post('/hobby-edit', [ToolController::class, 'hobbyEdit'])->name('admin.hobby.edit');
+    });
+
+    Route::prefix('broadcast')->middleware('admin')->group(function () {
+
+      Route::post('/broadcast-create', [BroadcastController::class, 'broadcastCreate'])->name('admin.broadcast');
+
+      Route::get('/prompt-view', [BroadcastController::class, 'promptView'])->name('admin.prompt.view');
+      Route::post('/prompt-create', [BroadcastController::class, 'promptCreate'])->name('admin.prompt');
+
     });
 
 });

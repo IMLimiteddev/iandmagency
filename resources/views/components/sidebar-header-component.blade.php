@@ -214,6 +214,35 @@
                 </li>
 
                 @endif
+
+                @if (Auth::user() && Auth::user()->isAdmin())
+                <li class="side-menu__divider">
+                    Broadcast Manager
+                </li>
+
+                <li>
+                    <a href="{{route('admin.prompt.view')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.prompt.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="radio-tower"
+                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Prompt</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+                <li>
+                    <a href="{{route('admin.prompt.view')}}"
+                        class="side-menu__link  {{Route::currentRouteName()== 'admin.prompt.view' ? 'side-menu__link--active': ''}}">
+                        <i data-tw-merge="" data-lucide="radio-tower"
+                            class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                        <div class="side-menu__link__title">Broadcast(loading...)</div>
+                    </a>
+                    <!-- BEGIN: Second Child -->
+                    <!-- END: Second Child -->
+                </li>
+
+                @endif
+
                 @if (Auth::user() && Auth::user()->isAdmin())
                 <li class="side-menu__divider">
                     Site Builder

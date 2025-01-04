@@ -611,7 +611,7 @@
                                                                     <i data-tw-merge="" data-lucide="clock"
                                                                         class="mr-2 h-4 w-4 stroke-[1.3] text-slate-500"></i>
                                                                     Is active:
-                                                                    @if ($user?->info->is_active == 1)
+                                                                    @if ($user?->info?->is_active == 1)
 
                                                                     <div
                                                                         class="ml-1 flex items-center rounded-md border border-success/10 bg-success/10 px-1.5 py-px text-xs font-medium text-success">
@@ -757,7 +757,7 @@
                                                 Booked Event
                                             </a>
                                             <div class="mb-5 mt-1 leading-relaxed text-slate-500">
-                                                {{$booking->details}}
+                                                {{$booking?->details}}
                                             </div>
                                             <div data-tw-merge="" data-tw-placement="bottom-end"
                                                 class="dropdown absolute right-0 top-0 mr-5 mt-5"><button
@@ -866,7 +866,7 @@
                                                 <div class="flex items-center">
                                                     <div class="text-slate-500">Meeting Created At:</div>
                                                     <div class="ml-auto text-slate-500">
-                                                        {{$booking?->created_at->diffForHumans()}}
+                                                        {{$booking?->created_at?->diffForHumans()}}
                                                     </div>
                                                 </div>
 
@@ -996,9 +996,6 @@
                                             </a>
                                         </div>
                                         @endif
-
-
-
                                     </div>
                                 </div>
 
