@@ -14,7 +14,7 @@
 <!-- Message Section -->
 <h3>Message:</h3>
 <div class="panel">
-    <span>{{ $usersPrompt['message'] }}</span>
+    <span>{!! $usersPrompt['message'] !!}</span>
 </div>
 
 <hr>

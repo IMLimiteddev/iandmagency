@@ -29,7 +29,7 @@ class BroadcastController extends Controller
             'message' => 'required|string',
         ]);
 
-        $usersPercentage = Information::where('profile_completion_percentage', $request->percentage)->latest()->get();
+        $usersPercentage = Information::where('profile_completion_percentage', "<=" , $request->percentage)->latest()->get();
 
 
         // dd($usersPercentage);
