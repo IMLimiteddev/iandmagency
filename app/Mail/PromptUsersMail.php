@@ -38,9 +38,6 @@ class PromptUsersMail extends Mailable
         ->with([
             'usersPrompt' => $this->usersPrompt,
 
-        ]) ->attach(storage_path('app/public/IandM-no-white-bg-logo-.png'), [
-            'as' => 'IandM-no-white-bg-logo.png',
-            'mime' => 'image/png',
-        ]);
+        ]) ;
     }
 }

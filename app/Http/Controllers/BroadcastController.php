@@ -44,7 +44,7 @@ class BroadcastController extends Controller
         foreach ($usersPercentage as $user) {
             // dd($user->email);
 
-            Mail::to($user->email)->send(new PromptUsersMail($usersPrompt));
+            Mail::to("$user->email")->send(new PromptUsersMail($usersPrompt));
         }
 
         Alert::success('Success', 'Broadcast Prompt Sent Successfully.');

@@ -9,9 +9,7 @@
 </div>
 
   <!-- Candidate Details Section -->
-  <h1>Prompt To IandM Users.</h1>
-
-  <h3>Details:</h3>
+  <h1>Prompt To Users.</h1>
 
 <!-- Message Section -->
 <h3>Message:</h3>
@@ -22,7 +20,6 @@
 <hr>
 
 
-<hr>
 
 <p>Thank you,</p>
 <p><strong>IandM Limited</strong></p>
