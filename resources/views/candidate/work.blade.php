@@ -52,7 +52,7 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     Enter the company name
                                                 </div>
                                             </div>
@@ -74,7 +74,7 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     Enter your role
                                                 </div>
                                             </div>
@@ -96,7 +96,7 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     Provide your start and end year.
                                                 </div>
                                             </div>
@@ -120,7 +120,7 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     Describe SHORTLY your role in the company.
                                                 </div>
                                             </div>

@@ -59,7 +59,7 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     Enter the degree name below
                                                 </div>
                                             </div>
@@ -87,7 +87,7 @@
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                        class="font-high text-danger">
                                                         This information is required to verify your age and
                                                         provide age-appropriate services.
                                                     </div>
@@ -116,7 +116,7 @@
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                        class="font-high text-danger">
                                                         What University did you attend
                                                     </div>
                                                 </div>
@@ -143,7 +143,7 @@
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                        class="font-high text-danger">
                                                         Describe SHORTLY this educational qualification.
                                                     </div>
                                                 </div>
@@ -168,7 +168,7 @@
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                        class="font-high text-danger">
                                                         Upload a visual proof of your degree. It MUST be less than 2mb
                                                         file,image or doc.
                                                     </div>

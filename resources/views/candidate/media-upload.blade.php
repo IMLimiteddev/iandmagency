@@ -56,7 +56,7 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     Upload your CV here.
                                                 </div>
                                             </div>
@@ -104,8 +104,8 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
-                                                    Upload Intro Video of less than 5mb.
+                                                <div class="font-high text-danger">
+                                                    Upload Intro Video of less than 5mb. Ensure to be centered while shooting the video, be professional.
                                                 </div>
                                             </div>
                                         </div>
@@ -159,7 +159,7 @@
                                                         Required
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     Enter the title of the file you wish to upload.
                                                 </div>
                                             </div>
@@ -185,7 +185,7 @@
                                                         Optional
                                                     </div>
                                                 </div>
-                                                <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80 xl:mt-3">
+                                                <div class="font-high text-danger">
                                                     You can upload a picture of your recent projects for users to
                                                     see.
                                                 </div>

@@ -96,10 +96,11 @@ class DashController extends Controller
             $gender = 'female';
         }
 
-        // dd($request->all());
 
         $professionalSkills = implode(', ', $validatedData['professional_skills']);
         $hobbies = implode(', ', $validatedData['hobbies']);
+
+        dd( $hobbies);
 
         if (!Information::where('user_id', $user->id)->exists()) {
 
@@ -265,7 +266,7 @@ class DashController extends Controller
         Alert::info('Info', 'You already have an Educational record, please navigate to edit if you wish to edit this info.');
         return back();
     }
-    
+
     public function educationEdit(Request $request, $ed)
     {
         $user = Auth::user();
