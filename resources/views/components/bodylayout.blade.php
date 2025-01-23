@@ -134,9 +134,9 @@
         <div class="d-flex align-items-center justify-content-between wow fadeInUp">
             <div class="sec-title">
                 <h2>Popular Candidates Sector</h2>
-                <div class="text">2024 Candidates live - 200 added today.</div>
+                <div class="text">2025 Candidates live - 200 added today.</div>
             </div>
-            <a href="#" class="text ud-btn2">View All Sectors<i class="fal fa-long-arrow-right"></i></a>
+            <a href="{{route('sectors.list')}}" class="text ud-btn2">View All Sectors<i class="fal fa-long-arrow-right"></i></a>
         </div>
         <div class="row wow fadeInUp">
             @if ($department->isEmpty())
@@ -152,7 +152,7 @@
             </div>
             @else
 
-            @foreach ($department as $d)
+            @foreach ($department->take(4) as $d)
 
             <!-- Category Block -->
             <div class="category-block-two at-home22 col-xl-3 col-sm-6">

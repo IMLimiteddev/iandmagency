@@ -62,6 +62,13 @@ class OnboardingController extends Controller
         $data['depts'] = Department::all();
         return view('onboarding.employer-list', $data);
     }
+    public function sectors_list()
+    {
+
+        // $data['sectors']= Company::latest()->get();
+        $data['department'] = Department::all();
+        return view('onboarding.sectors-list', $data);
+    }
 
     public function job_list()
     {
