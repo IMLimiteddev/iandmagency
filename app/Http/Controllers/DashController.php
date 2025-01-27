@@ -147,13 +147,15 @@ class DashController extends Controller
 
     public function profileEdit(Request $request)
     {
+
+
         $validatedData = $request->validate([
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
             'dob' => 'required|date',
             'gender' => 'required|string',
-            'email' => 'required|email',
+            'email' => 'nullable|email',
             'phone' => 'required|string',
             'bio' => 'required|string',
             'department' => 'required|string',
@@ -164,6 +166,11 @@ class DashController extends Controller
             'experience_yr' => 'required|integer',
             'address' => 'required|string',
         ]);
+
+
+        // dd($validatedData);
+
+
 
         $user = auth()->user();
         $info = Information::where('user_id', $user->id)->first();
@@ -195,7 +202,7 @@ class DashController extends Controller
             'country' => $validatedData['country'],
             'languages' => $validatedData['languages'],
             'address' => $validatedData['address'],
-            'email' => $validatedData['email'],
+            'email' => $user->email,
             'bio' => $validatedData['bio'],
             'department' => $validatedData['department'],
             'professional_skills' => $validatedData['professional_skills'] ?? $info->professional_skills, // Use existing value if not updated
