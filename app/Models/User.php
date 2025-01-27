@@ -108,4 +108,14 @@ public function sendEmailVerificationNotification()
     {
         return $this->hasMany(Request::class, 'user_id', 'id');
     }
+
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($user) {
+            $user->info()->delete();
+        });
+    }
 }

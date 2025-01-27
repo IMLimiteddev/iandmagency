@@ -58,7 +58,7 @@ class OnboardingController extends Controller
     public function employer_list()
     {
 
-        $data['companies']= Company::latest()->get();
+        $data['companies']= Company::where('is_active', 1)->latest()->get();
         $data['depts'] = Department::all();
         return view('onboarding.employer-list', $data);
     }

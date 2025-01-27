@@ -261,8 +261,20 @@ class AdminController extends Controller
 
     public function allUsers()
     {
-        $users = User::with('info')->get();
+        $users = User::with('info')->where('code',3188)->get();
         return view('admin.all-users', compact('users'));
+    }
+
+    public function deleteUser($userId = null)
+    {
+
+        //we have to delete the user and all the related data
+        // information, works, educations, medias, bookings, requests
+        // dd($userId);
+        $user = User::findOrFail($userId);
+        $user->delete();
+        Alert::success('Success', 'User deleted successfully.');
+        return back();
     }
 
     public function allRequest()

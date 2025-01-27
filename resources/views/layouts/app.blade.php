@@ -684,62 +684,28 @@
 
     @yield('autocomplete')
 
-    {{-- <script>
-        async function fetchCountries() {
-            try {
-                const response = await fetch('https://restcountries.com/v3.1/all');
-                const countries = await response.json();
-                const countriesList = document.getElementById('countries-list');
-
-                countries.forEach(country => {
-                    const option = document.createElement('option');
-                    option.textContent = country.name.common;
-                    option.value = country.name.common;
-                    countriesList.appendChild(option);
-                });
-            } catch (error) {
-                console.error('Error fetching countries:', error);
-            }
-        }
-
-        fetchCountries();
-
-
-    </script> --}}
-
     <script>
-        // async function fetchCountries() {
-        //     try {
-        //         const response = await fetch('https://api.printful.com/countries');
-        //         if (!response.ok) {
-        //             throw new Error(`HTTP error! Status: ${response.status}`);
-        //         }
-        //         const data = await response.json();
+        function confirmation(ev) {
+          ev.preventDefault();
+          var urlToRedirect = ev.currentTarget.getAttribute('href');
+          console.log(urlToRedirect);
+          swal({
+              title: "Are you sure to Delete this user",
+              text: "You will not be able to revert this! Note all interactions and actions carried out with this user will be deleted.",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+          })
+          .then((willCancel) => {
+              if (willCancel) {
 
-        //         // Extracting countries and populating the dropdown
-        //         const countriesList = document.getElementById('countries-list');
-        //         data.result.forEach(country => {
-        //             const option = document.createElement('option');
-        //             option.textContent = country.name;
-        //             option.value = country.code; // Use the country code as value
-        //             countriesList.appendChild(option);
-        //         });
-        //     } catch (err) {
-        //         console.error('Error fetching countries:', err);
-        //     }
-        // }
+                  window.location.href = urlToRedirect;
 
-        // fetchCountries();
+              }
+          });
+      }
+  </script>
 
-//         const proxy = 'https://cors-anywhere.herokuapp.com/';
-// const apiUrl = 'https://api.printful.com/countries';
-
-// fetch(proxy + apiUrl)
-//     .then(response => response)
-//     .then(data => console.log(data))
-//     .catch(err => console.error(err));
-//
-    </script>
 
     <script>
         function initAutocomplete() {
@@ -792,67 +758,3 @@ if (typeof google !== 'undefined' && google.maps && google.maps.places) {
 </html>
 
 
-{{--
-<div data-tw-backdrop="" aria-hidden="true" tabindex="-1" id="profile-info-{{$user?->info?->id}}"
-    class="modal group bg-gradient-to-b from-theme-1/50 via-theme-2/50 to-black/50 transition-[visibility,opacity] w-screen h-screen fixed left-0 top-0 [&:not(.show)]:duration-[0s,0.2s] [&:not(.show)]:delay-[0.2s,0s] [&:not(.show)]:invisible [&:not(.show)]:opacity-0 [&.show]:visible [&.show]:opacity-100 [&.show]:duration-[0s,0.4s]">
-    <form action="{{route('candidate.profile-info.edit', $user?->info?->id)}}" enctype="multipart/form-data"
-        method="POST">
-        @csrf
-
-        <div data-tw-merge=""
-            class="w-[90%] mx-auto bg-white relative rounded-md shadow-md transition-[margin-top,transform] duration-[0.4s,0.3s] -mt-16 group-[.show]:mt-16 group-[.modal-static]:scale-[1.05] dark:bg-darkmode-600 sm:w-[460px] p-10 text-center">
-            <div class="flex flex-col items-center md:flex-row">
-                Edit Profile info
-            </div>
-
-            <div id="preview-container"
-                class="relative flex h-24 w-24 items-center justify-center rounded-full border border-primary/10 bg-primary/5">
-                <img id="previeww" src="{{$user?->info?->image}}" alt="Profile Preview"
-                    class="hidden h-full w-full rounded-full object-cover" />
-                <i id="placeholder-iconn" data-tw-merge="" data-lucide="user"
-                    class="-mt-1.5 h-[65%] w-[65%] fill-slate-300/70 stroke-slate-400/50 stroke-[0.5]">
-                </i>
-            </div>
-
-
-            <!-- Hidden File Input -->
-            <input type="file" id="upload" name="image" accept="image/*" class="hidden"
-                onchange="handleFileUpload(event)" />
-
-
-
-            <input type="text" name="cv_upload"
-                class=" mb-3 disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:rounded-none [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:md:mt-0">
-
-            <button type="submit" class="mt-4 text-blue-500 hover:text-blue-700"> Edit</button>
-        </div>
-    </form>
-</div>
-
-</x-slot>
-
-
-
-@section('autocomplete')
-
-<script>
-function handleFileUpload(event) {
-const file = event.target.files[0];
-const previeww = document.getElementById('previeww');
-const placeholderIconn = document.getElementById('placeholder-iconn');
-
-if (file) {
-const reader = new FileReader();
-
-reader.onload = function (e) {
-    previeww.src = e.target.result;
-    previeww.classList.remove('hidden');
-    placeholderIconn.classList.add('hidden');
-};
-
-reader.readAsDataURL(file);
-}
-}
-</script>
-@endsection
- --}}

@@ -40,6 +40,7 @@ Route::prefix('admin')->middleware('admin')->group(function () {
 
 
     Route::get('/all-users', [AdminController::class, 'allUsers'])->name('admin.all.users');
+    Route::get('/delete-user/{user?}', [AdminController::class, 'deleteUser'])->name('admin.delete.user');
 
 
     Route::prefix('site-builder')->middleware('admin')->group(function () {

@@ -59,4 +59,15 @@ class Information extends Model
     {
         return $this->hasMany(Media::class, 'information_id', 'id');
     }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($info) {
+            $info->workExperiences()->delete();
+            $info->educationalExperiences()->delete();
+            $info->medias()->delete();
+        });
+    }
 }
