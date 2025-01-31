@@ -100,7 +100,7 @@ class DashController extends Controller
         $professionalSkills = implode(', ', $validatedData['professional_skills']);
         $hobbies = implode(', ', $validatedData['hobbies']);
 
-        dd( $hobbies);
+        // dd( $hobbies);
 
         if (!Information::where('user_id', $user->id)->exists()) {
 
