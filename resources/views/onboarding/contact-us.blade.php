@@ -36,8 +36,8 @@
                 <div class="inner-box">
                   <span class="icon"><i class="fa fa-map-marker-alt text-warning"></i></span>
                   <h4>Address</h4>
-                  <p>329 Olashola Street, <br>North Garden VIC
-                    3051, Nigeria</p>
+                  <p>33 Windsor Groove, <br>Estate, Lekki Conversation,
+                    Oluesesi Road, Eti-Osa LGA, Lagos State Nigeria</p>
                 </div>
               </div>
               <div class="contact-block col-lg-4 col-md-6 col-sm-12">
@@ -45,7 +45,7 @@
                     <span class="icon"><i class="fa fa-phone text-warning"></i></span>
 
                   <h4>Call Us</h4>
-                  <p><a href="#" class="text-warning">123 456 7890</a></p>
+                  <p><a href="#" class="text-warning">+234 913 4019 930</a></p>
                 </div>
               </div>
               <div class="contact-block col-lg-4 col-md-6 col-sm-12">
@@ -53,7 +53,7 @@
                     <span class="icon"><i class="fa fa-message text-warning"></i></span>
 
                   <h4>Email</h4>
-                  <p><a href="#">contact.london@example.com</a></p>
+                  <p><a href="info@imengin.com">info@imengin.com</a></p>
                 </div>
               </div>
             </div>
@@ -64,36 +64,49 @@
           <div class="contact-form default-form">
             <h3>Leave A Message</h3>
             <!--Contact Form-->
-            <form method="post" action="#" id="email-form">
-              <div class="row">
-                <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                  <div class="response"></div>
-                </div>
+            <form method="post" action="{{ route('contact.mail') }}">
+                @csrf
+                <div class="row">
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                        <div class="response"></div>
+                    </div>
 
-                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                  <label>Your Name</label>
-                  <input type="text" name="username" class="username" placeholder="Your Name*" required>
-                </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="name" class="username" placeholder="Your Name*" required>
+                        @if ($errors->has('name'))
+                            <span class="text-danger">{{ $errors->first('name') }}</span>
+                        @endif
+                    </div>
 
-                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                  <label>Your Email</label>
-                  <input type="email" name="email" class="email" placeholder="Your Email*" required>
-                </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                        <label>Your Email</label>
+                        <input type="email" name="email" class="email" placeholder="Your Email*" required>
+                        @if ($errors->has('email'))
+                            <span class="text-danger">{{ $errors->first('email') }}</span>
+                        @endif
+                    </div>
 
-                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                  <label>Subject</label>
-                  <input type="text" name="subject" class="subject" placeholder="Subject *" required>
-                </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label>Subject</label>
+                        <input type="text" name="subject" class="subject" placeholder="Subject *" required>
+                        @if ($errors->has('subject'))
+                            <span class="text-danger">{{ $errors->first('subject') }}</span>
+                        @endif
+                    </div>
 
-                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                  <label>Your Message</label>
-                  <textarea name="message" placeholder="Write your message..." required=""></textarea>
-                </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <label>Your Message</label>
+                        <textarea name="message" placeholder="Write your message..." required></textarea>
+                        @if ($errors->has('message'))
+                            <span class="text-danger">{{ $errors->first('message') }}</span>
+                        @endif
+                    </div>
 
-                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                  <button class="theme-btn btn-style-two" type="button" id="submit" name="submit-form">Send Massage</button>
+                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                        <button class="theme-btn btn-style-three" type="submit" id="submit" name="submit-form">Send Message</button>
+                    </div>
                 </div>
-              </div>
             </form>
           </div>
           <!--End Contact Form -->

@@ -8,6 +8,7 @@ use App\Mail\CandidateConfirmationMail;
 use App\Mail\CandidateRescheduleMail;
 use App\Models\Booking;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -115,6 +116,34 @@ Route::prefix('candidate-dash')->middleware('candidate')->group(function () {
 
 
 });
+
+
+// to send a contact us mail to the admin
+Route::post('/contact/mail', function (Request $request) {
+    $data = $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|max:255',
+        'subject' => 'required|string|max:255',
+        'message' => 'required|string',
+    ]);
+
+    $toEmail = env('MAIL_FROM_ADDRESS');
+
+    Mail::send([], [], function ($message) use ($data, $toEmail) {
+        $message->to($toEmail)
+                ->subject($data['subject'])
+                ->html(
+                    '<p><strong>Name:</strong> ' . $data['name'] . '</p>' .
+                    '<p><strong>Email:</strong> ' . $data['email'] . '</p>' .
+                    '<p><strong>Message:</strong> ' . $data['message'] . '</p>'
+                );
+    });
+
+    Alert::success('Success', 'Your message has been sent successfully!');
+    return back();
+})->name('contact.mail');
+
+
 
 Route::prefix('candidate')->group(function () {
 
