@@ -171,11 +171,14 @@
                                     <div class="widget-content">
                                         <ul class="job-overview at-sv5">
 
+                                            {{-- @php
+                                                use Illuminate\Support\Str;
+                                            @endphp --}}
                                             <li>
                                                 <i class="icon flaticon-title"></i>
                                                 <div class="ml15">
                                                     <h5>Experience Time</h5>
-                                                    <span>{{$information?->experience_yr}} Year</span>
+                                                    <span>{{ $information?->experience_yr }} {{ Str::plural('Year', $information?->experience_yr) }}</span>
                                                 </div>
                                             </li>
                                             {{-- <li>

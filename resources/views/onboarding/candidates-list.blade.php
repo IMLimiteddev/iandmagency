@@ -151,7 +151,7 @@
                         <li class="ms-0"><span class="icon fal fa-location-dot"></span>{{$info?->country}}</li>
 
                       </ul>
-                      <p class="text">Hi, I am {{$info?->first_name}} {{$info?->last_name}}.</p>
+                      <p class="text">Hi, I am {{$info?->first_name}} {{$info?->last_name}}. Click below to view my profile. Place a booking on me for interviews and we can work together.</p>
                       <ul class="post-tags justify-content-start mt20">
                         <li class="ms-0"><a href="#">{{$info?->department}}</a></li>
                         {{-- <li><a href="#">Enginer</a></li>

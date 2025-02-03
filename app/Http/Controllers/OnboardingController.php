@@ -48,7 +48,6 @@ class OnboardingController extends Controller
     }
     public function candidates_list()
     {
-
         $data['infos'] = Information::with('medias')
                     ->where('is_active', 1)
                     ->latest()->get();
@@ -129,7 +128,7 @@ class OnboardingController extends Controller
     {
 
         // dd($request->all());
-        $data['infos'] = Information::with('medias')->where('department','LIKE', '%'.$request->department.'%')->latest()->get();
+        $data['infos'] = Information::with('medias')->where('is_active', 1)->where('department','LIKE', '%'.$request->department.'%')->latest()->get();
         $data['depts'] = Department::all();
         return view('onboarding.candidates-list', $data);
 
