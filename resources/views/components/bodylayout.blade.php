@@ -21,7 +21,7 @@
                                 <!-- Form Group -->
 
                                 <!-- Form Group -->
-                                <div class="form-group col-lg-3 col-md-12 col-sm-12 text-left">
+                                <div class="form-group col-lg-4 col-md-12 col-sm-12 text-left">
                                     <button type="submit" class="theme-btn btn-style-two"><span class="text-white">Find
                                             Candidates by department</span></button>
                                 </div>
