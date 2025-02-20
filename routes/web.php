@@ -171,6 +171,14 @@ Route::prefix('company')->middleware('company')->group(function () {
 });
 
 
+// ussed as test for mistech site
+
+
+Route::get('test-eureka', [CompanyController::class, 'testEureka'])->name('test.eureka');
+
+
+
+
 
 
 

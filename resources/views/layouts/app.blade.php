@@ -17,6 +17,8 @@
     <meta property="og:url" content="https://iandmlimited.com" />
     <meta property="og:type" content="website" />
 
+    
+
     <meta content="Connect with Top Nigerian Remote Talent" property="twitter:title" />
     <meta content="Connecting top remote talent with forward-thinking companies worldwide, we specialize in simplifying the recruitment process for remote positions. Our platform brings you highly skilled professionals
         tailored to meet your business needs, whether you're looking for developers, designers, customer support experts,
@@ -543,7 +545,6 @@
     <script src="/dash/dist/js/components/quick-search.js"></script> <!-- END: Vendor JS Assets-->
     <!-- BEGIN: Pages, layouts, components JS Assets-->
     <!-- END: Pages, layouts, components JS Assets-->
-
 
     <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
     <script>

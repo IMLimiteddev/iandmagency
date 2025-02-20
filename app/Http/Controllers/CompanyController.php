@@ -118,4 +118,10 @@ class CompanyController extends Controller
         return $file_name;
 
     }
+
+    public function testEureka()
+    {
+
+        return view('test-eureka');
+    }
 }
