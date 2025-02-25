@@ -365,7 +365,7 @@
         </div>
 
         <div class="btn-box">
-            <a href="{{route('candidates.list')}}" class="theme-btn btn-style-three">Search Candidate</a>
+            {{-- <a href="{{route('candidates.list')}}" class="theme-btn btn-style-three">Search Candidate</a> --}}
             <a href="{{route('candidates.list')}}" class="theme-btn btn-style-three">Request For a Candidate</a>
         </div>
     </div>
@@ -383,7 +383,7 @@
             </div>
 
             <div class="btn-box">
-                <a href="{{route('candidates.list')}}" class="theme-btn btn-style-two bg-black"><span class="text-white">Search Job</span></a>
+                <a href="{{route('candidates.list')}}" class="theme-btn btn-style-two bg-black"><span class="text-white">Search Employees</span></a>
             </div>
         </div>
     </div>

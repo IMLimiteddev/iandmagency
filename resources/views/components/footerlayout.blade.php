@@ -8,7 +8,8 @@
             <div class="footer-column about-widget">
               <div class="logo"><a href="#"><img style="height: 80px; width: 80px;" src="/onboarding/IandM-no-bg-logo-.png" alt=""></a></div>
               <p class="phone-num"><span>Email us </span><a href="#">info@imengin.com</a></p>
-              <p class="address">Connecting top remote talent with companies worldwide. Find skilled professionals for roles like developers, designers, and support experts tailored to your needs. <br><a href="#" class="email">info@imengin.com</a></p>
+              <p class="address">Connecting top remote talent with companies worldwide. Find skilled professionals for roles like developers, designers, and support experts tailored to your needs.</p>
+              {{-- <p class="address">Connecting top remote talent with companies worldwide. Find skilled professionals for roles like developers, designers, and support experts tailored to your needs. <br><a href="#" class="email">info@imengin.com</a></p> --}}
             </div>
           </div>
 
@@ -38,7 +39,7 @@
                   <h4 class="widget-title">Join Us Now!</h4>
                   <div class="widget-content">
                     <div class="newsletter-form">
-                      <div class="text text-white">We don’t send spam so don’t worry.</div>
+                      <div class="text text-white">We don’t spam, so don’t worry.</div>
                       <form method="post" action="#" id="subscribe-form">
                         <div class="form-group">
                           <div class="response"></div>
