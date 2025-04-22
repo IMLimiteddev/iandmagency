@@ -122,6 +122,18 @@ class CompanyController extends Controller
     public function testEureka()
     {
 
-        return view('test-eureka');
+        // return view('test-eureka');
+
+        return view('ai-project.index');
+
+    }
+
+
+    public function aiProject()
+    {
+
+
+        dd('here');
+        return view('ai-project.index');
     }
 }

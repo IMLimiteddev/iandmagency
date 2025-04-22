@@ -1,0 +1,21 @@
+
+<?php
+
+use App\Http\Controllers\Ai\AiConverterController;
+use App\Http\Controllers\AiProject\AiController;
+use App\Http\Controllers\AiProjectController;
+use App\Http\Controllers\CompanyController;
+use Illuminate\Support\Facades\Route;
+
+
+
+
+
+
+Route::get('/ai-converter', [AiConverterController::class, 'aiProject'])->name('ai-project');
+Route::get('/ai-converter/work-area', [AiConverterController::class, 'aiWorkArea'])->name('ai-workarea');
+Route::post('/ai-converter/upload-file', [AiConverterController::class, 'aiUploadFile'])->name('ai.upload.file');
+
+
+Route::get('/ai-login', [AiConverterController::class, 'aiLogin'])->name('ai-login');
+Route::post('/ai-login-action', [AiConverterController::class, 'aiLoginAction'])->name('ai-login-action');

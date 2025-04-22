@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AiProject\AiController;
+use App\Http\Controllers\AiProjectController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\DashController;
 use App\Http\Controllers\OnboardingController;
@@ -176,13 +178,6 @@ Route::prefix('company')->middleware('company')->group(function () {
 
 Route::get('test-eureka', [CompanyController::class, 'testEureka'])->name('test.eureka');
 
-
-
-
-
-
-
-
 // Mail::raw('Testing email functionality for the email', function ($message) {
 //     $message->to('clintonace09@gmail.com')
 //             ->subject('Test Email');
@@ -190,6 +185,7 @@ Route::get('test-eureka', [CompanyController::class, 'testEureka'])->name('test.
 
 
 
+require __DIR__.'/aiproject.php';
 
 require __DIR__.'/auth.php';
 require __DIR__.'/admin.php';
