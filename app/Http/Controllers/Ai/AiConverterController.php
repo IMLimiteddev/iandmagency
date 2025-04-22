@@ -21,10 +21,10 @@ class AiConverterController extends Controller
 
     }
 
-    public function aiWorkArea()
+    public function aiWorkArea($id = null)
     {
 
-        $data['ai'] = AiUpload::where('txt', '!=', null)->first();
+        $data['result'] = AiUpload::where('id',$id)->where('status', 'converted')->first();
         return view('ai-project.workarea', $data);
     }
 
@@ -49,13 +49,7 @@ class AiConverterController extends Controller
         // Store file in 'uploads' folder inside storage/app/
         $path = $file->storeAs('uploads', $uniqueName); // No 'public' disk used
 
-        // Log into DB
-        $upload = new AiUpload();
-        $upload->file_name = $uniqueName;
-        $upload->path = $path;
-        $upload->save();
-
-        $fullPath = storage_path('app/' . $path); // absolute path
+        $fullPath = storage_path('app/public/' . $path); // absolute path
 
         // dd($fullPath);
         $response = Http::attach(
@@ -64,7 +58,16 @@ class AiConverterController extends Controller
             $uniqueName
         )->post('https://ai-4-v2k7.onrender.com/process_pdf/');
 
+
+
         if ($response->successful()) {
+
+            // Log into DB
+            $upload = new AiUpload();
+            $upload->file_name = $uniqueName;
+            $upload->path = $path;
+            $upload->save();
+
             $data = $response->json(); // Decode the JSON response
 
             $upload->txt = $data['output_files']['txt'] ?? null;
@@ -82,11 +85,10 @@ class AiConverterController extends Controller
                 $fileResponse = Http::get($downloadUrl);
 
                 if ($fileResponse->successful()) {
-                    // Save file in storage/app/converted/
+
                     Storage::disk('local')->put("public/converted/{$filename}", $fileResponse->body());
                 }
 
-                // Assign file paths to model
                 $upload->status = 'converted';
                 $upload->save();
             }
@@ -97,7 +99,7 @@ class AiConverterController extends Controller
             $data['base_file'] = $upload->base_file;
 
             Alert::success('Success', 'AI processing successful.');
-            return redirect()->route('ai-workarea');
+            return redirect()->route('ai-workarea', ['id' => $upload->id]);
 
         }else{
 

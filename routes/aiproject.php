@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/ai-converter', [AiConverterController::class, 'aiProject'])->name('ai-project');
-Route::get('/ai-converter/work-area', [AiConverterController::class, 'aiWorkArea'])->name('ai-workarea');
+Route::get('/ai-converter/work-area/{id?}', [AiConverterController::class, 'aiWorkArea'])->name('ai-workarea');
 Route::post('/ai-converter/upload-file', [AiConverterController::class, 'aiUploadFile'])->name('ai.upload.file');
 
 
