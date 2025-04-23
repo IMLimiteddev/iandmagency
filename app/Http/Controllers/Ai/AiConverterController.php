@@ -49,7 +49,7 @@ class AiConverterController extends Controller
         // Store file in 'uploads' folder inside storage/app/
         $path = $file->storeAs('public/uploads', $uniqueName); // No 'public' disk used
 
-        $fullPath = storage_path('app/public/' . $path); // absolute path
+        $fullPath = storage_path('app/' . $path); // absolute path
 
         // dd($fullPath);
         $response = Http::attach(
