@@ -47,7 +47,7 @@ class AiConverterController extends Controller
         $uniqueName = 'IandM.' . rand(100000, 999999) . '.pdf';
 
         // Store file in 'uploads' folder inside storage/app/
-        $path = $file->storeAs('uploads', $uniqueName); // No 'public' disk used
+        $path = $file->storeAs('public/uploads', $uniqueName); // No 'public' disk used
 
         $fullPath = storage_path('app/public/' . $path); // absolute path
 
