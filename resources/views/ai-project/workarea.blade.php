@@ -73,7 +73,7 @@
                                         <a href="/storage/converted/{{$result?->pdf}}" target="_blank" title="View PDF">
                                             <i class="fas fa-eye" style="font-size: 22px; color: #000000FF;"></i>
                                         </a>
-                                        <a href="" title="Download PDF">
+                                        <a href="{{route('download.file', $result?->pdf)}}" title="Download PDF">
                                             <i class="fas fa-download" style="font-size: 22px; color: #6D6D6DFF;"></i>
                                         </a>
                                     </div>
@@ -86,7 +86,7 @@
                                         <a href="/storage/converted/{{$result?->txt}}" target="_blank" title="View Text">
                                             <i class="fas fa-eye" style="font-size: 22px; color: #000000FF;"></i>
                                         </a>
-                                        <a href="" title="Download Text">
+                                        <a href="{{route('download.file', $result?->txt)}}" title="Download Text">
                                             <i class="fas fa-download" style="font-size: 22px; color: #6D6D6DFF;"></i>
                                         </a>
                                     </div>
@@ -99,9 +99,9 @@
                                         <a href="/storage/{{$result?->path}}" target="_blank" title="View Original">
                                             <i class="fas fa-eye" style="font-size: 22px; color: #000000FF;"></i>
                                         </a>
-                                        <a href="" title="Download Original">
+                                        {{-- <a href="" title="Download Original">
                                             <i class="fas fa-download" style="font-size: 22px; color: #6D6D6DFF;"></i>
-                                        </a>
+                                        </a> --}}
                                     </div>
                                 </div>
 

@@ -115,6 +115,20 @@ class AiConverterController extends Controller
         }
     }
 
+    public function downloadFile($file)
+    {
+        $path = storage_path("app/public/converted/{$file}");
+
+        // dd($path);
+
+        if (!file_exists($path)) {
+            abort(404, 'File not found');
+        }
+
+        Alert::success('Success', 'File Downloaded');
+        return response()->download($path);
+    }
+
     public function aiLogin()
     {
         return view('ai-project.login');

@@ -19,3 +19,4 @@ Route::post('/ai-converter/upload-file', [AiConverterController::class, 'aiUploa
 
 Route::get('/ai-login', [AiConverterController::class, 'aiLogin'])->name('ai-login');
 Route::post('/ai-login-action', [AiConverterController::class, 'aiLoginAction'])->name('ai-login-action');
+Route::get('/download/{file?}', [AiConverterController::class, 'downloadFile'])->name('download.file');
