@@ -29,7 +29,7 @@
                                     <div data-hover="false" data-delay="0" class="search-dropdown w-dropdown">
                                         <div class="search-toggle w-dropdown-toggle">
                                             <div class="icon w-icon-dropdown-toggle"></div>
-                                            <div class="dropdown-text">File</div>
+                                            <div class="dropdown-text">Datei</div>
                                         </div>
                                         {{-- <nav class="search-list w-dropdown-list"><a href="#"
                                                 class="search-text-link w-dropdown-link">Pdf</a><a href="#"
@@ -37,7 +37,7 @@
                                                 class="search-text-link w-dropdown-link">Excel</a></nav> --}}
                                     </div>
                                     <div data-w-id="258d8105-7d37-1f2a-8fec-c28d67552947" class="button-outline"><input
-                                            type="submit" class="button is-icon w-button" value="Convert" />
+                                            type="submit" class="button is-icon w-button" value="Konvertieren" />
                                         <div style="display:none" class="button-hover-effect"></div>
                                     </div>
                                     {{-- <div class="discover-circle-icon"><img loading="lazy"

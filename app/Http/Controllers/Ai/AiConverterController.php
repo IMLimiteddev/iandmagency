@@ -43,11 +43,15 @@ class AiConverterController extends Controller
         // Uploaded file
         $file = $request->file('file');
 
+        $originalFileName = $file->getClientOriginalName();
+
+        // dd($originalFileName);
+
         // Create a unique name: IandM.######.pdf
         $uniqueName = 'IandM.' . rand(100000, 999999) . '.pdf';
 
         // Store file in 'uploads' folder inside storage/app/
-        $path = $file->storeAs('public/uploads', $uniqueName); // No 'public' disk used
+        $path = $file->storeAs('/public/uploads', $uniqueName); // No 'public' disk used
 
         $fullPath = storage_path('app/' . $path); // absolute path
 
@@ -65,7 +69,7 @@ class AiConverterController extends Controller
             // Log into DB
             $upload = new AiUpload();
             $upload->file_name = $uniqueName;
-            $upload->path = $path;
+            $upload->path = 'uploads/'.$uniqueName;
             $upload->save();
 
             $data = $response->json(); // Decode the JSON response
@@ -74,6 +78,7 @@ class AiConverterController extends Controller
             $upload->excel = $data['output_files']['excel'] ?? null;
             $upload->pdf = $data['output_files']['pdf'] ?? null;
             $upload->base_file = $data['base_filename'] ?? null;
+            $upload->original_name = $originalFileName ?? null;
             $upload->save();
 
             $files = $data['output_files'];
@@ -97,6 +102,7 @@ class AiConverterController extends Controller
             $data['excel'] = $upload->excel;
             $data['pdf'] = $upload->pdf;
             $data['base_file'] = $upload->base_file;
+            $data['original_name'] = $originalFileName;
 
             Alert::success('Success', 'AI processing successful.');
             return redirect()->route('ai-workarea', ['id' => $upload->id]);

@@ -23,17 +23,17 @@
                         <div class="heading-block is-benefits">
                             <h2 data-w-id="2750b49e-f3a5-41af-730f-5a77f295728e" style="opacity:1"
                                 class="heading-title">Datei zum Konvertieren hochladen</h2>
-                            <p data-w-id="2750b49e-f3a5-41af-730f-5a77f295728e" style="opacity:1"
-                                class="heading-title">You can either <span style="color: #ffffff">view</span> or <span style="color: #16a34a">download</span> you results below.</p>
 
+                                <p style="color: #ffffff">Sie können Ihre Datei unten <strong style="color: #000000FF">ansehen</strong> oder <strong>herunterladen</strong>:</p>
+
+                                {{-- <p data-w-id="2750b49e-f3a5-41af-730f-5a77f295728e" style="opacity:1"
+                                class="heading-title">You can either <span style="color: #ffffff">view</span> or <span style="color: #16a34a">download</span> you results below.</p> --}}
+
+                                <h5 style="margin-top: 10px" data-w-id="2750b49e-f3a5-41af-730f-5a77f295728e" style="opacity:1"
+                                class="heading-title">Orignale Datei : {{$result?->original_name}}</h5>
                             {{-- <p data-w-id="f042040d-e630-37fb-d44b-001c6e4f062d" style="opacity:1" class="section-text">
                                </p> --}}
                         </div>
-
-                        @php
-
-                        // dd($ai);
-                        @endphp
 
                         {{-- <div class="w-layout-grid benefit-grid">
                             <div data-w-id="c8856594-cce7-d6ad-05bb-d9856dd5958b" style="opacity:1"
@@ -63,57 +63,44 @@
                             </div>
                         </div> --}}
 
-                        <div style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
+                        <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
                             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
 
                                 {{-- PDF Section --}}
-                                <div style="border: 1px solid #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                                    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;">PDF File</h3>
+                                <div style="background-color: #FFFFFFFF; border: 1px solid #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;">PDF datei</h3>
                                     <div style="display: flex; justify-content: center; gap: 30px;">
                                         <a href="/storage/converted/{{$result?->pdf}}" target="_blank" title="View PDF">
-                                            <i class="fas fa-eye" style="font-size: 22px; color: #FFFFFFFF;"></i>
+                                            <i class="fas fa-eye" style="font-size: 22px; color: #000000FF;"></i>
                                         </a>
                                         <a href="" title="Download PDF">
-                                            <i class="fas fa-download" style="font-size: 22px; color: #16a34a;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                {{-- Excel Section --}}
-                                <div style="border: 1px solid #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                                    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;">Excel File</h3>
-                                    <div style="display: flex; justify-content: center; gap: 30px;">
-                                        <a href="/storage/converted/{{$result?->excel}}" target="_blank" title="View Excel">
-                                            <i class="fas fa-eye" style="font-size: 22px; color: #FFFFFFFF;"></i>
-                                        </a>
-                                        <a href="/storage/converted/{{$result?->excel}}" title="Download Excel">
-                                            <i class="fas fa-download" style="font-size: 22px; color: #16a34a;"></i>
+                                            <i class="fas fa-download" style="font-size: 22px; color: #6D6D6DFF;"></i>
                                         </a>
                                     </div>
                                 </div>
 
                                 {{-- TXT Section --}}
-                                <div style="border: 1px solid #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                                    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;">Text File</h3>
+                                <div style=" background-color: #FFFFFFFF; border: 1px solid #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;">Text datei</h3>
                                     <div style="display: flex; justify-content: center; gap: 30px;">
                                         <a href="/storage/converted/{{$result?->txt}}" target="_blank" title="View Text">
-                                            <i class="fas fa-eye" style="font-size: 22px; color: #FFFFFFFF;"></i>
+                                            <i class="fas fa-eye" style="font-size: 22px; color: #000000FF;"></i>
                                         </a>
                                         <a href="" title="Download Text">
-                                            <i class="fas fa-download" style="font-size: 22px; color: #16a34a;"></i>
+                                            <i class="fas fa-download" style="font-size: 22px; color: #6D6D6DFF;"></i>
                                         </a>
                                     </div>
                                 </div>
 
                                 {{-- Original PDF Section --}}
-                                <div style="border: 1px solid #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                                    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;">Original PDF</h3>
+                                <div style="background-color: #FFFFFFFF; border: 1px solid #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                                    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;">originale PDF</h3>
                                     <div style="display: flex; justify-content: center; gap: 30px;">
                                         <a href="/storage/{{$result?->path}}" target="_blank" title="View Original">
-                                            <i class="fas fa-eye" style="font-size: 22px; color: #FFFFFFFF;"></i>
+                                            <i class="fas fa-eye" style="font-size: 22px; color: #000000FF;"></i>
                                         </a>
                                         <a href="" title="Download Original">
-                                            <i class="fas fa-download" style="font-size: 22px; color: #16a34a;"></i>
+                                            <i class="fas fa-download" style="font-size: 22px; color: #6D6D6DFF;"></i>
                                         </a>
                                     </div>
                                 </div>

@@ -1,7 +1,7 @@
 <header class="header">
     <div data-w-id="e53174a7-bda0-7f9c-f5e5-c7a1efc20a7d" data-animation="default" data-collapse="medium"
         data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <div class="container is-navebar w-container"><a href="/" aria-current="page"
+        <div class="container is-navebar w-container"><a href="{{route('ai-project')}}" aria-current="page"
                 class="brand w-nav-brand w--current"><img src="/onboarding/IandM-no-white-bg-logo-.png"  style="height: 50px; width: 50px; background-color: #FFFFFFB7; border-radius:50%; padding: 10px" loading="lazy"
                     alt="Logo" /></a>
             <nav role="navigation" class="nav-menu w-nav-menu">
