@@ -103,6 +103,7 @@
 <body>
     <div class="page-wrapper">
 
+    @include('sweetalert::alert')
 
         {{-- The footer start --}}
         <x-ai-project.header-component />

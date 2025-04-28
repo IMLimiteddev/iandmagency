@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::middleware('admin')->group(function () {
+Route::middleware('tool')->group(function () {
 
     Route::get('/ai-converter', [AiConverterController::class, 'aiProject'])->name('ai-project');
     Route::get('/ai-converter/work-area/{id?}', [AiConverterController::class, 'aiWorkArea'])->name('ai-workarea');
