@@ -60,7 +60,7 @@ class AiConverterController extends Controller
             'file',          // name of form field expected by FastAPI
             file_get_contents($fullPath),
             $uniqueName
-        )->post('https://ai-4-v2k7.onrender.com/process_pdf/');
+        )->post('https://ai-bxij.onrender.com/process_pdf/');
 
 
 
@@ -85,7 +85,7 @@ class AiConverterController extends Controller
             $base = $data['base_filename'];
 
             foreach ($files as $type => $filename) {
-                $downloadUrl = "https://ai-4-v2k7.onrender.com/download/{$filename}";
+                $downloadUrl = "https://ai-bxij.onrender.com/download/{$filename}";
 
                 $fileResponse = Http::get($downloadUrl);
 
@@ -129,6 +129,7 @@ class AiConverterController extends Controller
         return response()->download($path);
     }
 
+    // https://ai-bxij.onrender.com/
     public function aiLogin()
     {
         return view('ai-project.login');
