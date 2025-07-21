@@ -36,83 +36,87 @@ class AiConverterController extends Controller
 
     public function aiUploadFile(AiUploaadedRequest $request)
     {
+
+
+
+        // dd('here', $request->files);
+
         $validated = $request->validate([
-            'file' => 'required|file|mimes:pdf|max:10240',
+            'files' => 'required|array',
+            'files.*' => 'file|mimes:pdf|max:10240',
         ]);
 
-        // Uploaded file
-        $file = $request->file('file');
 
-        $originalFileName = $file->getClientOriginalName();
+        $uploadedFilesId = [];
 
-        // dd($originalFileName);
+        foreach ($request->file('files') as $f) {
 
-        // Create a unique name: IandM.######.pdf
-        $uniqueName = 'IandM.' . rand(100000, 999999) . '.pdf';
+            $file = $f;
+            $originalFileName = $file->getClientOriginalName();
+            $uniqueName = 'IandM.' . rand(100000, 999999) . '.pdf';
+            $path = $file->storeAs('/public/uploads', $uniqueName);
+            $fullPath = storage_path('app/' . $path);
 
-        // Store file in 'uploads' folder inside storage/app/
-        $path = $file->storeAs('/public/uploads', $uniqueName); // No 'public' disk used
+            $response = Http::attach(
+                'file',          // name of form field expected by FastAPI
+                file_get_contents($fullPath),
+                $uniqueName
+            )->post('https://ai-bxij.onrender.com/process_pdf/');
 
-        $fullPath = storage_path('app/' . $path); // absolute path
+            if ($response->successful()) {
 
-        // dd($fullPath);
-        $response = Http::attach(
-            'file',          // name of form field expected by FastAPI
-            file_get_contents($fullPath),
-            $uniqueName
-        )->post('https://ai-bxij.onrender.com/process_pdf/');
+                // Log into DB
+                $upload = new AiUpload();
+                $upload->file_name = $uniqueName;
+                $upload->path = 'uploads/'.$uniqueName;
+                $upload->save();
 
+                $data = $response->json(); // Decode the JSON response
 
+                $upload->txt = $data['output_files']['txt'] ?? null;
+                $upload->excel = $data['output_files']['excel'] ?? null;
+                $upload->pdf = $data['output_files']['pdf'] ?? null;
+                $upload->base_file = $data['base_filename'] ?? null;
+                $upload->original_name = $originalFileName ?? null;
+                $upload->save();
 
-        if ($response->successful()) {
+                $files = $data['output_files'];
+                $base = $data['base_filename'];
 
-            // Log into DB
-            $upload = new AiUpload();
-            $upload->file_name = $uniqueName;
-            $upload->path = 'uploads/'.$uniqueName;
-            $upload->save();
+                foreach ($files as $type => $filename) {
+                    $downloadUrl = "https://ai-bxij.onrender.com/download/{$filename}";
 
-            $data = $response->json(); // Decode the JSON response
+                    $fileResponse = Http::get($downloadUrl);
 
-            $upload->txt = $data['output_files']['txt'] ?? null;
-            $upload->excel = $data['output_files']['excel'] ?? null;
-            $upload->pdf = $data['output_files']['pdf'] ?? null;
-            $upload->base_file = $data['base_filename'] ?? null;
-            $upload->original_name = $originalFileName ?? null;
-            $upload->save();
+                    if ($fileResponse->successful()) {
 
-            $files = $data['output_files'];
-            $base = $data['base_filename'];
+                        Storage::disk('local')->put("public/converted/{$filename}", $fileResponse->body());
+                    }
 
-            foreach ($files as $type => $filename) {
-                $downloadUrl = "https://ai-bxij.onrender.com/download/{$filename}";
-
-                $fileResponse = Http::get($downloadUrl);
-
-                if ($fileResponse->successful()) {
-
-                    Storage::disk('local')->put("public/converted/{$filename}", $fileResponse->body());
+                    $upload->status = 'converted';
+                    $upload->save();
                 }
 
-                $upload->status = 'converted';
-                $upload->save();
+                $data['txt'] = $upload->txt;
+                $data['excel'] = $upload->excel;
+                $data['pdf'] = $upload->pdf;
+                $data['base_file'] = $upload->base_file;
+                $data['original_name'] = $originalFileName;
+
+                $uploadedFilesId[]= $upload->id;
+
+            }else{
+
+                Alert::info('Error', 'One or all of you files did not process successfully.');
+                return back();
+
             }
 
-            $data['txt'] = $upload->txt;
-            $data['excel'] = $upload->excel;
-            $data['pdf'] = $upload->pdf;
-            $data['base_file'] = $upload->base_file;
-            $data['original_name'] = $originalFileName;
-
-            Alert::success('Success', 'AI processing successful.');
-            return redirect()->route('ai-workarea', ['id' => $upload->id]);
-
-        }else{
-
-            Alert::info('Error', 'Error did not process successfully.');
-            return back();
-
         }
+
+        Alert::success('Success', 'AI processing successful.');
+        return redirect()->route('ai-workarea', ['id' => $uploadsId->id]);
+
     }
 
     public function downloadFile($file)
